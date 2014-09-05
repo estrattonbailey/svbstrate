@@ -12,13 +12,16 @@ Only the necessities:
 - 7 included stock images *via [Startup Stock Photos](http://startupstockphotos.com)*
 
 Plus two favorites:
-- [Skrollr](https://github.com/Prinzhorn/skrollr)
-- the super-neat [ScrollReveal](https://github.com/julianlloyd/scrollReveal.js)
+- [Skrollr](https://github.com/Prinzhorn/skrollr) parallax library
+- the super-neat [ScrollReveal](https://github.com/julianlloyd/scrollReveal.js) library
 
-###SASS
+####SASS
 It's the best. Be smart, use it for variables, calc(), etc, but keep the nesting and functions to a minimum. Ain't nobody got time for that.
 
-###Inline Block Grid
+Also, SVBSTRATE is mobile first. Use the separate ```*.scss``` files in ```~/components/*``` for the different breakpoints. Yay minimal CSS.
+
+####Inline Block Grid
 Columns are silly. Starbucks keeps it simple and uses easy to understand syntax. That's smart. Adjust settings in ```~/components/_grid--settings.scss```, including breakpoints.
 
-And that's it. Think you can make it better? I'm sure you can. Fork me. I'd love to learn something new.
+* * *
+And that's it. Think you can make it better? I'm sure you can. **Fork me.** I'd love to learn something new.
