@@ -1,0 +1,130 @@
+/////VARIABLES
+$red: #DF5C4F;
+$green: #8ac43f;
+$yellow: #f1cb19;
+$blue: #27abe3;
+$black: #222222;
+$gray: #333333;
+$gray60: #666666;
+$gray40: #999999;
+$gray20: #cccccc;
+$gray10: #f5f5f5;
+
+/////BREAKPOINTS
+$sm: 481px;
+$med: 768px;
+$lg: 1024px;
+$xl: 1280px;
+$xxl: 1500px;
+
+/////MIXINS
+@mixin block-rel {
+    display: block;
+    position: relative;
+}
+@mixin block-ab {
+    display: block;
+    position: absolute;
+}
+@mixin block-fix {
+    display: block;
+    position: fixed;
+}
+@mixin inline-rel {
+    display: inline-block;
+    position: relative;
+}
+@mixin rounded {
+    border-radius: 6px;
+        -moz-border-radius: 6px;
+        -webkit-border-radius: 6px;
+    overflow: hidden;
+}
+@mixin round {
+    border-radius: 1000px;
+        -moz-border-radius: 1000px;
+        -webkit-border-radius: 1000px;
+    overflow: hidden;
+}
+@mixin text-shadow {
+    text-shadow: 0 0 5px $gray60;
+        -moz-text-shadow: 0 0 5px $gray60;
+        -webkit-text-shadow: 0 0 5px $gray60;
+        -ms-text-shadow: 0 0 5px $gray60;
+}
+@mixin trans-one {
+    transition: .1s all;
+        -moz-transition: .1s all;
+        -webkit-transition: .1s all;
+        -ms-transition: .1s all;
+}
+@mixin trans-two {
+    transition: .3s all;
+        -moz-transition: .3s all;
+        -webkit-transition: .3s all;
+        -ms-transition: .3s all;
+    transition-delay: .3s;
+        -moz-transition-delay: .3s;
+        -webkit-transition-delay: .3s;
+        -ms-transition-delay: .3s;
+}
+@mixin trans-three {
+    transition: .3s all;
+        -moz-transition: .3s all;
+        -webkit-transition: .3s all;
+        -ms-transition: .3s all;
+}
+
+@mixin button {
+    @include inline-rel;
+    
+    background-color: white;
+    border-color: $black;
+    color: black;
+    cursor: pointer;
+    padding: 20px 30px;
+}
+@mixin img-bkgd {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+@mixin dots {
+    &::after {
+        @include block-ab;
+        
+        background-image: url('../resources/icons/dots.png');
+        content:'';
+        height:100%;
+        left: 0;
+        top: 0;
+        width:100%;
+        z-index: 0;
+    }
+}
+
+.socialIcons {
+    @include block-rel;
+    
+    height: 40px;
+    text-align: justify;
+    
+    a {
+        @include inline-rel;
+        
+        height:inherit;
+        margin: 0px 10px;
+        width: 40px;
+        
+        i {
+            color: $black;   
+        }
+    }
+    
+    &::after {
+        @include inline-rel;
+        
+        content:'';
+        width:100%;
+    }
+}

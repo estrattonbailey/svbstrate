@@ -1,0 +1,9 @@
+@import "partials/reset";
+@import "partials/font-awesome";
+@import "partials/global";
+@import "partials/typography";
+@import "partials/grid";
+
+@media screen and (min-width: $sm) {
+    @import "partials/sm"
+}
