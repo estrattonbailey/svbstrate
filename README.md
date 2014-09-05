@@ -9,11 +9,11 @@ Only the necessities:
 - customizable inline-block grid
 - typographical hierarchy
 - FontAwesome
-- 7 included stock images *via (Startup Stock Photos)[http://startupstockphotos.com]*
+- 7 included stock images *via [Startup Stock Photos](http://startupstockphotos.com)*
 
 Plus two favorites:
-- (Skrollr)["https://github.com/Prinzhorn/skrollr"]
-- the super-neat (ScrollReveal)["https://github.com/julianlloyd/scrollReveal.js"]
+- [Skrollr](https://github.com/Prinzhorn/skrollr)
+- the super-neat [ScrollReveal](https://github.com/julianlloyd/scrollReveal.js)
 
 ###SASS
 It's the best. Be smart, use it for variables, calc(), etc, but keep the nesting and functions to a minimum. Ain't nobody got time for that.
