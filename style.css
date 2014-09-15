@@ -1797,6 +1797,7 @@ th {
 .row {
   display: block;
   position: relative;
+  font-size: 0px;
   margin: auto;
   max-width: 144em;
   text-align: justify;
@@ -1806,6 +1807,9 @@ th {
     position: relative;
     content: '';
     width: 100%; }
+
+.row > * {
+  font-size: 62.5% !important; }
 
 .column {
   display: inline-block;

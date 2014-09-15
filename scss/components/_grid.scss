@@ -8,6 +8,7 @@
 .row {
     @include block-rel;
     
+    font-size: 0px;
     margin: auto;
     max-width: $maxRow;
     text-align: justify;
@@ -19,6 +20,9 @@
         content:'';
         width: 100%;
     }
+}
+.row > * {
+    font-size: 62.5% !important;
 }
 .column {
     @include inline-rel;
