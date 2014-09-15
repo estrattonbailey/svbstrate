@@ -1,8 +1,6 @@
-SVBSTRATE
-=========
+# SVBSTRATE
 
-Basic starter templates for SUIT CSS inspired SASS projects.
----
+## Basic starter templates for SUIT CSS inspired SASS projects.
 
 Only the necessities:
 - SASS
@@ -23,7 +21,7 @@ Also, SVBSTRATE is mobile first. Use the separate ```*.scss``` files in ```~/com
 Run ```sass --watch scss style.scss:style.css``` to compile from terminal.
 
 ####Inline Block Grid
-Columns are silly. Starbucks keeps it simple and uses easy to understand syntax. That's smart. Adjust settings in ```~/components/_grid--settings.scss```, including breakpoints.
+Floats are silly. Inline-block based grids keep it simple and use easy to understand syntax. That's smart. Adjust settings in ```~/components/_grid--settings.scss```, including breakpoints.
 
 * * *
 And that's it. Think you can make it better? I'm sure you can. **Fork me.** I'd love to learn something new.
