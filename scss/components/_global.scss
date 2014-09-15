@@ -1,8 +1,6 @@
 /////VARIABLES
-$red: #DF5C4F;
-$green: #8ac43f;
-$yellow: #f1cb19;
-$blue: #27abe3;
+$red: #ff4861;
+$blue: #00cbdc;
 $black: #222222;
 $gray: #333333;
 $gray60: #666666;
@@ -67,7 +65,6 @@ $gray10: #f5f5f5;
         -webkit-transition: .3s all;
         -ms-transition: .3s all;
 }
-
 @mixin button {
     @include inline-rel;
     
@@ -88,29 +85,52 @@ $gray10: #f5f5f5;
         
         background-image: url('../resources/icons/dots.png');
         content:'';
-        height:100%;
+        height:100% ;
         left: 0;
         top: 0;
-        width:100%;
+        width:100% ;
         z-index: 0;
     }
 }
 
-.socialIcons {
+/*EXTENDS*/
+@mixin imageBackground {
+    @include block-rel;
+    
+    background-image: url('../resources/images/1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100% ;
+}
+
+/*COMPONENTS*/
+.imageBackground {
+    @include block-rel;
+    
+    background-image: url('../resources/images/1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100% ;
+}
+
+.listIcons {
     @include block-rel;
     
     height: 40px;
-    text-align: justify;
+    text-align: left;
     
     a {
         @include inline-rel;
         
         height:inherit;
-        margin: 0px 10px;
+        margin: 0px 5px;
         width: 40px;
         
         i {
             color: $black;   
+            font-size: 2rem;
         }
     }
     
@@ -118,6 +138,6 @@ $gray10: #f5f5f5;
         @include inline-rel;
         
         content:'';
-        width:100%;
+        width:100% ;
     }
 }

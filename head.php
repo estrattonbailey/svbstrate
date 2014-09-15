@@ -2,6 +2,7 @@
 <!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en" > <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" prefix="og: http://ogp.me/ns#"> <!--<![endif]-->
 
+<html>
 <head>
     <link rel="icon" type="image/ico" href="http://ericbailey.co/favicon.ico"/>
     
@@ -33,7 +34,12 @@
     
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     
-    <link href="css/style.css" media="screen, projector, print" rel="stylesheet" type="text/css" />  
+    <link href="style.css" media="screen, projector, print" rel="stylesheet" type="text/css" /> 
+    
+        <!--    Fonts from Google-->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,600italic,800italic,300,600,800' rel='stylesheet' type='text/css'>
+        <!--    FontAwesome-->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     
     <title>Svbstrate</title>
 

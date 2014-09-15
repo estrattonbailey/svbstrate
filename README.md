@@ -20,6 +20,8 @@ It's the best. Be smart, use it for variables, calc(), etc, but keep the nesting
 
 Also, SVBSTRATE is mobile first. Use the separate ```*.scss``` files in ```~/components/*``` for the different breakpoints. Yay minimal CSS.
 
+Run ```sass --watch scss style.scss:style.css``` to compile from terminal.
+
 ####Inline Block Grid
 Columns are silly. Starbucks keeps it simple and uses easy to understand syntax. That's smart. Adjust settings in ```~/components/_grid--settings.scss```, including breakpoints.
 

@@ -1,0 +1,19 @@
+/* TYPOGRAPHICAL SCALE */
+html, body {
+    font-size: 50%;
+}
+
+/* GLOBAL SETTINGS */
+::selection {
+    color: $red;
+    background: $gray10;
+}
+
+/* BEGIN STYLES HERE */
+#top {
+    background-color: $red;
+    padding: 200px 0px;
+}
+#top h2, #top h4 {
+    color:white;
+}

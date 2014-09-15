@@ -1,48 +1,46 @@
 %typography {
-    font-family: "open-sans", arial, sans-serif;
+    font-family: "Open Sans", arial, sans-serif;
     color: $black;
 }
+
 h1, h2, h3, h4, h5, h6, p {
     @extend %typography
 }
 h1 {
-    font-size: 6.5rem;
+    font-size: 6.85rem;
     font-weight: 900;
-    line-height: .9;
-    margin-bottom: 1rem;
-    @media screen and (min-width: $sm) {
-        font-size: 5.5rem;   
-    }
+    line-height: 6.85rem;
 }
 h2 {
-    font-size: 5rem;
-    font-weight: 100;
-    margin-bottom: 1rem;
+    font-size: 4.24rem;
+    font-weight: 900;
+    line-height: 4.24rem;
 }
 h3 {
-    font-size: 2.5rem;
-    font-weight: 900;
-    line-height: 1.6rem;
-    margin-bottom: .8rem;
+    font-size: 2.618rem;
+    font-weight: 600;
+    line-height: 2.618rem;
 }
 h4 {
-    font-size: 2rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
+    font-size: 1.618rem;
+    font-weight: 100;
+    line-height: 1.618;
 }
 h5 {
-    font-size: 1.6rem;
+    font-size: 1rem;
     font-weight: 100;
-    line-height: 3rem;
+    line-height: 1.618;
 }
 h6 {
-    font-size: 1.2rem;
+    font-size: .618rem;
     font-weight: 100;
+    line-height: 1;
 }
 p {
-    font-size: 1.4rem;
+    font-family: Georgia, serif;
+    font-size: 1.618rem;
     font-weight: 100;
-    line-height: 2.4rem; 
+    line-height: 2.618rem; 
 }
 strong {
     font-weight: 900;   

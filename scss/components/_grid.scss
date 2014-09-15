@@ -9,6 +9,7 @@
     @include block-rel;
     
     margin: auto;
+    max-width: $maxRow;
     text-align: justify;
     width: $row;
     
@@ -27,76 +28,52 @@
     -webkit-box-sizing: border-box;
     padding: 0px;
     margin: 0px;
+    margin-bottom: calc(#{$gutter}*2);
     vertical-align: middle;
     width: 100%;
 }
+.row--fullWidth {
+    max-width: 100%;
+    width: 100%;
+}
 
-/*These classes pulled from Starbucks - http://www.starbucks.com/static/reference/styleguide/grid_inline_block_litmus.aspx */
-/* ---- sizes ---- */
-	.size1of1 {float:none}
+/*BEGIN GRID STYLES*/   
+    .size1of1 {float:none}
 	.size1of2 {width: calc(50% - #{$gutter})}
 	.size1of3 {width: calc(33.333333% - #{$gutter})}
 	.size2of3 {width: calc(66.666666% - #{$gutter})}
 	.size1of4 {width: calc(25% - #{$gutter})}
 	.size3of4 {width: calc(75% - #{$gutter})}
-	.size1of5 {width: calc(20% - #{$gutter})}
-	.size2of5 {width: calc(40% - #{$gutter})}
-	.size3of5 {width: calc(60% - #{$gutter})}
-	.size4of5 {width: calc(80% - #{$gutter})}
-	.size1of6 {width: calc(16.666667% - #{$gutter})}
-	.size5of6 {width: calc(83.333333% - #{$gutter})}
-	    .size-golden-long {width: calc(61.803398% - #{$gutter})}
-	    .size-golden-short {width: calc(38.196602% - #{$gutter})}
+    .sizeGoldenLong {width: calc(61.803398% - #{$gutter})}
+    .sizeGoldenShort {width: calc(38.196602% - #{$gutter})}
 
-	/* ---- push ---- */
-	.push1of2 {left:50%}
-	.push1of3 {left:33.333333%}
-	.push2of3 {left:66.666666%}
-	.push1of4 {left:25%}
-	.push3of4 {left:75%}
-	.push1of5 {left:20%}
-	.push2of5 {left:40%}
-	.push3of5 {left:60%}
-	.push4of5 {left:80%}
-	.push1of6 {left:16.666667%}
-	.push5of6 {left:83.333333%}
-	.push1of7 {left:14.285714%}
-	.push-golden-long {left:61.803398%}
-	.push-golden-short {left:38.196602%}
+    .push0of0 {left: 0}
+	.push1of2 {left: calc(50% + #{$gutter})}
+	.push1of3 {left: calc(33.333333% + #{$gutter})}
+	.push2of3 {left: calc(66.666666% + #{$gutter})}
+	.push1of4 {left: calc(25% + #{$gutter})}
+	.push3of4 {left: calc(75% + #{$gutter})}
+	.pushGoldenLong {left: calc(61.803398% + #{$gutter})}
+	.pushGoldenShort {left: calc(38.196602% + #{$gutter})}
 
-	/* ---- push filler ----*/
 	.push1of2, 
 	.push1of3,
 	.push2of3,
 	.push1of4,
 	.push3of4,
-	.push1of5,
-	.push2of5,
-	.push3of5,
-	.push4of5,
-	.push1of6,
-	.push5of6,
-	.push1of7,
-	.push-golden-long,
-	.push-golden-short {
+	.pushGoldenLong,
+	.pushGoldenShort {
 		min-height: 1px;
 	}
 
-	/* ---- pull ---- */
-	.pull1of2 {left:-50%}
-	.pull1of3 {left:-33.333333%}
-	.pull2of3 {left:-66.666666%}
-	.pull1of4 {left:-25%}
-	.pull3of4 {left:-75%}
-	.pull1of5 {left:-20%}
-	.pull2of5 {left:-40%}
-	.pull3of5 {left:-60%}
-	.pull4of5 {left:-80%}
-	.pull1of6 {left:-16.666667%}
-	.pull5of6 {left:-83.333333%}
-	.pull1of7 {left:-14.285714%}
-	.pull-golden-long {left:-61.803398%}
-	.pull-golden-short {left:-38.196602%}
+    .pull0of0 {left: 0}
+	.pull1of2 {left: calc(-50% + #{$gutter})}
+	.pull1of3 {left: calc(-33.333333% + #{$gutter})}
+	.pull2of3 {left: calc(-66.666666% + #{$gutter})}
+	.pull1of4 {left: calc(-25% + #{$gutter})}
+	.pull3of4 {left: calc(-75% + #{$gutter})}
+	.pullGoldenLong {left: calc(-61.803398% + #{$gutter})}
+	.pullGoldenShort {left: calc(-38.196602% + #{$gutter})}
 
 @media screen and (min-width:$sm) {
 /* ---- sizes ---- */
@@ -106,64 +83,36 @@
 	.sm_size2of3 {width: calc(66.666666% - #{$gutter})}
 	.sm_size1of4 {width: calc(25% - #{$gutter})}
 	.sm_size3of4 {width: calc(75% - #{$gutter})}
-	.sm_size1of5 {width: calc(20% - #{$gutter})}
-	.sm_size2of5 {width: calc(40% - #{$gutter})}
-	.sm_size3of5 {width: calc(60% - #{$gutter})}
-	.sm_size4of5 {width: calc(80% - #{$gutter})}
-	.sm_size1of6 {width: calc(16.666667% - #{$gutter})}
-	.sm_size5of6 {width: calc(83.333333% - #{$gutter})}
-	    .sm_size-golden-long {width: calc(61.803398% - #{$gutter})}
-	    .sm_size-golden-short {width: calc(38.196602% - #{$gutter})}
+    .sm_sizeGoldenLong {width: calc(61.803398% - #{$gutter})}
+    .sm_sizeGoldenShort {width: calc(38.196602% - #{$gutter})}
 
-	/* ---- push ---- */
-	.sm_push1of2 {left:50%}
-	.sm_push1of3 {left:33.333333%}
-	.sm_push2of3 {left:66.666666%}
-	.sm_push1of4 {left:25%}
-	.sm_push3of4 {left:75%}
-	.sm_push1of5 {left:20%}
-	.sm_push2of5 {left:40%}
-	.sm_push3of5 {left:60%}
-	.sm_push4of5 {left:80%}
-	.sm_push1of6 {left:16.666667%}
-	.sm_push5of6 {left:83.333333%}
-	.sm_push1of7 {left:14.285714%}
-	.sm_push-golden-long {left:61.803398%}
-	.sm_push-golden-short {left:38.196602%}
+    .sm_push0of0 {left: 0}
+	.sm_push1of2 {left: calc(50% + #{$gutter})}
+	.sm_push1of3 {left: calc(33.333333% + #{$gutter})}
+	.sm_push2of3 {left: calc(66.666666% + #{$gutter})}
+	.sm_push1of4 {left: calc(25% + #{$gutter})}
+	.sm_push3of4 {left: calc(75% + #{$gutter})}
+	.sm_pushGoldenLong {left: calc(61.803398% + #{$gutter})}
+	.sm_pushGoldenShort {left: calc(38.196602% + #{$gutter})}
 
-	/* ---- push filler ----*/
 	.sm_push1of2, 
 	.sm_push1of3,
 	.sm_push2of3,
 	.sm_push1of4,
 	.sm_push3of4,
-	.sm_push1of5,
-	.sm_push2of5,
-	.sm_push3of5,
-	.sm_push4of5,
-	.sm_push1of6,
-	.sm_push5of6,
-	.sm_push1of7,
-	.sm_push-golden-long,
-	.sm_push-golden-short {
+	.sm_pushGoldenLong,
+	.sm_pushGoldenShort {
 		min-height: 1px;
 	}
 
-	/* ---- pull ---- */
-	.sm_pull1of2 {left:-50%}
-	.sm_pull1of3 {left:-33.333333%}
-	.sm_pull2of3 {left:-66.666666%}
-	.sm_pull1of4 {left:-25%}
-	.sm_pull3of4 {left:-75%}
-	.sm_pull1of5 {left:-20%}
-	.sm_pull2of5 {left:-40%}
-	.sm_pull3of5 {left:-60%}
-	.sm_pull4of5 {left:-80%}
-	.sm_pull1of6 {left:-16.666667%}
-	.sm_pull5of6 {left:-83.333333%}
-	.sm_pull1of7 {left:-14.285714%}
-	.sm_pull-golden-long {left:-61.803398%}
-	.sm_pull-golden-short {left:-38.196602%}
+    .sm_pull0of0 {left: 0}
+	.sm_pull1of2 {left: calc(-50% + #{$gutter})}
+	.sm_pull1of3 {left: calc(-33.333333% + #{$gutter})}
+	.sm_pull2of3 {left: calc(-66.666666% + #{$gutter})}
+	.sm_pull1of4 {left: calc(-25% + #{$gutter})}
+	.sm_pull3of4 {left: calc(-75% + #{$gutter})}
+	.sm_pullGoldenLong {left: calc(-61.803398% + #{$gutter})}
+	.sm_pullGoldenShort {left: calc(-38.196602% + #{$gutter})}
 }
 
 @media screen and (min-width:$med) {
@@ -174,198 +123,112 @@
 	.med_size2of3 {width: calc(66.666666% - #{$gutter})}
 	.med_size1of4 {width: calc(25% - #{$gutter})}
 	.med_size3of4 {width: calc(75% - #{$gutter})}
-	.med_size1of5 {width: calc(20% - #{$gutter})}
-	.med_size2of5 {width: calc(40% - #{$gutter})}
-	.med_size3of5 {width: calc(60% - #{$gutter})}
-	.med_size4of5 {width: calc(80% - #{$gutter})}
-	.med_size1of6 {width: calc(16.666667% - #{$gutter})}
-	.med_size5of6 {width: calc(83.333333% - #{$gutter})}
-	    .med_size-golden-long {width: calc(61.803398% - #{$gutter})}
-	    .med_size-golden-short {width: calc(38.196602% - #{$gutter})}
+    .med_sizeGoldenLong {width: calc(61.803398% - #{$gutter})}
+    .med_sizeGoldenShort {width: calc(38.196602% - #{$gutter})}
 
-	/* ---- push ---- */
-	.med_push1of2 {left:50%}
-	.med_push1of3 {left:33.333333%}
-	.med_push2of3 {left:66.666666%}
-	.med_push1of4 {left:25%}
-	.med_push3of4 {left:75%}
-	.med_push1of5 {left:20%}
-	.med_push2of5 {left:40%}
-	.med_push3of5 {left:60%}
-	.med_push4of5 {left:80%}
-	.med_push1of6 {left:16.666667%}
-	.med_push5of6 {left:83.333333%}
-	.med_push1of7 {left:14.285714%}
-	.med_push-golden-long {left:61.803398%}
-	.med_push-golden-short {left:38.196602%}
+    .med_push0of0 {left: 0}
+	.med_push1of2 {left: calc(50% + #{$gutter})}
+	.med_push1of3 {left: calc(33.333333% + #{$gutter})}
+	.med_push2of3 {left: calc(66.666666% + #{$gutter})}
+	.med_push1of4 {left: calc(25% + #{$gutter})}
+	.med_push3of4 {left: calc(75% + #{$gutter})}
+	.med_pushGoldenLong {left: calc(61.803398% + #{$gutter})}
+	.med_pushGoldenShort {left: calc(38.196602% + #{$gutter})}
 
-	/* ---- push filler ----*/
 	.med_push1of2, 
 	.med_push1of3,
 	.med_push2of3,
 	.med_push1of4,
 	.med_push3of4,
-	.med_push1of5,
-	.med_push2of5,
-	.med_push3of5,
-	.med_push4of5,
-	.med_push1of6,
-	.med_push5of6,
-	.med_push1of7,
-	.med_push-golden-long,
-	.med_push-golden-short {
+	.med_pushGoldenLong,
+	.med_pushGoldenShort {
 		min-height: 1px;
 	}
 
-	/* ---- pull ---- */
-	.med_pull1of2 {left:-50%}
-	.med_pull1of3 {left:-33.333333%}
-	.med_pull2of3 {left:-66.666666%}
-	.med_pull1of4 {left:-25%}
-	.med_pull3of4 {left:-75%}
-	.med_pull1of5 {left:-20%}
-	.med_pull2of5 {left:-40%}
-	.med_pull3of5 {left:-60%}
-	.med_pull4of5 {left:-80%}
-	.med_pull1of6 {left:-16.666667%}
-	.med_pull5of6 {left:-83.333333%}
-	.med_pull1of7 {left:-14.285714%}
-	.med_pull-golden-long {left:-61.803398%}
-	.med_pull-golden-short {left:-38.196602%}
+    .med_pull0of0 {left: 0}
+	.med_pull1of2 {left: calc(-50% + #{$gutter})}
+	.med_pull1of3 {left: calc(-33.333333% + #{$gutter})}
+	.med_pull2of3 {left: calc(-66.666666% + #{$gutter})}
+	.med_pull1of4 {left: calc(-25% + #{$gutter})}
+	.med_pull3of4 {left: calc(-75% + #{$gutter})}
+	.med_pullGoldenLong {left: calc(-61.803398% + #{$gutter})}
+	.med_pullGoldenShort {left: calc(-38.196602% + #{$gutter})}
 }
 
 @media screen and (min-width:$lg) {
-/* ---- sizes ---- */
-	.lg_size1of1 {float:none}
+    .lg_size1of1 {float:none}
 	.lg_size1of2 {width: calc(50% - #{$gutter})}
 	.lg_size1of3 {width: calc(33.333333% - #{$gutter})}
 	.lg_size2of3 {width: calc(66.666666% - #{$gutter})}
 	.lg_size1of4 {width: calc(25% - #{$gutter})}
 	.lg_size3of4 {width: calc(75% - #{$gutter})}
-	.lg_size1of5 {width: calc(20% - #{$gutter})}
-	.lg_size2of5 {width: calc(40% - #{$gutter})}
-	.lg_size3of5 {width: calc(60% - #{$gutter})}
-	.lg_size4of5 {width: calc(80% - #{$gutter})}
-	.lg_size1of6 {width: calc(16.666667% - #{$gutter})}
-	.lg_size5of6 {width: calc(83.333333% - #{$gutter})}
-	    .lg_size-golden-long {width: calc(61.803398% - #{$gutter})}
-	    .lg_size-golden-short {width: calc(38.196602% - #{$gutter})}
+    .lg_sizeGoldenLong {width: calc(61.803398% - #{$gutter})}
+    .lg_sizeGoldenShort {width: calc(38.196602% - #{$gutter})}
 
-	/* ---- push ---- */
-	.lg_push1of2 {left:50%}
-	.lg_push1of3 {left:33.333333%}
-	.lg_push2of3 {left:66.666666%}
-	.lg_push1of4 {left:25%}
-	.lg_push3of4 {left:75%}
-	.lg_push1of5 {left:20%}
-	.lg_push2of5 {left:40%}
-	.lg_push3of5 {left:60%}
-	.lg_push4of5 {left:80%}
-	.lg_push1of6 {left:16.666667%}
-	.lg_push5of6 {left:83.333333%}
-	.lg_push1of7 {left:14.285714%}
-	.lg_push-golden-long {left:61.803398%}
-	.lg_push-golden-short {left:38.196602%}
+    .lg_push0of0 {left: 0}
+	.lg_push1of2 {left: calc(50% + #{$gutter})}
+	.lg_push1of3 {left: calc(33.333333% + #{$gutter})}
+	.lg_push2of3 {left: calc(66.666666% + #{$gutter})}
+	.lg_push1of4 {left: calc(25% + #{$gutter})}
+	.lg_push3of4 {left: calc(75% + #{$gutter})}
+	.lg_pushGoldenLong {left: calc(61.803398% + #{$gutter})}
+	.lg_pushGoldenShort {left: calc(38.196602% + #{$gutter})}
 
-	/* ---- push filler ----*/
 	.lg_push1of2, 
 	.lg_push1of3,
 	.lg_push2of3,
 	.lg_push1of4,
 	.lg_push3of4,
-	.lg_push1of5,
-	.lg_push2of5,
-	.lg_push3of5,
-	.lg_push4of5,
-	.lg_push1of6,
-	.lg_push5of6,
-	.lg_push1of7,
-	.lg_push-golden-long,
-	.lg_push-golden-short {
+	.lg_pushGoldenLong,
+	.lg_pushGoldenShort {
 		min-height: 1px;
 	}
 
-	/* ---- pull ---- */
-	.lg_pull1of2 {left:-50%}
-	.lg_pull1of3 {left:-33.333333%}
-	.lg_pull2of3 {left:-66.666666%}
-	.lg_pull1of4 {left:-25%}
-	.lg_pull3of4 {left:-75%}
-	.lg_pull1of5 {left:-20%}
-	.lg_pull2of5 {left:-40%}
-	.lg_pull3of5 {left:-60%}
-	.lg_pull4of5 {left:-80%}
-	.lg_pull1of6 {left:-16.666667%}
-	.lg_pull5of6 {left:-83.333333%}
-	.lg_pull1of7 {left:-14.285714%}
-	.lg_pull-golden-long {left:-61.803398%}
-	.lg_pull-golden-short {left:-38.196602%}
+    .lg_pull0of0 {left: 0}
+	.lg_pull1of2 {left: calc(-50% + #{$gutter})}
+	.lg_pull1of3 {left: calc(-33.333333% + #{$gutter})}
+	.lg_pull2of3 {left: calc(-66.666666% + #{$gutter})}
+	.lg_pull1of4 {left: calc(-25% + #{$gutter})}
+	.lg_pull3of4 {left: calc(-75% + #{$gutter})}
+	.lg_pullGoldenLong {left: calc(-61.803398% + #{$gutter})}
+	.lg_pullGoldenShort {left: calc(-38.196602% + #{$gutter})}
 }
 
 @media screen and (min-width:$xl) {
-/* ---- sizes ---- */
-	.xl_size1of1 {float:none}
+    .xl_size1of1 {float:none}
 	.xl_size1of2 {width: calc(50% - #{$gutter})}
 	.xl_size1of3 {width: calc(33.333333% - #{$gutter})}
 	.xl_size2of3 {width: calc(66.666666% - #{$gutter})}
 	.xl_size1of4 {width: calc(25% - #{$gutter})}
 	.xl_size3of4 {width: calc(75% - #{$gutter})}
-	.xl_size1of5 {width: calc(20% - #{$gutter})}
-	.xl_size2of5 {width: calc(40% - #{$gutter})}
-	.xl_size3of5 {width: calc(60% - #{$gutter})}
-	.xl_size4of5 {width: calc(80% - #{$gutter})}
-	.xl_size1of6 {width: calc(16.666667% - #{$gutter})}
-	.xl_size5of6 {width: calc(83.333333% - #{$gutter})}
-	    .xl_size-golden-long {width: calc(61.803398% - #{$gutter})}
-	    .xl_size-golden-short {width: calc(38.196602% - #{$gutter})}
+    .xl_sizeGoldenLong {width: calc(61.803398% - #{$gutter})}
+    .xl_sizeGoldenShort {width: calc(38.196602% - #{$gutter})}
 
-	/* ---- push ---- */
-	.xl_push1of2 {left:50%}
-	.xl_push1of3 {left:33.333333%}
-	.xl_push2of3 {left:66.666666%}
-	.xl_push1of4 {left:25%}
-	.xl_push3of4 {left:75%}
-	.xl_push1of5 {left:20%}
-	.xl_push2of5 {left:40%}
-	.xl_push3of5 {left:60%}
-	.xl_push4of5 {left:80%}
-	.xl_push1of6 {left:16.666667%}
-	.xl_push5of6 {left:83.333333%}
-	.xl_push1of7 {left:14.285714%}
-	.xl_push-golden-long {left:61.803398%}
-	.xl_push-golden-short {left:38.196602%}
+    .xl_push0of0 {left: 0}
+	.xl_push1of2 {left: calc(50% + #{$gutter})}
+	.xl_push1of3 {left: calc(33.333333% + #{$gutter})}
+	.xl_push2of3 {left: calc(66.666666% + #{$gutter})}
+	.xl_push1of4 {left: calc(25% + #{$gutter})}
+	.xl_push3of4 {left: calc(75% + #{$gutter})}
+	.xl_pushGoldenLong {left: calc(61.803398% + #{$gutter})}
+	.xl_pushGoldenShort {left: calc(38.196602% + #{$gutter})}
 
-	/* ---- push filler ----*/
 	.xl_push1of2, 
 	.xl_push1of3,
 	.xl_push2of3,
 	.xl_push1of4,
 	.xl_push3of4,
-	.xl_push1of5,
-	.xl_push2of5,
-	.xl_push3of5,
-	.xl_push4of5,
-	.xl_push1of6,
-	.xl_push5of6,
-	.xl_push1of7,
-	.xl_push-golden-long,
-	.xl_push-golden-short {
+	.xl_pushGoldenLong,
+	.xl_pushGoldenShort {
 		min-height: 1px;
 	}
 
-	/* ---- pull ---- */
-	.xl_pull1of2 {left:-50%}
-	.xl_pull1of3 {left:-33.333333%}
-	.xl_pull2of3 {left:-66.666666%}
-	.xl_pull1of4 {left:-25%}
-	.xl_pull3of4 {left:-75%}
-	.xl_pull1of5 {left:-20%}
-	.xl_pull2of5 {left:-40%}
-	.xl_pull3of5 {left:-60%}
-	.xl_pull4of5 {left:-80%}
-	.xl_pull1of6 {left:-16.666667%}
-	.xl_pull5of6 {left:-83.333333%}
-	.xl_pull1of7 {left:-14.285714%}
-	.xl_pull-golden-long {left:-61.803398%}
-	.xl_pull-golden-short {left:-38.196602%}
+    .xl_pull0of0 {left: 0}
+	.xl_pull1of2 {left: calc(-50% + #{$gutter})}
+	.xl_pull1of3 {left: calc(-33.333333% + #{$gutter})}
+	.xl_pull2of3 {left: calc(-66.666666% + #{$gutter})}
+	.xl_pull1of4 {left: calc(-25% + #{$gutter})}
+	.xl_pull3of4 {left: calc(-75% + #{$gutter})}
+	.xl_pullGoldenLong {left: calc(-61.803398% + #{$gutter})}
+	.xl_pullGoldenShort {left: calc(-38.196602% + #{$gutter})}
 }

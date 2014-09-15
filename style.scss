@@ -1,26 +1,26 @@
 /* Import Partials */
-@import "partials/reset";
-@import "partials/font-awesome";
-@import "partials/global";
+@import "components/reset";
+@import "components/font-awesome";
+@import "components/global";
 
 /* Import Components */
 @import "components/grid--settings";
 @import "components/grid";
 @import "components/typography";
 
-@import "components/base";
+@import "partials/base";
 
 @media screen and (min-width: $sm) {
-    @import "components/sm";
+    @import "partials/sm";
 }
 @media screen and (min-width: $med) {
-    @import "components/med";
+    @import "partials/med";
 }
 @media screen and (min-width: $lg) {
-    @import "components/lg";
+    @import "partials/lg";
 }
 @media screen and (min-width: $xl) {
-    @import "components/xl";
+    @import "partials/xl";
 }
 
 /* SUIT CSS Naming Conventions

@@ -1,0 +1,35 @@
+/*UTILITY CLASSES*/
+
+//height only affect direct descendants of <body> or <main>
+.u-height1of1 {
+    height: 100%;
+}
+.u-height1of2 {
+    height: 50%;
+}
+.u-height1of3 {
+    height: 33.33333333%;
+}
+.u-height2of3 {
+    height: 66.66666666%;
+}
+.u-height1of4 {
+    height: 25%;
+}
+.u-height3of4 {
+    height: 75%;
+}
+//end height classes
+
+.u-centerAlign {
+    text-align: center;
+}
+.u-rightAlign {
+    text-align: right;
+}
+
+.u-blockFix {
+    left: 0;
+    position: fixed !important;
+    top: 0;
+}
