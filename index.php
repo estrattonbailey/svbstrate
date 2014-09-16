@@ -18,10 +18,10 @@
             <div class="column lg_size1of2 size1of1 suffix1of2">
                 <h2>THE GOODS:</h2>
                 <ul>
-                    <li><h4>SASS (fuck yeah)</h4></li>
+                    <li><h4><a href="http://sass-lang.com/" target="_blank">SASS</a> (fuck yeah)</h4></li>
                     <li><h4>super-light <code>inline-block</code> based grid system</h4></li>
                     <li><h4>basic golden typographical hierarchy</h4></li>
-                    <li><h4>FontAwesome</h4></li>
+                    <li><h4><a href="http://fortawesome.github.io/Font-Awesome/icons/" target="_blank">FontAwesome</a></h4></li>
                     <li><h4>7 included stock images from one of my side projects, <a href="http://startupstockphotos.com" target="_blank">Startup Stock Photos</a></h4></li>
                 </ul>
             </div>
@@ -38,11 +38,11 @@
         <div class="row">
              <div class="column lg_size1of2 size1of1">
                 <h2>GET SASSY</h2>
-                <h4>It's the best. Be smart, use it for variables, calc(), etc, but keep the nesting and functions to a minimum. Ain't nobody got time for that.<br/>
+                 <h4>It's the best. Be smart, use it for variables, <code>calc()</code>, etc, but keep the nesting and functions to a minimum. Ain't nobody got time for that.<br/>
                     <br/>
-                    Also, SVBSTRATE is mobile first. Use the separate *.scss files in ~/components/* for the different breakpoints. Yay minimal CSS.<br/>
+                     Also, SVBSTRATE is mobile first. Use the separate .scss files in <code>~/components/</code> for the different breakpoints. Yay minimal CSS.<br/>
                     <br/>
-                    Run sass --watch scss style.scss:style.css to compile from terminal.</h4>
+                     Run sass <code>--watch scss style.scss:style.css</code> to compile from terminal.</h4>
             </div>
         </div>
     </section>

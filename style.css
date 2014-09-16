@@ -1,52 +1,10 @@
 /* Import Partials */
 /*
-Theme Name: startupphotos
-Theme URI: http://underscores.me/
-Author: Underscores.me
-Author URI: http://underscores.me/
-Description: Description
-Version: 1.0-wpcom
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: startupphotos
-Tags:
-
-This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned with others.
-
- startupphotos is based on Underscores http://underscores.me/, (C) 2012-2014 Automattic, Inc.
-
 Resetting and rebuilding styles have been helped along thanks to the fine work of
 Eric Meyer http://meyerweb.com/eric/tools/css/reset/index.html
 along with Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 and Blueprint http://www.blueprintcss.org/
 */
-/*--------------------------------------------------------------
->>> TABLE OF CONTENTS:
-----------------------------------------------------------------
-1.0 Reset
-2.0 Typography
-3.0 Elements
-4.0 Forms
-5.0 Navigation
-	5.1 Links
-	5.2 Menus
-6.0 Accessibility
-7.0 Alignments
-8.0 Clearings
-9.0 Widgets
-10.0 Content
-	10.1 Posts and pages
-	10.2 Asides
-	10.3 Comments
-11.0 Infinite scroll
-12.0 Media
-	12.1 Captions
-	12.2 Galleries
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-1.0 Reset
---------------------------------------------------------------*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -73,7 +31,9 @@ html {
   -webkit-text-size-adjust: 100%;
   /* Prevents iOS text size adjust after orientation change, without disabling user zoom */
   -ms-text-size-adjust: 100%;
-  /* www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */ }
+  /* www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
+  max-width: 100%;
+  overflow-x: hidden; }
 
 *,
 *:before,
@@ -136,9 +96,6 @@ a:active {
 a img {
   border: 0; }
 
-/*--------------------------------------------------------------
-2.0 Typography
---------------------------------------------------------------*/
 body,
 button,
 input,
@@ -224,9 +181,6 @@ small {
 big {
   font-size: 125%; }
 
-/*--------------------------------------------------------------
-3.0 Elements
---------------------------------------------------------------*/
 hr {
   background-color: #ccc;
   border: 0;
