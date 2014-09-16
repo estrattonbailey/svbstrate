@@ -4,7 +4,7 @@
 
 <html>
 <head>
-    <link rel="icon" type="image/ico" href="http://ericbailey.co/favicon.ico"/>
+    <link rel="icon" type="image/ico" href="http://svbstrate.io/favicon.ico"/>
     
     <meta charset="UTF-8"/>
     <!--[if lt IE 9]>
@@ -19,18 +19,18 @@
     
         <!-- Open Graph data -->
 	<meta prefix="og: http://ogp.me/ns#" property="og:description" content="Basic starter templates for SUIT CSS inspired SASS projects."/>
-	<meta prefix="og: http://ogp.me/ns#" property="og:site_name" content="Svbstrate"/>
-    <meta prefix="og: http://ogp.me/ns#" property="og:title" content="Svbstrate" />
-    <meta prefix="og: http://ogp.me/ns#" property="og:image" content="https://s3.amazonaws.com/StartupStockPhotos/20140808_StartupStockPhotos/60.jpg" />
-    <meta prefix="og: http://ogp.me/ns#" property="og:url" content="http://ericbailey.co/" />
+	<meta prefix="og: http://ogp.me/ns#" property="og:site_name" content="SVBSTRATE"/>
+    <meta prefix="og: http://ogp.me/ns#" property="og:title" content="SVBSTRATE" />
+    <meta prefix="og: http://ogp.me/ns#" property="og:image" content="http://svbstrate.io/resources/images/ogImg.png" />
+    <meta prefix="og: http://ogp.me/ns#" property="og:url" content="http://svbstrate.io/" />
     
         <!-- Twitter Card data -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="http://ericbailey.co">
-    <meta name="twitter:title" content="Svbstrate">
+    <meta name="twitter:site" content="http://svbstrate.io">
+    <meta name="twitter:title" content="SVBSTRATE">
     <meta name="twitter:description" content="Basic starter templates for SUIT CSS inspired SASS projects.">
     <meta name="twitter:creator" content="@estrattonbailey">
-    <meta name="twitter:image:src" content="https://s3.amazonaws.com/StartupStockPhotos/20140808_StartupStockPhotos/60.jpg">
+    <meta name="twitter:image:src" content="http://svbstrate.io/resources/images/ogImg.png">
     
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     
@@ -41,7 +41,7 @@
         <!--    FontAwesome-->
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     
-    <title>Svbstrate</title>
+    <title>SVBSTRATE</title>
 
 </head>
 <body>
