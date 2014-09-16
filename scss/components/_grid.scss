@@ -1,35 +1,34 @@
 /*inline-block based grid layout*/
 
 .container {
-    @include block-rel;
+    @include blockRel;
     
+    padding: $outerContainer--padding;
     width: $outerContainer;
 }
 .row {
-    @include block-rel;
+    @include blockRel;
     
-    font-size: 0px;
+    font-size: 0rem;
     margin: auto;
     max-width: $maxRow;
     text-align: justify;
     width: $row;
     
     &::after {
-        @include inline-rel;
+        @include inlineRel;
         
         content:'';
         width: 100%;
     }
 }
-.row > * {
-    font-size: 62.5% !important;
-}
 .column {
-    @include inline-rel;
+    @include inlineRel;
     
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
+    font-size: 1rem;
     padding: 0px;
     margin: 0px;
     margin-bottom: calc(#{$gutter}*2);
@@ -79,6 +78,14 @@
 	.pullGoldenLong {left: calc(-61.803398% + #{$gutter})}
 	.pullGoldenShort {left: calc(-38.196602% + #{$gutter})}
 
+    .suffix1of2 {margin-right:50%}
+	.suffix1of3 {margin-right:33.333333%}
+	.suffix2of3 {margin-right:66.666666%}
+	.suffix1of4 {margin-right:25%}
+	.suffix3of4 {margin-right:75%}
+
+
+
 @media screen and (min-width:$sm) {
 /* ---- sizes ---- */
 	.sm_size1of1 {float:none}
@@ -117,6 +124,12 @@
 	.sm_pull3of4 {left: calc(-75% + #{$gutter})}
 	.sm_pullGoldenLong {left: calc(-61.803398% + #{$gutter})}
 	.sm_pullGoldenShort {left: calc(-38.196602% + #{$gutter})}
+
+    .sm_suffix1of2 {margin-right:50%}
+	.sm_suffix1of3 {margin-right:33.333333%}
+	.sm_suffix2of3 {margin-right:66.666666%}
+	.sm_suffix1of4 {margin-right:25%}
+	.sm_suffix3of4 {margin-right:75%}
 }
 
 @media screen and (min-width:$med) {
@@ -157,6 +170,12 @@
 	.med_pull3of4 {left: calc(-75% + #{$gutter})}
 	.med_pullGoldenLong {left: calc(-61.803398% + #{$gutter})}
 	.med_pullGoldenShort {left: calc(-38.196602% + #{$gutter})}
+
+    .med_suffix1of2 {margin-right:50%}
+	.med_suffix1of3 {margin-right:33.333333%}
+	.med_suffix2of3 {margin-right:66.666666%}
+	.med_suffix1of4 {margin-right:25%}
+	.med_suffix3of4 {margin-right:75%}
 }
 
 @media screen and (min-width:$lg) {
@@ -196,6 +215,12 @@
 	.lg_pull3of4 {left: calc(-75% + #{$gutter})}
 	.lg_pullGoldenLong {left: calc(-61.803398% + #{$gutter})}
 	.lg_pullGoldenShort {left: calc(-38.196602% + #{$gutter})}
+
+    .lg_suffix1of2 {margin-right:50%}
+	.lg_suffix1of3 {margin-right:33.333333%}
+	.lg_suffix2of3 {margin-right:66.666666%}
+	.lg_suffix1of4 {margin-right:25%}
+	.lg_suffix3of4 {margin-right:75%}
 }
 
 @media screen and (min-width:$xl) {
@@ -235,4 +260,10 @@
 	.xl_pull3of4 {left: calc(-75% + #{$gutter})}
 	.xl_pullGoldenLong {left: calc(-61.803398% + #{$gutter})}
 	.xl_pullGoldenShort {left: calc(-38.196602% + #{$gutter})}
+
+    .xl_suffix1of2 {margin-right:50%}
+	.xl_suffix1of3 {margin-right:33.333333%}
+	.xl_suffix2of3 {margin-right:66.666666%}
+	.xl_suffix1of4 {margin-right:25%}
+	.xl_suffix3of4 {margin-right:75%}
 }

@@ -1,44 +1,50 @@
 %typography {
-    font-family: "Open Sans", arial, sans-serif;
     color: $black;
+    font-family: "Open Sans", arial, sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6, p {
     @extend %typography
 }
 h1 {
-    font-size: 6.85rem;
+    font-size: 6.85rem !important;
     font-weight: 900;
     line-height: 6.85rem;
+    margin-bottom: .618rem;
 }
 h2 {
-    font-size: 4.24rem;
+    font-size: 4.24rem !important;
     font-weight: 900;
     line-height: 4.24rem;
+    margin-bottom: .618rem;
 }
 h3 {
-    font-size: 2.618rem;
+    font-size: 2.618rem !important;
     font-weight: 600;
     line-height: 2.618rem;
+    margin-bottom: .618rem;
 }
 h4 {
-    font-size: 1.618rem;
+    font-size: 1.618rem !important;
     font-weight: 100;
     line-height: 1.618;
+    margin-bottom: .618rem;
 }
 h5 {
-    font-size: 1rem;
+    font-size: 1rem !important;
     font-weight: 100;
     line-height: 1.618;
+    margin-bottom: .618rem;
 }
 h6 {
-    font-size: .618rem;
+    font-size: .618rem !important;
     font-weight: 100;
     line-height: 1;
+    margin-bottom: .618rem;
 }
 p {
     font-family: Georgia, serif;
-    font-size: 1.618rem;
+    font-size: 1.618rem !important;
     font-weight: 100;
     line-height: 2.618rem; 
 }

@@ -7,7 +7,7 @@ Only the necessities:
 - customizable inline-block grid
 - typographical hierarchy
 - FontAwesome
-- 7 included stock images *via [Startup Stock Photos](http://startupstockphotos.com)*
+- 7 included stock images from one of my side projects, [Startup Stock Photos](http://startupstockphotos.com)
 
 Plus two favorites:
 - [Skrollr](https://github.com/Prinzhorn/skrollr) parallax library
@@ -25,3 +25,5 @@ Floats are silly. Inline-block based grids keep it simple and use easy to unders
 
 * * *
 And that's it. Think you can make it better? I'm sure you can. **Fork me.** I'd love to learn something new.
+
+Created with love and curiosity by [@estrattonbailey](http://twitter.com/estrattonbailey).

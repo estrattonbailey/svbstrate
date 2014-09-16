@@ -3,17 +3,42 @@ html, body {
     font-size: 50%;
 }
 
-/* GLOBAL SETTINGS */
-::selection {
-    color: $red;
-    background: $gray10;
-}
-
 /* BEGIN STYLES HERE */
 #top {
     background-color: $red;
     padding: 200px 0px;
 }
-#top h2, #top h4 {
+#top h1, #top h4 {
     color:white;
 }
+#mainSocialIcons h2 {
+    @include inlineRel;
+}
+.shareIcon {
+    color: white;
+    opacity: 1;
+    
+    &:hover {
+        opacity: .8;
+    }
+}
+
+.block {
+    background-color: $red;
+    height: 200px;
+    padding: 10px;
+}
+.block--nested {
+    background-color: $gray10;
+    height: 100px;
+}  
+
+
+#footer {
+    background-color: $red;
+}
+#footer a {
+    color: white;
+}
+
+

@@ -8,20 +8,30 @@ $gray40: #999999;
 $gray20: #cccccc;
 $gray10: #f5f5f5;
 
+/////GLOBAL SETTINGS
+::selection {
+    color: $red;
+    background: $gray10;
+}
+a {
+    color: $red;
+    font-weight:900;
+}
+
 /////MIXINS
-@mixin block-rel {
+@mixin blockRel {
     display: block;
     position: relative;
 }
-@mixin block-ab {
+@mixin blockAb {
     display: block;
     position: absolute;
 }
-@mixin block-fix {
+@mixin blockFix {
     display: block;
     position: fixed;
 }
-@mixin inline-rel {
+@mixin inlineRel {
     display: inline-block;
     position: relative;
 }
@@ -37,19 +47,19 @@ $gray10: #f5f5f5;
         -webkit-border-radius: 1000px;
     overflow: hidden;
 }
-@mixin text-shadow {
-    text-shadow: 0 0 5px $gray60;
-        -moz-text-shadow: 0 0 5px $gray60;
-        -webkit-text-shadow: 0 0 5px $gray60;
-        -ms-text-shadow: 0 0 5px $gray60;
+@mixin textShadow {
+    textShadow: 0 0 5px $gray60;
+        -moz-textShadow: 0 0 5px $gray60;
+        -webkit-textShadow: 0 0 5px $gray60;
+        -ms-textShadow: 0 0 5px $gray60;
 }
-@mixin trans-one {
+@mixin transOne {
     transition: .1s all;
         -moz-transition: .1s all;
         -webkit-transition: .1s all;
         -ms-transition: .1s all;
 }
-@mixin trans-two {
+@mixin transTwo {
     transition: .3s all;
         -moz-transition: .3s all;
         -webkit-transition: .3s all;
@@ -59,14 +69,14 @@ $gray10: #f5f5f5;
         -webkit-transition-delay: .3s;
         -ms-transition-delay: .3s;
 }
-@mixin trans-three {
+@mixin transThree {
     transition: .3s all;
         -moz-transition: .3s all;
         -webkit-transition: .3s all;
         -ms-transition: .3s all;
 }
 @mixin button {
-    @include inline-rel;
+    @include inlineRel;
     
     background-color: white;
     border-color: $black;
@@ -74,14 +84,20 @@ $gray10: #f5f5f5;
     cursor: pointer;
     padding: 20px 30px;
 }
-@mixin img-bkgd {
+@mixin imageBackground {
+    @include blockRel;
+    
+    background-image: url('../resources/images/1.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    width: 100% ;
 }
+
+/* Adds a dot overlay to any photo - requires z-index values */
 @mixin dots {
     &::after {
-        @include block-ab;
+        @include blockAb;
         
         background-image: url('../resources/icons/dots.png');
         content:'';
@@ -93,36 +109,19 @@ $gray10: #f5f5f5;
     }
 }
 
-/*EXTENDS*/
-@mixin imageBackground {
-    @include block-rel;
-    
-    background-image: url('../resources/images/1.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100% ;
-}
 
 /*COMPONENTS*/
 .imageBackground {
-    @include block-rel;
-    
-    background-image: url('../resources/images/1.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100% ;
+    @include imageBackground;
 }
-
 .listIcons {
-    @include block-rel;
+    @include blockRel;
     
     height: 40px;
     text-align: left;
     
     a {
-        @include inline-rel;
+        @include inlineRel;
         
         height:inherit;
         margin: 0px 5px;
@@ -135,7 +134,7 @@ $gray10: #f5f5f5;
     }
     
     &::after {
-        @include inline-rel;
+        @include inlineRel;
         
         content:'';
         width:100% ;

@@ -1,8 +1,9 @@
 /* GRID SETTINGS */
 $outerContainer: 100%;
-$row: 95%;
-$maxRow: 144em;
-$gutter: .5em; /*For no gutter, you must remove whitespace between the rendered inline-block elements. See http://joshnh.com/2012/02/07/why-you-should-use-inline-block-when-positioning-elements/ for an example. Otherwise, use at least 2px worth of gutter.*/
+$outerContainer--padding: 50px 0px;
+$row: 85%;
+$maxRow: 144rem;
+$gutter: 1rem; /*Use rem units*/
 
 /* BREAKPOINTS */
 $sm: 481px;
