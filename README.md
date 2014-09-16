@@ -2,6 +2,8 @@
 
 ## Basic starter templates for SUIT CSS inspired SASS projects.
 
+### [Demo](http://svbstrate.io)
+
 Only the necessities:
 - SASS
 - customizable inline-block grid
