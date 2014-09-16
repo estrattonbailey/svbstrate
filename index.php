@@ -15,7 +15,7 @@
     </section>
     <section id="intro" class="container">
         <div class="row">
-            <div class="column lg_size1of2 size1of1 suffix1of2">
+            <div class="column lg_size1of2 size1of1 lg_suffix1of2 suffix0of0">
                 <h2>THE GOODS:</h2>
                 <ul>
                     <li><h4><a href="http://sass-lang.com/" target="_blank">SASS</a> (fuck yeah)</h4></li>
@@ -25,7 +25,7 @@
                     <li><h4>7 included stock images from one of my side projects, <a href="http://startupstockphotos.com" target="_blank">Startup Stock Photos</a></h4></li>
                 </ul>
             </div>
-            <div class="column lg_size1of2 size1of1 suffix1of2">
+            <div class="column lg_size1of2 size1of1 lg_suffix1of2 suffix0of0">
                 <h3>PLUS A COUPLE FAVS:</h3>
                 <ul>
                     <li><h4><a href="https://github.com/Prinzhorn/skrollr" target="_blank">Skrollr</a> Parallax Library</h4></li>

@@ -387,6 +387,9 @@ a {
 .pullGoldenShort {
   left: calc(-38.196602% + 1rem); }
 
+.suffix0of0 {
+  margin-right: 0%; }
+
 .suffix1of2 {
   margin-right: 50%; }
 
@@ -485,6 +488,9 @@ a {
   .sm_pullGoldenShort {
     left: calc(-38.196602% + 1rem); }
 
+  .sm_suffix0of0 {
+    margin-right: 0%; }
+
   .sm_suffix1of2 {
     margin-right: 50%; }
 
@@ -582,6 +588,9 @@ a {
   .med_pullGoldenShort {
     left: calc(-38.196602% + 1rem); }
 
+  .med_suffix0of0 {
+    margin-right: 0%; }
+
   .med_suffix1of2 {
     margin-right: 50%; }
 
@@ -678,6 +687,9 @@ a {
   .lg_pullGoldenShort {
     left: calc(-38.196602% + 1rem); }
 
+  .lg_suffix0of0 {
+    margin-right: 0%; }
+
   .lg_suffix1of2 {
     margin-right: 50%; }
 
@@ -773,6 +785,9 @@ a {
 
   .xl_pullGoldenShort {
     left: calc(-38.196602% + 1rem); }
+
+  .xl_suffix0of0 {
+    margin-right: 0%; }
 
   .xl_suffix1of2 {
     margin-right: 50%; }
