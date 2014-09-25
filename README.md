@@ -18,7 +18,7 @@ Plus two favorites:
 ####SASS
 It's the best. Be smart, use it for variables, calc(), etc, but keep the nesting and functions to a minimum. Ain't nobody got time for that.
 
-Also, SVBSTRATE is mobile first. Use the separate ```*.scss``` files in ```~/components/*``` for the different breakpoints. Yay minimal CSS.
+Also, SVBSTRATE is mobile first. Use the separate ```*.scss``` files in ```~/partials/*``` for the different breakpoints. Yay minimal CSS.
 
 Run ```sass --watch scss style.scss:style.css``` to compile from terminal.
 
