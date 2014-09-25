@@ -1,6 +1,6 @@
 /*UTILITY CLASSES*/
 
-//height classes only affect direct descendants of <body> or <main>
+/* height classes only affect direct descendants of <body> or <main> */
 .u-height1of1 {
     height: 100%;
 }
@@ -19,8 +19,12 @@
 .u-height3of4 {
     height: 75%;
 }
-//end height classes
+/* end height classes */
 
+
+
+
+/* text alignment classes */
 .u-centerAlign {
     text-align: center;
 }
@@ -33,13 +37,6 @@
 .u-justifyAlign {
     text-align: right;
 }
-
-.u-blockFix {
-    left: 0;
-    position: fixed !important;
-    top: 0;
-}
-
 
 @media screen and (min-width:$sm) {
     .sm_u-centerAlign {
@@ -100,3 +97,4 @@
         text-align: right;
     }
 }
+/* end text alignment classes */

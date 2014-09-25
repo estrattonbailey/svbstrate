@@ -62,6 +62,19 @@
                 <div class="block--nested block column lg_size1of2 size1of1"><h5>lg_size1of2 size1of1</h5></div>
             </div>
         </div>
+        <div class="row">
+            <div class="column size1of1">
+                <h3>VERTICAL ALIGNMENT</h3>
+                <h4 class="column lg_size1of2 size1of1">The row container below has a class of <code>u-verticalAlign--middle</code>, forcing the child blocks to align vertically. Use <code>u-verticalAlign--top</code> <code>u-verticalAlign--bottom</code> for top and bottom alignment.</h4>
+            </div>
+        </div>
+        <div id="verticalAlign" class="verticalAlign--middle row">
+            <h4>u-verticalAlign--middle row</h4>
+            <div class="block--nested block column size1of4"></div>
+            <div class="block column size1of4"></div>
+            <div class="block--nested block column size1of4"></div>
+            <div class="block column size1of4"></div>
+        </div>
     </section>
     <section id="footer" class="container">
         <div class="row">

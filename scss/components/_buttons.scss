@@ -1,0 +1,39 @@
+@mixin button {
+    @include blockRel;
+    @extend %typography;
+    @include h4;
+    @include transOne;
+    
+    color: $black;
+    background-color: white;
+    border: 4px solid $black;
+    font-weight: 900;
+    padding: 10px 20px;
+    outline: none;
+    
+    &:hover {
+        border: 4px solid $red;
+        color: $red;
+    }
+}
+button {
+    @include button;
+}
+.button--sm {
+    @include button;
+    @include h5;
+    
+    padding: 5px 10px;
+}
+.button--lg {
+    @include button;
+    @include h3;
+    
+    font-weight: 900;
+}
+.button--xl {
+    @include button;
+    @include h2;
+    
+    padding: 15px 28px;
+}

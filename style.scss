@@ -1,13 +1,22 @@
-/* Import Partials */
+//// Import Base
 @import "components/reset";
+@import "components/variables";
 @import "components/global";
+@import "components/mixins";
 
-/* Import Components */
+//// Import Components
 @import "components/grid--settings";
+@import "components/grid-classes";
 @import "components/grid";
 @import "components/typography";
 @import "components/utilities";
 
+@import "components/images";
+@import "components/components";
+@import "components/buttons";
+
+
+//// Import Partials
 @import "partials/base";
 
 @media screen and (min-width: $sm) {

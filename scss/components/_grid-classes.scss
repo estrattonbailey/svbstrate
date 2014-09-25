@@ -1,0 +1,99 @@
+//// OUTERMOST GRID WRAPPER
+.container {
+    @include blockRel;
+    
+    padding: $outerContainer--padding;
+    width: $outerContainer;
+}
+
+//// GRID BLOCK WRAPPER
+.row {
+    @include blockRel;
+    
+    font-size: 0rem;
+    margin: auto;
+    max-width: $maxRow;
+    text-align: justify;
+    width: $row;
+    
+    &::after {
+        @include inlineRel;
+        
+        content:'';
+        width: 100%;
+    }
+}
+
+//// FULL WIDTH BLOCK WRAPPER
+.row--fullWidth {
+    max-width: 100%;
+    width: 100%;
+}
+
+//// GRID BLOCK
+.column {
+    @include inlineRel;
+    
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-size: 1rem;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: calc(#{$gutter}*2);
+    vertical-align: middle;
+    width: 100%;
+}
+
+
+/* Vertical align inline-block within a container */
+@mixin u-verticalAlign--middle {
+    & > .column {
+        vertical-align: middle;
+    }
+    
+    &::after {
+        @include inlineRel;
+        
+        content:'';
+        height: 50%;
+        font-size: 0px;
+    }
+}
+.u-verticalAlign--middle {
+    @include u-verticalAlign--middle;
+}
+
+@mixin u-verticalAlign--bottom {
+    & > .column {
+        vertical-align: bottom;
+    }
+    
+    &::after {
+        @include inlineRel;
+        
+        content:'';
+        height: 50%;
+        font-size: 0px;
+    }
+}
+.u-verticalAlign--bottom {
+    @include u-verticalAlign--bottom;
+}
+
+@mixin u-verticalAlign--top {
+    & > .column {
+        vertical-align: top;
+    }
+    
+    &::after {
+        @include inlineRel;
+        
+        content:'';
+        height: 50%;
+        font-size: 0px;
+    }
+}
+.u-verticalAlign--top {
+    @include u-verticalAlign--top;
+}

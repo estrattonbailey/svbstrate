@@ -1,0 +1,26 @@
+//// Applies image background attributes to any containing element
+@mixin imageBackground {
+    background-image: url('../resources/images/1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100% ;
+}
+.imageBackground {
+    @include imageBackground;
+}
+
+//// adds a dot overlay to any image container - requires z-index values on the image container descendants 
+.dots {
+    &::after {
+        @include blockAb;
+        
+        background-image: url('../resources/icons/dots.png');
+        content:'';
+        height:100% ;
+        left: 0;
+        top: 0;
+        width:100% ;
+        z-index: 0;
+    }
+}

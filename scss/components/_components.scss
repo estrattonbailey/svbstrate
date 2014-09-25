@@ -1,0 +1,41 @@
+/* for social icons, for example */
+.listIcons {
+    @include blockRel;
+    
+    height: 40px;
+    text-align: left;
+    
+    a {
+        @include inlineRel;
+        
+        height:inherit;
+        margin: 0px 5px;
+        width: 40px;
+        
+        i {
+            color: $black;   
+            font-size: 2rem;
+        }
+    }
+    
+    &::after {
+        @include inlineRel;
+        
+        content:'';
+        width:100% ;
+    }
+}
+
+.avatar {
+    @include blockRel;
+    @include round;
+    @include imageBackground;
+    
+    background-image: url("resources/icons/avatar.jpg");
+    height: 50px;
+    width: 50px;
+}
+.avatar--sm {
+    height: 30px;
+    width: 30px;
+}
