@@ -78,3 +78,23 @@
   #{$property}: -webkit-calc(#{$value});
   #{$property}:         calc(#{$value});
 }
+
+@mixin boxShadow($shadows...) {
+-moz-box-shadow: $shadows;
+-webkit-box-shadow: $shadows;
+box-shadow: $shadows;
+}
+
+@mixin transition($transition...) {
+-webkit-transition: $transition;
+-moz-transition: $transition;
+-o-transition: $transition;
+transition: $transition;
+}
+
+@mixin backgroundSize($size) {
+-webkit-background-size: $size;
+-moz-background-size: $size;
+-o-background-size: $size;
+background-size: $size;
+}

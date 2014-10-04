@@ -5,7 +5,7 @@ html, body {
 
 /* BEGIN STYLES HERE */
 #top {
-    background-color: $red;
+    background-color: $primaryColor;
     padding: 200px 0px;
 }
 #top h1, #top h4 {
@@ -24,7 +24,7 @@ html, body {
 }
 
 .block {
-    background-color: $red;
+    background-color: $primaryColor;
     height: 200px;
     padding: 10px;
 }
@@ -38,10 +38,14 @@ html, body {
     background-color: $gray40;
 }
 
+.sliderContainer {
+    margin: 100px auto;
+}
+
 
 
 #footer {
-    background-color: $red;
+    background-color: $primaryColor;
 }
 #footer a {
     color: white;

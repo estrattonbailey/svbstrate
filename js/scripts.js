@@ -80,4 +80,9 @@ if ($(window).width() > 400) {
     window.scrollReveal = new scrollReveal();
 }
  
+    
+    
+/* instantiate Superslides plugin: https://github.com/nicinabox/superslides */
+$('.slider').superslides();
+    
 });

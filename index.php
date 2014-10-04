@@ -38,7 +38,7 @@
         <div class="row">
              <div class="column lg_size1of2 size1of1">
                 <h2>GET SASSY</h2>
-                 <h4>It's the best. Be smart, use it for variables, <code>calc()</code>, etc, but keep the nesting and functions to a minimum. Ain't nobody got time for that.<br/>
+                 <h4>It's the best (imo). Be smart, use it for variables, <code>calc()</code>, etc, but keep the nesting and functions to a minimum. Ain't nobody got time for that.<br/>
                     <br/>
                      Also, SVBSTRATE is mobile first. Use the separate .scss files in <code>~/components/</code> for the different breakpoints. Yay minimal CSS.<br/>
                     <br/>
@@ -76,6 +76,30 @@
             <div class="block column size1of4"></div>
         </div>
     </section>
+    
+    <!-- outer slide container-->
+    <section class="sliderContainer">
+        
+        <div class="js-slider">
+            
+            <div class="slide">
+                <img src="resources/images/1.jpg" alt="" />
+            </div>
+            
+            <div class="slide">
+                <img src="resources/images/2.jpg" alt="" />
+            </div>
+            
+        </div>
+        
+        <nav class="slider-navigation">
+            <div class="next"><i class="fa fa-chevron-right fa-3x fa-fw"></i></div>
+            <div class="prev"><i class="fa fa-chevron-left fa-3x fa-fw"></i></div>
+        </nav>
+        
+    </section>
+    <!-- end slide container-->
+    
     <section id="footer" class="container">
         <div class="row">
             <div class="column lg_size1of2 size1of1">
