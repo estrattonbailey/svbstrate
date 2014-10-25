@@ -1,4 +1,32 @@
 /*UTILITY CLASSES*/
+.parallax {
+    perspective: 1px;
+    -webkit-perspective: 1px;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.parallaxContainer {
+    position: relative;
+    height: 100vh;
+    transform-style: preserve-3d;
+}
+.parallaxContainer-layer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.parallaxContainer-layer--base {
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+}
+.parallaxContainer-layer--scroll {
+    transform: translateZ(-1px) scale(2);
+    -webkit-transform: translateZ(-1px) scale(2);
+}
+
 
 /* text alignment classes */
 .u-centerAlign {

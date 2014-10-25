@@ -1,4 +1,4 @@
-<?php include('head.php'); ?>
+<?php include('header.php'); ?>
 
 <main>
     <section id="top" class="u-height3of4 container">

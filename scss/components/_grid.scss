@@ -5,6 +5,7 @@
 	.size2of3 {width: calc(66.666666% - #{$gutter})}
 	.size1of4 {width: calc(25% - #{$gutter})}
 	.size3of4 {width: calc(75% - #{$gutter})}
+    .size1of6 {width: calc(16.6666666% + #{$gutter})}
     .sizeGoldenLong {width: calc(61.803398% - #{$gutter})}
     .sizeGoldenShort {width: calc(38.196602% - #{$gutter})}
 
@@ -56,6 +57,7 @@
 	.sm_size2of3 {width: calc(66.666666% - #{$gutter})}
 	.sm_size1of4 {width: calc(25% - #{$gutter})}
 	.sm_size3of4 {width: calc(75% - #{$gutter})}
+    .sm_size1of6 {width: calc(16.6666666% + #{$gutter})}
     .sm_sizeGoldenLong {width: calc(61.803398% - #{$gutter})}
     .sm_sizeGoldenShort {width: calc(38.196602% - #{$gutter})}
 
@@ -106,6 +108,7 @@
 	.med_size2of3 {width: calc(66.666666% - #{$gutter})}
 	.med_size1of4 {width: calc(25% - #{$gutter})}
 	.med_size3of4 {width: calc(75% - #{$gutter})}
+    .med_size1of6 {width: calc(16.6666666% + #{$gutter})}
     .med_sizeGoldenLong {width: calc(61.803398% - #{$gutter})}
     .med_sizeGoldenShort {width: calc(38.196602% - #{$gutter})}
 

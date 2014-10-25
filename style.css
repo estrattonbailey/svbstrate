@@ -250,7 +250,8 @@ a {
   display: block;
   position: relative;
   padding: 30px 0px;
-  width: 100%; }
+  width: 100%;
+  z-index: 0; }
 
 .row {
   display: block;
@@ -329,6 +330,9 @@ a {
 
 .size3of4 {
   width: calc(75% - 1rem); }
+
+.size1of6 {
+  width: calc(16.6666666% + 1rem); }
 
 .sizeGoldenLong {
   width: calc(61.803398% - 1rem); }
@@ -438,6 +442,9 @@ a {
   .sm_size3of4 {
     width: calc(75% - 1rem); }
 
+  .sm_size1of6 {
+    width: calc(16.6666666% + 1rem); }
+
   .sm_sizeGoldenLong {
     width: calc(61.803398% - 1rem); }
 
@@ -544,6 +551,9 @@ a {
 
   .med_size3of4 {
     width: calc(75% - 1rem); }
+
+  .med_size1of6 {
+    width: calc(16.6666666% + 1rem); }
 
   .med_sizeGoldenLong {
     width: calc(61.803398% - 1rem); }
@@ -894,6 +904,33 @@ strong {
   font-weight: 900; }
 
 /*UTILITY CLASSES*/
+.parallax {
+  perspective: 1px;
+  -webkit-perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto; }
+
+.parallaxContainer {
+  position: relative;
+  height: 100vh;
+  transform-style: preserve-3d; }
+
+.parallaxContainer-layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; }
+
+.parallaxContainer-layer--base {
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0); }
+
+.parallaxContainer-layer--scroll {
+  transform: translateZ(-1px) scale(2);
+  -webkit-transform: translateZ(-1px) scale(2); }
+
 /* text alignment classes */
 .u-centerAlign {
   text-align: center; }
