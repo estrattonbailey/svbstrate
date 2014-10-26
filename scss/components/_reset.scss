@@ -116,6 +116,11 @@ textarea {
 	line-height: 1.5;
 }
 
+input {
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+
 h1,
 h2,
 h3,
