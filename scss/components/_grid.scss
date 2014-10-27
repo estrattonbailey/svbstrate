@@ -1,5 +1,5 @@
 /*BEGIN GRID STYLES*/   
-    .size1of1 {float:none}
+    .size1of1 {width: 100%; float:none}
 	.size1of2 {width: calc(50% - #{$gutter})}
 	.size1of3 {width: calc(33.333333% - #{$gutter})}
 	.size2of3 {width: calc(66.666666% - #{$gutter})}
@@ -47,11 +47,9 @@
 	.suffix1of4 {margin-right:25%}
 	.suffix3of4 {margin-right:75%}
 
-
-
 @media screen and (min-width:$sm) {
 /* ---- sizes ---- */
-	.sm_size1of1 {float:none}
+	.sm_size1of1 {width: 100%; float:none}
 	.sm_size1of2 {width: calc(50% - #{$gutter})}
 	.sm_size1of3 {width: calc(33.333333% - #{$gutter})}
 	.sm_size2of3 {width: calc(66.666666% - #{$gutter})}
@@ -102,7 +100,7 @@
 
 @media screen and (min-width:$med) {
 /* ---- sizes ---- */
-	.med_size1of1 {float:none}
+	.med_size1of1 {width: 100%; float:none}
 	.med_size1of2 {width: calc(50% - #{$gutter})}
 	.med_size1of3 {width: calc(33.333333% - #{$gutter})}
 	.med_size2of3 {width: calc(66.666666% - #{$gutter})}
@@ -152,7 +150,7 @@
 }
 
 @media screen and (min-width:$lg) {
-    .lg_size1of1 {float:none}
+    .lg_size1of1 {width: 100%; float:none}
 	.lg_size1of2 {width: calc(50% - #{$gutter})}
 	.lg_size1of3 {width: calc(33.333333% - #{$gutter})}
 	.lg_size2of3 {width: calc(66.666666% - #{$gutter})}
@@ -201,7 +199,7 @@
 }
 
 @media screen and (min-width:$xl) {
-    .xl_size1of1 {float:none}
+    .xl_size1of1 {width: 100%; float:none}
 	.xl_size1of2 {width: calc(50% - #{$gutter})}
 	.xl_size1of3 {width: calc(33.333333% - #{$gutter})}
 	.xl_size2of3 {width: calc(66.666666% - #{$gutter})}
