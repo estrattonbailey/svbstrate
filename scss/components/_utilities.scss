@@ -1,30 +1,19 @@
 /*UTILITY CLASSES*/
-.parallax {
-    perspective: 1px;
-    -webkit-perspective: 1px;
-    height: 100vh;
-    overflow-x: hidden;
-    overflow-y: auto;
-}
-.parallaxContainer {
-    position: relative;
-    height: 100vh;
-    transform-style: preserve-3d;
-}
-.parallaxContainer-layer {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
+
+// LAYOUT CLASSES
+.u-blockFixed {
     left: 0;
+    position: fixed !important;
+    top: 0;
 }
-.parallaxContainer-layer--base {
-    transform: translateZ(0);
-    -webkit-transform: translateZ(0);
+.u-inlineRelative {
+    @include inlineRel;
 }
-.parallaxContainer-layer--scroll {
-    transform: translateZ(-1px) scale(2);
-    -webkit-transform: translateZ(-1px) scale(2);
+.u-blockRelative {
+    @include inlineRel;
+}
+.u-blockAbsolute {
+    @include blockAb;
 }
 
 
@@ -36,10 +25,10 @@
     text-align: right;
 }
 .u-leftAlign {
-    text-align: right;
+    text-align: left;
 }
 .u-justifyAlign {
-    text-align: right;
+    text-align: justify;
 }
 
 @media screen and (min-width:$sm) {
@@ -50,10 +39,10 @@
         text-align: right;
     }
     .sm_u-leftAlign {
-        text-align: right;
+        text-align: left;
     }
     .sm_u-justifyAlign {
-        text-align: right;
+        text-align: justify;
     }
 }
 
@@ -65,10 +54,10 @@
         text-align: right;
     }
     .med_u-leftAlign {
-        text-align: right;
+        text-align: left;
     }
     .med_u-justifyAlign {
-        text-align: right;
+        text-align: justify;
     }
 }
 
@@ -80,10 +69,10 @@
         text-align: right;
     }
     .lg_u-leftAlign {
-        text-align: right;
+        text-align: left;
     }
     .lg_u-justifyAlign {
-        text-align: right;
+        text-align: justify;
     }
 }
 
@@ -95,10 +84,10 @@
         text-align: right;
     }
     .xl_u-leftAlign {
-        text-align: right;
+        text-align: left;
     }
     .xl_u-justifyAlign {
-        text-align: right;
+        text-align: justify;
     }
 }
 /* end text alignment classes */

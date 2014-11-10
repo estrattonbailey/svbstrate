@@ -42,7 +42,7 @@ html {
 }
 
 body {
-	background: #fff; /* Fallback for when there is no custom background color defined. */
+	background: #fff;
 }
 
 html, body {
@@ -67,7 +67,7 @@ ul {
 	list-style: none;
 }
 
-table { /* tables still need 'cellspacing="0"' in the markup */
+table { // tables still need 'cellspacing="0"' in the markup
 	border-collapse: separate;
 	border-spacing: 0;
 }
@@ -210,7 +210,6 @@ big {
 	font-size: 125%;
 }
 
-/////ELEMENTS
 hr {
 	background-color: #ccc;
 	border: 0;
@@ -237,6 +236,14 @@ li > ol {
 	margin-left: 1.5em;
 }
 
+.unordered-list { 
+    list-style-type: disc; 
+}
+
+.ordered-list { 
+    list-style: decimal; 
+}
+
 dt {
 	font-weight: bold;
 }
@@ -246,8 +253,8 @@ dd {
 }
 
 img {
-	height: auto; /* Make sure images are scaled correctly. */
-	max-width: 100%; /* Adhere to container width. */
+	height: auto;
+	max-width: 100%;
 }
 
 figure {
@@ -261,4 +268,15 @@ table {
 
 th {
 	font-weight: bold;
+}
+
+
+/* A few global settings here */
+::selection {
+    color: $primaryColor;
+    background: $gray10;
+}
+a {
+    color: $primaryColor;
+    font-weight:900;
 }

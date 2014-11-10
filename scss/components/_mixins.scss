@@ -1,36 +1,27 @@
 //// DISPLAY STYLINGS
 @mixin blockRel {
-    display: block;
+    display: block !important;
     position: relative;
 }
 @mixin blockAb {
-    display: block;
+    display: block !important;
     position: absolute;
 }
 @mixin blockFix {
-    display: block;
+    display: block !important;
     position: fixed;
 }
 @mixin inlineRel {
-    display: inline-block;
+    display: inline-block !important;
     position: relative;
 }
 @mixin rounded {
-    border-radius: 6px;
-        -moz-border-radius: 6px;
-        -webkit-border-radius: 6px;
+    border-radius: 3px;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
     overflow: hidden;
 }
 
-.u-blockFix {
-    left: 0;
-    position: fixed !important;
-    top: 0;
-}
-
-.u-inlineRel {
-    @include inlineRel;
-}
 
 
 //// PRESENTATIONAL

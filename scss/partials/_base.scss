@@ -3,19 +3,25 @@ html, body {
     font-size: 50%;
 }
 
-/* BEGIN STYLES HERE */
+// BEGIN STYLES HERE
+
+// TOP
 #top {
-    background-color: $primaryColor;
-    padding: 200px 0px;
-}
-#top h1, #top h4 {
-    color:white;
+    background-color: $tertiaryColor;
+    padding: 15rem 0px 15rem;
+    
+    h1 {
+        color: white;
+    }
+    h4 {
+        color: $primaryColor;
+    }
 }
 #mainSocialIcons h2 {
     @include inlineRel;
 }
 .shareIcon {
-    color: white;
+    color: $primaryColor;
     opacity: 1;
     
     &:hover {
@@ -23,32 +29,17 @@ html, body {
     }
 }
 
-.block {
-    background-color: $primaryColor;
-    height: 200px;
-    padding: 10px;
+// INTRO
+#intro {
+    padding: 10rem 0;
 }
-.block--nested {
-    background-color: $gray10;
-    height: 100px;
-}  
-
-
-#verticalAlign{
-    background-color: $gray40;
-}
-
-.sliderContainer {
-    margin: 100px auto;
-}
-
-
 
 #footer {
     background-color: $primaryColor;
+    margin-top: 6rem;
+    padding: 5rem 0 3rem;
 }
 #footer a {
     color: white;
 }
-
 

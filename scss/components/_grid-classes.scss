@@ -38,10 +38,10 @@
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-    font-size: 1rem;
     padding: 0px;
     margin: 0px;
-    margin-bottom: calc(#{$gutter}*2);
+    margin-bottom: calc(#{$gutter}/2);
+    text-align: left;
     vertical-align: middle;
     width: 100%;
 }

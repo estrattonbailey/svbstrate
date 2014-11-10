@@ -1,41 +1,17 @@
-/* for social icons, for example */
-.listIcons {
-    @include blockRel;
-    
-    height: 40px;
-    text-align: left;
-    
-    a {
-        @include inlineRel;
-        
-        height:inherit;
-        margin: 0px 5px;
-        width: 40px;
-        
-        i {
-            color: $black;   
-            font-size: 2rem;
-        }
-    }
-    
-    &::after {
-        @include inlineRel;
-        
-        content:'';
-        width:100% ;
-    }
+// HORIZONTAL DIVIDER - use class="column size{sizeHere}" in HTML for width, padding, and margin properties
+.divider {
+    background-color: $primaryColor;
+    height: 8px;
 }
-
-.avatar {
-    @include blockRel;
-    @include round;
-    @include imageBackground;
-    
-    background-image: url("resources/icons/avatar.jpg");
-    height: 50px;
-    width: 50px;
+.divider--secondary {
+    background-color: $secondaryColor;
+    height: 8px;
 }
-.avatar--sm {
-    height: 30px;
-    width: 30px;
+.divider--tertiary {
+    background-color: $tertiaryColor;
+    height: 8px;
+}
+.divider--white {
+    background-color: white;
+    height: 8px;
 }

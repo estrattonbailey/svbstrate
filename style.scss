@@ -1,10 +1,9 @@
-//// Import Base
-@import "components/reset";
+//// IMPORT BASE
 @import "components/variables";
-@import "components/global";
+@import "components/reset";
 @import "components/mixins";
 
-//// Import Components
+//// IMPORT COMPONENTS
 @import "components/grid--settings";
 @import "components/grid-classes";
 @import "components/grid";
@@ -14,12 +13,13 @@
 @import "components/images";
 @import "components/components";
 @import "components/buttons";
-@import "components/slider";
+@import "components/inputs";
+//@import "components/slider";
 
-//// Import Libraries 
-@import "libraries/superslides";
+//// IMPORT LIBRARIES 
+//@import "libraries/superslides";
 
-//// Import Partials
+//// IMPORT PARTIALS
 @import "partials/base";
 
 @media screen and (min-width: $sm) {
@@ -35,7 +35,7 @@
     @import "partials/xl";
 }
 
-/* SUIT CSS Naming Conventions
+/* Naming Conventions
 *
 *   .u-utilityClass {}
 *
