@@ -424,7 +424,7 @@ input:focus { border: 1px solid #333333; box-shadow: 0 0 2px #4d4d4d; }
 html, body { font-size: 50%; }
 
 #top { background-color: #55555f; padding: 15rem 0px 15rem; }
-#top h1 { color: white; }
+#top h1 { color: white; letter-spacing: 6px; }
 #top h4 { color: #00d7dd; }
 
 #mainSocialIcons h2 { display: inline-block !important; position: relative; }
