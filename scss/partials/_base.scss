@@ -7,7 +7,7 @@ html, body {
 
 // TOP
 #top {
-    background-color: $tertiaryColor;
+    background-color: $color-tertiary;
     padding: 15rem 0px 15rem;
     
     h1 {
@@ -15,14 +15,14 @@ html, body {
         letter-spacing: 6px;
     }
     h4 {
-        color: $primaryColor;
+        color: $color-primary;
     }
 }
 #mainSocialIcons h2 {
     @include inlineRel;
 }
 .shareIcon {
-    color: $primaryColor;
+    color: $color-primary;
     opacity: 1;
     
     &:hover {
@@ -36,7 +36,7 @@ html, body {
 }
 
 #footer {
-    background-color: $primaryColor;
+    background-color: $color-primary;
     margin-top: 6rem;
     padding: 5rem 0 3rem;
 }

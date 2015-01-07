@@ -1,4 +1,4 @@
-/*BEGIN GRID STYLES*/   
+// INLINE BLOCK GRID   
     .size1of1 {width: 100%; float:none}
 	.size1of2 {width: calc(50% - #{$gutter})}
 	.size1of3 {width: calc(33.333333% - #{$gutter})}
@@ -245,4 +245,359 @@
 	.xl_suffix2of3 {margin-right:66.666666%}
 	.xl_suffix1of4 {margin-right:25%}
 	.xl_suffix3of4 {margin-right:75%}
+}
+@media screen and (min-width:$xxl) {
+    .xxl_size1of1 {width: 100%; float:none}
+	.xxl_size1of2 {width: calc(50% - #{$gutter})}
+	.xxl_size1of3 {width: calc(33.333333% - #{$gutter})}
+	.xxl_size2of3 {width: calc(66.666666% - #{$gutter})}
+	.xxl_size1of4 {width: calc(25% - #{$gutter})}
+	.xxl_size3of4 {width: calc(75% - #{$gutter})}
+    .xxl_sizeGoldenLong {width: calc(61.803398% - #{$gutter})}
+    .xxl_sizeGoldenShort {width: calc(38.196602% - #{$gutter})}
+
+    .xxl_push0of0 {left: 0}
+	.xxl_push1of2 {left: calc(50% + #{$gutter})}
+	.xxl_push1of3 {left: calc(33.333333% + #{$gutter})}
+	.xxl_push2of3 {left: calc(66.666666% + #{$gutter})}
+	.xxl_push1of4 {left: calc(25% + #{$gutter})}
+	.xxl_push3of4 {left: calc(75% + #{$gutter})}
+    .xxl_push1of6 {left: calc(16.6666666% + #{$gutter})}
+	.xxl_pushGoldenLong {left: calc(61.803398% + #{$gutter})}
+	.xxl_pushGoldenShort {left: calc(38.196602% + #{$gutter})}
+
+	.xxl_push1of2, 
+	.xxl_push1of3,
+	.xxl_push2of3,
+	.xxl_push1of4,
+	.xxl_push3of4,
+    .xxl_push1of6,
+	.xxl_pushGoldenLong,
+	.xxl_pushGoldenShort {
+		min-height: 1px;
+	}
+
+    .xxl_pull0of0 {left: 0}
+	.xxl_pull1of2 {left: calc(-50% + #{$gutter})}
+	.xxl_pull1of3 {left: calc(-33.333333% + #{$gutter})}
+	.xxl_pull2of3 {left: calc(-66.666666% + #{$gutter})}
+	.xxl_pull1of4 {left: calc(-25% + #{$gutter})}
+	.xxl_pull3of4 {left: calc(-75% + #{$gutter})}
+    .xxl_pull1of6 {left: calc(-16.6666666% + #{$gutter})}
+	.xxl_pullGoldenLong {left: calc(-61.803398% + #{$gutter})}
+	.xxl_pullGoldenShort {left: calc(-38.196602% + #{$gutter})}
+
+    .xxl_suffix0of0 {margin-right:0%}
+    .xxl_suffix1of2 {margin-right:50%}
+	.xxl_suffix1of3 {margin-right:33.333333%}
+	.xxl_suffix2of3 {margin-right:66.666666%}
+	.xxl_suffix1of4 {margin-right:25%}
+	.xxl_suffix3of4 {margin-right:75%}
+}
+
+
+//=============================================================
+// FLOAT BLOCK GRID
+
+.row--float {
+
+    .size1of1 {width: 100%;}
+	.size1of2 {width: 50%}
+	.size1of3 {width: 33.333333%}
+	.size2of3 {width: 66.666666%}
+	.size1of4 {width: 25%}
+	.size3of4 {width: 75%}
+    .size1of6 {width: 16.6666666%}
+    .sizeGoldenLong {width: 61.803398%}
+    .sizeGoldenShort {width: 38.196602%}
+
+    .push0of0 {left: 0}
+	.push1of2 {left: 50%}
+	.push1of3 {left: 33.333333%}
+	.push2of3 {left: 66.666666%}
+	.push1of4 {left: 25%}
+	.push3of4 {left: 75%}
+	.push1of6 {left: 16.6666666%}
+	.pushGoldenLong {left: 61.803398%}
+	.pushGoldenShort {left: 38.196602%}
+
+	.push1of2, 
+	.push1of3,
+	.push2of3,
+	.push1of4,
+	.push3of4,
+    .push1of6,
+	.pushGoldenLong,
+	.pushGoldenShort {
+		min-height: 1px;
+	}
+
+    .pull0of0 {left: 0}
+	.pull1of2 {left: 50%}
+	.pull1of3 {left: -33.333333%}
+	.pull2of3 {left: -66.666666%}
+	.pull1of4 {left: 25%}
+	.pull3of4 {left: 75%}
+    .pull1of6 {left: -16.6666666%}
+	.pullGoldenLong {left: -61.803398%}
+	.pullGoldenShort {left: -38.196602%}
+
+    .suffix0of0 {margin-right:0%}
+    .suffix1of2 {margin-right:50%}
+	.suffix1of3 {margin-right:33.333333%}
+	.suffix2of3 {margin-right:66.666666%}
+	.suffix1of4 {margin-right:25%}
+	.suffix3of4 {margin-right:75%}
+
+@media screen and (min-width:$sm) {
+/* ---- sizes ---- */
+    .sm_size1of1 {width: 100%;}
+	.sm_size1of2 {width: 50%}
+	.sm_size1of3 {width: 33.333333%}
+	.sm_size2of3 {width: 66.666666%}
+	.sm_size1of4 {width: 25%}
+	.sm_size3of4 {width: 75%}
+    .sm_size1of6 {width: 16.6666666%}
+    .sm_sizeGoldenLong {width: 61.803398%}
+    .sm_sizeGoldenShort {width: 38.196602%}
+
+    .sm_push0of0 {left: 0}
+	.sm_push1of2 {left: 50%}
+	.sm_push1of3 {left: 33.333333%}
+	.sm_push2of3 {left: 66.666666%}
+	.sm_push1of4 {left: 25%}
+	.sm_push3of4 {left: 75%}
+	.sm_push1of6 {left: 16.6666666%}
+	.sm_pushGoldenLong {left: 61.803398%}
+	.sm_pushGoldenShort {left: 38.196602%}
+
+	.sm_push1of2, 
+	.sm_push1of3,
+	.sm_push2of3,
+	.sm_push1of4,
+	.sm_push3of4,
+    .sm_push1of6,
+	.sm_pushGoldenLong,
+	.sm_pushGoldenShort {
+		min-height: 1px;
+	}
+
+    .sm_pull0of0 {left: 0}
+	.sm_pull1of2 {left: 50%}
+	.sm_pull1of3 {left: -33.333333%}
+	.sm_pull2of3 {left: -66.666666%}
+	.sm_pull1of4 {left: 25%}
+	.sm_pull3of4 {left: 75%}
+    .sm_pull1of6 {left: -16.6666666%}
+	.sm_pullGoldenLong {left: -61.803398%}
+	.sm_pullGoldenShort {left: -38.196602%}
+
+    .sm_suffix0of0 {margin-right:0%}
+    .sm_suffix1of2 {margin-right:50%}
+	.sm_suffix1of3 {margin-right:33.333333%}
+	.sm_suffix2of3 {margin-right:66.666666%}
+	.sm_suffix1of4 {margin-right:25%}
+	.sm_suffix3of4 {margin-right:75%}
+}
+
+@media screen and (min-width:$med) {
+/* ---- sizes ---- */
+    .med_size1of1 {width: 100%;}
+	.med_size1of2 {width: 50%}
+	.med_size1of3 {width: 33.333333%}
+	.med_size2of3 {width: 66.666666%}
+	.med_size1of4 {width: 25%}
+	.med_size3of4 {width: 75%}
+    .med_size1of6 {width: 16.6666666%}
+    .med_sizeGoldenLong {width: 61.803398%}
+    .med_sizeGoldenShort {width: 38.196602%}
+
+    .med_push0of0 {left: 0}
+	.med_push1of2 {left: 50%}
+	.med_push1of3 {left: 33.333333%}
+	.med_push2of3 {left: 66.666666%}
+	.med_push1of4 {left: 25%}
+	.med_push3of4 {left: 75%}
+	.med_push1of6 {left: 16.6666666%}
+	.med_pushGoldenLong {left: 61.803398%}
+	.med_pushGoldenShort {left: 38.196602%}
+
+	.med_push1of2, 
+	.med_push1of3,
+	.med_push2of3,
+	.med_push1of4,
+	.med_push3of4,
+    .med_push1of6,
+	.med_pushGoldenLong,
+	.med_pushGoldenShort {
+		min-height: 1px;
+	}
+
+    .med_pull0of0 {left: 0}
+	.med_pull1of2 {left: 50%}
+	.med_pull1of3 {left: -33.333333%}
+	.med_pull2of3 {left: -66.666666%}
+	.med_pull1of4 {left: 25%}
+	.med_pull3of4 {left: 75%}
+    .med_pull1of6 {left: -16.6666666%}
+	.med_pullGoldenLong {left: -61.803398%}
+	.med_pullGoldenShort {left: -38.196602%}
+
+    .med_suffix0of0 {margin-right:0%}
+    .med_suffix1of2 {margin-right:50%}
+	.med_suffix1of3 {margin-right:33.333333%}
+	.med_suffix2of3 {margin-right:66.666666%}
+	.med_suffix1of4 {margin-right:25%}
+	.med_suffix3of4 {margin-right:75%}
+}
+
+@media screen and (min-width:$lg) {
+    .lg_size1of1 {width: 100%;}
+	.lg_size1of2 {width: 50%}
+	.lg_size1of3 {width: 33.333333%}
+	.lg_size2of3 {width: 66.666666%}
+	.lg_size1of4 {width: 25%}
+	.lg_size3of4 {width: 75%}
+    .lg_size1of6 {width: 16.6666666%}
+    .lg_sizeGoldenLong {width: 61.803398%}
+    .lg_sizeGoldenShort {width: 38.196602%}
+
+    .lg_push0of0 {left: 0}
+	.lg_push1of2 {left: 50%}
+	.lg_push1of3 {left: 33.333333%}
+	.lg_push2of3 {left: 66.666666%}
+	.lg_push1of4 {left: 25%}
+	.lg_push3of4 {left: 75%}
+	.lg_push1of6 {left: 16.6666666%}
+	.lg_pushGoldenLong {left: 61.803398%}
+	.lg_pushGoldenShort {left: 38.196602%}
+
+	.lg_push1of2, 
+	.lg_push1of3,
+	.lg_push2of3,
+	.lg_push1of4,
+	.lg_push3of4,
+    .lg_push1of6,
+	.lg_pushGoldenLong,
+	.lg_pushGoldenShort {
+		min-height: 1px;
+	}
+
+    .lg_pull0of0 {left: 0}
+	.lg_pull1of2 {left: 50%}
+	.lg_pull1of3 {left: -33.333333%}
+	.lg_pull2of3 {left: -66.666666%}
+	.lg_pull1of4 {left: 25%}
+	.lg_pull3of4 {left: 75%}
+    .lg_pull1of6 {left: -16.6666666%}
+	.lg_pullGoldenLong {left: -61.803398%}
+	.lg_pullGoldenShort {left: -38.196602%}
+
+    .lg_suffix0of0 {margin-right:0%}
+    .lg_suffix1of2 {margin-right:50%}
+	.lg_suffix1of3 {margin-right:33.333333%}
+	.lg_suffix2of3 {margin-right:66.666666%}
+	.lg_suffix1of4 {margin-right:25%}
+	.lg_suffix3of4 {margin-right:75%}
+}
+
+@media screen and (min-width:$xl) {
+    .xl_size1of1 {width: 100%;}
+	.xl_size1of2 {width: 50%}
+	.xl_size1of3 {width: 33.333333%}
+	.xl_size2of3 {width: 66.666666%}
+	.xl_size1of4 {width: 25%}
+	.xl_size3of4 {width: 75%}
+    .xl_size1of6 {width: 16.6666666%}
+    .xl_sizeGoldenLong {width: 61.803398%}
+    .xl_sizeGoldenShort {width: 38.196602%}
+
+    .xl_push0of0 {left: 0}
+	.xl_push1of2 {left: 50%}
+	.xl_push1of3 {left: 33.333333%}
+	.xl_push2of3 {left: 66.666666%}
+	.xl_push1of4 {left: 25%}
+	.xl_push3of4 {left: 75%}
+	.xl_push1of6 {left: 16.6666666%}
+	.xl_pushGoldenLong {left: 61.803398%}
+	.xl_pushGoldenShort {left: 38.196602%}
+
+	.xl_push1of2, 
+	.xl_push1of3,
+	.xl_push2of3,
+	.xl_push1of4,
+	.xl_push3of4,
+    .xl_push1of6,
+	.xl_pushGoldenLong,
+	.xl_pushGoldenShort {
+		min-height: 1px;
+	}
+
+    .xl_pull0of0 {left: 0}
+	.xl_pull1of2 {left: 50%}
+	.xl_pull1of3 {left: -33.333333%}
+	.xl_pull2of3 {left: -66.666666%}
+	.xl_pull1of4 {left: 25%}
+	.xl_pull3of4 {left: 75%}
+    .xl_pull1of6 {left: -16.6666666%}
+	.xl_pullGoldenLong {left: -61.803398%}
+	.xl_pullGoldenShort {left: -38.196602%}
+
+    .xl_suffix0of0 {margin-right:0%}
+    .xl_suffix1of2 {margin-right:50%}
+	.xl_suffix1of3 {margin-right:33.333333%}
+	.xl_suffix2of3 {margin-right:66.666666%}
+	.xl_suffix1of4 {margin-right:25%}
+	.xl_suffix3of4 {margin-right:75%}
+}
+
+@media screen and (min-width:$xxl) {
+    .xxl_size1of1 {width: 100%;}
+	.xxl_size1of2 {width: 50%}
+	.xxl_size1of3 {width: 33.333333%}
+	.xxl_size2of3 {width: 66.666666%}
+	.xxl_size1of4 {width: 25%}
+	.xxl_size3of4 {width: 75%}
+    .xxl_size1of6 {width: 16.6666666%}
+    .xxl_sizeGoldenLong {width: 61.803398%}
+    .xxl_sizeGoldenShort {width: 38.196602%}
+
+    .xxl_push0of0 {left: 0}
+	.xxl_push1of2 {left: 50%}
+	.xxl_push1of3 {left: 33.333333%}
+	.xxl_push2of3 {left: 66.666666%}
+	.xxl_push1of4 {left: 25%}
+	.xxl_push3of4 {left: 75%}
+	.xxl_push1of6 {left: 16.6666666%}
+	.xxl_pushGoldenLong {left: 61.803398%}
+	.xxl_pushGoldenShort {left: 38.196602%}
+
+	.xxl_push1of2, 
+	.xxl_push1of3,
+	.xxl_push2of3,
+	.xxl_push1of4,
+	.xxl_push3of4,
+    .xxl_push1of6,
+	.xxl_pushGoldenLong,
+	.xxl_pushGoldenShort {
+		min-height: 1px;
+	}
+
+    .xxl_pull0of0 {left: 0}
+	.xxl_pull1of2 {left: 50%}
+	.xxl_pull1of3 {left: -33.333333%}
+	.xxl_pull2of3 {left: -66.666666%}
+	.xxl_pull1of4 {left: 25%}
+	.xxl_pull3of4 {left: 75%}
+    .xxl_pull1of6 {left: -16.6666666%}
+	.xxl_pullGoldenLong {left: -61.803398%}
+	.xxl_pullGoldenShort {left: -38.196602%}
+
+    .xxl_suffix0of0 {margin-right:0%}
+    .xxl_suffix1of2 {margin-right:50%}
+	.xxl_suffix1of3 {margin-right:33.333333%}
+	.xxl_suffix2of3 {margin-right:66.666666%}
+	.xxl_suffix1of4 {margin-right:25%}
+	.xxl_suffix3of4 {margin-right:75%}
+}
 }

@@ -1,9 +1,6 @@
-$font-default: "Open Sans", helvetica, sans-serif;
-$font-default--color: $tertiaryColor;
-
 h1, h2, h3, h4, h5, h6, p {
-    font-family: $font-default;
-    color: $font-default--color;
+    font-family: $font-primary;
+    color: $font-primary--color;
 }
 @mixin h1 {
     font-size: 3.4rem;
@@ -36,7 +33,8 @@ h1, h2, h3, h4, h5, h6, p {
     line-height: 1.618;
 }
 @mixin p {
-    font-family: Georgia, serif;
+    color: $font-secondary--color;
+    font-family: $font-secondary;
     font-size: 1.618rem;
     font-weight: 100;
     line-height: 2.618rem; 

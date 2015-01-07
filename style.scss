@@ -1,20 +1,15 @@
 //// IMPORT BASE
-@import "components/variables";
+@import "components/settings";
 @import "components/reset";
 @import "components/mixins";
 
 //// IMPORT COMPONENTS
-@import "components/grid--settings";
 @import "components/grid-classes";
 @import "components/grid";
-@import "components/grid--float";
 @import "components/typography";
 @import "components/utilities";
 
-@import "components/images";
-@import "components/components";
-@import "components/buttons";
-@import "components/inputs";
+@import "components/default";
 //@import "components/slider";
 
 //// IMPORT LIBRARIES 
@@ -34,6 +29,9 @@
 }
 @media screen and (min-width: $xl) {
     @import "partials/xl";
+}
+@media screen and (min-width: $xxl) {
+    @import "partials/xxl";
 }
 
 /* Naming Conventions

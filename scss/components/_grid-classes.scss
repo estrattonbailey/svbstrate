@@ -2,9 +2,11 @@
 .container {
     @include blockRel;
     
-    padding: $outerContainer--padding;
     width: $outerContainer;
     z-index: 0;
+}
+.container--padded {
+    padding: $outerContainer--padded;
 }
 
 //// GRID BLOCK WRAPPER
@@ -41,67 +43,14 @@
     margin: 0px;
     margin-bottom: calc(#{$gutter}/2);
     text-align: left;
-    vertical-align: middle;
+    vertical-align: top;
     width: 100%;
 }
 
 /* removes inline grid styles for _grid--float.scss full bleed grid */
-.row--test .column {
+.row--float.column {
     @include blockRel;
     
     float: left;
     margin-bottom: 0px;
-}
-
-
-/* Vertical align inline-block within a container */
-@mixin u-verticalAlign--middle {
-    & > .column {
-        vertical-align: middle;
-    }
-    
-    &::after {
-        @include inlineRel;
-        
-        content:'';
-        height: 50%;
-        font-size: 0px;
-    }
-}
-.u-verticalAlign--middle {
-    @include u-verticalAlign--middle;
-}
-
-@mixin u-verticalAlign--bottom {
-    & > .column {
-        vertical-align: bottom;
-    }
-    
-    &::after {
-        @include inlineRel;
-        
-        content:'';
-        height: 50%;
-        font-size: 0px;
-    }
-}
-.u-verticalAlign--bottom {
-    @include u-verticalAlign--bottom;
-}
-
-@mixin u-verticalAlign--top {
-    & > .column {
-        vertical-align: top;
-    }
-    
-    &::after {
-        @include inlineRel;
-        
-        content:'';
-        height: 50%;
-        font-size: 0px;
-    }
-}
-.u-verticalAlign--top {
-    @include u-verticalAlign--top;
 }

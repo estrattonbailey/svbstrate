@@ -120,7 +120,7 @@ textarea {
 	line-height: 1.5;
 }
 
-input {
+input, button {
     -webkit-appearance: none;
     border-radius: 0;
 }
@@ -134,10 +134,6 @@ h6 {
 	clear: both;
 }
 
-p {
-	margin-bottom: 1.5em;
-}
-
 b,
 strong {
 	font-weight: bold;
@@ -148,14 +144,6 @@ cite,
 em,
 i {
 	font-style: italic;
-}
-
-blockquote {
-	margin: 0 1.5em;
-}
-
-address {
-	margin: 0 0 1.5em;
 }
 
 pre {
@@ -240,14 +228,6 @@ li > ol {
 	margin-left: 1.5em;
 }
 
-.unordered-list { 
-    list-style-type: disc; 
-}
-
-.ordered-list { 
-    list-style: decimal; 
-}
-
 dt {
 	font-weight: bold;
 }
@@ -270,17 +250,15 @@ table {
 	width: 100%;
 }
 
-th {
-	font-weight: bold;
-}
 
-
-/* A few global settings here */
+/* 
+* A few global settings here 
+**/
 ::selection {
-    color: $primaryColor;
+    color: $color-primary;
     background: $gray10;
 }
 a {
-    color: $primaryColor;
+    color: $color-primary;
     font-weight:900;
 }

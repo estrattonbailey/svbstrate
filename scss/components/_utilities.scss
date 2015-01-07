@@ -1,5 +1,3 @@
-/*UTILITY CLASSES*/
-
 // LAYOUT CLASSES
 .u-blockFixed {
     left: 0;
@@ -87,6 +85,21 @@
         text-align: left;
     }
     .xl_u-justifyAlign {
+        text-align: justify;
+    }
+}
+
+@media screen and (min-width:$xxl) {
+    .xxl_u-centerAlign {
+        text-align: center;
+    }
+    .xxl_u-rightAlign {
+        text-align: right;
+    }
+    .xxl_u-leftAlign {
+        text-align: left;
+    }
+    .xxl_u-justifyAlign {
         text-align: justify;
     }
 }
