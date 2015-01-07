@@ -4,7 +4,7 @@
             <a href="https://twitter.com/home?status=Check%20out%20SVBSTRATE,%20a%20super-basic%20SASS%20framework%20by%20@estrattonbailey.%20http://svbstrate.io" target="_blank">
                 <button class="button--sm u-inlineRelative"><i class="fa fa-twitter fa-fw"></i>&nbsp;Tweet</button>
             </a>
-            <a href="https://github.com/estrattonbailey/svbstrate/blob/master/svbstrate_v0.4.2_complete.zip?raw=true">
+            <a href="https://github.com/estrattonbailey/svbstrate/blob/master/svbstrate_v0.5_complete.zip?raw=true">
                 <button class="button--sm button--ghost u-inlineRelative">Download</button>
             </a>
             <a href="https://github.com/estrattonbailey/svbstrate">
