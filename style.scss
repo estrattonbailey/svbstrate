@@ -1,21 +1,19 @@
-//// IMPORT BASE
 @import "components/settings";
 @import "components/reset";
 @import "components/mixins";
-
-//// IMPORT COMPONENTS
 @import "components/grid-classes";
 @import "components/grid";
 @import "components/typography";
 @import "components/utilities";
 
+// Extras
+@import "components/buttons";
+@import "components/inputs";
+
+// Basic default stylings
 @import "components/default";
-//@import "components/slider";
 
-//// IMPORT LIBRARIES 
-//@import "libraries/superslides";
-
-//// IMPORT PARTIALS
+// Mobile first styles
 @import "partials/base";
 
 @media screen and (min-width: $sm) {

@@ -1,3 +1,17 @@
+// COLORS
+.color-primary {
+    background-color: $color-primary;
+    color: $color-primary;
+}
+.color-secondary {
+    background-color: $color-secondary;
+    color: $color-secondary
+}
+.color-tertiary {
+    background-color: $color-tertiary;
+    color: $color-tertiary;
+}
+
 // LAYOUT CLASSES
 .u-blockFixed {
     left: 0;
