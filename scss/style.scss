@@ -11,12 +11,12 @@
 @import "scss/base/images";
 @import "scss/base/base";
 
+// Modules
+@import "scss/modules/two-up";
+
 // Partials
 @import "scss/partials/header";
 @import "scss/partials/footer";
-
-// Modules
-@import "scss/modules/two-up";
 
 /* Naming Conventions
 *
