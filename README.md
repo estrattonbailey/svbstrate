@@ -1,7 +1,4 @@
 # SVBSTRATE
+My base templates for developing sites. Base styles, easy peasy grid framework (inline-block *and* float based), and some useful things like a nice typographic scale, variables and low-level mixins.
 
-## Base-level SCSS framework for OOCSS projects.
-
-### [Demo](http://svbstrate.io)
-
-Created with love and curiosity by [@estrattonbailey](http://twitter.com/estrattonbailey).
+*These templates will be updated much more frequently than they have been in the past, since I only recently made development my full time job. How exciting!*

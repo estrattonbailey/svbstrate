@@ -1,0 +1,47 @@
+/* Add HTML markup and these styles will fill the parent element with a full background.
+NOTE: must specify z-index values for siblings.*/
+.image-wrapper {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 0;
+
+    .background-image {
+        z-index: 0;
+    }
+
+    .background-image {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 0;
+
+        &.texture {
+            background-image: url('assets/images/background_texture.jpg');
+            background-size: 200px;
+            background-repeat: repeat;
+        }
+    }
+
+    .image-overlay {
+        background-color: rgba(0,0,0,0); // change this to affect color/opacity over images
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 0;
+        z-index: 1;
+    }
+}

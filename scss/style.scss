@@ -1,0 +1,31 @@
+// All file paths are relative to the CWD.
+
+// Global styles
+@import "scss/base/variables"; // Import this one first
+@import "scss/base/normalize";
+@import "scss/base/mixins";
+@import "scss/base/utilities";
+@import "scss/base/grid";
+@import "scss/base/typography";
+@import "scss/base/buttons";
+@import "scss/base/images";
+@import "scss/base/base";
+
+// Partials
+@import "scss/partials/header";
+@import "scss/partials/footer";
+
+// Modules
+@import "scss/modules/two-up";
+
+/* Naming Conventions
+*
+*   .u-utilityClass {}
+*
+*   .componentName {}
+*   .componentName--modifierName {}
+*   .componentName-descendantName {}
+*
+*   .componentName.is-someState {}
+*   .js-componentName
+*/

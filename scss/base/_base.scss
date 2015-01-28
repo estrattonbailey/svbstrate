@@ -1,0 +1,139 @@
+html {
+    height: 100%;
+}
+body {
+    @include blockRel;
+
+    background-color: #ffffff;
+    height: 100%;
+    max-width: 1500px;
+    margin: auto;
+}
+a {
+    text-decoration: none;
+}
+a.hu {
+    &:hover {
+        text-decoration: underline;
+    }
+}
+a.u {
+    text-decoration: underline;
+}
+
+@mixin container {
+    @include blockRel;
+
+    padding: .01rem; // prevents margin-collapse
+    z-index: 0;
+}
+.container {
+    @include container;
+}
+
+// These come in handy with containers where you need vertical spacing.
+.pad-sm {
+    padding: 3rem 0rem;
+}
+.pad-med {
+    padding: 7rem 0rem;
+}
+.pad-lg {
+    padding: 10rem 0rem;
+}
+
+/* Use a row to specify width and .inline or .float options
+ * to set up a wrapper for grids.
+ */
+@mixin row {
+    @include blockRel;
+
+    height: 100%;
+    margin: 0 auto;
+    padding: .01rem; // prevents margin-collapse
+    width: 100%;
+    z-index: 1;
+
+    &.small {
+        width: 90%;
+
+        @media screen and (min-width: $xs) {
+            width: 70%;
+        }
+        @media screen and (min-width: $med) {
+            width: 50%;
+        }
+    }
+
+    &.medium {
+        width: 90%;
+
+        @media screen and (min-width: $xs) {
+            width: 80%;
+        }
+        @media screen and (min-width: $med) {
+            width: 70%;
+        }
+    }
+
+    &.large {
+        width: 95%;
+
+        @media screen and (min-width: $xs) {
+            width: 92.5%;
+        }
+        @media screen and (min-width: $med) {
+            width: 90%;
+        }
+    }
+
+    &.inline {
+        text-align: justify;
+
+        &::after {
+            @include inlineRel;
+
+            content: '';
+            width: 100%;
+        }
+
+        &.center {
+            text-align: center;
+        }
+
+        .block {
+            @include inlineRel;
+        }
+    } 
+
+    &.float {
+        .block {
+            @include blockRel;
+
+            float: left;
+        }
+    }
+}
+.row {
+    @include row;
+}
+
+// Usually content within a container/row.
+.content {
+    @include blockRel;
+
+    margin: auto;
+    width: 100%; // default width
+
+    // Inner content, same props as .row, but for nesting and altering width, margin, etc.
+    .inner {
+        @include row;
+    }
+}
+
+
+.test {
+    height: 100px;
+    background-color: $color-one;
+    margin-bottom: 1rem;
+}

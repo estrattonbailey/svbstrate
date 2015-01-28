@@ -1,0 +1,155 @@
+html, body {
+    font-size: 62.5%; // Set to 10px
+    color: $black;
+}
+
+// Default font stacks
+$font-one: "museo-sans-rounded", helvetica, arial, sans-serif;
+$font-two: Georgia, Times New Roman, serif;
+
+// Default font mixins
+@mixin font-primary {
+    font-family: $font-one;
+    font-weight: 900; 
+}
+@mixin font-secondary {
+    font-family: $font-two;
+    font-weight: 100;   
+}
+
+// Assign font stack
+@mixin h1 {
+    font-family: $font-one;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 4rem;
+
+    // Desktop sizes
+    @media screen and (min-width: $sm) {
+        font-size: 3.5rem;
+        line-height: 4.5rem;
+    }
+}
+@mixin h2 {
+    font-family: $font-one;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 3.3rem;
+
+    // Desktop sizes
+    @media screen and (min-width: $sm) {
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+}
+@mixin h3 {
+    font-family: $font-one;
+    font-size: 2rem;
+    font-weight: 100;
+    line-height: 3rem;
+
+    // Desktop sizes
+    @media screen and (min-width: $sm) {
+        font-size: 2.5rem;
+        line-height: 3.3rem;
+    }
+}
+@mixin h4 {
+    font-family: $font-one;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 2.5rem;
+}
+@mixin h5 {
+    font-family: $font-two;
+    font-size: 1.5rem;
+    font-weight: 100;
+    line-height: 2.5rem;
+}
+@mixin h6 {
+    font-family: $font-two;
+    font-size: 1.5rem;
+    font-weight: 900;
+    line-height: 2.5rem;
+}
+@mixin p {
+    font-family: $font-two;
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 2.5rem;
+}
+
+.h0 {
+    @include h1;
+    
+    font-size: 4rem;
+}
+
+h1, 
+.h1 {
+    @include h1;
+
+    margin-bottom: 2rem;
+}
+
+h2, 
+.h2 {
+    @include h2;
+
+    margin-bottom: 1.4rem;
+}
+
+h3, 
+.h3 {
+    @include h3;
+
+    margin-bottom: 1rem;
+}
+
+h4, 
+.h4 {
+    @include h4;
+
+    margin-bottom: .618rem;
+}
+
+h5, 
+.h5 {
+    @include h5;
+
+    margin-bottom: .618rem;
+}
+
+h6, 
+.h6 {
+    @include h6;
+
+    margin-bottom: .618rem;
+}
+
+p, 
+.p {
+    @include p;
+
+    margin-bottom: .618rem;
+}
+
+.p0 {
+    @include p;
+
+    font-size: 1.2rem;
+}
+
+
+// Presentational font classes
+i { 
+    font-style: italic;
+
+    &.fa {
+        font-style: normal;
+    }
+}
+
+strong, b { 
+    font-weight: 900;
+}
