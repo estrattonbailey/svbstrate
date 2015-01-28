@@ -4,7 +4,7 @@ html, body {
 }
 
 // Default font stacks
-$font-one: "museo-sans-rounded", helvetica, arial, sans-serif;
+$font-one: "open-sans", helvetica, arial, sans-serif;
 $font-two: Georgia, Times New Roman, serif;
 
 // Default font mixins
@@ -20,25 +20,25 @@ $font-two: Georgia, Times New Roman, serif;
 // Assign font stack
 @mixin h1 {
     font-family: $font-one;
-    font-size: 3rem;
-    font-weight: 700;
+    font-size: 3.2rem;
+    font-weight: 100;
     line-height: 4rem;
 
     // Desktop sizes
     @media screen and (min-width: $sm) {
-        font-size: 3.5rem;
-        line-height: 4.5rem;
+        font-size: 4.5rem;
+        line-height: 5.5rem;
     }
 }
 @mixin h2 {
     font-family: $font-one;
     font-size: 2.5rem;
-    font-weight: 700;
+    font-weight: 100;
     line-height: 3.3rem;
 
     // Desktop sizes
     @media screen and (min-width: $sm) {
-        font-size: 3rem;
+        font-size: 3.2rem;
         line-height: 4rem;
     }
 }
@@ -62,19 +62,19 @@ $font-two: Georgia, Times New Roman, serif;
 }
 @mixin h5 {
     font-family: $font-two;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 100;
     line-height: 2.5rem;
 }
 @mixin h6 {
     font-family: $font-two;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 900;
     line-height: 2.5rem;
 }
 @mixin p {
     font-family: $font-two;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 300;
     line-height: 2.5rem;
 }
@@ -89,14 +89,14 @@ h1,
 .h1 {
     @include h1;
 
-    margin-bottom: 2rem;
+    margin-bottom: 1.4rem;
 }
 
 h2, 
 .h2 {
     @include h2;
 
-    margin-bottom: 1.4rem;
+    margin-bottom: 1rem;
 }
 
 h3, 
@@ -152,4 +152,18 @@ i {
 
 strong, b { 
     font-weight: 900;
+}
+
+// Font specific utilites
+.f-c1 {
+    color: $color-one;
+}
+.f-c2 {
+    color: $color-two;
+}
+.f-c3 {
+    color: $color-three;
+}
+.f-cw {
+    color: white;
 }

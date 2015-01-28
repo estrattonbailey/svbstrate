@@ -11,6 +11,9 @@ module.exports = function(grunt) {
     },
 
     sass: {
+      options: {
+        style: 'compressed'
+      },
       dist: {
         files: {
           'scss/build.css': 'scss/style.scss'
@@ -50,6 +53,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-autoprefixer');
 
   // Default tasks
-  grunt.registerTask('default', ['watch', 'autoprefixer']);
+  grunt.registerTask('default', ['watch']);
 
 }

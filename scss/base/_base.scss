@@ -1,10 +1,11 @@
 html {
+    background-color: $color-one;
     height: 100%;
 }
 body {
     @include blockRel;
 
-    background-color: #ffffff;
+    background-color: white;
     height: 100%;
     max-width: 1500px;
     margin: auto;
@@ -26,6 +27,14 @@ a.u {
 
     padding: .01rem; // prevents margin-collapse
     z-index: 0;
+
+    &.vh {
+        height: 100%;
+    }
+
+    &.vh2 {
+        height: 50%;
+    }
 }
 .container {
     @include container;
@@ -106,12 +115,22 @@ a.u {
         }
     } 
 
-    &.float {
-        .block {
-            @include blockRel;
+    // Vertically middle align child, e.g. ".content"
+    &.vm-child {
+        &::after {
+            @include inlineRel;
 
-            float: left;
+            content:'';
+            height: 50%;
+            width: 0px;
         }
+    }
+
+    // Grid block identifying class
+    .block {
+        @include blockRel;
+
+        float: left;
     }
 }
 .row {
@@ -120,10 +139,12 @@ a.u {
 
 // Usually content within a container/row.
 .content {
-    @include blockRel;
+    @include inlineRel;
 
     margin: auto;
-    width: 100%; // default width
+    text-align: left;
+    width: 99%; // default width
+    vertical-align: middle;
 
     // Inner content, same props as .row, but for nesting and altering width, margin, etc.
     .inner {
@@ -136,4 +157,16 @@ a.u {
     height: 100px;
     background-color: $color-one;
     margin-bottom: 1rem;
+}
+
+
+
+// Random components 
+.divider {
+    @include blockRel;
+
+    background-color: $color-three;
+    height: 4px;
+    margin: 1rem 0rem 1.4rem;
+    width: 100px;
 }

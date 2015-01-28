@@ -13,6 +13,7 @@ NOTE: must specify z-index values for siblings.*/
     z-index: 0;
 
     .image {
+        background-color: $color-three;
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -23,12 +24,6 @@ NOTE: must specify z-index values for siblings.*/
         right: 0;
         top: 0;
         z-index: 0;
-
-        &.texture {
-            background-image: url('assets/images/background_texture.jpg');
-            background-size: 200px;
-            background-repeat: repeat;
-        }
     }
 
     .overlay {
