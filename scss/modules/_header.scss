@@ -1,0 +1,23 @@
+header {
+	@include blockAb;
+
+	left: 0;
+	top: 0;
+	width: 100%;
+	z-index: 100;
+}
+
+.menuItem {
+	@include inlineRel;
+	@include h4;
+
+	color: white;
+	margin: 0 1rem;
+
+	&:first-child {
+		margin-left: 0rem;
+	}
+	&:last-child {
+		margin-right: 0rem;
+	}
+}

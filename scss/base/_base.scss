@@ -113,7 +113,7 @@ a.u {
         .block {
             @include inlineRel;
         }
-    } 
+    }
 
     // Vertically middle align child, e.g. ".content"
     &.vm-child {
@@ -125,16 +125,16 @@ a.u {
             width: 0px;
         }
     }
-
-    // Grid block identifying class
-    .block {
-        @include blockRel;
-
-        float: left;
-    }
 }
 .row {
     @include row;
+}
+
+// Grid block identifying class
+.block {
+    @include blockRel;
+
+    float: left;
 }
 
 // Usually content within a container/row.
@@ -145,23 +145,16 @@ a.u {
     text-align: left;
     width: 99%; // default width
     vertical-align: middle;
-
-    // Inner content, same props as .row, but for nesting and altering width, margin, etc.
-    .inner {
-        @include row;
-    }
 }
 
-
-.test {
-    height: 100px;
-    background-color: $color-one;
-    margin-bottom: 1rem;
+// Inner content, same props as .row, but for nesting and altering width, margin, etc.
+.inner {
+    @include row;
 }
 
 
 
-// Random components 
+// Random components
 .divider {
     @include blockRel;
 

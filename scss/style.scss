@@ -1,7 +1,6 @@
-// All file paths are relative to the CWD.
+@import "scss/base/variables"; // Import this one first
 
 // Global styles
-@import "scss/base/variables"; // Import this one first
 @import "scss/base/normalize";
 @import "scss/base/mixins";
 @import "scss/base/utilities";
@@ -13,10 +12,13 @@
 
 // Modules
 @import "scss/modules/two-up";
-
-// Partials
 @import "scss/partials/header";
 @import "scss/partials/footer";
+
+// Partials
+// @import "scss/partials/home-page";
+
+
 
 /* Naming Conventions
 *
