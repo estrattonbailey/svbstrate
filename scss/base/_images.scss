@@ -1,6 +1,12 @@
+.bg-cover {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
 /* Add HTML markup and these styles will fill the parent element with a full background.
 NOTE: must specify z-index values for siblings.*/
-.backgroundImage {
+.bg {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -11,29 +17,28 @@ NOTE: must specify z-index values for siblings.*/
     right: 0;
     top: 0;
     z-index: 0;
+}
+.bg-image {
+    background-color: $color-three;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 0;
+}
 
-    .image {
-        background-color: $color-three;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        display: block;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        top: 0;
-        z-index: 0;
-    }
-
-    .overlay {
-        background-color: rgba(0,0,0,0); // change this to affect color/opacity over images
-        display: block;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        top: 0;
-        z-index: 1;
-    }
+.bg-overlay {
+    background-color: rgba(0,0,0,0); // change this to affect color/opacity over images
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1;
 }
