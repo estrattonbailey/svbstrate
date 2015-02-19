@@ -404,11 +404,11 @@ table {
     border-spacing: 0;
 }
 
-/** 
- * SVBSTRATE: A few global settings here. 
+/**
+ * SVBSTRATE: A few global settings here.
  */
 ::selection {
-    color: $color-one;
+    color: $c1;
     background: $gray10;
 }
 
@@ -422,4 +422,30 @@ html, html a {
  */
 h1, h2, h3, h4, h5, h6, p {
     margin: auto;
+}
+
+nav,
+main,
+section,
+article,
+aside,
+header,
+footer,
+div,
+details,
+summary,
+form,
+fieldset,
+textarea,
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="email"],
+input[type="search"],
+input[type="number"],
+input[type="password"],
+.border-box {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
 }

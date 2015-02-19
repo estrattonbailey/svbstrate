@@ -1,4 +1,5 @@
-@import "scss/base/variables"; // Import this one first
+// Import this one first
+@import "scss/base/variables";
 
 // Global styles
 @import "scss/base/normalize";
@@ -9,9 +10,10 @@
 @import "scss/base/buttons";
 @import "scss/base/images";
 @import "scss/base/base";
+@import "scss/base/javascript";
 
 // Modules
-@import "scss/modules/two-up";
+// @import "scss/modules/two-up";
 @import "scss/modules/header";
 @import "scss/modules/footer";
 

@@ -4,17 +4,15 @@ html, body {
 }
 
 // Default font stacks
-$font-one: "open-sans", helvetica, arial, sans-serif;
+$font-one: "Open Sans", Helvetica, Arial Black, arial, sans-serif;
 $font-two: Georgia, Times New Roman, serif;
 
 // Default font mixins
-@mixin font-primary {
+.f1 {
     font-family: $font-one;
-    font-weight: 900; 
 }
-@mixin font-secondary {
+.f2 {
     font-family: $font-two;
-    font-weight: 100;   
 }
 
 // Assign font stack
@@ -57,77 +55,77 @@ $font-two: Georgia, Times New Roman, serif;
 @mixin h4 {
     font-family: $font-one;
     font-size: 1.5rem;
-    font-weight: 500;
+    font-weight: 300;
     line-height: 2.5rem;
 }
 @mixin h5 {
-    font-family: $font-two;
+    font-family: $font-one;
     font-size: 2rem;
     font-weight: 100;
     line-height: 2.5rem;
 }
 @mixin h6 {
-    font-family: $font-two;
-    font-size: 2rem;
-    font-weight: 900;
+    font-family: $font-one;
+    font-size: 1.6rem;
+    font-weight: 100;
     line-height: 2.5rem;
 }
 @mixin p {
-    font-family: $font-two;
-    font-size: 2rem;
+    font-family: $font-one;
+    font-size: 1.6rem;
     font-weight: 300;
     line-height: 2.5rem;
 }
 
 .h0 {
     @include h1;
-    
+
     font-size: 4rem;
 }
 
-h1, 
+h1,
 .h1 {
     @include h1;
 
     margin-bottom: 1.4rem;
 }
 
-h2, 
+h2,
 .h2 {
     @include h2;
 
     margin-bottom: 1rem;
 }
 
-h3, 
+h3,
 .h3 {
     @include h3;
 
     margin-bottom: 1rem;
 }
 
-h4, 
+h4,
 .h4 {
     @include h4;
 
     margin-bottom: .618rem;
 }
 
-h5, 
+h5,
 .h5 {
     @include h5;
 
     margin-bottom: .618rem;
 }
 
-h6, 
+h6,
 .h6 {
     @include h6;
 
     margin-bottom: .618rem;
 }
 
-p, 
+p,
 .p {
     @include p;
 
@@ -142,7 +140,7 @@ p,
 
 
 // Presentational font classes
-i { 
+i {
     font-style: italic;
 
     &.fa {
@@ -150,20 +148,29 @@ i {
     }
 }
 
-strong, b { 
+strong, b, .bold {
     font-weight: 900;
 }
 
 // Font specific utilites
 .f-c1 {
-    color: $color-one;
+    color: $c1;
 }
 .f-c2 {
-    color: $color-two;
+    color: $c2;
+}
+.f-c2l {
+    color: $c2l;
+}
+.f-c2d {
+    color: $c2d;
 }
 .f-c3 {
-    color: $color-three;
+    color: $c3;
 }
 .f-cw {
     color: white;
+}
+.f-cw-02 {
+    color: rgba(255,255,255,0.2);
 }

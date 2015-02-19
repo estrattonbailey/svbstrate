@@ -1,7 +1,7 @@
 {
-  "name": "urban_soil",
+  "name": "svg_test",
   "version": "1.0.0",
-  "description": "Front-end for Urban Soil project.",
+  "description": "Test site for grunt-svgstore.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,6 +13,8 @@
     "grunt-autoprefixer": "^2.1.0",
     "grunt-contrib-concat": "^0.5.0",
     "grunt-contrib-sass": "^0.8.1",
-    "grunt-contrib-watch": "^0.6.1"
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-spritesmith": "^3.6.1",
+    "grunt-svgstore": "^0.5.0"
   }
 }

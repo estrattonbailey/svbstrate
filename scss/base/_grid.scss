@@ -1,7 +1,7 @@
 // Specify spacing between two inline-block grid elements
-$gutter: 20px;
+$gutter: 6rem;
 
-/** 
+/**
  * Inline-block grid sizing
  *
  * [s = "size"] [applied columns] [total number of columns]
@@ -10,6 +10,7 @@ $gutter: 20px;
  */
 .row.inline {
 
+	.s1 { width: 100%; }
 	.s12 { width: calc( 50% - #{$gutter}/2 ); }
 	.s13 { width: calc( 33.333333% - #{$gutter}/2 ); }
 	.s23 { width: calc( 66.666666% - #{$gutter}/2 ); }
@@ -51,6 +52,7 @@ $gutter: 20px;
 	.sx56 { margin-right: calc( 83.333333% + #{$gutter}/2 ); }
 
 	@media screen and (min-width: $xs) {
+		.xs_s1 { width: 100%; }
 		.xs_s12 { width: calc( 50% - #{$gutter}/2 ); }
 		.xs_s13 { width: calc( 33.333333% - #{$gutter}/2 ); }
 		.xs_s23 { width: calc( 66.666666% - #{$gutter}/2 ); }
@@ -93,6 +95,7 @@ $gutter: 20px;
 	}
 
 	@media screen and (min-width: $sm) {
+		.sm_s1 { width: 100%; }
 		.sm_s12 { width: calc( 50% - #{$gutter}/2 ); }
 		.sm_s13 { width: calc( 33.333333% - #{$gutter}/2 ); }
 		.sm_s23 { width: calc( 66.666666% - #{$gutter}/2 ); }
@@ -135,6 +138,7 @@ $gutter: 20px;
 	}
 
 	@media screen and (min-width: $med) {
+		.med_s1 { width: 100%; }
 		.med_s12 { width: calc( 50% - #{$gutter}/2 ); }
 		.med_s13 { width: calc( 33.333333% - #{$gutter}/2 ); }
 		.med_s23 { width: calc( 66.666666% - #{$gutter}/2 ); }
@@ -177,6 +181,7 @@ $gutter: 20px;
 	}
 
 	@media screen and (min-width: $lg) {
+		.lg_s1 { width: 100%; }
 		.lg_s12 { width: calc( 50% - #{$gutter}/2 ); }
 		.lg_s13 { width: calc( 33.333333% - #{$gutter}/2 ); }
 		.lg_s23 { width: calc( 66.666666% - #{$gutter}/2 ); }
@@ -219,6 +224,7 @@ $gutter: 20px;
 	}
 
 	@media screen and (min-width: $xl) {
+		.xl_s1 { width: 100%; }
 		.xl_s12 { width: calc( 50% - #{$gutter}/2 ); }
 		.xl_s13 { width: calc( 33.333333% - #{$gutter}/2 ); }
 		.xl_s23 { width: calc( 66.666666% - #{$gutter}/2 ); }
@@ -261,6 +267,7 @@ $gutter: 20px;
 	}
 
 	@media screen and (min-width: $xxl) {
+		.xxl_s1 { width: 100%; }
 		.xxl_s12 { width: calc( 50% - #{$gutter}/2 ); }
 		.xxl_s13 { width: calc( 33.333333% - #{$gutter}/2 ); }
 		.xxl_s23 { width: calc( 66.666666% - #{$gutter}/2 ); }
@@ -308,7 +315,8 @@ $gutter: 20px;
 /**
  * Float based grid layouts, by default.
  */
-.s12 { width: 50%; }
+.s1 {width: 100%; float: none;}
+.s12 { width: 50%;}
 .s13 { width: 33.333333%; }
 .s23 { width: 66.666666%; }
 .s14 { width: 25%; }
@@ -349,6 +357,7 @@ $gutter: 20px;
 .sx56 { margin-right: 83.333333%; }
 
 @media screen and (min-width: $xs) {
+	.xs_s1 {width: 100%; float: none;}
 	.xs_s12 { width: 50%; }
 	.xs_s13 { width: 33.333333%; }
 	.xs_s23 { width: 66.666666%; }
@@ -387,10 +396,11 @@ $gutter: 20px;
 	.xs_sx14 { margin-right: 25%; }
 	.xs_sx34 { margin-right: 75%; }
 	.xs_sx16 { margin-right: 16.666666%; }
-	.xs_sx56 { margin-right: 83.333333%; }	
+	.xs_sx56 { margin-right: 83.333333%; }
 }
 
 @media screen and (min-width: $sm) {
+	.sm_s1 {width: 100%; float: none;}
 	.sm_s12 { width: 50%; }
 	.sm_s13 { width: 33.333333%; }
 	.sm_s23 { width: 66.666666%; }
@@ -429,10 +439,11 @@ $gutter: 20px;
 	.sm_sx14 { margin-right: 25%; }
 	.sm_sx34 { margin-right: 75%; }
 	.sm_sx16 { margin-right: 16.666666%; }
-	.sm_sx56 { margin-right: 83.333333%; }	
+	.sm_sx56 { margin-right: 83.333333%; }
 }
 
 @media screen and (min-width: $med) {
+	.med_s1 {width: 100%; float: none;}
 	.med_s12 { width: 50%; }
 	.med_s13 { width: 33.333333%; }
 	.med_s23 { width: 66.666666%; }
@@ -471,10 +482,11 @@ $gutter: 20px;
 	.med_sx14 { margin-right: 25%; }
 	.med_sx34 { margin-right: 75%; }
 	.med_sx16 { margin-right: 16.666666%; }
-	.med_sx56 { margin-right: 83.333333%; }	
+	.med_sx56 { margin-right: 83.333333%; }
 }
 
 @media screen and (min-width: $lg) {
+	.lg_s1 {width: 100%; float: none;}
 	.lg_s12 { width: 50%; }
 	.lg_s13 { width: 33.333333%; }
 	.lg_s23 { width: 66.666666%; }
@@ -513,10 +525,11 @@ $gutter: 20px;
 	.lg_sx14 { margin-right: 25%; }
 	.lg_sx34 { margin-right: 75%; }
 	.lg_sx16 { margin-right: 16.666666%; }
-	.lg_sx56 { margin-right: 83.333333%; }	
+	.lg_sx56 { margin-right: 83.333333%; }
 }
 
 @media screen and (min-width: $xl) {
+	.xl_s1 {width: 100%; float: none;}
 	.xl_s12 { width: 50%; }
 	.xl_s13 { width: 33.333333%; }
 	.xl_s23 { width: 66.666666%; }
@@ -555,10 +568,11 @@ $gutter: 20px;
 	.xl_sx14 { margin-right: 25%; }
 	.xl_sx34 { margin-right: 75%; }
 	.xl_sx16 { margin-right: 16.666666%; }
-	.xl_sx56 { margin-right: 83.333333%; }	
+	.xl_sx56 { margin-right: 83.333333%; }
 }
 
 @media screen and (min-width: $xxl) {
+	.xxl_s1 {width: 100%; float: none;}
 	.xxl_s12 { width: 50%; }
 	.xxl_s13 { width: 33.333333%; }
 	.xxl_s23 { width: 66.666666%; }
@@ -597,5 +611,5 @@ $gutter: 20px;
 	.xxl_sx14 { margin-right: 25%; }
 	.xxl_sx34 { margin-right: 75%; }
 	.xxl_sx16 { margin-right: 16.666666%; }
-	.xxl_sx56 { margin-right: 83.333333%; }	
+	.xxl_sx56 { margin-right: 83.333333%; }
 }

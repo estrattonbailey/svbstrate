@@ -1,13 +1,33 @@
 // Colors
-$color-one: #00d7dd;
-$color-two: #ffeabb;
-$color-three: #55555f;
-$black: #22222d; // set your black level - mine has a little blue in it
-$gray: #33333d;
+$c1: #00d7dd; // bright blue
+$c2: #264465; // dark blue
+$c3: #ff3556; // bright red
+$c4: #c4324c; // darker red
+$c5: #ffca55; // pastel yellow
+$c6: #ffeabb; // faint yellow
+
+$c1d: darken($c1, 10%);
+$c2d: darken($c2, 10%);
+$c3d: darken($c3, 10%);
+$c4d: darken($c4, 10%);
+$c5d: darken($c5, 10%);
+$c6d: darken($c6, 10%);
+
+$c1l: lighten($c1, 20%);
+$c2l: lighten($c2, 20%);
+$c3l: lighten($c3, 20%);
+$c4l: lighten($c4, 20%);
+$c5l: lighten($c5, 20%);
+$c6l: lighten($c6, 20%);
+
+$black: #111f2d; // set your black level - mine has a little blue in it
+$gray: #333333;
+$gray-a: #55555d; // gray with some blue
 $gray60: #666666; // 60% grayscale
 $gray40: #999999; // 40% grayscale
 $gray20: #cccccc; // 20% grayscale
 $gray10: #f5f5f5; // 10% grayscale = "whitesmoke", for those curious
+
 
 // Breakpoints
 $xs: 399px;

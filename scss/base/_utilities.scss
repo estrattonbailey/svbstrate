@@ -1,12 +1,22 @@
-.u-alignCenter {
-	text-align: center;
+.u-align-center {
+	text-align: center !important;
 }
-.u-alignRight {
-	text-align: right;
+.u-align-right {
+	text-align: right !important;
 }
-.u-alignLeft {
-	text-align: left;
+.u-align-left {
+	text-align: left !important;
 }
-.u-alignJustify {
-	text-align: justify;
+.u-align-justify {
+	text-align: justify !important;
+}
+
+
+.u-float-r {
+	float: right;
+}
+@media screen and (min-width: $sm) {
+	.sm_u-float-r {
+		float: right;
+	}
 }
