@@ -49,21 +49,6 @@ module.exports = function(grunt) {
         files: {
           'assets/images/svg_sprite.svg' : ['assets/images/svg/*.svg'],
         }
-      },
-      icons: {
-        files: {
-          'assets/images/icon_sprite.svg' : ['assets/images/svgs/*.svg'],
-        }
-      },
-      packs: {
-        files: {
-          'assets/images/pack_sprite.svg' : ['assets/images/packs/*.svg'],
-        }
-      },
-      global: {
-        files: {
-          'assets/images/global_sprite.svg' : ['assets/images/global/*.svg'],
-        }
       }
     },
 
@@ -79,11 +64,11 @@ module.exports = function(grunt) {
     watch: {
       css: {
         files: 'scss/**/*.scss',
-        tasks: ['sass', 'autoprefixer']
+        tasks: ['newer:sass', 'autoprefixer']
       },
       js: {
         files: ['js/*.js', 'js/**/*.js', '!js/build.js'],
-        tasks: ['concat']
+        tasks: ['newer:concat']
       },
       svg: {
         files: 'assets/images/svg/*.svg',
@@ -99,6 +84,7 @@ module.exports = function(grunt) {
 
 
   // Load the plugins
+  grunt.loadNpmTasks('grunt-newer');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
