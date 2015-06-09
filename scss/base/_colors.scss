@@ -1,0 +1,76 @@
+/*
+	Colors
+
+	Prefixed with 'c' followed by the color descriptor.
+*/
+// Primary Colors
+$c-1: #FDF6E4; // light yellow
+$c-2: #222A33; // deep gray blue
+$c-3: #3AC9E3; // blue link color
+
+// Darken
+$c-1d: darken($c-1, 10%);
+$c-2d: darken($c-2, 10%);
+$c-3d: darken($c-3, 10%);
+
+// Lighten
+$c-1l: lighten($c-1, 10%);
+$c-2l: lighten($c-2, 10%);
+$c-3l: lighten($c-3, 10%);
+
+$c-b: #171f26; // black level
+$c-g: #333f36;
+$c-g4: #666666; // 60% grayscale
+$c-g3: #999999; // 40% grayscale
+$c-g2: #cccccc; // 20% grayscale
+$c-g1: #f5f5f5; // 10% grayscale
+
+.c-1 {
+	color: $c-1;
+}
+.c-2 {
+	color: $c-2;
+}
+.c-3 {
+	color: $c-3;
+}
+.c-1d {
+	color: $c-1d;
+}
+.c-2d {
+	color: $c-2d;
+}
+.c-3d {
+	color: $c-3d;
+}
+.c-1l {
+	color: $c-1l;
+}
+.c-2l {
+	color: $c-2l;
+}
+.c-3l {
+	color: $c-3l;
+}
+
+.c-w {
+	color: #FFFFFF;
+}
+.c-b {
+	color: $c-b;
+}
+.c-g {
+	color: $c-g;
+}
+.c-g1 {
+	color: $c-g1;
+}
+.c-g2 {
+	color: $c-g2;
+}
+.c-g3 {
+	color: $c-g3;
+}
+.c-g4 {
+	color: $c-g4;
+}

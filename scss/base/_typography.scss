@@ -1,176 +1,145 @@
 html, body {
     font-size: 62.5%; // Set to 10px
-    color: $black;
+    color: $c-2;
+}
+.f-1 {
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+.f-2 {
+    font-family: georgia, serif;
 }
 
-// Default font stacks
-$font-one: "Open Sans", Helvetica, Arial Black, arial, sans-serif;
-$font-two: Georgia, Times New Roman, serif;
-
-// Default font mixins
-.f1 {
-    font-family: $font-one;
-}
-.f2 {
-    font-family: $font-two;
-}
-
-// Assign font stack
-@mixin h1 {
-    font-family: $font-one;
-    font-size: 3.2rem;
-    font-weight: 100;
-    line-height: 4rem;
-
-    // Desktop sizes
-    @media screen and (min-width: $sm) {
-        font-size: 4.5rem;
-        line-height: 5.5rem;
-    }
-}
-@mixin h2 {
-    font-family: $font-one;
-    font-size: 2.5rem;
-    font-weight: 100;
-    line-height: 3.3rem;
-
-    // Desktop sizes
-    @media screen and (min-width: $sm) {
-        font-size: 3.2rem;
-        line-height: 4rem;
-    }
-}
-@mixin h3 {
-    font-family: $font-one;
-    font-size: 2rem;
-    font-weight: 100;
-    line-height: 3rem;
-
-    // Desktop sizes
-    @media screen and (min-width: $sm) {
-        font-size: 2.5rem;
-        line-height: 3.3rem;
-    }
-}
-@mixin h4 {
-    font-family: $font-one;
-    font-size: 1.5rem;
-    font-weight: 300;
-    line-height: 2.5rem;
-}
-@mixin h5 {
-    font-family: $font-one;
-    font-size: 2rem;
-    font-weight: 100;
-    line-height: 2.5rem;
-}
-@mixin h6 {
-    font-family: $font-one;
-    font-size: 1.6rem;
-    font-weight: 100;
-    line-height: 2.5rem;
-}
-@mixin p {
-    font-family: $font-one;
-    font-size: 1.6rem;
-    font-weight: 300;
-    line-height: 2.5rem;
-}
-
-.h0 {
-    @include h1;
-
-    font-size: 4rem;
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
 }
 
 h1,
 .h1 {
-    @include h1;
+    font-size: 3.2rem;
+    font-weight: 900;
+    line-height: 4rem;
+    margin-bottom: 1.6rem;
 
-    margin-bottom: 1.4rem;
+    @media screen and (min-width: $sm) {
+        font-size: 4.5rem;
+        line-height: 4.7rem;
+    }
 }
 
 h2,
 .h2 {
-    @include h2;
+    font-size: 2.5rem;
+    font-weight: 900;
+    line-height: 3.3rem;
 
-    margin-bottom: 1rem;
+    @media screen and (min-width: $sm) {
+        font-size: 3rem;
+        line-height: 4rem;
+    }
 }
 
 h3,
 .h3 {
-    @include h3;
+    font-size: 2rem;
+    font-weight: 900;
+    line-height: 3rem;
 
-    margin-bottom: 1rem;
+    @media screen and (min-width: $sm) {
+        font-size: 2.2rem;
+        line-height: 3.3rem;
+    }
 }
 
 h4,
 .h4 {
-    @include h4;
-
-    margin-bottom: .618rem;
+    font-size: 1.8rem;
+    font-weight: 900;
+    line-height: 3rem;
 }
 
 h5,
 .h5 {
-    @include h5;
-
-    margin-bottom: .618rem;
+    font-size: 1.5rem;
+    font-weight: 900;
+    line-height: 2rem;
 }
 
 h6,
 .h6 {
-    @include h6;
-
-    margin-bottom: .618rem;
+    font-size: 1.2rem;
+    font-weight: 900;
+    line-height: 1.8rem;
 }
 
 p,
 .p {
-    @include p;
-
-    margin-bottom: .618rem;
+    font-size: 1.8rem;
+    font-weight: 100;
+    line-height: 2.6rem;
 }
 
-.p0 {
-    @include p;
+blockquote {
+    border-left: 4px solid $c-1;
+    margin: 4rem 0;
+    padding: 0 0 0 1rem;
 
-    font-size: 1.2rem;
-}
+    @media screen and (min-width: $med) {
+        padding: 0 0 0 3rem;
+    }
 
-
-// Presentational font classes
-i {
-    font-style: italic;
-
-    &.fa {
-        font-style: normal;
+    h1, h2, h3, h4 {
+        max-width: 100%;
     }
 }
+ul, ol {
+    margin: 0 0 1.6rem;
+    padding: 0 0 0 3rem;
+}
+li {
+}
+pre {
+    border-left: 4px solid $c-1d;
+    background-color: rgba($c-1l, .6);
+    font-family: Consolas , Monaco, monospace;
+    overflow: auto;
+    overflow-y: hidden;
+    padding: 2rem 0 2rem 3rem;
+}
+code {
+    background-color: rgba($c-1l, .6);
+    font-family: Consolas , Monaco, monospace;
+}
+figure {
+    @include blockRel;
 
-strong, b, .bold {
-    font-weight: 900;
-}
+    margin: 3rem 0 3rem;
+    max-width: 100%;
 
-// Font specific utilites
-.f-c1 {
-    color: $c1;
+    @media screen and (min-width: $med){
+        margin: 4rem 0 5rem;
+    }
+
+    img {
+        @include blockRel; 
+
+        max-width: 100%;
+        height: auto !important;
+        width: 100%;
+    }
+
+    figcaption {
+        border-bottom: 2px solid $c-g1;
+        color: rgba($c-2, .6);
+        max-width: 500px;
+        padding: .5rem 0 1rem;
+    }
 }
-.f-c2 {
-    color: $c2;
-}
-.f-c2l {
-    color: $c2l;
-}
-.f-c2d {
-    color: $c2d;
-}
-.f-c3 {
-    color: $c3;
-}
-.f-cw {
-    color: white;
-}
-.f-cw-02 {
-    color: rgba(255,255,255,0.2);
+hr {
+    @include blockRel;
+
+    background-color: $c-g1;
+    border: 0;
+    height: 2px;
+    width: 100px;
+    margin: 1rem 0 4rem;
 }

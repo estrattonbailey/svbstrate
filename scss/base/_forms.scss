@@ -1,48 +1,34 @@
-input, textarea, select, button {
-	@include blockRel;
-	@include p;
+::-webkit-input-placeholder {
+   color: rgba($c-b, .6);
+}
+:-moz-placeholder {
+   color: rgba($c-b, .6);  
+}
+::-moz-placeholder {
+   color: rgba($c-b, .6);  
+}
+:-ms-input-placeholder {  
+   color: rgba($c-b, .6);  
+}
 
-	border: 1px solid $gray20;
-	outline: 0px;
-	padding: 1rem 2rem;
+input {
 	-webkit-appearance: none;
-
-	&:focus {
-		outline: 0;
+	
+	/* Fix autofil in Chrome */
+	&:-webkit-autofill {
+		background-color: #FFFFFF !important;
+		-webkit-box-shadow: 0 0 0 1000px #FFFFFF inset;
+		color: $c-b !important;
 	}
 }
 
-legend {
-	margin-bottom: 1rem;
-	text-align: center;
+textarea {
+	background-color: transparent;
+	border: 0;
+	outline: 0;
+	resize: none;
 	width: 100%;
 }
 
-label {
-	@include blockRel;
 
-	width: 100%;
-}
-
-// Essentially a form specific row
-.inputGroup {
-	@include blockRel;
-	@include inlineHelper;
-
-	text-align: justify;
-	width: 100%;
-}
-
-// Form specific .block element
-input.inline {
-	@include inlineRel;
-
-	margin: 1rem auto;
-
-	&:first-child {
-		margin-left: 0;
-	}
-	&:last-child {
-		margin-right: 0;
-	}
-}
+/* More to come */

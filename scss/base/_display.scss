@@ -1,0 +1,37 @@
+@mixin blockRel {
+  display: block;
+  position: relative;
+}
+@mixin blockAb {
+  display: block;
+  position: absolute;
+}
+@mixin blockFix {
+  display: block;
+  position: fixed;
+}
+@mixin inlineRel {
+  display: inline-block;
+  position: relative;
+}
+.d-br {
+  @include blockRel;
+}
+.d-ir {
+  @include inlineRel;
+}
+.d-bf {
+  @include blockFix;
+}
+.d-ba {
+  @include blockAb;
+}
+.d-b {
+  display: block;
+}
+.d-i {
+  display: inline;
+}
+.d-ib {
+  display: inline-block;
+}

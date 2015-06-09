@@ -1,0 +1,33 @@
+.hide {
+  display: none;
+}
+@media (min-width: $xs){
+  .xs_hide {
+    display: none;
+  }
+}
+@media (min-width: $sm){
+  .sm_hide {
+    display: none;
+  }
+}
+@media (min-width: $med){
+  .med_hide {
+    display: none;
+  }
+}
+@media (min-width: $lg){
+  .lg_hide {
+    display: none;
+  }
+}
+@media (min-width: $xl){
+  .xl_hide {
+    display: none;
+  }
+}
+@media (min-width: $xxl){
+  .xxl_hide {
+    display: none;
+  }
+}

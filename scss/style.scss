@@ -1,35 +1,8 @@
-// Import this one first
-@import "scss/base/variables";
+/* includes - for dependencies and resets */
+@import "inc/_init";
 
-// Global styles
-@import "scss/base/normalize";
-@import "scss/base/mixins";
-@import "scss/base/utilities";
-@import "scss/base/grid";
-@import "scss/base/typography";
-@import "scss/base/buttons";
-@import "scss/base/images";
-@import "scss/base/base";
-@import "scss/base/javascript";
+/* Base styles */
+@import "base/_init";
 
-// Modules
-// @import "scss/modules/two-up";
-@import "scss/modules/header";
-@import "scss/modules/footer";
-
-// Partials
-// @import "scss/partials/home-page";
-
-
-
-/* Naming Conventions
-*
-*   .u-utilityClass {}
-*
-*   .componentName {}
-*   .componentName--modifierName {}
-*   .componentName-descendantName {}
-*
-*   .componentName.is-someState {}
-*   .js-componentName
-*/
+/* Partials for site pages */
+@import "partials/_init";
