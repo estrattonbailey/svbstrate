@@ -1,9 +1,5 @@
 a {
     color: $c-3;
-    font-weight: 900;
+    font-weight: inherit;
     text-decoration: none;
-
-    &:hover {
-        text-decoration: underline;
-    }
 }

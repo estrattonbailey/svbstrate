@@ -1,5 +1,5 @@
 button {
-	@include inlineRel;
+	@extend .display-ir;
 	@extend .h3;
 
 	cursor: pointer;

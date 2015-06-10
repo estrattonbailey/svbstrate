@@ -2,32 +2,32 @@
   display: none;
 }
 @media (min-width: $xs){
-  .xs_hide {
+  .hide_xs {
     display: none;
   }
 }
 @media (min-width: $sm){
-  .sm_hide {
+  .hide_sm {
     display: none;
   }
 }
 @media (min-width: $med){
-  .med_hide {
+  .hide_med {
     display: none;
   }
 }
 @media (min-width: $lg){
-  .lg_hide {
+  .hide_lg {
     display: none;
   }
 }
 @media (min-width: $xl){
-  .xl_hide {
+  .hide_xl {
     display: none;
   }
 }
 @media (min-width: $xxl){
-  .xxl_hide {
+  .hide_xxl {
     display: none;
   }
 }

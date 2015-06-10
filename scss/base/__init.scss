@@ -1,13 +1,28 @@
 @import "breakpoints";
 @import "colors";
-@import "normalize";
 @import "display";
 @import "hide";
-@import "grid";
 @import "spacing";
+@import "grid";
 @import "background";
 @import "height";
 @import "presentational";
 @import "typography";
 @import "forms";
 @import "button";
+
+@media (min-width: $xs){
+
+}
+@media (min-width: $sm){
+	
+}
+@media (min-width: $med){
+	
+}
+@media (min-width: $lg){
+	
+}
+@media (min-width: $xl){
+	
+}
