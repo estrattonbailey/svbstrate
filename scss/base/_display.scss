@@ -1,37 +1,25 @@
-@mixin blockRel {
+.display-br {
   display: block;
   position: relative;
 }
-@mixin blockAb {
-  display: block;
-  position: absolute;
-}
-@mixin blockFix {
-  display: block;
-  position: fixed;
-}
-@mixin inlineRel {
+.display-ir {
   display: inline-block;
   position: relative;
 }
-.d-br {
-  @include blockRel;
+.display-bf {
+  display: block;
+  position: fixed;
 }
-.d-ir {
-  @include inlineRel;
+.display-ba {
+  display: block;
+  position: absolute;
 }
-.d-bf {
-  @include blockFix;
-}
-.d-ba {
-  @include blockAb;
-}
-.d-b {
+.display-b {
   display: block;
 }
-.d-i {
+.display-i {
   display: inline;
 }
-.d-ib {
+.display-ib {
   display: inline-block;
 }

@@ -2,10 +2,10 @@ html, body {
     font-size: 62.5%; // Set to 10px
     color: $c-2;
 }
-.f-1 {
+.font-1 {
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
-.f-2 {
+.font-2 {
     font-family: georgia, serif;
 }
 
@@ -110,7 +110,7 @@ code {
     font-family: Consolas , Monaco, monospace;
 }
 figure {
-    @include blockRel;
+    @extend .display-br;
 
     margin: 3rem 0 3rem;
     max-width: 100%;
@@ -120,7 +120,7 @@ figure {
     }
 
     img {
-        @include blockRel; 
+        @extend .display-br; 
 
         max-width: 100%;
         height: auto !important;
@@ -135,7 +135,7 @@ figure {
     }
 }
 hr {
-    @include blockRel;
+    @extend .display-br;
 
     background-color: $c-g1;
     border: 0;

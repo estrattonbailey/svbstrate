@@ -1,30 +1,95 @@
-$gutter: 10px; // where should this go?
-
 .container {
-    @include blockRel;
+    @extend .display-br;
 
     overflow-x: hidden;
-
-    &.gutter {
-        margin: 0 -$gutter;
-
-        .row {
-            border-spacing: $gutter 0;
-        }
-    }
+    width: 100%;
 }
 
 .row {
-	display: table;
-	table-layout: fixed; 
-	width: 100%; 
+	@extend .display-br;
+
+	margin: 0 auto;
+
+	&::before,
+    &::after {
+      content: " "; /* 1 */
+      display: table; /* 2 */
+    }
+
+    &::after {
+      clear: both;
+    }
+
+    .has-gutter--sm & {
+		margin-left: - $spacing_sm;
+		margin-right: - $spacing_sm;
+    }
+    .has-gutter--med & {
+    	margin-left: - $spacing_med; 
+		margin-right: - $spacing_med; 
+    }
+    .has-gutter--lg & {
+    	margin-left: - $spacing_lg;
+		margin-right: - $spacing_lg;
+    }
 }
 
+.row--lg {
+	@extend .row;
+
+	width: 90%;
+
+    @media screen and (min-width: $xs) {
+        width: 92.5%;
+    }
+    @media screen and (min-width: $med) {
+        width: 95%;
+    }
+}
+.row--med {
+	@extend .row;
+
+	width: 90%;
+
+    @media screen and (min-width: $xs) {
+        width: 82.5%;
+    }
+    @media screen and (min-width: $med) {
+        width: 75%;
+    }
+}
+.row--sm {
+	@extend .row;
+
+    width: 90%;
+
+    @media screen and (min-width: $med) {
+        width: 80%;
+    }
+    @media screen and (min-width: $lg) {
+        width: 66%;
+    }
+}
 .col { 
-	display: table-cell; 
+	@extend .display-br;
+
+	float: left;
+
+	.has-gutter--sm & {
+		padding-left: $spacing_sm;
+		padding-right: $spacing_sm;
+    }
+    .has-gutter--med & {
+    	padding-left: $spacing_med; 
+		padding-right: $spacing_med; 
+    }
+    .has-gutter--lg & {
+    	padding-left: $spacing_lg; 
+		padding-right: $spacing_lg; 
+    }
 }
 
-.s1 {width: 100%;}
+.s1 {width: 100%; float: none;}
 .s12 { width: 50%;}
 .s13 { width: 33.333333%; }
 .s23 { width: 66.666666%; }
@@ -33,8 +98,40 @@ $gutter: 10px; // where should this go?
 .s16 { width: 16.666666%; }
 .s56 { width: 83.333333%; }
 
+.p12 { left: 50%; }
+.p13 { left: 33.333333%; }
+.p23 { left: 66.666666%; }
+.p14 { left: 25%; }
+.p34 { left: 75%; }
+.p16 { left: 16.666666%; }
+.p56 { left: 83.333333%; }
+
+.p12,
+.p13,
+.p23,
+.p14,
+.p34,
+.p16,
+.p56 {min-height: 1px;}
+
+.pl12 { left: -50%; }
+.pl13 { left: -33.333333%; }
+.pl23 { left: -66.666666%; }
+.pl14 { left: -25%; }
+.pl34 { left: -75%; }
+.pl16 { left: -16.666666%; }
+.pl56 { left: -83.333333%; }
+
+.sx12 { margin-right: 50%; }
+.sx13 { margin-right: 33.333333%; }
+.sx23 { margin-right: 66.666666%; }
+.sx14 { margin-right: 25%; }
+.sx34 { margin-right: 75%; }
+.sx16 { margin-right: 16.666666%; }
+.sx56 { margin-right: 83.333333%; }
+
 @media screen and (min-width: $xs) {
-	.xs_s1 {width: 100%;}
+	.xs_s1 {width: 100%; float: none;}
 	.xs_s12 { width: 50%; }
 	.xs_s13 { width: 33.333333%; }
 	.xs_s23 { width: 66.666666%; }
@@ -42,10 +139,42 @@ $gutter: 10px; // where should this go?
 	.xs_s34 { width: 75%; }
 	.xs_s16 { width: 16.666666%; }
 	.xs_s56 { width: 83.333333%; }
+
+	.xs_p12 { left: 50%; }
+	.xs_p13 { left: 33.333333%; }
+	.xs_p23 { left: 66.666666%; }
+	.xs_p14 { left: 25%; }
+	.xs_p34 { left: 75%; }
+	.xs_p16 { left: 16.666666%; }
+	.xs_p56 { left: 83.333333%; }
+
+	.xs_p12,
+	.xs_p13,
+	.xs_p23,
+	.xs_p14,
+	.xs_p34,
+	.xs_p16,
+	.xs_p56 {min-height: 1px;}
+
+	.xs_pl12 { left: -50%; }
+	.xs_pl13 { left: -33.333333%; }
+	.xs_pl23 { left: -66.666666%; }
+	.xs_pl14 { left: -25%; }
+	.xs_pl34 { left: -75%; }
+	.xs_pl16 { left: -16.666666%; }
+	.xs_pl56 { left: -83.333333%; }
+
+	.xs_sx12 { margin-right: 50%; }
+	.xs_sx13 { margin-right: 33.333333%; }
+	.xs_sx23 { margin-right: 66.666666%; }
+	.xs_sx14 { margin-right: 25%; }
+	.xs_sx34 { margin-right: 75%; }
+	.xs_sx16 { margin-right: 16.666666%; }
+	.xs_sx56 { margin-right: 83.333333%; }
 }
 
 @media screen and (min-width: $sm) {
-	.sm_s1 {width: 100%;}
+	.sm_s1 {width: 100%; float: none;}
 	.sm_s12 { width: 50%; }
 	.sm_s13 { width: 33.333333%; }
 	.sm_s23 { width: 66.666666%; }
@@ -53,10 +182,42 @@ $gutter: 10px; // where should this go?
 	.sm_s34 { width: 75%; }
 	.sm_s16 { width: 16.666666%; }
 	.sm_s56 { width: 83.333333%; }
+
+	.sm_p12 { left: 50%; }
+	.sm_p13 { left: 33.333333%; }
+	.sm_p23 { left: 66.666666%; }
+	.sm_p14 { left: 25%; }
+	.sm_p34 { left: 75%; }
+	.sm_p16 { left: 16.666666%; }
+	.sm_p56 { left: 83.333333%; }
+
+	.sm_p12,
+	.sm_p13,
+	.sm_p23,
+	.sm_p14,
+	.sm_p34,
+	.sm_p16,
+	.sm_p56 {min-height: 1px;}
+
+	.sm_pl12 { left: -50%; }
+	.sm_pl13 { left: -33.333333%; }
+	.sm_pl23 { left: -66.666666%; }
+	.sm_pl14 { left: -25%; }
+	.sm_pl34 { left: -75%; }
+	.sm_pl16 { left: -16.666666%; }
+	.sm_pl56 { left: -83.333333%; }
+
+	.sm_sx12 { margin-right: 50%; }
+	.sm_sx13 { margin-right: 33.333333%; }
+	.sm_sx23 { margin-right: 66.666666%; }
+	.sm_sx14 { margin-right: 25%; }
+	.sm_sx34 { margin-right: 75%; }
+	.sm_sx16 { margin-right: 16.666666%; }
+	.sm_sx56 { margin-right: 83.333333%; }
 }
 
 @media screen and (min-width: $med) {
-	.med_s1 {width: 100%;}
+	.med_s1 {width: 100%; float: none;}
 	.med_s12 { width: 50%; }
 	.med_s13 { width: 33.333333%; }
 	.med_s23 { width: 66.666666%; }
@@ -64,10 +225,42 @@ $gutter: 10px; // where should this go?
 	.med_s34 { width: 75%; }
 	.med_s16 { width: 16.666666%; }
 	.med_s56 { width: 83.333333%; }
+
+	.med_p12 { left: 50%; }
+	.med_p13 { left: 33.333333%; }
+	.med_p23 { left: 66.666666%; }
+	.med_p14 { left: 25%; }
+	.med_p34 { left: 75%; }
+	.med_p16 { left: 16.666666%; }
+	.med_p56 { left: 83.333333%; }
+
+	.med_p12,
+	.med_p13,
+	.med_p23,
+	.med_p14,
+	.med_p34,
+	.med_p16,
+	.med_p56 {min-height: 1px;}
+
+	.med_pl12 { left: -50%; }
+	.med_pl13 { left: -33.333333%; }
+	.med_pl23 { left: -66.666666%; }
+	.med_pl14 { left: -25%; }
+	.med_pl34 { left: -75%; }
+	.med_pl16 { left: -16.666666%; }
+	.med_pl56 { left: -83.333333%; }
+
+	.med_sx12 { margin-right: 50%; }
+	.med_sx13 { margin-right: 33.333333%; }
+	.med_sx23 { margin-right: 66.666666%; }
+	.med_sx14 { margin-right: 25%; }
+	.med_sx34 { margin-right: 75%; }
+	.med_sx16 { margin-right: 16.666666%; }
+	.med_sx56 { margin-right: 83.333333%; }
 }
 
 @media screen and (min-width: $lg) {
-	.lg_s1 {width: 100%;}
+	.lg_s1 {width: 100%; float: none;}
 	.lg_s12 { width: 50%; }
 	.lg_s13 { width: 33.333333%; }
 	.lg_s23 { width: 66.666666%; }
@@ -75,10 +268,42 @@ $gutter: 10px; // where should this go?
 	.lg_s34 { width: 75%; }
 	.lg_s16 { width: 16.666666%; }
 	.lg_s56 { width: 83.333333%; }
+
+	.lg_p12 { left: 50%; }
+	.lg_p13 { left: 33.333333%; }
+	.lg_p23 { left: 66.666666%; }
+	.lg_p14 { left: 25%; }
+	.lg_p34 { left: 75%; }
+	.lg_p16 { left: 16.666666%; }
+	.lg_p56 { left: 83.333333%; }
+
+	.lg_p12,
+	.lg_p13,
+	.lg_p23,
+	.lg_p14,
+	.lg_p34,
+	.lg_p16,
+	.lg_p56 {min-height: 1px;}
+
+	.lg_pl12 { left: -50%; }
+	.lg_pl13 { left: -33.333333%; }
+	.lg_pl23 { left: -66.666666%; }
+	.lg_pl14 { left: -25%; }
+	.lg_pl34 { left: -75%; }
+	.lg_pl16 { left: -16.666666%; }
+	.lg_pl56 { left: -83.333333%; }
+
+	.lg_sx12 { margin-right: 50%; }
+	.lg_sx13 { margin-right: 33.333333%; }
+	.lg_sx23 { margin-right: 66.666666%; }
+	.lg_sx14 { margin-right: 25%; }
+	.lg_sx34 { margin-right: 75%; }
+	.lg_sx16 { margin-right: 16.666666%; }
+	.lg_sx56 { margin-right: 83.333333%; }
 }
 
 @media screen and (min-width: $xl) {
-	.xl_s1 {width: 100%;}
+	.xl_s1 {width: 100%; float: none;}
 	.xl_s12 { width: 50%; }
 	.xl_s13 { width: 33.333333%; }
 	.xl_s23 { width: 66.666666%; }
@@ -86,10 +311,42 @@ $gutter: 10px; // where should this go?
 	.xl_s34 { width: 75%; }
 	.xl_s16 { width: 16.666666%; }
 	.xl_s56 { width: 83.333333%; }
+
+	.xl_p12 { left: 50%; }
+	.xl_p13 { left: 33.333333%; }
+	.xl_p23 { left: 66.666666%; }
+	.xl_p14 { left: 25%; }
+	.xl_p34 { left: 75%; }
+	.xl_p16 { left: 16.666666%; }
+	.xl_p56 { left: 83.333333%; }
+
+	.xl_p12,
+	.xl_p13,
+	.xl_p23,
+	.xl_p14,
+	.xl_p34,
+	.xl_p16,
+	.xl_p56 {min-height: 1px;}
+
+	.xl_pl12 { left: -50%; }
+	.xl_pl13 { left: -33.333333%; }
+	.xl_pl23 { left: -66.666666%; }
+	.xl_pl14 { left: -25%; }
+	.xl_pl34 { left: -75%; }
+	.xl_pl16 { left: -16.666666%; }
+	.xl_pl56 { left: -83.333333%; }
+
+	.xl_sx12 { margin-right: 50%; }
+	.xl_sx13 { margin-right: 33.333333%; }
+	.xl_sx23 { margin-right: 66.666666%; }
+	.xl_sx14 { margin-right: 25%; }
+	.xl_sx34 { margin-right: 75%; }
+	.xl_sx16 { margin-right: 16.666666%; }
+	.xl_sx56 { margin-right: 83.333333%; }
 }
 
 @media screen and (min-width: $xxl) {
-	.xxl_s1 {width: 100%;}
+	.xxl_s1 {width: 100%; float: none;}
 	.xxl_s12 { width: 50%; }
 	.xxl_s13 { width: 33.333333%; }
 	.xxl_s23 { width: 66.666666%; }
@@ -97,4 +354,36 @@ $gutter: 10px; // where should this go?
 	.xxl_s34 { width: 75%; }
 	.xxl_s16 { width: 16.666666%; }
 	.xxl_s56 { width: 83.333333%; }
+
+	.xxl_p12 { left: 50%; }
+	.xxl_p13 { left: 33.333333%; }
+	.xxl_p23 { left: 66.666666%; }
+	.xxl_p14 { left: 25%; }
+	.xxl_p34 { left: 75%; }
+	.xxl_p16 { left: 16.666666%; }
+	.xxl_p56 { left: 83.333333%; }
+
+	.xxl_p12,
+	.xxl_p13,
+	.xxl_p23,
+	.xxl_p14,
+	.xxl_p34,
+	.xxl_p16,
+	.xxl_p56 {min-height: 1px;}
+
+	.xxl_pl12 { left: -50%; }
+	.xxl_pl13 { left: -33.333333%; }
+	.xxl_pl23 { left: -66.666666%; }
+	.xxl_pl14 { left: -25%; }
+	.xxl_pl34 { left: -75%; }
+	.xxl_pl16 { left: -16.666666%; }
+	.xxl_pl56 { left: -83.333333%; }
+
+	.xxl_sx12 { margin-right: 50%; }
+	.xxl_sx13 { margin-right: 33.333333%; }
+	.xxl_sx23 { margin-right: 66.666666%; }
+	.xxl_sx14 { margin-right: 25%; }
+	.xxl_sx34 { margin-right: 75%; }
+	.xxl_sx16 { margin-right: 16.666666%; }
+	.xxl_sx56 { margin-right: 83.333333%; }
 }

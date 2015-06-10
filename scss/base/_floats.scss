@@ -1,0 +1,64 @@
+.float-n {
+	float: none;
+}
+.float-l {
+	float: left;
+}
+.float-r {
+	float: right;
+}
+@media (min-width: $xs){
+	.float-n_xs {
+		float: none;
+	}
+	.float-l_xs {
+		float: left;
+	}
+	.float-r_xs {
+		float: right;
+	}
+}
+@media (min-width: $sm){
+	.float-n_sm {
+		float: none;
+	}
+	.float-l_sm {
+		float: left;
+	}
+	.float-r_sm {
+		float: right;
+	}	
+}
+@media (min-width: $med){
+	.float-n_med {
+		float: none;
+	}
+	.float-l_med {
+		float: left;
+	}
+	.float-r_med {
+		float: right;
+	}	
+}
+@media (min-width: $lg){
+	.float-n_lg {
+		float: none;
+	}
+	.float-l_lg {
+		float: left;
+	}
+	.float-r_lg {
+		float: right;
+	}	
+}
+@media (min-width: $xl){
+	.float-n_xl {
+		float: none;
+	}
+	.float-l_xl {
+		float: left;
+	}
+	.float-r_xl {
+		float: right;
+	}	
+}

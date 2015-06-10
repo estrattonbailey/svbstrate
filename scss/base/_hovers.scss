@@ -1,0 +1,27 @@
+$long: 0.3s;
+$short: 0.1s;
+
+.hover-bg-l {
+	transition: background $long;
+		-webkit-transition: background $long;
+		-moz-transition: background $long;
+		-ms-transition: background $long;
+}
+.hover-bg-s {
+	transition: background $short;
+		-webkit-transition: background $short;
+		-moz-transition: background $short;
+		-ms-transition: background $short;
+}
+.hover-c-l {
+	transition: color $long;
+		-webkit-transition: color $long;
+		-moz-transition: color $long;
+		-ms-transition: color $long;
+}
+.hover-c-s {
+	transition: color $short;
+		-webkit-transition: color $short;
+		-moz-transition: color $short;
+		-ms-transition: color $short;
+}
