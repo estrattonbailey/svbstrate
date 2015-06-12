@@ -1,26 +1,27 @@
-.background-c-1 { background-color: $c-1 }
-.background-c-1l { background-color: $c-1l }
-.background-c-1d { background-color: $c-1d }
-.background-c-2 { background-color: $c-2 }
-.background-c-2l { background-color: $c-2l }
-.background-c-2d { background-color: $c-2d }
-.background-c-3 { background-color: $c-3 }
-.background-c-3l { background-color: $c-3l }
-.background-c-3d { background-color: $c-3d }
-.background-c-b { background-color: $c-b }
-.background-c-w { background-color: #FFFFFF }
-/* ETC*/
+.bg-c-1 { background-color: $c-1 }
+.bg-c-1l { background-color: $c-1l }
+.bg-c-1d { background-color: $c-1d }
+.bg-c-2 { background-color: $c-2 }
+.bg-c-2l { background-color: $c-2l }
+.bg-c-2d { background-color: $c-2d }
+.bg-c-3 { background-color: $c-3 }
+.bg-c-3l { background-color: $c-3l }
+.bg-c-3d { background-color: $c-3d }
+.bg-c-b { background-color: $c-b }
+.bg-c-w { background-color: #FFFFFF }
+.bg-c-g { background-color: $c-g }
+.bg-c-g1 { background-color: $c-g1 }
+.bg-c-g2 { background-color: $c-g2 }
+.bg-c-g3 { background-color: $c-g3 }
+.bg-c-g4 { background-color: $c-g4 }
 
-.background-cv-c {
+.bg-cv {
 	background-size: cover;
 	background-position: center;
-	background-repeat: no-repeat;
+	background-repeat: no-repeat;	
 }
-/* ETC*/
+.bg-cv-t {
+	@extend .bg-cv;
 
-.background-cn-c {
-	background-size: contain;
-	background-position: center;
-	background-repeat: no-repeat;
+	background-position: top center;
 }
-/* ETC */

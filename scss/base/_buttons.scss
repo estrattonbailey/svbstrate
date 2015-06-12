@@ -1,0 +1,35 @@
+$button_color: $c-1;
+$button_color_hover: $c-1d;
+
+.button,
+button {
+	@extend .inline-relative;
+	@extend .h3;
+
+	background-color: $button_color;
+	border: 0;
+	color: #FFFFFF;
+	cursor: pointer;
+	padding: 1rem 2rem;
+	text-decoration: none;
+	text-align: center;
+	-webkit-appearance: none;
+
+	&:hover {
+		background-color: $button_color_hover;
+	}
+}
+
+.button--border {
+	@extend .button;
+
+	background-color: transparent;
+	border: 3px solid $button_color;
+	color:$button_color;
+
+	&:hover {
+		background-color: transparent;
+		border-color: $button_color_hover;
+		color: $button_color_hover;
+	}
+}

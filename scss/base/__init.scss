@@ -1,28 +1,38 @@
+@import "global";
 @import "breakpoints";
-@import "colors";
+
 @import "display";
-@import "hide";
 @import "spacing";
 @import "grid";
-@import "background";
 @import "height";
-@import "presentational";
+@import "hide";
+@import "floats";
+@import "align";
+
+@import "colors";
+@import "background";
 @import "typography";
+@import "rte";
+@import "links";
 @import "forms";
-@import "button";
+@import "buttons";
+@import "borders";
+@import "hovers";
 
-@media (min-width: $xs){
+/*
+@media (min-width: $breakpoint-xs){
 
 }
-@media (min-width: $sm){
+@media (min-width: $breakpoint-s){
 	
 }
-@media (min-width: $med){
+@media (min-width: $breakpoint-m){
 	
 }
-@media (min-width: $lg){
+@media (min-width: $breakpoint-l){
 	
 }
-@media (min-width: $xl){
+@media (min-width: $breakpoint-xl){
 	
 }
+*/

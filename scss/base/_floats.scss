@@ -7,58 +7,58 @@
 .float-r {
 	float: right;
 }
-@media (min-width: $xs){
-	.float-n_xs {
+@media (min-width: $breakpoint-xs){
+	.float-n-xs {
 		float: none;
 	}
-	.float-l_xs {
+	.float-l-xs {
 		float: left;
 	}
-	.float-r_xs {
+	.float-r-xs {
 		float: right;
 	}
 }
-@media (min-width: $sm){
-	.float-n_sm {
+@media (min-width: $breakpoint-s){
+	.float-n-s {
 		float: none;
 	}
-	.float-l_sm {
+	.float-l-s {
 		float: left;
 	}
-	.float-r_sm {
-		float: right;
-	}	
-}
-@media (min-width: $med){
-	.float-n_med {
-		float: none;
-	}
-	.float-l_med {
-		float: left;
-	}
-	.float-r_med {
+	.float-r-s {
 		float: right;
 	}	
 }
-@media (min-width: $lg){
-	.float-n_lg {
+@media (min-width: $breakpoint-m){
+	.float-n-m {
 		float: none;
 	}
-	.float-l_lg {
+	.float-l-m {
 		float: left;
 	}
-	.float-r_lg {
+	.float-r-m {
 		float: right;
 	}	
 }
-@media (min-width: $xl){
-	.float-n_xl {
+@media (min-width: $breakpoint-l){
+	.float-n-l {
 		float: none;
 	}
-	.float-l_xl {
+	.float-l-l {
 		float: left;
 	}
-	.float-r_xl {
+	.float-r-l {
+		float: right;
+	}	
+}
+@media (min-width: $breakpoint-xl){
+	.float-n-xl {
+		float: none;
+	}
+	.float-l-xl {
+		float: left;
+	}
+	.float-r-xl {
 		float: right;
 	}	
 }

@@ -1,12 +1,19 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,800italic,400,300,800);
+
 html, body {
+    @extend .type-sans;
+    
     font-size: 62.5%; // Set to 10px
     color: $c-2;
 }
-.font-1 {
+.type-sans {
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
-.font-2 {
+.type-serif {
     font-family: georgia, serif;
+}
+.type-monospace {
+    font-family: Consolas , Monaco, monospace;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -15,12 +22,14 @@ h1, h2, h3, h4, h5, h6, p {
 
 h1,
 .h1 {
+    @extend .type-sans;
+
     font-size: 3.2rem;
     font-weight: 900;
     line-height: 4rem;
     margin-bottom: 1.6rem;
 
-    @media screen and (min-width: $sm) {
+    @media screen and (min-width: $breakpoint-s) {
         font-size: 4.5rem;
         line-height: 4.7rem;
     }
@@ -28,11 +37,13 @@ h1,
 
 h2,
 .h2 {
+    @extend .type-sans;
+
     font-size: 2.5rem;
     font-weight: 900;
     line-height: 3.3rem;
 
-    @media screen and (min-width: $sm) {
+    @media screen and (min-width: $breakpoint-s) {
         font-size: 3rem;
         line-height: 4rem;
     }
@@ -40,11 +51,13 @@ h2,
 
 h3,
 .h3 {
+    @extend .type-sans;
+
     font-size: 2rem;
     font-weight: 900;
     line-height: 3rem;
 
-    @media screen and (min-width: $sm) {
+    @media screen and (min-width: $breakpoint-s) {
         font-size: 2.2rem;
         line-height: 3.3rem;
     }
@@ -52,6 +65,8 @@ h3,
 
 h4,
 .h4 {
+    @extend .type-sans;
+
     font-size: 1.8rem;
     font-weight: 900;
     line-height: 3rem;
@@ -59,6 +74,8 @@ h4,
 
 h5,
 .h5 {
+    @extend .type-sans;
+
     font-size: 1.5rem;
     font-weight: 900;
     line-height: 2rem;
@@ -66,6 +83,8 @@ h5,
 
 h6,
 .h6 {
+    @extend .type-sans;
+
     font-size: 1.2rem;
     font-weight: 900;
     line-height: 1.8rem;
@@ -73,73 +92,16 @@ h6,
 
 p,
 .p {
+    @extend .type-serif;
+
     font-size: 1.8rem;
     font-weight: 100;
     line-height: 2.6rem;
 }
 
-blockquote {
-    border-left: 4px solid $c-1;
-    margin: 4rem 0;
-    padding: 0 0 0 1rem;
-
-    @media screen and (min-width: $med) {
-        padding: 0 0 0 3rem;
-    }
-
-    h1, h2, h3, h4 {
-        max-width: 100%;
-    }
+.text-uppercase {
+    text-transform: uppercase;
 }
-ul, ol {
-    margin: 0 0 1.6rem;
-    padding: 0 0 0 3rem;
-}
-li {
-}
-pre {
-    border-left: 4px solid $c-1d;
-    background-color: rgba($c-1l, .6);
-    font-family: Consolas , Monaco, monospace;
-    overflow: auto;
-    overflow-y: hidden;
-    padding: 2rem 0 2rem 3rem;
-}
-code {
-    background-color: rgba($c-1l, .6);
-    font-family: Consolas , Monaco, monospace;
-}
-figure {
-    @extend .display-br;
-
-    margin: 3rem 0 3rem;
-    max-width: 100%;
-
-    @media screen and (min-width: $med){
-        margin: 4rem 0 5rem;
-    }
-
-    img {
-        @extend .display-br; 
-
-        max-width: 100%;
-        height: auto !important;
-        width: 100%;
-    }
-
-    figcaption {
-        border-bottom: 2px solid $c-g1;
-        color: rgba($c-2, .6);
-        max-width: 500px;
-        padding: .5rem 0 1rem;
-    }
-}
-hr {
-    @extend .display-br;
-
-    background-color: $c-g1;
-    border: 0;
-    height: 2px;
-    width: 100px;
-    margin: 1rem 0 4rem;
+.text-underline {
+    text-decoration: underline;
 }

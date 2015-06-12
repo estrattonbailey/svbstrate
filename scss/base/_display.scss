@@ -1,25 +1,60 @@
-.display-br {
-  display: block;
-  position: relative;
-}
-.display-ir {
-  display: inline-block;
-  position: relative;
-}
-.display-bf {
-  display: block;
-  position: fixed;
-}
-.display-ba {
-  display: block;
-  position: absolute;
-}
-.display-b {
+/* Display */
+.block {
   display: block;
 }
-.display-i {
+.inline {
   display: inline;
 }
-.display-ib {
+.inline-block {
   display: inline-block;
+}
+.table {
+  display: table;
+  table-layout: fixed;
+}
+.table-row-header {
+  display: table-header-group;
+}
+.table-row-footer {
+  display: table-footer-group;
+}
+.table-row-group {
+  display: table-row-group;
+}
+.table-row {
+  display: table-row;
+}
+.table-cell {
+  display: table-cell;
+}
+
+/* Positioning */
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+.fixed {
+  position: fixed;
+}
+.static {
+  position: static;
+}
+
+.block-relative {
+  @extend .block;
+  @extend .relative;
+}
+.inline-relative {
+  @extend .inline-block;
+  @extend .relative;
+}
+.block-fixed {
+  @extend .block;
+  @extend .fixed;
+}
+.block-absolute {
+  @extend .block;
+  @extend .absolute;
 }

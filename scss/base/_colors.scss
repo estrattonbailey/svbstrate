@@ -1,24 +1,24 @@
 // Primary Colors
-$c-1: #FDF6E4; // light yellow
-$c-2: #222A33; // deep gray blue
-$c-3: #3AC9E3; // blue link color
+$c-1: 	#147ACC; // blue
+$c-2: 	#68FFD9; // torqouise
+$c-3: 	#36556E; // dark blue
 
 // Darken
-$c-1d: darken($c-1, 10%);
-$c-2d: darken($c-2, 10%);
-$c-3d: darken($c-3, 10%);
+$c-1d: 	darken($c-1, 10%);
+$c-2d: 	darken($c-2, 10%);
+$c-3d: 	darken($c-3, 10%);
 
 // Lighten
-$c-1l: lighten($c-1, 10%);
-$c-2l: lighten($c-2, 10%);
-$c-3l: lighten($c-3, 10%);
+$c-1l: 	lighten($c-1, 10%);
+$c-2l: 	lighten($c-2, 10%);
+$c-3l: 	lighten($c-3, 10%);
 
-$c-b: #171f26; // black level
-$c-g: #333f36;
-$c-g4: #666666; // 60% grayscale
-$c-g3: #999999; // 40% grayscale
-$c-g2: #cccccc; // 20% grayscale
-$c-g1: #f5f5f5; // 10% grayscale
+$c-b: 	#111111; // black level
+$c-g: 	#333333;
+$c-g4: 	#666666; // 60% grayscale
+$c-g3: 	#999999; // 40% grayscale
+$c-g2: 	#cccccc; // 20% grayscale
+$c-g1: 	#f5f5f5; // 10% grayscale
 
 .c-1 {
 	color: $c-1;
