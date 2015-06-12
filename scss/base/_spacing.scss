@@ -5,6 +5,10 @@ $spacing_sm: calc(#{$spacing_base} / #{$factor});
 $spacing_med: $spacing_base;
 $spacing_lg: calc(#{$spacing_base} * #{$factor});
 
+$spacing_sm_neg: calc(-1 * #{$spacing_base} / #{$factor});
+$spacing_med_neg: calc(-1 * #{$spacing_base});
+$spacing_lg_neg: calc(-1 * #{$spacing_base} * #{$factor});
+
 .padding-a-n  {  padding: 0; }
 .padding-a-s  {  padding: $spacing_sm; }
 .padding-a-m  {  padding: $spacing_med;  }

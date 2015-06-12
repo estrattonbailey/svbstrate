@@ -1,12 +1,52 @@
-.container {
-    @extend .display-br;
+.grid {
+    @extend .block-relative;
 
+    margin: 0 auto;
     overflow-x: hidden;
     width: 100%;
 }
 
+.grid--l {
+	@extend .grid;
+
+	width: 90%;
+
+    @media screen and (min-width: $breakpoint-xs) {
+        width: 92.5%;
+    }
+    @media screen and (min-width: $breakpoint-m) {
+        width: 95%;
+    }
+}
+
+.grid--m {
+	@extend .grid;
+
+	width: 90%;
+
+    @media screen and (min-width: $breakpoint-xs) {
+        width: 82.5%;
+    }
+    @media screen and (min-width: $breakpoint-m) {
+        width: 75%;
+    }
+}
+
+.grid--s {
+	@extend .grid;
+
+    width: 90%;
+
+    @media screen and (min-width: $breakpoint-m) {
+        width: 80%;
+    }
+    @media screen and (min-width: $breakpoint-l) {
+        width: 66%;
+    }
+}
+
 .row {
-	@extend .display-br;
+	@extend .block-relative;
 
 	margin: 0 auto;
 
@@ -20,70 +60,37 @@
       clear: both;
     }
 
-    .has-gutter--sm & {
-		margin-left: - $spacing_sm;
-		margin-right: - $spacing_sm;
+    .has-gutter--s & {
+		margin-left: $spacing_sm_neg;
+		margin-right: $spacing_sm_neg;
+		padding: $spacing_sm 0;
     }
-    .has-gutter--med & {
-    	margin-left: - $spacing_med; 
-		margin-right: - $spacing_med; 
+    .has-gutter--m & {
+    	margin-left: $spacing_med_neg; 
+		margin-right: $spacing_med_neg; 
+		padding: $spacing_med 0;
     }
-    .has-gutter--lg & {
-    	margin-left: - $spacing_lg;
-		margin-right: - $spacing_lg;
-    }
-}
-
-.row--lg {
-	@extend .row;
-
-	width: 90%;
-
-    @media screen and (min-width: $xs) {
-        width: 92.5%;
-    }
-    @media screen and (min-width: $med) {
-        width: 95%;
+    .has-gutter--l & {
+    	margin-left: $spacing_lg_neg;
+		margin-right: $spacing_lg_neg;
+		padding: $spacing_lg 0;
     }
 }
-.row--med {
-	@extend .row;
 
-	width: 90%;
-
-    @media screen and (min-width: $xs) {
-        width: 82.5%;
-    }
-    @media screen and (min-width: $med) {
-        width: 75%;
-    }
-}
-.row--sm {
-	@extend .row;
-
-    width: 90%;
-
-    @media screen and (min-width: $med) {
-        width: 80%;
-    }
-    @media screen and (min-width: $lg) {
-        width: 66%;
-    }
-}
 .col { 
-	@extend .display-br;
+	@extend .block-relative;
 
 	float: left;
 
-	.has-gutter--sm & {
+	.has-gutter--s & {
 		padding-left: $spacing_sm;
 		padding-right: $spacing_sm;
     }
-    .has-gutter--med & {
+    .has-gutter--m & {
     	padding-left: $spacing_med; 
 		padding-right: $spacing_med; 
     }
-    .has-gutter--lg & {
+    .has-gutter--l & {
     	padding-left: $spacing_lg; 
 		padding-right: $spacing_lg; 
     }
@@ -130,7 +137,7 @@
 .sx16 { margin-right: 16.666666%; }
 .sx56 { margin-right: 83.333333%; }
 
-@media screen and (min-width: $xs) {
+@media screen and (min-width: $breakpoint-xs) {
 	.xs_s1 {width: 100%; float: none;}
 	.xs_s12 { width: 50%; }
 	.xs_s13 { width: 33.333333%; }
@@ -173,7 +180,7 @@
 	.xs_sx56 { margin-right: 83.333333%; }
 }
 
-@media screen and (min-width: $sm) {
+@media screen and (min-width: $breakpoint-s) {
 	.sm_s1 {width: 100%; float: none;}
 	.sm_s12 { width: 50%; }
 	.sm_s13 { width: 33.333333%; }
@@ -216,7 +223,7 @@
 	.sm_sx56 { margin-right: 83.333333%; }
 }
 
-@media screen and (min-width: $med) {
+@media screen and (min-width: $breakpoint-m) {
 	.med_s1 {width: 100%; float: none;}
 	.med_s12 { width: 50%; }
 	.med_s13 { width: 33.333333%; }
@@ -259,7 +266,7 @@
 	.med_sx56 { margin-right: 83.333333%; }
 }
 
-@media screen and (min-width: $lg) {
+@media screen and (min-width: $breakpoint-l) {
 	.lg_s1 {width: 100%; float: none;}
 	.lg_s12 { width: 50%; }
 	.lg_s13 { width: 33.333333%; }
@@ -302,7 +309,7 @@
 	.lg_sx56 { margin-right: 83.333333%; }
 }
 
-@media screen and (min-width: $xl) {
+@media screen and (min-width: $breakpoint-xl) {
 	.xl_s1 {width: 100%; float: none;}
 	.xl_s12 { width: 50%; }
 	.xl_s13 { width: 33.333333%; }
@@ -345,7 +352,7 @@
 	.xl_sx56 { margin-right: 83.333333%; }
 }
 
-@media screen and (min-width: $xxl) {
+@media screen and (min-width: $breakpoint-xxl) {
 	.xxl_s1 {width: 100%; float: none;}
 	.xxl_s12 { width: 50%; }
 	.xxl_s13 { width: 33.333333%; }

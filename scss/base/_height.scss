@@ -1,8 +1,118 @@
-.height-1 {
+.h1 {
 	min-height: 100vh;
 }
-.height-12 {
+.h12 {
 	min-height: 50vh;
 }
-
-/* Need to add media query sizing */
+.h13 {
+	min-height: 33.333333vh;
+}
+.h23 {
+	min-height: 66.666666vh;
+}
+.h14 {
+	min-height: 25vh;
+}
+.h34 {
+	min-height: 75vh;
+}
+@media (min-width: $breakpoint-xs){
+	.h1-xs {
+		min-height: 100vh;
+	}
+	.h12-xs {
+		min-height: 50vh;
+	}
+	.h13-xs {
+		min-height: 33.333333vh;
+	}
+	.h23-xs {
+		min-height: 66.666666vh;
+	}
+	.h14-xs {
+		min-height: 25vh;
+	}
+	.h34-xs {
+		min-height: 75vh;
+	}
+}
+@media (min-width: $breakpoint-s){
+	.h1-s {
+		min-height: 100vh;
+	}
+	.h12-s {
+		min-height: 50vh;
+	}
+	.h13-s {
+		min-height: 33.333333vh;
+	}
+	.h23-s {
+		min-height: 66.666666vh;
+	}
+	.h14-s {
+		min-height: 25vh;
+	}
+	.h34-s {
+		min-height: 75vh;
+	}
+}
+@media (min-width: $breakpoint-m){
+	.h1-m {
+		min-height: 100vh;
+	}
+	.h12-m {
+		min-height: 50vh;
+	}
+	.h13-m {
+		min-height: 33.333333vh;
+	}
+	.h23-m {
+		min-height: 66.666666vh;
+	}
+	.h14-m {
+		min-height: 25vh;
+	}
+	.h34-m {
+		min-height: 75vh;
+	}	
+}
+@media (min-width: $breakpoint-l){
+	.h1-l {
+		min-height: 100vh;
+	}
+	.h12-l {
+		min-height: 50vh;
+	}
+	.h13-l {
+		min-height: 33.333333vh;
+	}
+	.h23-l {
+		min-height: 66.666666vh;
+	}
+	.h14-l {
+		min-height: 25vh;
+	}
+	.h34-l {
+		min-height: 75vh;
+	}	
+}
+@media (min-width: $breakpoint-xl){
+	.h1-xl {
+		min-height: 100vh;
+	}
+	.h12-xl {
+		min-height: 50vh;
+	}
+	.h13-xl {
+		min-height: 33.333333vh;
+	}
+	.h23-xl {
+		min-height: 66.666666vh;
+	}
+	.h14-xl {
+		min-height: 25vh;
+	}
+	.h34-xl {
+		min-height: 75vh;
+	}	
+}

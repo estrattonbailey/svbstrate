@@ -1,33 +1,33 @@
 .hide {
   display: none;
 }
-@media (min-width: $xs){
-  .hide_xs {
+@media (min-width: $breakpoint-xs){
+  .hide-xs {
     display: none;
   }
 }
-@media (min-width: $sm){
-  .hide_sm {
+@media (min-width: $breakpoint-s){
+  .hide-s {
     display: none;
   }
 }
-@media (min-width: $med){
-  .hide_med {
+@media (min-width: $breakpoint-m){
+  .hide-m {
     display: none;
   }
 }
-@media (min-width: $lg){
-  .hide_lg {
+@media (min-width: $breakpoint-l){
+  .hide-l {
     display: none;
   }
 }
-@media (min-width: $xl){
-  .hide_xl {
+@media (min-width: $breakpoint-xl){
+  .hide-xl {
     display: none;
   }
 }
-@media (min-width: $xxl){
-  .hide_xxl {
+@media (min-width: $breakpoint-xxl){
+  .hide-xxl {
     display: none;
   }
 }
