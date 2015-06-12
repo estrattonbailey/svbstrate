@@ -1,5 +1,7 @@
 $button_color: $c-1;
 $button_color_hover: $c-1d;
+$button_color_alt: $c-2;
+$button_color_alt_hover: $c-2d;
 
 .button,
 button {
@@ -20,16 +22,38 @@ button {
 	}
 }
 
+.button--c-2 {
+	@extend .button;
+
+	background-color: $button_color_alt;
+
+	&:hover {
+		background-color: $button_color_alt_hover;
+	}
+}
+
 .button--border {
 	@extend .button;
 
 	background-color: transparent;
 	border: 3px solid $button_color;
-	color:$button_color;
+	color: $button_color;
 
 	&:hover {
 		background-color: transparent;
 		border-color: $button_color_hover;
 		color: $button_color_hover;
+	}
+}
+
+.button--border--c-2 {
+	@extend .button--border;
+
+	border-color: $button_color_alt;
+	color: $button_color_alt;
+
+	&:hover {
+		border-color: $button_color_alt_hover;
+		color: $button_color_alt_hover;
 	}
 }

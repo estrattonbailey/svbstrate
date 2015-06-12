@@ -195,13 +195,14 @@ body {
 .inline {
   display: inline; }
 
-.inline-block, .inline-relative, .button, .button--border,
+.inline-block, .inline-relative, .button, .button--c-2, .button--border, .button--border--c-2,
 button {
   display: inline-block; }
 
 .table {
   display: table;
-  table-layout: fixed; }
+  table-layout: fixed;
+  width: 100%; }
 
 .table__row__header {
   display: table-header-group; }
@@ -219,7 +220,7 @@ button {
   display: table-cell; }
 
 /* Positioning */
-.relative, .block-relative, .grid, .grid--l, .grid--m, .grid--s, .row, .col, .inline-relative, .button, .button--border,
+.relative, .block-relative, .grid, .grid--l, .grid--m, .grid--s, .row, .col, .inline-relative, .button, .button--c-2, .button--border, .button--border--c-2,
 button {
   position: relative; }
 
@@ -1344,6 +1345,15 @@ button {
 
   .float-r-xl {
     float: right; } }
+.align-middle {
+  vertical-align: middle; }
+
+.align-top {
+  vertical-align: top; }
+
+.align-bottom {
+  vertical-align: bottom; }
+
 .align-left {
   text-align: left; }
 
@@ -1530,7 +1540,9 @@ html, body {
 .h2, h3,
 .h3,
 .button,
+.button--c-2,
 .button--border,
+.button--border--c-2,
 button, h4,
 .h4, h5,
 .h5, h6,
@@ -1582,7 +1594,9 @@ h2,
 h3,
 .h3,
 .button,
+.button--c-2,
 .button--border,
+.button--border--c-2,
 button {
   font-size: 2rem;
   font-weight: 900;
@@ -1591,7 +1605,9 @@ button {
     h3,
     .h3,
     .button,
+    .button--c-2,
     .button--border,
+    .button--border--c-2,
     button {
       font-size: 2.2rem;
       line-height: 1.4; } }
@@ -1680,7 +1696,7 @@ textarea {
   width: 100%; }
 
 /* More to come */
-.button, .button--border,
+.button, .button--c-2, .button--border, .button--border--c-2,
 button {
   background-color: #147ACC;
   border: 0;
@@ -1690,18 +1706,30 @@ button {
   text-decoration: none;
   text-align: center;
   -webkit-appearance: none; }
-  .button:hover, .button--border:hover,
+  .button:hover, .button--c-2:hover, .button--border:hover, .button--border--c-2:hover,
   button:hover {
     background-color: #0f5e9e; }
 
-.button--border {
+.button--c-2 {
+  background-color: #68FFD9; }
+  .button--c-2:hover {
+    background-color: #35ffcc; }
+
+.button--border, .button--border--c-2 {
   background-color: transparent;
   border: 3px solid #147ACC;
   color: #147ACC; }
-  .button--border:hover {
+  .button--border:hover, .button--border--c-2:hover {
     background-color: transparent;
     border-color: #0f5e9e;
     color: #0f5e9e; }
+
+.button--border--c-2 {
+  border-color: #68FFD9;
+  color: #68FFD9; }
+  .button--border--c-2:hover {
+    border-color: #35ffcc;
+    color: #35ffcc; }
 
 .border-c-1 {
   border-color: #147ACC; }
