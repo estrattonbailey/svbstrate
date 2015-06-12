@@ -12,19 +12,19 @@
   display: table;
   table-layout: fixed;
 }
-.table-row-header {
+.table__row__header {
   display: table-header-group;
 }
-.table-row-footer {
+.table__row__footer {
   display: table-footer-group;
 }
-.table-row-group {
+.table__row__group {
   display: table-row-group;
 }
-.table-row {
+.table__row {
   display: table-row;
 }
-.table-cell {
+.table__cell {
   display: table-cell;
 }
 
