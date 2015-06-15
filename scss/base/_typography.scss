@@ -107,7 +107,7 @@ p,
 
     font-size: 1.8rem;
     font-weight: 100;
-    line-height: 2;
+    line-height: 1.7;
 }
 
 .text-uppercase {
@@ -115,4 +115,7 @@ p,
 }
 .text-underline {
     text-decoration: underline;
+}
+.font-w-0 {
+    font-weight: 100;
 }
