@@ -1,17 +1,20 @@
 // Primary Colors
-$c-1: 	#147ACC; // blue
-$c-2: 	#68FFD9; // torqouise
+$c-1: 	#148ECC; // blue
+$c-2: 	#00D0FE; // torqouise
 $c-3: 	#36556E; // dark blue
+$c-4: 	#182b40; // deep blue
 
 // Darken
 $c-1d: 	darken($c-1, 10%);
 $c-2d: 	darken($c-2, 10%);
 $c-3d: 	darken($c-3, 10%);
+$c-4d: 	darken($c-4, 10%);
 
 // Lighten
 $c-1l: 	lighten($c-1, 10%);
 $c-2l: 	lighten($c-2, 10%);
 $c-3l: 	lighten($c-3, 10%);
+$c-4l: 	darken($c-4, 10%);
 
 $c-b: 	#111111; // black level
 $c-g: 	#333333;
@@ -29,6 +32,9 @@ $c-g1: 	#f5f5f5; // 10% grayscale
 .c-3 {
 	color: $c-3;
 }
+.c-4 {
+	color: $c-4;
+}
 .c-1d {
 	color: $c-1d;
 }
@@ -38,6 +44,9 @@ $c-g1: 	#f5f5f5; // 10% grayscale
 .c-3d {
 	color: $c-3d;
 }
+.c-4d {
+	color: $c-4d;
+}
 .c-1l {
 	color: $c-1l;
 }
@@ -46,6 +55,9 @@ $c-g1: 	#f5f5f5; // 10% grayscale
 }
 .c-3l {
 	color: $c-3l;
+}
+.c-4l {
+	color: $c-4l;
 }
 
 .c-w {

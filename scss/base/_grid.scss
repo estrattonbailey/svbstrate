@@ -1,7 +1,7 @@
 .grid {
     @extend .block-relative;
 
-    margin: 0 auto;
+    margin: auto;
     overflow-x: hidden;
     width: 100%;
 }
@@ -11,10 +11,10 @@
 
 	width: 90%;
 
-    @media screen and (min-width: $breakpoint-xs) {
+    @media screen and (min-width: $breakpoint_xs) {
         width: 92.5%;
     }
-    @media screen and (min-width: $breakpoint-m) {
+    @media screen and (min-width: $breakpoint_m) {
         width: 95%;
     }
 }
@@ -24,10 +24,10 @@
 
 	width: 90%;
 
-    @media screen and (min-width: $breakpoint-xs) {
+    @media screen and (min-width: $breakpoint_xs) {
         width: 82.5%;
     }
-    @media screen and (min-width: $breakpoint-m) {
+    @media screen and (min-width: $breakpoint_m) {
         width: 75%;
     }
 }
@@ -37,10 +37,10 @@
 
     width: 90%;
 
-    @media screen and (min-width: $breakpoint-m) {
+    @media screen and (min-width: $breakpoint_m) {
         width: 80%;
     }
-    @media screen and (min-width: $breakpoint-l) {
+    @media screen and (min-width: $breakpoint_l) {
         width: 66%;
     }
 }
@@ -63,17 +63,14 @@
     .has-gutter--s & {
 		margin-left: $spacing_sm_neg;
 		margin-right: $spacing_sm_neg;
-		padding: $spacing_sm 0;
     }
     .has-gutter--m & {
     	margin-left: $spacing_med_neg; 
 		margin-right: $spacing_med_neg; 
-		padding: $spacing_med 0;
     }
     .has-gutter--l & {
     	margin-left: $spacing_lg_neg;
 		margin-right: $spacing_lg_neg;
-		padding: $spacing_lg 0;
     }
 }
 
@@ -81,6 +78,7 @@
 	@extend .block-relative;
 
 	float: left;
+	min-height: 1px;
 
 	.has-gutter--s & {
 		padding-left: $spacing_sm;
@@ -96,7 +94,7 @@
     }
 }
 
-.s1 {width: 100%; float: none;}
+.s1 {width: 100%;}
 .s12 { width: 50%;}
 .s13 { width: 33.333333%; }
 .s23 { width: 66.666666%; }
@@ -137,8 +135,8 @@
 .sx16 { margin-right: 16.666666%; }
 .sx56 { margin-right: 83.333333%; }
 
-@media screen and (min-width: $breakpoint-xs) {
-	.xs_s1 {width: 100%; float: none;}
+@media screen and (min-width: $breakpoint_xs) {
+	.xs_s1 {width: 100%;}
 	.xs_s12 { width: 50%; }
 	.xs_s13 { width: 33.333333%; }
 	.xs_s23 { width: 66.666666%; }
@@ -180,8 +178,8 @@
 	.xs_sx56 { margin-right: 83.333333%; }
 }
 
-@media screen and (min-width: $breakpoint-s) {
-	.sm_s1 {width: 100%; float: none;}
+@media screen and (min-width: $breakpoint_s) {
+	.sm_s1 {width: 100%;}
 	.sm_s12 { width: 50%; }
 	.sm_s13 { width: 33.333333%; }
 	.sm_s23 { width: 66.666666%; }
@@ -223,8 +221,8 @@
 	.sm_sx56 { margin-right: 83.333333%; }
 }
 
-@media screen and (min-width: $breakpoint-m) {
-	.med_s1 {width: 100%; float: none;}
+@media screen and (min-width: $breakpoint_m) {
+	.med_s1 {width: 100%;}
 	.med_s12 { width: 50%; }
 	.med_s13 { width: 33.333333%; }
 	.med_s23 { width: 66.666666%; }
@@ -266,8 +264,8 @@
 	.med_sx56 { margin-right: 83.333333%; }
 }
 
-@media screen and (min-width: $breakpoint-l) {
-	.lg_s1 {width: 100%; float: none;}
+@media screen and (min-width: $breakpoint_l) {
+	.lg_s1 {width: 100%;}
 	.lg_s12 { width: 50%; }
 	.lg_s13 { width: 33.333333%; }
 	.lg_s23 { width: 66.666666%; }
@@ -309,8 +307,8 @@
 	.lg_sx56 { margin-right: 83.333333%; }
 }
 
-@media screen and (min-width: $breakpoint-xl) {
-	.xl_s1 {width: 100%; float: none;}
+@media screen and (min-width: $breakpoint_xl) {
+	.xl_s1 {width: 100%;}
 	.xl_s12 { width: 50%; }
 	.xl_s13 { width: 33.333333%; }
 	.xl_s23 { width: 66.666666%; }
@@ -352,8 +350,8 @@
 	.xl_sx56 { margin-right: 83.333333%; }
 }
 
-@media screen and (min-width: $breakpoint-xxl) {
-	.xxl_s1 {width: 100%; float: none;}
+@media screen and (min-width: $breakpoint_xxl) {
+	.xxl_s1 {width: 100%;}
 	.xxl_s12 { width: 50%; }
 	.xxl_s13 { width: 33.333333%; }
 	.xxl_s23 { width: 66.666666%; }

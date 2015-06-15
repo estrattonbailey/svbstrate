@@ -20,73 +20,73 @@
 .align-center {
 	text-align: center;
 }
-@media (min-width: $breakpoint-xs){
-	.align-left-xs {
+@media (min-width: $breakpoint_xs){
+	.align-left_xs {
 		text-align: left;
 	}
-	.align-right-xs {
+	.align-right_xs {
 		text-align: right;
 	}
-	.align-justify-xs {
+	.align-justify_xs {
 		text-align: justify;
 	}
-	.align-center-xs {
+	.align-center_xs {
 		text-align: center;
 	}
 }
-@media (min-width: $breakpoint-s){
-	.align-left-s {
+@media (min-width: $breakpoint_s){
+	.align-left_s {
 		text-align: left;
 	}
-	.align-right-s {
+	.align-right_s {
 		text-align: right;
 	}
-	.align-justify-s {
+	.align-justify_s {
 		text-align: justify;
 	}
-	.align-center-s {
-		text-align: center;
-	}	
-}
-@media (min-width: $breakpoint-m){
-	.align-left-m {
-		text-align: left;
-	}
-	.align-right-m {
-		text-align: right;
-	}
-	.align-justify-m {
-		text-align: justify;
-	}
-	.align-center-m {
+	.align-center_s {
 		text-align: center;
 	}	
 }
-@media (min-width: $breakpoint-l){
-	.align-left-l {
+@media (min-width: $breakpoint_m){
+	.align-left_m {
 		text-align: left;
 	}
-	.align-right-l {
+	.align-right_m {
 		text-align: right;
 	}
-	.align-justify-l {
+	.align-justify_m {
 		text-align: justify;
 	}
-	.align-center-l {
+	.align-center_m {
 		text-align: center;
 	}	
 }
-@media (min-width: $breakpoint-xl){
-	.align-left-xl {
+@media (min-width: $breakpoint_l){
+	.align-left_l {
 		text-align: left;
 	}
-	.align-right-xl {
+	.align-right_l {
 		text-align: right;
 	}
-	.align-justify-xl {
+	.align-justify_l {
 		text-align: justify;
 	}
-	.align-center-xl {
+	.align-center_l {
+		text-align: center;
+	}	
+}
+@media (min-width: $breakpoint_xl){
+	.align-left_xl {
+		text-align: left;
+	}
+	.align-right_xl {
+		text-align: right;
+	}
+	.align-justify_xl {
+		text-align: justify;
+	}
+	.align-center_xl {
 		text-align: center;
 	}	
 }

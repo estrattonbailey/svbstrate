@@ -7,58 +7,58 @@
 .float-r {
 	float: right;
 }
-@media (min-width: $breakpoint-xs){
-	.float-n-xs {
+@media (min-width: $breakpoint_xs){
+	.float-n_xs {
 		float: none;
 	}
-	.float-l-xs {
+	.float-l_xs {
 		float: left;
 	}
-	.float-r-xs {
+	.float-r_xs {
 		float: right;
 	}
 }
-@media (min-width: $breakpoint-s){
-	.float-n-s {
+@media (min-width: $breakpoint_s){
+	.float-n_s {
 		float: none;
 	}
-	.float-l-s {
+	.float-l_s {
 		float: left;
 	}
-	.float-r-s {
-		float: right;
-	}	
-}
-@media (min-width: $breakpoint-m){
-	.float-n-m {
-		float: none;
-	}
-	.float-l-m {
-		float: left;
-	}
-	.float-r-m {
+	.float-r_s {
 		float: right;
 	}	
 }
-@media (min-width: $breakpoint-l){
-	.float-n-l {
+@media (min-width: $breakpoint_m){
+	.float-n_m {
 		float: none;
 	}
-	.float-l-l {
+	.float-l_m {
 		float: left;
 	}
-	.float-r-l {
+	.float-r_m {
 		float: right;
 	}	
 }
-@media (min-width: $breakpoint-xl){
-	.float-n-xl {
+@media (min-width: $breakpoint_l){
+	.float-n_l {
 		float: none;
 	}
-	.float-l-xl {
+	.float-l_l {
 		float: left;
 	}
-	.float-r-xl {
+	.float-r_l {
+		float: right;
+	}	
+}
+@media (min-width: $breakpoint_xl){
+	.float-n_xl {
+		float: none;
+	}
+	.float-l_xl {
+		float: left;
+	}
+	.float-r_xl {
 		float: right;
 	}	
 }
