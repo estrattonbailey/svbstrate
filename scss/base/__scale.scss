@@ -7,7 +7,8 @@ $scale: (
 	s: calc(#{$scale_base} / #{$ratio}),
 	m: $scale_base,
 	l: calc(#{$scale_base} * #{$ratio}),
-	xl: calc(#{$scale_base} * ( #{$ratio} * #{$ratio}) )
+	xl: calc(#{$scale_base} * ( #{$ratio} * #{$ratio}) ),
+	xxl: calc(#{$scale_base} * ( #{$ratio} * #{$ratio}) * 2 )
 );
 
 @function scale($key) {
