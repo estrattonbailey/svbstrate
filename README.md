@@ -3,7 +3,7 @@ My sandbox templates. A framework of sorts.
 
 See [BASSCSS](https://github.com/basscss/basscss) and [Tachyons](https://github.com/mrmrs/tachyons) to learn more. All code herein are a product of their writings and codebases, I just wanted to do it a little differently.
 
-### Notes 6/21
+### Notes 6/22
 The grid *should absolutely* be customized for every project i.e. if you only have two-up and four-up grids, you only need to enable classes `.s1, .s12, .s14`.
 
 ## A few resources:
