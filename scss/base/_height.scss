@@ -1,118 +1,29 @@
-.height-s1 {
-	min-height: 100%;
+/*
+ * Heights
+ *
+ * Generates classes i.e. '.height-s12 { height: 50% }'
+ * Plus, breakpoint specific extensions i.e. '.height-s12_m { height: 50% }',
+ ** which will only affect layouts greater than break(m)
+ */
+html,
+body {
+	height: 100%;
 }
-.height-s12 {
-	min-height: 50%;
+$heights: (
+	1: 100%,
+	12: 50%,
+	13: 33.333333%,
+	23: 66.666666%,
+	14: 25%,
+	34: 75%
+);
+@each $height_ext, $height in $heights {
+	.height-s#{$height_ext} { height: $height }
 }
-.height-s13 {
-	min-height: 33.333333%;
-}
-.height-s23 {
-	min-height: 66.666666%;
-}
-.height-s14 {
-	min-height: 25%;
-}
-.height-s34 {
-	min-height: 75%;
-}
-@media (min-width: $breakpoint_xs){
-	.height-s1_xs {
-		min-height: 100%;
+@each $break_ext, $break in $breakpoints {
+  @media (min-width: $break) {
+  	@each $height_ext, $height in $heights {
+		.height-s#{$height_ext}_#{$break_ext} { height: $height }
 	}
-	.height-s12_xs {
-		min-height: 50%;
-	}
-	.height-s13_xs {
-		min-height: 33.333333%;
-	}
-	.height-s23_xs {
-		min-height: 66.666666%;
-	}
-	.height-s14_xs {
-		min-height: 25%;
-	}
-	.height-s34_xs {
-		min-height: 75%;
-	}
-}
-@media (min-width: $breakpoint_s){
-	.height-s1_s {
-		min-height: 100%;
-	}
-	.height-s12_s {
-		min-height: 50%;
-	}
-	.height-s13_s {
-		min-height: 33.333333%;
-	}
-	.height-s23_s {
-		min-height: 66.666666%;
-	}
-	.height-s14_s {
-		min-height: 25%;
-	}
-	.height-s34_s {
-		min-height: 75%;
-	}
-}
-@media (min-width: $breakpoint_m){
-	.height-s1_m {
-		min-height: 100%;
-	}
-	.height-s12_m {
-		min-height: 50%;
-	}
-	.height-s13_m {
-		min-height: 33.333333%;
-	}
-	.height-s23_m {
-		min-height: 66.666666%;
-	}
-	.height-s14_m {
-		min-height: 25%;
-	}
-	.height-s34_m {
-		min-height: 75%;
-	}	
-}
-@media (min-width: $breakpoint_l){
-	.height-s1_l {
-		min-height: 100%;
-	}
-	.height-s12_l {
-		min-height: 50%;
-	}
-	.height-s13_l {
-		min-height: 33.333333%;
-	}
-	.height-s23_l {
-		min-height: 66.666666%;
-	}
-	.height-s14_l {
-		min-height: 25%;
-	}
-	.height-s34_l {
-		min-height: 75%;
-	}	
-}
-@media (min-width: $breakpoint_xl){
-	.height-s1_xl {
-		min-height: 100%;
-	}
-	.height-s12_xl {
-		min-height: 50%;
-	}
-	.height-s13_xl {
-		min-height: 33.333333%;
-	}
-	.height-s23_xl {
-		min-height: 66.666666%;
-	}
-	.height-s14_xl {
-		min-height: 25%;
-	}
-	.height-s34_xl {
-		min-height: 75%;
-	}	
+  }
 }

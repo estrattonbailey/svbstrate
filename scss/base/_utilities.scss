@@ -1,0 +1,38 @@
+/*
+ * Utilities
+ *
+ * Helper classes. Prefixed with 'u-'.
+ */
+.u-clear {
+	&::before,
+	&::after {
+	  content:' ';
+	  display: table;
+	}
+
+	&::after {
+	  clear: both;
+	}
+}
+.u-inline-helper {
+	&::after {
+		@extend .inline-block;
+
+		content:'';
+		width: 100%;
+	}
+}
+
+/*
+ * Hide Elements
+ *
+ * Generates classes i.e. '.u-hide { display: none }'
+ * Plus, breakpoint specific extensions i.e. '.u-hide_m { display: none }',
+ ** which will only affect layouts greater than break(m)
+ */
+.u-hide { display: none }
+@each $breakpoint, $break_size in $breakpoints {
+  @media (min-width: $break_size) {
+    .u-hide_#{$breakpoint} { display: none }
+  }
+}

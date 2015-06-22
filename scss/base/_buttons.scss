@@ -1,14 +1,18 @@
-$button_color: $c-1;
-$button_color_hover: $c-1d;
-$button_color_alt: $c-2;
-$button_color_alt_hover: $c-2d;
+/*
+ * Buttons
+ */
+
+$button-color: color(1);
+$button-color__hover: darker(color(1), 10%);
+$button-color--alt: color(2);
+$button-color__hover--alt: darker(color(2), 10%);
 
 .button,
 button {
 	@extend .inline-relative;
 	@extend .h3;
 
-	background-color: $button_color;
+	background-color: $button-color;
 	border: 0;
 	color: #FFFFFF;
 	cursor: pointer;
@@ -18,17 +22,17 @@ button {
 	-webkit-appearance: none;
 
 	&:hover {
-		background-color: $button_color_hover;
+		background-color: $button-color__hover;
 	}
 }
 
 .button--c-2 {
 	@extend .button;
 
-	background-color: $button_color_alt;
+	background-color: $button-color--alt;
 
 	&:hover {
-		background-color: $button_color_alt_hover;
+		background-color: $button-color__hover--alt;
 	}
 }
 
@@ -36,24 +40,24 @@ button {
 	@extend .button;
 
 	background-color: transparent;
-	border: 3px solid $button_color;
-	color: $button_color;
+	border: 3px solid $button-color;
+	color: $button-color;
 
 	&:hover {
 		background-color: transparent;
-		border-color: $button_color_hover;
-		color: $button_color_hover;
+		border-color: $button-color__hover;
+		color: $button-color__hover;
 	}
 }
 
 .button--border--c-2 {
 	@extend .button--border;
 
-	border-color: $button_color_alt;
-	color: $button_color_alt;
+	border-color: $button-color--alt;
+	color: $button-color--alt;
 
 	&:hover {
-		border-color: $button_color_alt_hover;
-		color: $button_color_alt_hover;
+		border-color: $button-color__hover--alt;
+		color: $button-color__hover--alt;
 	}
 }

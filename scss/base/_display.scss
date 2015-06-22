@@ -1,4 +1,8 @@
-/* Display */
+/*
+ * Display
+ *
+ * Display attribute styles
+ */
 .block {
   display: block;
 }
@@ -13,13 +17,13 @@
   table-layout: fixed;
   width: 100%;
 }
-.table__row__header {
+.table-row-header {
   display: table-header-group;
 }
-.table__row__footer {
+.table-row-footer {
   display: table-footer-group;
 }
-.table__row__group {
+.table-row-group {
   display: table-row-group;
 }
 .table__row {

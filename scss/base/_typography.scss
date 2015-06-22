@@ -1,10 +1,13 @@
+/*
+ * Typography
+ */
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,800italic,400,300,800);
 
 html, body {
     @extend .type-sans;
     
     font-size: 62.5%; // Set to 10px
-    color: $c-2;
+    color: color(b);
 }
 .type-sans {
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
@@ -29,7 +32,7 @@ h1,
     line-height: 4rem;
     margin-bottom: 1.6rem;
 
-    @media screen and (min-width: $breakpoint-s) {
+    @media screen and (min-width: break(s)) {
         font-size: 4.5rem;
         line-height: 1.1;
     }
@@ -40,7 +43,7 @@ h1,
 
     font-size: 4.5rem;
 
-    @media screen and (min-width: $breakpoint-s) {
+    @media screen and (min-width: break(s)) {
         font-size: 5.5vw;
         line-height: 1.1;
     }
@@ -54,7 +57,7 @@ h2,
     font-weight: 900;
     line-height: 3.3rem;
 
-    @media screen and (min-width: $breakpoint-s) {
+    @media screen and (min-width: break(s)) {
         font-size: 3rem;
         line-height: 1.4;
     }
@@ -68,7 +71,7 @@ h3,
     font-weight: 900;
     line-height: 3rem;
 
-    @media screen and (min-width: $breakpoint-s) {
+    @media screen and (min-width: break(s)) {
         font-size: 2.2rem;
         line-height: 1.4;
     }

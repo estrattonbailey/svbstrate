@@ -1,92 +1,35 @@
-.align-middle {
-	vertical-align: middle;
-}
-.align-top {
-	vertical-align: top;
-}
-.align-bottom {
-	vertical-align: bottom;
+/*
+ * Alignment
+ *
+ * Generates classes i.e. '.align-m { vertical-align: middle }'
+ * Plus, breakpoint specific extensions i.e. '.align-m_l { vertical-align: middle }',
+ ** which will only affect layouts greater than break(l)
+ */
+
+/* Text Align */
+$align: (
+	l: left,
+	r: right,
+	c: center,
+	j: justify
+);
+@each $align__ext, $align in $align {
+	.align-#{$align__ext} { text-align: $align }
+} 
+@each $break_ext, $break in $breakpoints {
+  @media (min-width: $break) {
+  	@each $align__ext, $align in $align {
+		.align-#{$align__ext}_#{$break_ext} { text-align: $align }
+	} 
+  }
 }
 
-.align-left {
-	text-align: left;
-}
-.align-right {
-	text-align: right;
-}
-.align-justify {
-	text-align: justify;
-}
-.align-center {
-	text-align: center;
-}
-@media (min-width: $breakpoint_xs){
-	.align-left_xs {
-		text-align: left;
-	}
-	.align-right_xs {
-		text-align: right;
-	}
-	.align-justify_xs {
-		text-align: justify;
-	}
-	.align-center_xs {
-		text-align: center;
-	}
-}
-@media (min-width: $breakpoint_s){
-	.align-left_s {
-		text-align: left;
-	}
-	.align-right_s {
-		text-align: right;
-	}
-	.align-justify_s {
-		text-align: justify;
-	}
-	.align-center_s {
-		text-align: center;
-	}	
-}
-@media (min-width: $breakpoint_m){
-	.align-left_m {
-		text-align: left;
-	}
-	.align-right_m {
-		text-align: right;
-	}
-	.align-justify_m {
-		text-align: justify;
-	}
-	.align-center_m {
-		text-align: center;
-	}	
-}
-@media (min-width: $breakpoint_l){
-	.align-left_l {
-		text-align: left;
-	}
-	.align-right_l {
-		text-align: right;
-	}
-	.align-justify_l {
-		text-align: justify;
-	}
-	.align-center_l {
-		text-align: center;
-	}	
-}
-@media (min-width: $breakpoint_xl){
-	.align-left_xl {
-		text-align: left;
-	}
-	.align-right_xl {
-		text-align: right;
-	}
-	.align-justify_xl {
-		text-align: justify;
-	}
-	.align-center_xl {
-		text-align: center;
-	}	
-}
+/* Vertical Align */
+$align--vertical: (
+	m: middle,
+	t: top,
+	b: bottom
+);
+@each $align__ext, $align in $align--vertical {
+	.align-#{$align__ext} { vertical-align: $align }
+} 

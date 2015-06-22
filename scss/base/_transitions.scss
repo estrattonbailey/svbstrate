@@ -1,0 +1,32 @@
+/*
+ * Transitions
+ *
+ * Easily extend these or apply these directly in HTML.
+ */
+$t-long: 0.3s;
+$t-short: 0.1s;
+
+.trans-bg-l {
+	transition: background $t-long;
+		-webkit-transition: background $t-long;
+		-moz-transition: background $t-long;
+		-ms-transition: background $t-long;
+}
+.trans-bg-s {
+	transition: background $t-short;
+		-webkit-transition: background $t-short;
+		-moz-transition: background $t-short;
+		-ms-transition: background $t-short;
+}
+.trans-c-l {
+	transition: color $t-long;
+		-webkit-transition: color $t-long;
+		-moz-transition: color $t-long;
+		-ms-transition: color $t-long;
+}
+.trans-c-s {
+	transition: color $t-short;
+		-webkit-transition: color $t-short;
+		-moz-transition: color $t-short;
+		-ms-transition: color $t-short;
+}

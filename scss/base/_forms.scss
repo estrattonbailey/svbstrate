@@ -1,14 +1,19 @@
+/*
+ * Forms
+ */
+ 
+/* Placeholder Styling */
 ::-webkit-input-placeholder {
-   color: rgba($c-b, .6);
+   color: rgba(color(b), .6);
 }
 :-moz-placeholder {
-   color: rgba($c-b, .6);  
+   color: rgba(color(b), .6);  
 }
 ::-moz-placeholder {
-   color: rgba($c-b, .6);  
+   color: rgba(color(b), .6);  
 }
 :-ms-input-placeholder {  
-   color: rgba($c-b, .6);  
+   color: rgba(color(b), .6);  
 }
 
 input {
@@ -18,7 +23,7 @@ input {
 	&:-webkit-autofill {
 		background-color: #FFFFFF !important;
 		-webkit-box-shadow: 0 0 0 1000px #FFFFFF inset;
-		color: $c-b !important;
+		color: color(b) !important;
 	}
 }
 
@@ -30,5 +35,4 @@ textarea {
 	width: 100%;
 }
 
-
-/* More to come */
+// Need to add to this
