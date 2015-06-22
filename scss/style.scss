@@ -1,8 +1,11 @@
-/* includes - for dependencies and resets */
+// Dependencies & Resets
 @import "inc/_init";
 
-/* Base styles */
+// Base Styles
 @import "base/_init";
 
-/* Partials for site pages */
-@import "partials/_init";
+// Module Styles
+@import "modules/_init";
+
+// Page Partials
+@import "pages/_init";
