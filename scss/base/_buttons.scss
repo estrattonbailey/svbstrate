@@ -1,7 +1,6 @@
 /*
  * Buttons
  */
-
 $button-color: color(1);
 $button-color__hover: darker(color(1), 10%);
 $button-color--alt: color(2);
@@ -14,9 +13,9 @@ button {
 
 	background-color: $button-color;
 	border: 0;
-	color: #FFFFFF;
+	color: color(w);
 	cursor: pointer;
-	padding: 1rem 2rem;
+	padding: s(s) s(m);
 	text-decoration: none;
 	text-align: center;
 	-webkit-appearance: none;

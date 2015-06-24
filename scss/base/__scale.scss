@@ -11,7 +11,7 @@ $scale: (
 	xxl: calc(#{$scale_base} * ( #{$ratio} * #{$ratio}) * 2 )
 );
 
-@function scale($key) {
+@function s($key) {
   @if map-has-key($scale, $key) {
     @return map-get($scale, $key);
   }

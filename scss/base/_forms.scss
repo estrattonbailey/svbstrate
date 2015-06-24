@@ -1,7 +1,6 @@
 /*
  * Forms
  */
- 
 /* Placeholder Styling */
 ::-webkit-input-placeholder {
    color: rgba(color(b), .6);
@@ -17,6 +16,8 @@
 }
 
 input {
+	border: 0;
+	outline: 0;
 	-webkit-appearance: none;
 	
 	/* Fix autofil in Chrome */
