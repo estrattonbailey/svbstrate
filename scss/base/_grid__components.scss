@@ -66,16 +66,16 @@
     }
 
     .has-gutter--s & {
-		margin-left: calc(-1 * scale(s));
-		margin-right: calc(-1 * scale(s));
+		margin-left: calc(-1 * #{s(s)});
+		margin-right: calc(-1 * #{s(s)});
     }
     .has-gutter--m & {
-    	margin-left: calc(-1 * scale(m));
-		margin-right: calc(-1 * scale(m));
+    	margin-left: calc(-1 * #{s(m)});
+		margin-right: calc(-1 * #{s(m)});
     }
     .has-gutter--l & {
-    	margin-left: calc(-1 * scale(l));
-		margin-right: calc(-1 * scale(l));
+    	margin-left: calc(-1 * #{s(l)});
+		margin-right: calc(-1 * #{s(l)});
     }
 }
 
@@ -86,15 +86,15 @@
 	min-height: 1px;
 
 	.has-gutter--s & {
-		padding-left: scale(s);
-		padding-right: scale(s);
+		padding-left: s(s);
+		padding-right: s(s);
     }
     .has-gutter--m & {
-    	padding-left: scale(m); 
-		padding-right: scale(m); 
+    	padding-left: s(m); 
+		padding-right: s(m); 
     }
     .has-gutter--l & {
-    	padding-left: scale(l); 
-		padding-right: scale(l); 
+    	padding-left: s(l); 
+		padding-right: s(l); 
     }
 }
