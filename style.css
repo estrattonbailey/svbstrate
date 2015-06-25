@@ -203,14 +203,14 @@ html, html a {
  *
  * Display attribute styles
  */
-.block, .block-relative, .grid, .grid--l, .grid--m, .grid--s, .row, .col, .block-fixed, .block-absolute {
+.block, .block-relative, .grid, .grid--l, .grid--m, .grid--s, .row, .col, .rte p img, .rte figure img, .rte hr, .block-fixed, .block-absolute {
   display: block; }
 
 .inline {
   display: inline; }
 
 .inline-block, .inline-relative, .button, .button--c-2, .button--border, .button--border--c-2,
-button, .u-inline-helper::after {
+button, .u-inline-helper::after, .u-middle-align-helper::after {
   display: inline-block; }
 
 .table {
@@ -234,7 +234,7 @@ button, .u-inline-helper::after {
   display: table-cell; }
 
 /* Positioning */
-.relative, .block-relative, .grid, .grid--l, .grid--m, .grid--s, .row, .col, .inline-relative, .button, .button--c-2, .button--border, .button--border--c-2,
+.relative, .block-relative, .grid, .grid--l, .grid--m, .grid--s, .row, .col, .rte p img, .rte figure img, .rte hr, .inline-relative, .button, .button--c-2, .button--border, .button--border--c-2,
 button {
   position: relative; }
 
@@ -1832,7 +1832,9 @@ html, body {
 .type-sans, html, body, h1,
 .h1,
 .h0, h2,
-.h2, h3,
+.h2,
+.rte p:first-of-type,
+.rte blockquote *, h3,
 .h3,
 .button,
 .button--c-2,
@@ -1845,7 +1847,9 @@ button, h4,
   font-family: "Open Sans", Helvetica, Arial, sans-serif; }
 
 .type-serif, p,
-.p {
+.p,
+.rte li,
+.rte pre, .rte p:first-of-type {
   font-family: georgia, serif; }
 
 .type-monospace, .rte pre, .rte code {
@@ -1876,13 +1880,17 @@ h1,
       line-height: 1.1; } }
 
 h2,
-.h2 {
+.h2,
+.rte p:first-of-type,
+.rte blockquote * {
   font-size: 2.5rem;
   font-weight: 900;
   line-height: 3.3rem; }
   @media screen and (min-width: 550px) {
     h2,
-    .h2 {
+    .h2,
+    .rte p:first-of-type,
+    .rte blockquote * {
       font-size: 3rem;
       line-height: 1.4; } }
 
@@ -1926,7 +1934,9 @@ h6,
   line-height: 1.6; }
 
 p,
-.p {
+.p,
+.rte li,
+.rte pre {
   font-size: 1.8rem;
   font-weight: 100;
   line-height: 1.7; }
@@ -1937,29 +1947,61 @@ p,
 .text-underline {
   text-decoration: underline; }
 
-.font-w-0 {
+.font-w-0, .rte p:first-of-type {
   font-weight: 100; }
 
-/*
- * Rich Text Styles
- */
-.rte ul, .rte ol {
-  margin: 0 0 1.6rem;
-  padding: 0 0 0 3rem; }
-.rte pre {
-  overflow: auto;
-  overflow-y: hidden; }
-.rte figure {
-  max-width: 100%; }
-  .rte figure img {
+.rte {
+  /* Links */
+  /* Pull Quotes */
+  /* Lists */
+  /* Code */
+  /* Images */
+  /* Horizontal Rule */ }
+  .rte h1, .rte h2, .rte h3, .rte h4, .rte h5, .rte h6, .rte p {
+    max-width: 700px; }
+  .rte h2, .rte h3, .rte h4, .rte h5, .rte h6 {
+    margin: calc(2rem * 1.618) 0 2rem; }
+  .rte .h0 {
+    max-width: 100%; }
+  .rte p {
+    margin: 2rem 0;
+    /* Lede */ }
+    .rte p:first-of-type {
+      max-width: 840px; }
+  .rte a {
+    color: #148ECC; }
+  .rte blockquote {
+    margin: 2rem 0;
+    padding-left: calc(2rem / 1.618);
+    border-left: 4px solid #148ECC; }
+    @media (min-width: 768px) {
+      .rte blockquote {
+        padding-left: 2rem; } }
+  .rte ul, .rte ol {
+    margin-bottom: 2rem;
+    padding-left: 2rem; }
+  .rte pre {
+    border-left: 4px solid #148ECC;
+    background-color: #f5f5f5;
+    margin: 2rem 0;
+    overflow: auto;
+    overflow-y: hidden;
+    padding: 2rem 0 2rem 2rem; }
+  .rte p img {
     height: auto !important;
     max-width: 100%;
+    padding: 2rem;
     width: 100%; }
-  .rte figure figcaption {
-    max-width: 500px; }
-.rte hr {
-  border: 0;
-  height: 2px; }
+  .rte figure img {
+    max-width: 100%;
+    height: auto !important;
+    width: 100%; }
+  .rte hr {
+    background-color: #f5f5f5;
+    border: 0;
+    height: 2px;
+    margin: calc(2rem * 1.618) 0;
+    width: 100px; }
 
 /*
  * Forms
@@ -2075,6 +2117,11 @@ button {
 .u-inline-helper::after {
   content: '';
   width: 100%; }
+
+.u-middle-align-helper::after {
+  content: '';
+  height: 100%;
+  vertical-align: middle; }
 
 /*
  * Hide Elements

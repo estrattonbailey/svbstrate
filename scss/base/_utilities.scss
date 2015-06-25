@@ -22,6 +22,15 @@
 		width: 100%;
 	}
 }
+.u-middle-align-helper {
+	&::after {
+		@extend .inline-block;
+
+		content:'';
+		height: 100%;
+		vertical-align: middle;
+	}
+}
 
 /*
  * Hide Elements
