@@ -1,0 +1,41 @@
+/*
+ * Buttons
+ */
+$button__color: color(w);
+$button__color--hover: color(w);
+$button__bg-color: color(1);
+$button__bg-color--hover: darken(color(1), 5%);
+
+.button,
+button {
+	@extend .inline-relative;
+	@extend %radius;
+	@extend .h5;
+
+	background-color: $button__bg-color;
+	border: 0;
+	color: $button__color;
+	cursor: pointer;
+	padding: s(xs) s(m);
+	text-decoration: none;
+	text-align: center;
+	-webkit-appearance: none;
+
+	&:hover {
+		background-color: $button__bg-color--hover;
+	}
+}
+
+.button--border {
+	@extend .button;
+
+	background-color: transparent;
+	border: 1px solid $button__bg-color;
+	color: $button__bg-color;
+
+	&:hover {
+		background-color: transparent;
+		border-color: $button__bg-color--hover;
+		color: $button__bg-color--hover;
+	}
+}

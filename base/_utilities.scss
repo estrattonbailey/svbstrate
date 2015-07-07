@@ -1,0 +1,33 @@
+/*
+ * Utilities
+ *
+ * Helper classes. Prefixed with 'u-'.
+ */
+.u-clear {
+	&::before,
+	&::after {
+	  content:' ';
+	  display: table;
+	}
+
+	&::after {
+	  clear: both;
+	}
+}
+.u-inline-helper {
+	&::after {
+		@extend .inline-block;
+
+		content:'';
+		width: 100%;
+	}
+}
+.u-middle-align-helper {
+	&::after {
+		@extend .inline-block;
+
+		content:'';
+		height: 100%;
+		vertical-align: middle;
+	}
+}

@@ -1,0 +1,15 @@
+/*
+ * Code
+ */
+pre {
+    background-color: color(g1);
+    border-left: 4px solid color(1);
+    margin: s(m) 0;
+    overflow: auto;
+    overflow-y: hidden;
+    padding: s(m) 0 s(m) s(l);
+}
+code {
+    @extend .p, .type-monospace;
+    white-space: pre;
+}

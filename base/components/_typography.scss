@@ -1,0 +1,167 @@
+/*
+ * Typography
+ */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,800italic,400,300,800);
+
+html, body {
+    @extend .type-sans;
+    
+    font-size: 62.5%; // Set to 10px
+    color: color(b);
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+.type-sans {
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+.type-serif {
+    font-family: georgia, serif;
+}
+.type-monospace {
+    font-family: Consolas , Monaco, monospace;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+h1,
+.h1 {
+    @extend .type-sans;
+
+    font-size: 3.2rem;
+    line-height: 1.1;
+    margin-bottom: 1.6rem;
+
+    @media screen and (min-width: break(s)) {
+        font-size: 4.5rem;
+    }
+}
+
+.h0 {
+    @extend .h1;
+
+    font-size: 4.5rem;
+    line-height: 1.1;
+
+    @media screen and (min-width: break(s)) {
+        font-size: 5.5vw;
+    }
+}
+
+h2,
+.h2 {
+    @extend .type-sans;
+
+    font-size: 2.5rem;
+    line-height: 1.4;
+
+    @media screen and (min-width: break(s)) {
+        font-size: 3rem;
+    }
+}
+
+h3,
+.h3 {
+    @extend .type-sans;
+
+    font-size: 2rem;
+    line-height: 1.4;
+
+    @media screen and (min-width: break(s)) {
+        font-size: 2.2rem;
+    }
+}
+
+h4,
+.h4 {
+    @extend .type-sans;
+
+    font-size: 1.8rem;
+    line-height: 1.5;
+}
+
+h5,
+.h5 {
+    @extend .type-sans;
+
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
+h6,
+.h6 {
+    @extend .type-sans;
+
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+p,
+.p {
+    @extend .type-serif;
+
+    font-size: 1.8rem;
+    font-weight: 100;
+    line-height: 1.7;
+}
+
+/* 
+ * WYSIWYG (Rich Text) Editor
+ *
+ * Apply .rte class to parent to encapsulate styles,
+ * leaving base typography open for extension.
+ */
+.rte {
+    h1, h2, h3, h4, h5, h6, p {
+        max-width: 700px;
+    }
+    h2, h3, h4, h5, h6 {
+        margin: s(l) 0 s(m);
+    }
+    .h0 {
+        max-width: 100%;
+    }
+    p {
+        margin: s(m) 0;
+    }
+
+    /* Links */
+    a {
+        color: color(1);
+    }
+}
+
+/* Images */
+img {
+    @extend .block-relative; 
+    height: auto !important;
+    max-width: 100%;
+    padding: s(m);
+    width: 100%;  
+}
+
+/* Pull Quotes */
+blockquote {
+    margin: s(m) 0;
+    padding-left: s(s);
+    border-left: 4px solid color(1);
+
+    @media (min-width: break(m)){
+        padding-left: s(m);
+    }
+
+    h1, h2, h3, h4, h5, h6, p {
+        @extend .h2;
+    }
+}
+
+/* Horizontal Rule */
+hr {
+    @extend .block-relative; 
+    background-color: color(g1);
+    border: 0;
+    height: 2px;
+    margin: s(l) 0;
+    width: 100px;
+}

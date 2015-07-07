@@ -1,0 +1,45 @@
+/* 
+ * Scale
+ *
+ * Many measurements in Substrate are based off this scale,
+ * including the grid, buttons, lists, forms, and typographical elements.
+ */
+$scale_base:  2rem;
+$ratio: 1.618;
+
+/* Scale SASS Map */
+$scale: (
+	n: 0,
+	xs: calc(#{$scale_base} / ( #{$ratio} * #{$ratio} ) ),
+	s: calc(#{$scale_base} / #{$ratio}),
+	m: $scale_base,
+	l: calc(#{$scale_base} * #{$ratio}),
+	xl: calc(#{$scale_base} * ( #{$ratio} * #{$ratio}) )
+);
+
+/* Function to reference scale */
+@function s($key) {
+  @if map-has-key($scale, $key) {
+    @return map-get($scale, $key);
+  }
+  @warn "Unknown `#{$key}` in $scale.";
+  @return null;
+}
+
+/* Negative Scale SASS Map */
+$scale__negative: (
+	xs: calc(-1 * #{$scale_base} / ( #{$ratio} * #{$ratio} ) ),
+	s: calc(-1 * #{$scale_base} / #{$ratio}),
+	m: calc(-1 * $scale_base),
+	l: calc(-1 * #{$scale_base} * #{$ratio}),
+	xl: calc(-1 * #{$scale_base} * ( #{$ratio} * #{$ratio}) )
+);
+
+/* Function to reference negative scale */
+@function sn($key) {
+  @if map-has-key($scale__negative, $key) {
+    @return map-get($scale__negative, $key);
+  }
+  @warn "Unknown `#{$key}` in $scale__negative.";
+  @return null;
+}

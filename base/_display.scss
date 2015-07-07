@@ -1,0 +1,45 @@
+/*
+ * Display
+ *
+ * Display attribute styles
+ */
+.block {
+  display: block;
+}
+.inline {
+  display: inline;
+}
+.inline-block {
+  display: inline-block;
+}
+
+/* Positioning */
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+.fixed {
+  position: fixed;
+}
+.static {
+  position: static;
+}
+
+.block-relative {
+  @extend .block;
+  @extend .relative;
+}
+.inline-relative {
+  @extend .inline-block;
+  @extend .relative;
+}
+.block-fixed {
+  @extend .block;
+  @extend .fixed;
+}
+.block-absolute {
+  @extend .block;
+  @extend .absolute;
+}

@@ -1,0 +1,27 @@
+/* Lists */
+ul, ol {
+    margin: 0 0 s(m) 0;
+    padding: 0;
+}
+ol {
+    list-style: decimal inside;
+}
+ul {
+    list-style: disc inside; 
+}
+li {
+    @extend .p;
+}
+/* Nested Lists */
+ul, ol, li {
+    ul, ol {
+        margin: 0;
+        padding-left: s(m);
+    }
+    ul {
+        list-style: circle inside;
+    }
+    ol {
+        list-style: lower-alpha inside;
+    }
+}

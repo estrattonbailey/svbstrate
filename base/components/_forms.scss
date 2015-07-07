@@ -1,0 +1,92 @@
+/*
+ * Forms
+ * 
+ * Some reset styles
+ */
+::-webkit-input-placeholder { color: rgba(color(b), .6) }
+:-moz-placeholder { color: rgba(color(b), .6) }
+::-moz-placeholder { color: rgba(color(b), .6) }
+:-ms-input-placeholder { color: rgba(color(b), .6) }
+input { border: 0; outline: 0;
+	&:-webkit-autofill { background-color: #FFFFFF !important; // customize this as needed
+		-webkit-box-shadow: 0 0 0 1000px #FFFFFF inset; // customize this as needed
+		color: color(b) !important; // customize this as needed
+	}
+}
+textarea { background-color: transparent; border: 0; max-width: 100%; outline: 0; width: 100%; }
+fieldset, legend { margin: 0; padding: 0; border: 0; }
+
+/* 
+ * Styles
+ */
+legend {
+	@extend .h3;
+}
+label,
+input,
+select {
+	@extend .inline-relative;
+}
+input[type="text"],
+input[type="email"],
+input[type="search"],
+input[type="tel"],
+select, {
+	@extend .h4;
+	@extend %radius;
+	border: 1px solid rgba(color(g), .4);
+	height: 44px;
+	padding: 0 s(s);
+	width: 100%;
+}
+label {
+	@extend .h5;
+	color: color(g);
+	margin-bottom: s(xs);
+}
+input {
+}
+select {
+	background-color: color(w);
+}
+textarea {
+	@extend .h4;
+	@extend %radius;
+	border: 1px solid rgba(color(g), .4);
+	min-height: 100px;
+	padding: s(s);
+	width: 100%;
+}
+input[type="checkbox"], 
+input[type="radio"] { 
+	@extend .inline-block; 
+	@extend %radius;
+	border: 1px solid rgba(color(g), .4);
+	vertical-align: middle;
+
+	&:checked{
+	  background-color: color(1);
+	  border-color: color(1);
+	}
+	&:focus{
+	  box-shadow: none;
+	}
+}
+.checkbox, .radio {
+	@extend .block-relative;
+	font-size: 2rem;
+
+	label {
+		font-weight: 100;
+		margin: 0 0 0 s(xs);
+		vertical-align: middle;
+	}
+}
+input[type="radio"] {
+	border-radius: 100%;
+}
+
+.input-group {
+	@extend .block-relative;
+	margin: s(s) auto s(xs);
+}
