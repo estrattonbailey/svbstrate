@@ -192,7 +192,7 @@ html, html a { -webkit-font-smoothing: antialiased; text-shadow: 1px 1px 1px rgb
 
 html, body { font-size: 10px; color: #111111; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; }
 
-html, body, h1, .h1, .h0, h2, .h2, blockquote h1, blockquote h2, blockquote h3, blockquote h4, blockquote h5, blockquote h6, blockquote p, h3, .h3, legend, h4, .h4, input[type="text"], input[type="email"], input[type="search"], input[type="tel"], select, textarea, td, th, .table__cell, h5, .h5, .button, .button--border, button, label, h6, .h6 { font-family: "Open Sans", Helvetica, Arial, sans-serif; }
+html, body, h1, .h1, .h0, h2, .h2, blockquote, blockquote h1, blockquote h2, blockquote h3, blockquote h4, blockquote h5, blockquote h6, blockquote p, h3, .h3, legend, h4, .h4, input[type="text"], input[type="email"], input[type="search"], input[type="tel"], select, textarea, td, th, .table__cell, h5, .h5, .button, .button--border, button, label, h6, .h6 { font-family: "Open Sans", Helvetica, Arial, sans-serif; }
 
 p, .p, code, li { font-family: georgia, serif; }
 
@@ -200,14 +200,14 @@ code { font-family: Consolas , Monaco, monospace; }
 
 h1, h2, h3, h4, h5, h6, p { font-weight: 100; margin: 0; }
 
-h1, .h1, .h0 { font-size: 3.2em; line-height: 1.1; margin-bottom: 1.6em; }
+h1, .h1, .h0 { font-size: 3.2em; line-height: 1.1; }
 @media screen and (min-width: 55em) { h1, .h1, .h0 { font-size: 4.5em; } }
 
 .h0 { font-size: 4.5em; line-height: 1.1; }
 @media screen and (min-width: 55em) { .h0 { font-size: 5.5vw; } }
 
-h2, .h2, blockquote h1, blockquote h2, blockquote h3, blockquote h4, blockquote h5, blockquote h6, blockquote p { font-size: 2.5em; line-height: 1.4; }
-@media screen and (min-width: 55em) { h2, .h2, blockquote h1, blockquote h2, blockquote h3, blockquote h4, blockquote h5, blockquote h6, blockquote p { font-size: 3em; } }
+h2, .h2, blockquote, blockquote h1, blockquote h2, blockquote h3, blockquote h4, blockquote h5, blockquote h6, blockquote p { font-size: 2.5em; line-height: 1.4; }
+@media screen and (min-width: 55em) { h2, .h2, blockquote, blockquote h1, blockquote h2, blockquote h3, blockquote h4, blockquote h5, blockquote h6, blockquote p { font-size: 3em; } }
 
 h3, .h3, legend { font-size: 2em; line-height: 1.4; }
 @media screen and (min-width: 55em) { h3, .h3, legend { font-size: 2.2em; } }
@@ -221,7 +221,7 @@ h6, .h6 { font-size: 1.2em; line-height: 1.6; }
 p, .p, code, li { font-size: 1.8em; font-weight: 100; line-height: 1.7; }
 
 .rte h1, .rte h2, .rte h3, .rte h4, .rte h5, .rte h6, .rte p { max-width: 700px; }
-.rte h2, .rte h3, .rte h4, .rte h5, .rte h6 { margin: calc(1em * 1.618) 0 1em; }
+.rte h1, .rte h2, .rte h3, .rte h4, .rte h5, .rte h6 { margin: 0 0 calc(1em / 1.618); }
 .rte .h0 { max-width: 100%; }
 .rte p { margin: 1em 0; }
 .rte a { color: #148ECC; }
@@ -230,7 +230,7 @@ p, .p, code, li { font-size: 1.8em; font-weight: 100; line-height: 1.7; }
 blockquote { margin: 1em 0; padding-left: calc(1em / 1.618); border-left: 4px solid #148ECC; }
 @media (min-width: 76.8em) { blockquote { padding-left: 1em; } }
 
-hr { background-color: #f5f5f5; border: 0; height: 2px; margin: calc(1em * 1.618) 0; width: 100px; }
+hr { background-color: #f5f5f5; border: 0; height: 2px; margin: calc(1em * ( 1.618 * 1.618) ) 0 calc(1em * 1.618); width: 100px; }
 
 .button, .button--border, button, input[type="text"], input[type="email"], input[type="search"], input[type="tel"], select, textarea, input[type="checkbox"], input[type="radio"] { border-radius: 4px; }
 

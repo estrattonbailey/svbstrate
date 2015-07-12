@@ -26,7 +26,6 @@ h1,
 
     font-size: 3.2em;
     line-height: 1.1;
-    margin-bottom: 1.6em;
 
     @media screen and (min-width: break(s)) {
         font-size: 4.5em;
@@ -101,8 +100,8 @@ p,
     h1, h2, h3, h4, h5, h6, p {
         max-width: 700px;
     }
-    h2, h3, h4, h5, h6 {
-        margin: s(l) 0 s(m);
+    h1, h2, h3, h4, h5, h6 {
+        margin: 0 0 s(s); // .618
     }
     .h0 {
         max-width: 100%;
@@ -122,6 +121,7 @@ p,
     }
 }
 blockquote {
+    @extend .h2;
     margin: s(m) 0;
     padding-left: s(s);
     border-left: 4px solid color(1);
@@ -139,6 +139,6 @@ hr {
     background-color: color(g1);
     border: 0;
     height: 2px;
-    margin: s(l) 0;
+    margin: s(xl) 0 s(l);
     width: 100px;
 }
