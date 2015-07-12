@@ -8,6 +8,6 @@ pre {
     padding: s(m) 0 s(m) s(l);
 }
 code {
-    @extend .p, .type-monospace;
+    @extend .p, %type-monospace;
     white-space: pre;
 }

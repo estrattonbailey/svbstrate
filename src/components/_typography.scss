@@ -1,20 +1,19 @@
 // TYPOGRAPHY
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,800italic,400,300,800);
 html, body {
-    @extend .type-sans;
-    
-    font-size: $font_base; // set in _scale.scss
+    @extend %type-sans;
+    font-size: $font_base * 1px; // set in _scale.scss
     color: color(b);
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
 }
-.type-sans {
+%type-sans {
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
-.type-serif {
+%type-serif {
     font-family: georgia, serif;
 }
-.type-monospace {
+%type-monospace {
     font-family: Consolas , Monaco, monospace;
 }
 h1, h2, h3, h4, h5, h6, p {
@@ -23,20 +22,20 @@ h1, h2, h3, h4, h5, h6, p {
 }
 h1,
 .h1 {
-    @extend .type-sans;
+    @extend %type-sans;
 
-    font-size: 3.2rem;
+    font-size: 3.2em;
     line-height: 1.1;
-    margin-bottom: 1.6rem;
+    margin-bottom: 1.6em;
 
     @media screen and (min-width: break(s)) {
-        font-size: 4.5rem;
+        font-size: 4.5em;
     }
 }
 .h0 {
     @extend .h1;
 
-    font-size: 4.5rem;
+    font-size: 4.5em;
     line-height: 1.1;
 
     @media screen and (min-width: break(s)) {
@@ -45,52 +44,52 @@ h1,
 }
 h2,
 .h2 {
-    @extend .type-sans;
+    @extend %type-sans;
 
-    font-size: 2.5rem;
+    font-size: 2.5em;
     line-height: 1.4;
 
     @media screen and (min-width: break(s)) {
-        font-size: 3rem;
+        font-size: 3em;
     }
 }
 h3,
 .h3 {
-    @extend .type-sans;
+    @extend %type-sans;
 
-    font-size: 2rem;
+    font-size: 2em;
     line-height: 1.4;
 
     @media screen and (min-width: break(s)) {
-        font-size: 2.2rem;
+        font-size: 2.2em;
     }
 }
 h4,
 .h4 {
-    @extend .type-sans;
+    @extend %type-sans;
 
-    font-size: 1.8rem;
+    font-size: 1.8em;
     line-height: 1.5;
 }
 h5,
 .h5 {
-    @extend .type-sans;
+    @extend %type-sans;
 
-    font-size: 1.5rem;
+    font-size: 1.5em;
     line-height: 1.6;
 }
 h6,
 .h6 {
-    @extend .type-sans;
+    @extend %type-sans;
 
-    font-size: 1.2rem;
+    font-size: 1.2em;
     line-height: 1.6;
 }
 p,
 .p {
-    @extend .type-serif;
+    @extend %type-serif;
 
-    font-size: 1.8rem;
+    font-size: 1.8em;
     font-weight: 100;
     line-height: 1.7;
 }
