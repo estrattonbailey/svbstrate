@@ -1,10 +1,8 @@
-/*
- * Padding
- *
- * Generates classes i.e. '.padding-r-l { padding-right: scale(l) }'
- * Plus, breakpoint specific extensions i.e. '.padding-r-l_m { padding-right: scale(l) }',
- ** which will only affect layouts greater than break(m)
- */
+// Padding
+// 
+// Generates classes i.e. '.padding-r-l { padding-right: scale(l) }'
+// Plus, breakpoint specific extensions i.e. '.padding-r-l_m { padding-right: scale(l) }',
+// which will only affect layouts greater than break(m)
 @each $size, $value in $scale {
 	.padding-a-#{$size} { padding: $value }
 	.padding-l-#{$size} { padding-left: $value }

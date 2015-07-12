@@ -1,9 +1,5 @@
-/*
- * Utilities
- *
- * Helper classes. Prefixed with 'u-'.
- */
-.u-clear {
+// UTILIES - prefixed with .u-
+%u-clear {
 	&::before,
 	&::after {
 	  content:' ';
@@ -14,7 +10,7 @@
 	  clear: both;
 	}
 }
-.u-inline-helper {
+%u-inline-helper {
 	&::after {
 		@extend .inline-block;
 
@@ -22,7 +18,7 @@
 		width: 100%;
 	}
 }
-.u-middle-align-helper {
+%u-middle-align-helper {
 	&::after {
 		@extend .inline-block;
 

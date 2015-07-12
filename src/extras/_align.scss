@@ -1,12 +1,7 @@
-/*
- * Alignment
- *
- * Generates classes i.e. '.align-m { vertical-align: middle }'
- * Plus, breakpoint specific extensions i.e. '.align-m_l { vertical-align: middle }',
- ** which will only affect layouts greater than break(l)
- */
-
-/* Text Align */
+// ALIGNMENT
+// Generates classes i.e. '.align-m { vertical-align: middle }'
+// Plus, breakpoint specific extensions i.e. '.align-m_l { vertical-align: middle }',
+// which will only affect layouts greater than break(l)
 $align: (
 	l: left,
 	r: right,
@@ -23,8 +18,6 @@ $align: (
 	} 
   }
 }
-
-/* Vertical Align */
 $align--vertical: (
 	m: middle,
 	t: top,

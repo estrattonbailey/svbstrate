@@ -1,10 +1,8 @@
-/*
- * Floats
- *
- * Generates classes i.e. '.float-l { float: left }'
- * Plus, breakpoint specific extensions i.e. '.float-l_m { float: left }',
- ** which will only affect layouts greater than break(m)
- */
+// Floats
+//
+// Generates classes i.e. '.float-l { float: left }'
+// Plus, breakpoint specific extensions i.e. '.float-l_m { float: left }',
+// which will only affect layouts greater than break(m)
 $floats: (
 	n: none,
 	l: left,

@@ -1,8 +1,4 @@
-/*
- * Display
- *
- * Display attribute styles
- */
+// DISPLAY & POSITIONING
 .block {
   display: block;
 }
@@ -12,8 +8,6 @@
 .inline-block {
   display: inline-block;
 }
-
-/* Positioning */
 .relative {
   position: relative;
 }
@@ -26,7 +20,6 @@
 .static {
   position: static;
 }
-
 .block-relative {
   @extend .block;
   @extend .relative;

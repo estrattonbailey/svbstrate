@@ -1,0 +1,28 @@
+// BREAKPOINTS
+//
+// Configured to the following sizes:
+// xs: 399px
+// s: 550px
+// m: 768px
+// l: 1024px
+// xl: 1280px
+// xxl: 1400px
+//
+// Function 'break()' allows user to specify a key/value
+// from the $breakpoints SASS map.
+// Example usage: '@media (min-width: break(m)) { ... }'
+$breakpoints: (
+	xs: (399 / $font_base) * 1em,
+	s: (550 / $font_base) * 1em,
+	m: (768 / $font_base) * 1em,
+	l: (1024 / $font_base) * 1em,
+	xl: (1280 / $font_base) * 1em,
+	xxl: (1400 / $font_base) * 1em
+);
+@function break($key) {
+  @if map-has-key($breakpoints, $key) {
+    @return map-get($breakpoints, $key);
+  }
+  @warn "Unknown breakpoint `#{$key}` in $breakpoints object.";
+  @return null;
+}

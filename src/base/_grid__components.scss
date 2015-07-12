@@ -1,21 +1,13 @@
-/*
- * Grid Components
- *
- * The building blocks of the grid.
- */
+// GRID COMPONENTS
 .grid {
     @extend .block-relative;
-
     margin: auto;
     overflow-x: hidden;
     width: 100%;
 }
-
 .grid--l {
 	@extend .grid;
-
 	width: 90%;
-
     @media (min-width: break(xs)) {
         width: 92.5%;
     }
@@ -23,12 +15,9 @@
         width: 95%;
     }
 }
-
 .grid--m {
 	@extend .grid;
-
 	width: 90%;
-
     @media (min-width: break(xs)) {
         width: 82.5%;
     }
@@ -36,12 +25,9 @@
         width: 75%;
     }
 }
-
 .grid--s {
 	@extend .grid;
-
     width: 90%;
-
     @media (min-width: break(xs)) {
         width: 80%;
     }
@@ -49,38 +35,21 @@
         width: 66%;
     }
 }
-
 .row {
 	@extend .block-relative;
-
+    @extend %u-clear;
 	margin: 0 auto;
-
-	&::before,
-    &::after {
-      content: " ";
-      display: table;
-    }
-
-    &::after {
-      clear: both;
-    }
 }
-
 .col { 
 	@extend .block-relative;
-
 	float: left;
 	min-height: 1px;
 }
-
-/* 
- * Gutters
- */
+// GUTTERS
 .has-gutter--s {
     > .row {
         margin-left: sn(s);
         margin-right: sn(s);
-
         > .col {
             padding-left: s(s);
             padding-right: s(s);
@@ -101,7 +70,6 @@
     > .row {
         margin-left: sn(l);
         margin-right: sn(l);
-        
         > .col {
             padding-left: s(l); 
             padding-right: s(l);

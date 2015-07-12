@@ -1,6 +1,4 @@
-/*
- * Code
- */
+// CODE
 pre {
     background-color: color(g1);
     border-left: 4px solid color(1);
@@ -10,6 +8,6 @@ pre {
     padding: s(m) 0 s(m) s(l);
 }
 code {
-    @extend .p, .type-monospace;
+    @extend .p, %type-monospace;
     white-space: pre;
 }
