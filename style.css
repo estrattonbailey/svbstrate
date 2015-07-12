@@ -1,36 +1,6 @@
-/* 
- * Scale
- *
- * Many measurements in Substrate are based off this scale,
- * including the grid, buttons, lists, forms, and typographical elements.
- */
-/* Scale SASS Map */
-/* Function to reference scale */
-/* Negative Scale SASS Map */
-/* Function to reference negative scale */
-/*
- * Breakpoints
- *
- * Configured to the following sizes:
- 	xs: 399px,
-	s: 550px,
-	m: 768px,
-	l: 1024px,
-	xl: 1280px,
-	xxl: 1400px'
- *
- * Function 'break()' allows user to specify a key/value
- ** from the $breakpoints SASS map.
- *
- * Example usage: '@media (min-width: break(m)) { ... }'
- */
-/*
- * Display
- *
- * Display attribute styles
- */
+@charset "UTF-8";
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,800italic,400,300,800);
-.block, .block-relative, .grid, .grid--l, .grid--m, .grid--s, .row, .col, img, hr, .checkbox, .radio, .input-group, .block-fixed, .block-absolute {
+.block, .block-relative, .grid, .grid--l, .grid--m, .grid--s, .row, .col, .rte img, hr, .checkbox, .radio, .input-group, .block-fixed, .block-absolute {
   display: block; }
 
 .inline {
@@ -43,8 +13,7 @@ select, .u-inline-helper::after, .u-middle-align-helper::after, input[type="chec
 input[type="radio"] {
   display: inline-block; }
 
-/* Positioning */
-.relative, .block-relative, .grid, .grid--l, .grid--m, .grid--s, .row, .col, img, hr, .checkbox, .radio, .input-group, .inline-relative, .button, .button--border,
+.relative, .block-relative, .grid, .grid--l, .grid--m, .grid--s, .row, .col, .rte img, hr, .checkbox, .radio, .input-group, .inline-relative, .button, .button--border,
 button, label,
 input,
 select {
@@ -59,13 +28,6 @@ select {
 .static {
   position: static; }
 
-/*
- * Grid Sizing
- *
- * Generates classes i.e. '.s12 { width: 50% }'
- * Plus, breakpoint specific extensions i.e. '.s12_m { width: 50% }',
- ** which will only affect layouts greater than break(m)
- */
 .s1 {
   width: 100%; }
 
@@ -210,7 +172,7 @@ select {
 .sx45 {
   margin-right: 80%; }
 
-@media (min-width: 399px) {
+@media (min-width: 39.9em) {
   .s1_xs {
     width: 100%; }
 
@@ -354,7 +316,7 @@ select {
 
   .sx45_xs {
     margin-right: 80%; } }
-@media (min-width: 550px) {
+@media (min-width: 55em) {
   .s1_s {
     width: 100%; }
 
@@ -498,7 +460,7 @@ select {
 
   .sx45_s {
     margin-right: 80%; } }
-@media (min-width: 768px) {
+@media (min-width: 76.8em) {
   .s1_m {
     width: 100%; }
 
@@ -642,7 +604,7 @@ select {
 
   .sx45_m {
     margin-right: 80%; } }
-@media (min-width: 1024px) {
+@media (min-width: 102.4em) {
   .s1_l {
     width: 100%; }
 
@@ -786,7 +748,7 @@ select {
 
   .sx45_l {
     margin-right: 80%; } }
-@media (min-width: 1280px) {
+@media (min-width: 128em) {
   .s1_xl {
     width: 100%; }
 
@@ -930,7 +892,7 @@ select {
 
   .sx45_xl {
     margin-right: 80%; } }
-@media (min-width: 1400px) {
+@media (min-width: 140em) {
   .s1_xxl {
     width: 100%; }
 
@@ -1074,11 +1036,6 @@ select {
 
   .sx45_xxl {
     margin-right: 80%; } }
-/*
- * Grid Components
- *
- * The building blocks of the grid.
- */
 .grid, .grid--l, .grid--m, .grid--s {
   margin: auto;
   overflow-x: hidden;
@@ -1086,28 +1043,28 @@ select {
 
 .grid--l {
   width: 90%; }
-  @media (min-width: 399px) {
+  @media (min-width: 39.9em) {
     .grid--l {
       width: 92.5%; } }
-  @media (min-width: 768px) {
+  @media (min-width: 76.8em) {
     .grid--l {
       width: 95%; } }
 
 .grid--m {
   width: 90%; }
-  @media (min-width: 399px) {
+  @media (min-width: 39.9em) {
     .grid--m {
       width: 82.5%; } }
-  @media (min-width: 768px) {
+  @media (min-width: 76.8em) {
     .grid--m {
       width: 75%; } }
 
 .grid--s {
   width: 90%; }
-  @media (min-width: 399px) {
+  @media (min-width: 39.9em) {
     .grid--s {
       width: 80%; } }
-  @media (min-width: 768px) {
+  @media (min-width: 76.8em) {
     .grid--s {
       width: 66%; } }
 
@@ -1127,31 +1084,26 @@ select {
  * Gutters
  */
 .has-gutter--s > .row {
-  margin-left: calc(-1 * 2rem / 1.618);
-  margin-right: calc(-1 * 2rem / 1.618); }
+  margin-left: calc(-1 * 1em / 1.618);
+  margin-right: calc(-1 * 1em / 1.618); }
   .has-gutter--s > .row > .col {
-    padding-left: calc(2rem / 1.618);
-    padding-right: calc(2rem / 1.618); }
+    padding-left: calc(1em / 1.618);
+    padding-right: calc(1em / 1.618); }
 
 .has-gutter--m > .row {
   margin-left: calc(-1 * $scale_base);
   margin-right: calc(-1 * $scale_base); }
   .has-gutter--m > .row > .col {
-    padding-left: 2rem;
-    padding-right: 2rem; }
+    padding-left: 1em;
+    padding-right: 1em; }
 
 .has-gutter--l > .row {
-  margin-left: calc(-1 * 2rem * 1.618);
-  margin-right: calc(-1 * 2rem * 1.618); }
+  margin-left: calc(-1 * 1em * 1.618);
+  margin-right: calc(-1 * 1em * 1.618); }
   .has-gutter--l > .row > .col {
-    padding-left: calc(2rem * 1.618);
-    padding-right: calc(2rem * 1.618); }
+    padding-left: calc(1em * 1.618);
+    padding-right: calc(1em * 1.618); }
 
-/*
- * Utilities
- *
- * Helper classes. Prefixed with 'u-'.
- */
 .u-clear::before, .u-clear::after {
   content: ' ';
   display: table; }
@@ -1167,118 +1119,100 @@ select {
   height: 100%;
   vertical-align: middle; }
 
-/*
- * Colors
- *
- * Generates classes i.e. '.c-1 { color: color(1) }'
- *
- * Function 'color()' allows user to grab a key value
- ** from the $colors SASS map.
- */
-.c-w {
-  color: #FFFFFF; }
+[hidden], template {
+  display: none; }
 
-.c-w--d {
-  color: darker(#FFFFFF, 10%); }
+body {
+  margin: 0; }
 
-.c-w--l {
-  color: lighter(#FFFFFF, 10%); }
+a {
+  background: transparent; }
 
-.c-b {
-  color: #111111; }
+a:active, a:hover {
+  outline: 0; }
 
-.c-b--d {
-  color: darker(#111111, 10%); }
+b, strong {
+  font-weight: bold; }
 
-.c-b--l {
-  color: lighter(#111111, 10%); }
+hr {
+  height: 0; }
 
-.c-g {
-  color: #333333; }
+code, kbd, pre, samp {
+  font-family: Consolas, Monaco, monospace, serif; }
 
-.c-g--d {
-  color: darker(#333333, 10%); }
+pre {
+  white-space: pre-wrap; }
 
-.c-g--l {
-  color: lighter(#333333, 10%); }
+q {
+  quotes: "“" "”" "‘" "’"; }
 
-.c-g1 {
-  color: #f5f5f5; }
+small {
+  font-size: 80%; }
 
-.c-g1--d {
-  color: darker(#f5f5f5, 10%); }
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
 
-.c-g1--l {
-  color: lighter(#f5f5f5, 10%); }
+sup {
+  top: -0.5em; }
 
-.c-g2 {
-  color: #cccccc; }
+sub {
+  bottom: -0.25em; }
 
-.c-g2--d {
-  color: darker(#cccccc, 10%); }
+img {
+  border: 0; }
 
-.c-g2--l {
-  color: lighter(#cccccc, 10%); }
+svg:not(:root) {
+  overflow: hidden; }
 
-.c-g3 {
-  color: #999999; }
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0; }
 
-.c-g3--d {
-  color: darker(#999999, 10%); }
+button, input {
+  line-height: normal; }
 
-.c-g3--l {
-  color: lighter(#999999, 10%); }
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+  -webkit-appearance: none;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+  border: 0;
+  outline: 0; }
 
-.c-g4 {
-  color: #666666; }
+button[disabled], html input[disabled] {
+  cursor: default; }
 
-.c-g4--d {
-  color: darker(#666666, 10%); }
+input[type="search"] {
+  -webkit-appearance: textfield; }
 
-.c-g4--l {
-  color: lighter(#666666, 10%); }
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
 
-.c-1 {
-  color: #148ECC; }
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
 
-.c-1--d {
-  color: darker(#148ECC, 10%); }
+textarea {
+  overflow: auto; }
 
-.c-1--l {
-  color: lighter(#148ECC, 10%); }
+html, html a {
+  -webkit-font-smoothing: antialiased;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004); }
 
-.c-2 {
-  color: #00D0FE; }
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box; }
 
-.c-2--d {
-  color: darker(#00D0FE, 10%); }
-
-.c-2--l {
-  color: lighter(#00D0FE, 10%); }
-
-.c-3 {
-  color: #36556E; }
-
-.c-3--d {
-  color: darker(#36556E, 10%); }
-
-.c-3--l {
-  color: lighter(#36556E, 10%); }
-
-.c-4 {
-  color: #182b40; }
-
-.c-4--d {
-  color: darker(#182b40, 10%); }
-
-.c-4--l {
-  color: lighter(#182b40, 10%); }
-
-/*
- * Typography
- */
 html, body {
-  font-size: 62.5%;
+  font-size: 10; }
+
+html, body {
+  font-size: 10;
   color: #111111;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%; }
@@ -1324,6 +1258,7 @@ li {
   font-family: Consolas , Monaco, monospace; }
 
 h1, h2, h3, h4, h5, h6, p {
+  font-weight: 100;
   margin: 0; }
 
 h1,
@@ -1332,7 +1267,7 @@ h1,
   font-size: 3.2rem;
   line-height: 1.1;
   margin-bottom: 1.6rem; }
-  @media screen and (min-width: 550px) {
+  @media screen and (min-width: 55em) {
     h1,
     .h1,
     .h0 {
@@ -1341,7 +1276,7 @@ h1,
 .h0 {
   font-size: 4.5rem;
   line-height: 1.1; }
-  @media screen and (min-width: 550px) {
+  @media screen and (min-width: 55em) {
     .h0 {
       font-size: 5.5vw; } }
 
@@ -1356,7 +1291,7 @@ blockquote h6,
 blockquote p {
   font-size: 2.5rem;
   line-height: 1.4; }
-  @media screen and (min-width: 550px) {
+  @media screen and (min-width: 55em) {
     h2,
     .h2,
     blockquote h1,
@@ -1373,7 +1308,7 @@ h3,
 legend {
   font-size: 2rem;
   line-height: 1.4; }
-  @media screen and (min-width: 550px) {
+  @media screen and (min-width: 55em) {
     h3,
     .h3,
     legend {
@@ -1415,52 +1350,37 @@ li {
   font-weight: 100;
   line-height: 1.7; }
 
-/* 
- * WYSIWYG (Rich Text) Editor
- *
- * Apply .rte class to parent to encapsulate styles,
- * leaving base typography open for extension.
- */
-.rte {
-  /* Links */ }
-  .rte h1, .rte h2, .rte h3, .rte h4, .rte h5, .rte h6, .rte p {
-    max-width: 700px; }
-  .rte h2, .rte h3, .rte h4, .rte h5, .rte h6 {
-    margin: calc(2rem * 1.618) 0 2rem; }
-  .rte .h0 {
-    max-width: 100%; }
-  .rte p {
-    margin: 2rem 0; }
-  .rte a {
-    color: #148ECC; }
-
-/* Images */
-img {
+.rte h1, .rte h2, .rte h3, .rte h4, .rte h5, .rte h6, .rte p {
+  max-width: 700px; }
+.rte h2, .rte h3, .rte h4, .rte h5, .rte h6 {
+  margin: calc(1em * 1.618) 0 1em; }
+.rte .h0 {
+  max-width: 100%; }
+.rte p {
+  margin: 1em 0; }
+.rte a {
+  color: #148ECC; }
+.rte img {
   height: auto !important;
   max-width: 100%;
-  padding: 2rem;
+  padding: 1em;
   width: 100%; }
 
-/* Pull Quotes */
 blockquote {
-  margin: 2rem 0;
-  padding-left: calc(2rem / 1.618);
+  margin: 1em 0;
+  padding-left: calc(1em / 1.618);
   border-left: 4px solid #148ECC; }
-  @media (min-width: 768px) {
+  @media (min-width: 76.8em) {
     blockquote {
-      padding-left: 2rem; } }
+      padding-left: 1em; } }
 
-/* Horizontal Rule */
 hr {
   background-color: #f5f5f5;
   border: 0;
   height: 2px;
-  margin: calc(2rem * 1.618) 0;
+  margin: calc(1em * 1.618) 0;
   width: 100px; }
 
-/*
- * Borders
- */
 .button, .button--border,
 button, input[type="text"],
 input[type="email"],
@@ -1470,16 +1390,13 @@ select, textarea, input[type="checkbox"],
 input[type="radio"] {
   border-radius: 4px; }
 
-/*
- * Buttons
- */
 .button, .button--border,
 button {
   background-color: #148ECC;
   border: 0;
   color: #FFFFFF;
   cursor: pointer;
-  padding: calc(2rem / ( 1.618 * 1.618 ) ) 2rem;
+  padding: calc(1em / ( 1.618 * 1.618 ) ) 1em;
   text-decoration: none;
   text-align: center;
   -webkit-appearance: none; }
@@ -1496,25 +1413,17 @@ button {
     border-color: #127eb5;
     color: #127eb5; }
 
-/*
- * Code
- */
 pre {
   background-color: #f5f5f5;
   border-left: 4px solid #148ECC;
-  margin: 2rem 0;
+  margin: 1em 0;
   overflow: auto;
   overflow-y: hidden;
-  padding: 2rem 0 2rem calc(2rem * 1.618); }
+  padding: 1em 0 1em calc(1em * 1.618); }
 
 code {
   white-space: pre; }
 
-/*
- * Forms
- * 
- * Some reset styles
- */
 ::-webkit-input-placeholder {
   color: rgba(17, 17, 17, 0.6); }
 
@@ -1547,9 +1456,6 @@ fieldset, legend {
   padding: 0;
   border: 0; }
 
-/* 
- * Styles
- */
 input[type="text"],
 input[type="email"],
 input[type="search"],
@@ -1557,12 +1463,12 @@ input[type="tel"],
 select {
   border: 1px solid rgba(51, 51, 51, 0.4);
   height: 44px;
-  padding: 0 calc(2rem / 1.618);
+  padding: 0 calc(1em / 1.618);
   width: 100%; }
 
 label {
   color: #333333;
-  margin-bottom: calc(2rem / ( 1.618 * 1.618 ) ); }
+  margin-bottom: calc(1em / ( 1.618 * 1.618 ) ); }
 
 select {
   background-color: #FFFFFF; }
@@ -1570,7 +1476,7 @@ select {
 textarea {
   border: 1px solid rgba(51, 51, 51, 0.4);
   min-height: 100px;
-  padding: calc(2rem / 1.618);
+  padding: calc(1em / 1.618);
   width: 100%; }
 
 input[type="checkbox"],
@@ -1589,18 +1495,17 @@ input[type="radio"] {
   font-size: 2rem; }
   .checkbox label, .radio label {
     font-weight: 100;
-    margin: 0 0 0 calc(2rem / ( 1.618 * 1.618 ) );
+    margin: 0 0 0 calc(1em / ( 1.618 * 1.618 ) );
     vertical-align: middle; }
 
 input[type="radio"] {
   border-radius: 100%; }
 
 .input-group {
-  margin: calc(2rem / 1.618) auto calc(2rem / ( 1.618 * 1.618 ) ); }
+  margin: calc(1em / 1.618) auto calc(1em / ( 1.618 * 1.618 ) ); }
 
-/* Lists */
 ul, ol {
-  margin: 0 0 2rem 0;
+  margin: 0 0 1em 0;
   padding: 0; }
 
 ol {
@@ -1609,18 +1514,14 @@ ol {
 ul {
   list-style: disc inside; }
 
-/* Nested Lists */
 ul ul, ul ol, ol ul, ol ol, li ul, li ol {
   margin: 0;
-  padding-left: 2rem; }
+  padding-left: 1em; }
 ul ul, ol ul, li ul {
   list-style: circle inside; }
 ul ol, ol ol, li ol {
   list-style: lower-alpha inside; }
 
-/*
- * Tables
- */
 table,
 .table {
   border-collapse: collapse;
@@ -1646,7 +1547,7 @@ th,
 .table__cell {
   border-bottom: 1px solid #f5f5f5;
   display: table-cell;
-  padding: calc(2rem / 1.618) 2rem;
+  padding: calc(1em / 1.618) 1em;
   text-align: left; }
   td:first-child,
   th:first-child,
@@ -1656,5 +1557,38 @@ th,
   th:last-child,
   .table__cell:last-child {
     padding-right: 0; }
+
+.bg-c-w {
+  background-color: #FFFFFF; }
+
+.bg-c-b {
+  background-color: #111111; }
+
+.bg-c-g {
+  background-color: #333333; }
+
+.bg-c-g1 {
+  background-color: #f5f5f5; }
+
+.bg-c-g2 {
+  background-color: #cccccc; }
+
+.bg-c-g3 {
+  background-color: #999999; }
+
+.bg-c-g4 {
+  background-color: #666666; }
+
+.bg-c-1 {
+  background-color: #148ECC; }
+
+.bg-c-2 {
+  background-color: #00D0FE; }
+
+.bg-c-3 {
+  background-color: #36556E; }
+
+.bg-c-4 {
+  background-color: #182b40; }
 
 /*# sourceMappingURL=style.css.map */

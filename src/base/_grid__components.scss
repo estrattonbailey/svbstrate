@@ -1,8 +1,4 @@
-/*
- * Grid Components
- *
- * The building blocks of the grid.
- */
+// GRID COMPONENTS
 .grid {
     @extend .block-relative;
 
@@ -10,7 +6,6 @@
     overflow-x: hidden;
     width: 100%;
 }
-
 .grid--l {
 	@extend .grid;
 
@@ -23,7 +18,6 @@
         width: 95%;
     }
 }
-
 .grid--m {
 	@extend .grid;
 
@@ -36,7 +30,6 @@
         width: 75%;
     }
 }
-
 .grid--s {
 	@extend .grid;
 
@@ -49,7 +42,6 @@
         width: 66%;
     }
 }
-
 .row {
 	@extend .block-relative;
 
@@ -65,14 +57,12 @@
       clear: both;
     }
 }
-
 .col { 
 	@extend .block-relative;
 
 	float: left;
 	min-height: 1px;
 }
-
 /* 
  * Gutters
  */

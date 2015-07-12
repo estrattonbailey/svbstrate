@@ -1,11 +1,8 @@
-/*
- * Buttons
- */
+// BUTTONS
 $button__color: color(w);
 $button__color--hover: color(w);
 $button__bg-color: color(1);
 $button__bg-color--hover: darken(color(1), 5%);
-
 .button,
 button {
 	@extend .inline-relative;
@@ -25,7 +22,6 @@ button {
 		background-color: $button__bg-color--hover;
 	}
 }
-
 .button--border {
 	@extend .button;
 

@@ -1,10 +1,9 @@
-/*
- * Margins
- *
- * Generates classes i.e. '.margin-r-l { margin-right: scale(l) }'
- * Plus, breakpoint specific extensions i.e. '.margin-r-l_m { margin-right: scale(l) }',
- ** which will only affect layouts greater than break(m)
- */
+// Margins
+// 
+// Generates classes i.e. '.margin-r-l { margin-right: scale(l) }'
+// Plus, breakpoint specific extensions i.e. '.margin-r-l_m { margin-right: scale(l) }',
+// which will only affect layouts greater than break(m)
+
 @each $size, $value in $scale {
 	.margin-a-#{$size} { margin: $value }
 	.margin-l-#{$size} { margin-left: $value }

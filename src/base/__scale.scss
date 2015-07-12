@@ -1,13 +1,10 @@
-/* 
- * Scale
- *
- * Many measurements in Substrate are based off this scale,
- * including the grid, buttons, lists, forms, and typographical elements.
- */
-$scale_base:  2rem;
-$ratio: 1.618;
+// SCALE 
+// Many measurements in Substrate are based off this scale,
+// including the grid, buttons, lists, forms, and typographical elements.
+$font_base: 10;
+$scale_base:  1em;
+$ratio: 1.618; // golden
 
-/* Scale SASS Map */
 $scale: (
 	n: 0,
 	xs: calc(#{$scale_base} / ( #{$ratio} * #{$ratio} ) ),
@@ -17,16 +14,18 @@ $scale: (
 	xl: calc(#{$scale_base} * ( #{$ratio} * #{$ratio}) )
 );
 
-/* Function to reference scale */
+// SCALE Function
+// E.g. use s(xs) to reference the "small" key in the $scale object
 @function s($key) {
   @if map-has-key($scale, $key) {
     @return map-get($scale, $key);
+  } @else {
+  	@warn "Unknown increment (#{$key}) in $scale object.";
+  	@return 1em;
   }
-  @warn "Unknown `#{$key}` in $scale.";
-  @return null;
 }
 
-/* Negative Scale SASS Map */
+// Negative scale for .grid .row classes
 $scale__negative: (
 	xs: calc(-1 * #{$scale_base} / ( #{$ratio} * #{$ratio} ) ),
 	s: calc(-1 * #{$scale_base} / #{$ratio}),
@@ -34,12 +33,11 @@ $scale__negative: (
 	l: calc(-1 * #{$scale_base} * #{$ratio}),
 	xl: calc(-1 * #{$scale_base} * ( #{$ratio} * #{$ratio}) )
 );
-
-/* Function to reference negative scale */
 @function sn($key) {
   @if map-has-key($scale__negative, $key) {
     @return map-get($scale__negative, $key);
+  } @else {
+  	@warn "Unknown increment (#{$key}) in $scale_negative object.";
+  	@return 1em;
   }
-  @warn "Unknown `#{$key}` in $scale__negative.";
-  @return null;
 }

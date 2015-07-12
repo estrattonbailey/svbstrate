@@ -1,12 +1,9 @@
-/*
- * Typography
- */
+// TYPOGRAPHY
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,800italic,400,300,800);
-
 html, body {
     @extend .type-sans;
     
-    font-size: 62.5%; // Set to 10px
+    font-size: $font_base; // set in _scale.scss
     color: color(b);
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
@@ -20,11 +17,10 @@ html, body {
 .type-monospace {
     font-family: Consolas , Monaco, monospace;
 }
-
 h1, h2, h3, h4, h5, h6, p {
+    font-weight: 100;
     margin: 0;
 }
-
 h1,
 .h1 {
     @extend .type-sans;
@@ -37,7 +33,6 @@ h1,
         font-size: 4.5rem;
     }
 }
-
 .h0 {
     @extend .h1;
 
@@ -48,7 +43,6 @@ h1,
         font-size: 5.5vw;
     }
 }
-
 h2,
 .h2 {
     @extend .type-sans;
@@ -60,7 +54,6 @@ h2,
         font-size: 3rem;
     }
 }
-
 h3,
 .h3 {
     @extend .type-sans;
@@ -72,7 +65,6 @@ h3,
         font-size: 2.2rem;
     }
 }
-
 h4,
 .h4 {
     @extend .type-sans;
@@ -80,7 +72,6 @@ h4,
     font-size: 1.8rem;
     line-height: 1.5;
 }
-
 h5,
 .h5 {
     @extend .type-sans;
@@ -88,7 +79,6 @@ h5,
     font-size: 1.5rem;
     line-height: 1.6;
 }
-
 h6,
 .h6 {
     @extend .type-sans;
@@ -96,7 +86,6 @@ h6,
     font-size: 1.2rem;
     line-height: 1.6;
 }
-
 p,
 .p {
     @extend .type-serif;
@@ -106,12 +95,9 @@ p,
     line-height: 1.7;
 }
 
-/* 
- * WYSIWYG (Rich Text) Editor
- *
- * Apply .rte class to parent to encapsulate styles,
- * leaving base typography open for extension.
- */
+// RTE (rich text) - WYSIWYG styles
+// apply .rte descender classes to encapsulate styles
+// and leave base type properties open to extension
 .rte {
     h1, h2, h3, h4, h5, h6, p {
         max-width: 700px;
@@ -125,23 +111,17 @@ p,
     p {
         margin: s(m) 0;
     }
-
-    /* Links */
     a {
         color: color(1);
     }
+    img {
+        @extend .block-relative; 
+        height: auto !important;
+        max-width: 100%;
+        padding: s(m);
+        width: 100%;  
+    }
 }
-
-/* Images */
-img {
-    @extend .block-relative; 
-    height: auto !important;
-    max-width: 100%;
-    padding: s(m);
-    width: 100%;  
-}
-
-/* Pull Quotes */
 blockquote {
     margin: s(m) 0;
     padding-left: s(s);
@@ -155,8 +135,6 @@ blockquote {
         @extend .h2;
     }
 }
-
-/* Horizontal Rule */
 hr {
     @extend .block-relative; 
     background-color: color(g1);

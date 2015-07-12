@@ -1,4 +1,4 @@
-/* Lists */
+// LISTS
 ul, ol {
     margin: 0 0 s(m) 0;
     padding: 0;
@@ -12,7 +12,7 @@ ul {
 li {
     @extend .p;
 }
-/* Nested Lists */
+// NESTED LISTS
 ul, ol, li {
     ul, ol {
         margin: 0;

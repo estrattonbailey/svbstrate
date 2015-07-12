@@ -1,10 +1,7 @@
-/*
- * Grid Sizing
- *
- * Generates classes i.e. '.s12 { width: 50% }'
- * Plus, breakpoint specific extensions i.e. '.s12_m { width: 50% }',
- ** which will only affect layouts greater than break(m)
- */
+// Grid Sizing
+// Generates classes i.e. '.s12 { width: 50% }'
+// Plus, breakpoint specific extensions i.e. '.s12_m { width: 50% }',
+// which will only affect layouts greater than break(m)
 $col_sizes: (
     1: 100%,
     12: 50%,
