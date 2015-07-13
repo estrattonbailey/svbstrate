@@ -3,6 +3,7 @@
 html, body {
     @extend %type-sans;
     color: color(b);
+    font-size: 62.5%;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
 }
@@ -138,6 +139,23 @@ hr {
     background-color: color(g1);
     border: 0;
     height: 2px;
-    margin: s(xl) 0 s(l);
+    margin: s(l) 0;
     width: 100px;
+
+    @media (min-width: break(m)){
+        margin: s(xl) 0;
+    }
+}
+// Font styles
+.font-s-i {
+    font-style: italic;
+}
+.font-w-1 {
+    font-weight: 100;
+}
+.font-w-4 {
+    font-weight: 400;
+}
+.font-w-9 {
+    font-weight: 900;
 }
