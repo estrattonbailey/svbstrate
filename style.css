@@ -254,26 +254,4 @@ td, th, .table__cell { border-bottom: 1px solid #f5f5f5; display: table-cell; pa
 td:first-child, th:first-child, .table__cell:first-child { padding-left: 0; }
 td:last-child, th:last-child, .table__cell:last-child { padding-right: 0; }
 
-.bg-c-w { background-color: #FFFFFF; }
-
-.bg-c-b { background-color: #111111; }
-
-.bg-c-g { background-color: #333333; }
-
-.bg-c-g1 { background-color: #f5f5f5; }
-
-.bg-c-g2 { background-color: #cccccc; }
-
-.bg-c-g3 { background-color: #999999; }
-
-.bg-c-g4 { background-color: #666666; }
-
-.bg-c-1 { background-color: #148ECC; }
-
-.bg-c-2 { background-color: #00D0FE; }
-
-.bg-c-3 { background-color: #36556E; }
-
-.bg-c-4 { background-color: #182b40; }
-
 /*# sourceMappingURL=style.css.map */
