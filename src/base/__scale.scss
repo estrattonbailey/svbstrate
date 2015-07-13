@@ -1,8 +1,7 @@
 // SCALE 
 // Many measurements in Substrate are based off this scale,
 // including the grid, buttons, lists, forms, and typographical elements.
-$font_base: 10;
-$scale_base:  1em;
+$scale_base:  1rem;
 $ratio: 1.618; // golden
 
 $scale: (
@@ -21,7 +20,7 @@ $scale: (
     @return map-get($scale, $key);
   } @else {
   	@warn "Unknown increment (#{$key}) in $scale object.";
-  	@return 1em;
+  	@return 1rem;
   }
 }
 
@@ -38,6 +37,6 @@ $scale__negative: (
     @return map-get($scale__negative, $key);
   } @else {
   	@warn "Unknown increment (#{$key}) in $scale_negative object.";
-  	@return 1em;
+  	@return 1rem;
   }
 }

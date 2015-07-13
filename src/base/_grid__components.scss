@@ -2,7 +2,6 @@
 .grid {
     @extend .block-relative;
     margin: auto;
-    overflow-x: hidden;
     width: 100%;
 }
 .grid--l {

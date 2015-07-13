@@ -2,7 +2,6 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,800italic,400,300,800);
 html, body {
     @extend %type-sans;
-    font-size: $font_base * 1px; // set in _scale.scss
     color: color(b);
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
@@ -24,17 +23,17 @@ h1,
 .h1 {
     @extend %type-sans;
 
-    font-size: 3.2em;
+    font-size: 3.2rem;
     line-height: 1.1;
 
     @media screen and (min-width: break(s)) {
-        font-size: 4.5em;
+        font-size: 4.5rem;
     }
 }
 .h0 {
     @extend .h1;
 
-    font-size: 4.5em;
+    font-size: 4.5rem;
     line-height: 1.1;
 
     @media screen and (min-width: break(s)) {
@@ -45,50 +44,50 @@ h2,
 .h2 {
     @extend %type-sans;
 
-    font-size: 2.5em;
+    font-size: 2.5rem;
     line-height: 1.4;
 
     @media screen and (min-width: break(s)) {
-        font-size: 3em;
+        font-size: 3rem;
     }
 }
 h3,
 .h3 {
     @extend %type-sans;
 
-    font-size: 2em;
+    font-size: 2rem;
     line-height: 1.4;
 
     @media screen and (min-width: break(s)) {
-        font-size: 2.2em;
+        font-size: 2.2rem;
     }
 }
 h4,
 .h4 {
     @extend %type-sans;
 
-    font-size: 1.8em;
+    font-size: 1.8rem;
     line-height: 1.5;
 }
 h5,
 .h5 {
     @extend %type-sans;
 
-    font-size: 1.5em;
+    font-size: 1.5rem;
     line-height: 1.6;
 }
 h6,
 .h6 {
     @extend %type-sans;
 
-    font-size: 1.2em;
+    font-size: 1.2rem;
     line-height: 1.6;
 }
 p,
 .p {
     @extend %type-serif;
 
-    font-size: 1.8em;
+    font-size: 1.8rem;
     font-weight: 100;
     line-height: 1.7;
 }
