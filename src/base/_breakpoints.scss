@@ -1,16 +1,19 @@
 // BREAKPOINTS
-//
-// Configured to the following sizes:
+// Svbstrate uses em based @media
+@function em($value) {
+	@if ($value/1) == $value {
+		@return ($value/16)*1em;
+	} 
+	@warn "em(#{$value}) is not a number.";
+	@return null;
+}
+// Breakpoints onfigured to the following sizes:
 // xs: 399px
 // s: 550px
 // m: 768px
 // l: 1024px
 // xl: 1280px
 // xxl: 1400px
-//
-// Function 'break()' allows user to specify a key/value
-// from the $breakpoints SASS map.
-// Example usage: '@media (min-width: break(m)) { ... }'
 $breakpoints: (
 	xs: 399,
 	s: 550,
@@ -19,9 +22,12 @@ $breakpoints: (
 	xl: 1280,
 	xxl: 1400
 );
+// Function 'break()' allows user to specify a key/value
+// from the $breakpoints SASS map.
+// Example usage: '@media (min-width: break(m)) { ... }'
 @function break($key) {
   @if map-has-key($breakpoints, $key) {
-    @return (map-get($breakpoints, $key) / 16) * 1em;
+    @return em(map-get($breakpoints, $key));
   }
   @warn "Unknown breakpoint `#{$key}` in $breakpoints object.";
   @return null;

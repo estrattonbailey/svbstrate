@@ -23,7 +23,7 @@ $col_sizes: (
     // .sx#{$col_ext} { margin-right: $width }
 }
 @each $break_ext, $break in $breakpoints {
-    @media (min-width: $break){
+    @media (min-width: em($break)){
         @each $col_width, $width in $col_sizes {
             .s#{$col_width}_#{$break_ext} { width: $width }
             // .p#{$col_width}_#{$break_ext} { left: $width }
