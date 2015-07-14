@@ -6,37 +6,25 @@ $ratio: 1.618; // golden
 
 $scale: (
 	n: 0,
-	xs: calc(#{$scale_base} / ( #{$ratio} * #{$ratio} ) ),
-	s: calc(#{$scale_base} / #{$ratio}),
+	xs: (#{$scale_base} / ( #{$ratio} * #{$ratio} ) ),
+	s: (#{$scale_base} / #{$ratio}),
 	m: $scale_base,
-	l: calc(#{$scale_base} * #{$ratio}),
-	xl: calc(#{$scale_base} * ( #{$ratio} * #{$ratio}) )
+	l: (#{$scale_base} * #{$ratio}),
+	xl: (#{$scale_base} * ( #{$ratio} * #{$ratio}) )
 );
 
 // SCALE Function
 // E.g. use s(xs) to reference the "small" key in the $scale object
-@function s($key) {
+// If you need a negative value, set the $i @param to true
+@function s($key, $i: false) {
   @if map-has-key($scale, $key) {
-    @return map-get($scale, $key);
+    @if $i == true {
+      @return map-get($scale, $key);
+    } @else {
+      @return calc(#{map-get($scale, $key)});
+    }
   } @else {
   	@warn "Unknown increment (#{$key}) in $scale object.";
-  	@return 1rem;
-  }
-}
-
-// Negative scale for .grid .row classes
-$scale__negative: (
-	xs: calc(-1 * #{$scale_base} / ( #{$ratio} * #{$ratio} ) ),
-	s: calc(-1 * #{$scale_base} / #{$ratio}),
-	m: calc(-1 * $scale_base),
-	l: calc(-1 * #{$scale_base} * #{$ratio}),
-	xl: calc(-1 * #{$scale_base} * ( #{$ratio} * #{$ratio}) )
-);
-@function sn($key) {
-  @if map-has-key($scale__negative, $key) {
-    @return map-get($scale__negative, $key);
-  } @else {
-  	@warn "Unknown increment (#{$key}) in $scale_negative object.";
   	@return 1rem;
   }
 }

@@ -47,8 +47,8 @@
 // GUTTERS
 .has-gutter--s {
     > .row {
-        margin-left: sn(s);
-        margin-right: sn(s);
+        margin-left: calc(#{s(s, true)} * -1);
+        margin-right: calc(#{s(s, true)} * -1);
         > .col {
             padding-left: s(s);
             padding-right: s(s);
@@ -57,8 +57,8 @@
 }
 .has-gutter--m {
     > .row {
-        margin-left: sn(m);
-        margin-right: sn(m);
+        margin-left: calc(#{s(m, true)} * -1);
+        margin-right: calc(#{s(m, true)} * -1);
         > .col {
             padding-left: s(m); 
             padding-right: s(m);
@@ -67,8 +67,8 @@
 }
 .has-gutter--l {
     > .row {
-        margin-left: sn(l);
-        margin-right: sn(l);
+        margin-left: calc(#{s(l, true)} * -1);
+        margin-right: calc(#{s(l, true)} * -1);
         > .col {
             padding-left: s(l); 
             padding-right: s(l);
