@@ -9,7 +9,8 @@ $scale: (
 	s: #{$scale__base} / #{$scale__ratio},
 	m: $scale__base,
 	l: #{$scale__base} * #{$scale__ratio},
-	xl: #{$scale__base} * #{$scale__ratio} * #{$scale__ratio} 
+	xl: #{$scale__base} * #{$scale__ratio} * #{$scale__ratio},
+	xxl: #{$scale__base} * #{$scale__ratio} * #{$scale__ratio} * #{$scale__ratio}
 );
 
 // SCALE Function

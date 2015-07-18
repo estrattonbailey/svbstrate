@@ -252,7 +252,7 @@ a { text-decoration: none; }
 
 .radius, .button, .button--border, .button--ghost, button, input[type="text"], input[type="email"], input[type="search"], input[type="tel"], select, textarea, input[type="checkbox"], input[type="radio"] { border-radius: 4px; }
 
-.button, .button--border, .button--ghost, button { background-color: #ff4567; border: 0; color: #FFFFFF; cursor: pointer; padding: calc(2rem / 1.618 / 1.618) calc(2rem); text-decoration: none; text-align: center; -webkit-appearance: none; }
+.button, .button--border, .button--ghost, button { background-color: #ff4567; border: 0; color: #FFFFFF; cursor: pointer; margin-right: calc(2rem); padding: calc(2rem / 1.618 / 1.618) calc(2rem); text-decoration: none; text-align: center; -webkit-appearance: none; }
 .button:hover, .button--border:hover, .button--ghost:hover, button:hover { background-color: #ff2b52; }
 
 .button--border { background-color: transparent; border: 1px solid #ff4567; color: #ff4567; }

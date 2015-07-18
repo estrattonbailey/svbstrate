@@ -4,9 +4,10 @@
 $color__theme: #148ECC !default;
 $color__button: $color__theme !default;
 $color__background: $color__theme !default;
+$color__black: #111111 !default;
 $colors: (
 	w: #FFFFFF,
-	b: #111111,
+	b: $color__black,
 	g: #333333,
 	g1: #f5f5f5,
 	g2: #cccccc,
