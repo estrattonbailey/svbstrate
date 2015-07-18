@@ -1,13 +1,17 @@
 // CODE
 pre {
-    background-color: color(g1);
-    border-left: 4px solid color(1);
-    margin: s(m) 0;
+    background-color: rgba(color(w), .6);
+    border-left: 4px solid color(theme);
+    margin: s(l) 0;
     overflow: auto;
     overflow-y: hidden;
-    padding: s(m) 0 s(m) s(l);
+    padding: s(m) s(l);
+    code {
+    	background-color: transparent;
+    }
 }
 code {
     @extend .p, .type-monospace;
+    background-color: rgba(color(w), .6);
     white-space: pre;
 }

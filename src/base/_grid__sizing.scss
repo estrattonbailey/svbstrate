@@ -15,7 +15,7 @@ $col_sizes: (
     // 25: 40%,
     // 35: 60%,
     // 45: 80%
-);
+) !default;
 @each $col_ext, $width in $col_sizes {
     .s#{$col_ext} { width: $width }
     // .p#{$col_ext} { left: $width }

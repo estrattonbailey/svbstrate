@@ -4,13 +4,12 @@
 	.bg-c-#{$color} { background-color: $hex }
 }
 // Background Images - fill these in as needed 
-%bg-cv {
+.bg-cv {
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;	
 }
-%bg-cv-t {
-	@extend %bg-cv;
-
+.bg-cv-t {
+	@extend .bg-cv;
 	background-position: top center;
 }

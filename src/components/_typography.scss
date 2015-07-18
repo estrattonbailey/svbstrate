@@ -98,10 +98,10 @@ p,
 // and leave base type properties open to extension
 .rte {
     h1, h2, h3, h4, h5, h6, p {
-        max-width: 700px;
+        max-width: 40em;
     }
     h1, h2, h3, h4, h5, h6 {
-        margin: 0 0 s(s); // .618
+        margin: 0 0 s(s);
     }
     .h0 {
         max-width: 100%;
@@ -110,7 +110,7 @@ p,
         margin: s(m) 0;
     }
     a {
-        color: color(1);
+        color: color(theme);
     }
     img {
         @extend .block-relative; 
@@ -125,9 +125,9 @@ p,
 }
 blockquote {
     @extend .h2;
-    margin: s(m) 0;
+    margin: s(l) 0;
     padding-left: s(s);
-    border-left: 4px solid color(1);
+    border-left: 4px solid color(theme);
 
     @media (min-width: break(m)){
         padding-left: s(m);
@@ -148,6 +148,9 @@ hr {
     @media (min-width: break(m)){
         margin: s(xl) 0;
     }
+}
+a {
+    text-decoration: none;
 }
 // Font styles
 .font-s-i {

@@ -13,16 +13,16 @@
 	.margin-v-#{$size} { margin-top: $value; margin-bottom: $value; }
 	.margin-h-#{$size} { margin-left: $value; margin-right: $value; }
 }
-@each $breakpoint, $break_size in $breakpoints {
-	@media (min-width: $break_size){
+@each $break_ext, $break in $breakpoints {
+  @media (min-width: em($break)) {
 		@each $size, $value in $scale {
-			.margin-a-#{$size}_#{$breakpoint} { margin: $value }
-			.margin-l-#{$size}_#{$breakpoint} { margin-left: $value }
-			.margin-r-#{$size}_#{$breakpoint} { margin-right: $value }
-			.margin-t-#{$size}_#{$breakpoint} { margin-top: $value }
-			.margin-b-#{$size}_#{$breakpoint} { margin-bottom: $value }
-			.margin-v-#{$size}_#{$breakpoint} { margin-top: $value; margin-bottom: $value; }
-			.margin-h-#{$size}_#{$breakpoint} { margin-left: $value; margin-right: $value; }
+			.margin-a-#{$size}_#{$break_ext} { margin: $value }
+			.margin-l-#{$size}_#{$break_ext} { margin-left: $value }
+			.margin-r-#{$size}_#{$break_ext} { margin-right: $value }
+			.margin-t-#{$size}_#{$break_ext} { margin-top: $value }
+			.margin-b-#{$size}_#{$break_ext} { margin-bottom: $value }
+			.margin-v-#{$size}_#{$break_ext} { margin-top: $value; margin-bottom: $value; }
+			.margin-h-#{$size}_#{$break_ext} { margin-left: $value; margin-right: $value; }
 		}
 	}
 }

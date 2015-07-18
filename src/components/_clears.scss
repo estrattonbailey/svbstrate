@@ -1,0 +1,17 @@
+// Clears
+// 
+// Generates classes i.e. '.clear-l_m { clear: left }'
+// 
+// Use these to ensure grids flow properly at different breakpoints 
+// with different grid item heights.
+// Alternatively, set a height for each grid item. 
+.clear-l { clear: left }
+// .clear-r { clear: right }
+// .clear-b { clear: both }
+@each $break_ext, $break in $breakpoints {
+	@media (min-width: em($break)) {
+		.clear-l_#{$break_ext} { clear: left }
+		// .clear-r_#{$break_ext} { clear: right }
+		// .clear-b_#{$break_ext} { clear: both }
+	}
+}

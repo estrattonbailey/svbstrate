@@ -1,0 +1,40 @@
+// WHITESPACE SCALE
+$scale__base:  2rem;
+$scale__ratio: 1.618;
+
+// BREAKPOINTS
+// Edit or add to these as you will
+// There are a few default queries within Svbstrate
+// that may break if these are removed. Not many.
+$breakpoints: (
+	xs: 399,
+	s: 550,
+	m: 768,
+	l: 1024,
+	xl: 1280,
+	xxl: 1400
+);
+
+// GRID COLUMNS
+// Add or remove these as needed
+$col_sizes: (
+    1: 100%,
+    12: 50%,
+    13: 33.333333%,
+    23: 66.666666%,
+    14: 25%,
+    34: 75%,
+    16: 16.666666%,
+    56: 83.333333%,
+    15: 20%,
+    25: 40%,
+    35: 60%,
+    45: 80%
+);
+
+// COLORS
+// These are more easily edited within base/colors.scss
+// but here are the basic options.
+$color__theme: #ff4567;
+$color__button: $color__theme;
+$color__background: $color__theme;

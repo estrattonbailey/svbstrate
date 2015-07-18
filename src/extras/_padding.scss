@@ -12,16 +12,16 @@
 	.padding-v-#{$size} { padding-top: $value; padding-bottom: $value; }
 	.padding-h-#{$size} { padding-left: $value; padding-right: $value; }
 }
-@each $breakpoint, $break_size in $breakpoints {
-	@media (min-width: $break_size){
+@each $break_ext, $break in $breakpoints {
+  @media (min-width: em($break)) {
 		@each $size, $value in $scale {
-			.padding-a-#{$size}_#{$breakpoint} { padding: $value }
-			.padding-l-#{$size}_#{$breakpoint} { padding-left: $value }
-			.padding-r-#{$size}_#{$breakpoint} { padding-right: $value }
-			.padding-t-#{$size}_#{$breakpoint} { padding-top: $value }
-			.padding-b-#{$size}_#{$breakpoint} { padding-bottom: $value }
-			.padding-v-#{$size}_#{$breakpoint} { padding-top: $value; padding-bottom: $value; }
-			.padding-h-#{$size}_#{$breakpoint} { padding-left: $value; padding-right: $value; }
+			.padding-a-#{$size}_#{$break_ext} { padding: $value }
+			.padding-l-#{$size}_#{$break_ext} { padding-left: $value }
+			.padding-r-#{$size}_#{$break_ext} { padding-right: $value }
+			.padding-t-#{$size}_#{$break_ext} { padding-top: $value }
+			.padding-b-#{$size}_#{$break_ext} { padding-bottom: $value }
+			.padding-v-#{$size}_#{$break_ext} { padding-top: $value; padding-bottom: $value; }
+			.padding-h-#{$size}_#{$break_ext} { padding-left: $value; padding-right: $value; }
 		}
 	}
 }

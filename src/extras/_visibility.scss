@@ -4,9 +4,9 @@
 // Plus, breakpoint specific extensions i.e. '.u-hide_m { display: none }',
 // which will only affect layouts greater than break(m)
 .u-hide { display: none }
-@each $breakpoint, $break_size in $breakpoints {
-  @media (min-width: $break_size) {
-    .u-hide_#{$breakpoint} { display: none }
+@each $break_ext, $break in $breakpoints {
+  @media (min-width: em($break)) {
+    .u-hide_#{$break_ext} { display: none }
   }
 }
 // Show Elements
@@ -15,8 +15,8 @@
 // Plus, breakpoint specific extensions i.e. '.u-hide_m { display: none }',
 // which will only affect layouts greater than break(m)
 .u-show { display: block }
-@each $breakpoint, $break_size in $breakpoints {
-  @media (min-width: $break_size) {
-    .u-show_#{$breakpoint} { display: block }
+@each $break_ext, $break in $breakpoints {
+  @media (min-width: em($break)) {
+    .u-show_#{$break_ext} { display: block }
   }
 }

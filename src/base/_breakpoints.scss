@@ -21,7 +21,7 @@ $breakpoints: (
 	l: 1024,
 	xl: 1280,
 	xxl: 1400
-);
+) !default;
 // Function 'break()' allows user to specify a key/value
 // from the $breakpoints SASS map.
 // Example usage: '@media (min-width: break(m)) { ... }'

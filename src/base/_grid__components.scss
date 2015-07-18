@@ -36,7 +36,7 @@
 }
 .row {
 	@extend .block-relative;
-    @extend %u-clear;
+    @extend .u-clear;
 	margin: 0 auto;
 }
 .col { 

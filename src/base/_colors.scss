@@ -1,6 +1,9 @@
 // COLORS
 // Function 'color()' allows user to grab a key value
 // from the $colors SASS map.
+$color__theme: #148ECC !default;
+$color__button: $color__theme !default;
+$color__background: $color__theme !default;
 $colors: (
 	w: #FFFFFF,
 	b: #111111,
@@ -9,10 +12,9 @@ $colors: (
 	g2: #cccccc,
 	g3: #999999,
 	g4: #666666,
-	1: #148ECC,
-	2: #00D0FE,
-	3: #36556E,
-	4: #182b40
+	theme: $color__theme,
+	button: $color__button,
+	background: $color__background
 );
 @function color($key) {
   @if map-has-key($colors, $key) {

@@ -1,16 +1,15 @@
 // SCALE 
 // Many measurements in Substrate are based off this scale,
 // including the grid, buttons, lists, forms, and typographical elements.
-$scale_base:  2rem;
-$ratio: 1.618; // golden
-
+$scale__base:  2rem !default;
+$scale__ratio: 1.618 !default; // golden
 $scale: (
 	n: 0,
-	xs: (#{$scale_base} / ( #{$ratio} * #{$ratio} ) ),
-	s: (#{$scale_base} / #{$ratio}),
-	m: $scale_base,
-	l: (#{$scale_base} * #{$ratio}),
-	xl: (#{$scale_base} * ( #{$ratio} * #{$ratio}) )
+	xs: #{$scale__base} / #{$scale__ratio} / #{$scale__ratio},
+	s: #{$scale__base} / #{$scale__ratio},
+	m: $scale__base,
+	l: #{$scale__base} * #{$scale__ratio},
+	xl: #{$scale__base} * #{$scale__ratio} * #{$scale__ratio} 
 );
 
 // SCALE Function
