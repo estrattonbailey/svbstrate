@@ -17,10 +17,10 @@ $colors: (
 	background: $color__background
 );
 @function color($key) {
-  @if map-has-key($colors, $key) {
-    @return map-get($colors, $key);
-  } @else {
-  	@warn "Unknown color (#{$key}) in $colors object.";
-  	@return #111111;
-  }
+	@if map-has-key($colors, $key) {
+		@return map-get($colors, $key);
+	} @else {
+		@warn "Unknown color (#{$key}) in $colors object.";
+		@return #111111;
+	}
 }

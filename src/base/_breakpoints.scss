@@ -26,9 +26,9 @@ $breakpoints: (
 // from the $breakpoints SASS map.
 // Example usage: '@media (min-width: break(m)) { ... }'
 @function break($key) {
-  @if map-has-key($breakpoints, $key) {
-    @return em(map-get($breakpoints, $key));
-  }
-  @warn "Unknown breakpoint `#{$key}` in $breakpoints object.";
-  @return null;
+	@if map-has-key($breakpoints, $key) {
+		@return em(map-get($breakpoints, $key));
+	}
+	@warn "Unknown breakpoint `#{$key}` in $breakpoints object.";
+	@return null;
 }

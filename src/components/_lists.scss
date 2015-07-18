@@ -1,27 +1,27 @@
 // LISTS
 ul, ol {
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 }
 ol {
-    list-style: decimal inside;
+	list-style: decimal inside;
 }
 ul {
-    list-style: disc inside; 
+	list-style: disc inside; 
 }
 li {
-    @extend .p;
+	@extend .p;
 }
 // NESTED LISTS
 ul, ol, li {
-    ul, ol {
-        margin: 0;
-        padding-left: s(m);
-    }
-    ul {
-        list-style: circle inside;
-    }
-    ol {
-        list-style: lower-alpha inside;
-    }
+	ul, ol {
+		margin: 0;
+		padding-left: s(m);
+	}
+	ul {
+		list-style: circle inside;
+	}
+	ol {
+		list-style: lower-alpha inside;
+	}
 }

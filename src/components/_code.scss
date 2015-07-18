@@ -1,17 +1,17 @@
 // CODE
 pre {
-    background-color: rgba(color(w), .6);
-    border-left: 4px solid color(theme);
-    margin: s(l) 0;
-    overflow: auto;
-    overflow-y: hidden;
-    padding: s(m) s(l);
-    code {
-    	background-color: transparent;
-    }
+	background-color: rgba(color(w), .6);
+	border-left: 4px solid color(theme);
+	margin: s(l) 0;
+	overflow: auto;
+	overflow-y: hidden;
+	padding: s(m) s(l);
+	code {
+		background-color: transparent;
+	}
 }
 code {
-    @extend .p, .type-monospace;
-    background-color: rgba(color(w), .6);
-    white-space: pre;
+	@extend .p, .type-monospace;
+	background-color: rgba(color(w), .6);
+	white-space: pre;
 }

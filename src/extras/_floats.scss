@@ -12,9 +12,9 @@ $floats: (
 	.float-#{$float_ext} { float: $float }
 }
 @each $break_ext, $break in $breakpoints {
-  @media (min-width: em($break)) {
-  	@each $float_ext, $float in $floats {
-  		.float-#{$float_ext}_#{$break_ext} { float: $float }
-  	}
-  }
+	@media (min-width: em($break)) {
+		@each $float_ext, $float in $floats {
+			.float-#{$float_ext}_#{$break_ext} { float: $float }
+		}
+	}
 }

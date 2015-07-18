@@ -1,42 +1,42 @@
 // GRID COMPONENTS
 .grid {
-    @extend .block-relative;
-    margin: auto;
-    width: 100%;
+	@extend .block-relative;
+	margin: auto;
+	width: 100%;
 }
 .grid--l {
 	@extend .grid;
 	width: 90%;
-    @media (min-width: break(xs)) {
-        width: 92.5%;
-    }
-    @media (min-width: break(m)) {
-        width: 95%;
-    }
+	@media (min-width: break(xs)) {
+		width: 92.5%;
+	}
+	@media (min-width: break(m)) {
+		width: 95%;
+	}
 }
 .grid--m {
 	@extend .grid;
 	width: 90%;
-    @media (min-width: break(xs)) {
-        width: 82.5%;
-    }
-    @media (min-width: break(m)) {
-        width: 75%;
-    }
+	@media (min-width: break(xs)) {
+		width: 82.5%;
+	}
+	@media (min-width: break(m)) {
+		width: 75%;
+	}
 }
 .grid--s {
 	@extend .grid;
-    width: 90%;
-    @media (min-width: break(xs)) {
-        width: 80%;
-    }
-    @media (min-width: break(m)) {
-        width: 66%;
-    }
+	width: 90%;
+	@media (min-width: break(xs)) {
+		width: 80%;
+	}
+	@media (min-width: break(m)) {
+		width: 66%;
+	}
 }
 .row {
 	@extend .block-relative;
-    @extend .u-clear;
+	@extend .u-clear;
 	margin: 0 auto;
 }
 .col { 
@@ -46,32 +46,32 @@
 }
 // GUTTERS
 .has-gutter--s {
-    > .row {
-        margin-left: calc(#{s(s, true)} * -1);
-        margin-right: calc(#{s(s, true)} * -1);
-        > .col {
-            padding-left: s(s);
-            padding-right: s(s);
-        }
-    }
+	> .row {
+		margin-left: calc(#{s(s, true)} * -1);
+		margin-right: calc(#{s(s, true)} * -1);
+		> .col {
+			padding-left: s(s);
+			padding-right: s(s);
+		}
+	}
 }
 .has-gutter--m {
-    > .row {
-        margin-left: calc(#{s(m, true)} * -1);
-        margin-right: calc(#{s(m, true)} * -1);
-        > .col {
-            padding-left: s(m); 
-            padding-right: s(m);
-        }
-    }
+	> .row {
+		margin-left: calc(#{s(m, true)} * -1);
+		margin-right: calc(#{s(m, true)} * -1);
+		> .col {
+			padding-left: s(m); 
+			padding-right: s(m);
+		}
+	}
 }
 .has-gutter--l {
-    > .row {
-        margin-left: calc(#{s(l, true)} * -1);
-        margin-right: calc(#{s(l, true)} * -1);
-        > .col {
-            padding-left: s(l); 
-            padding-right: s(l);
-        }
-    }
+	> .row {
+		margin-left: calc(#{s(l, true)} * -1);
+		margin-right: calc(#{s(l, true)} * -1);
+		> .col {
+		    padding-left: s(l); 
+		    padding-right: s(l);
+		}
+	}
 }

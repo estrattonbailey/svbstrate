@@ -1,167 +1,155 @@
 // TYPOGRAPHY
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,800italic,400,300,800);
 html, body {
-    @extend .type-sans;
-    color: color(b);
-    font-size: 62.5%;
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
+	@extend .type-sans;
+	color: color(b);
+	font-size: 62.5%;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
 }
 .type-sans {
-    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
 .type-serif {
-    font-family: georgia, serif;
+	font-family: georgia, serif;
 }
 .type-monospace {
-    font-family: Consolas , Monaco, monospace;
+	font-family: Consolas , Monaco, monospace;
 }
 h1, h2, h3, h4, h5, h6, p {
-    font-weight: 100;
-    margin: 0;
+	font-weight: 100;
+	margin: 0;
 }
 h1,
 .h1 {
-    @extend .type-sans;
-
-    font-size: 3.2rem;
-    line-height: 1.1;
-
-    @media screen and (min-width: break(s)) {
-        font-size: 4.5rem;
-    }
+	@extend .type-sans;
+	font-size: 3.2rem;
+	line-height: 1.1;
+	@media screen and (min-width: break(s)) {
+		font-size: 4.5rem;
+	}
 }
 .h0 {
-    @extend .h1;
-
-    font-size: 4.5rem;
-    line-height: 1.1;
-
-    @media screen and (min-width: break(s)) {
-        font-size: 5.5vw;
-    }
+	@extend .h1;
+	font-size: 4.5rem;
+	line-height: 1.1;
+	@media screen and (min-width: break(s)) {
+		font-size: 5.5vw;
+	}
 }
 h2,
 .h2 {
-    @extend .type-sans;
-
-    font-size: 2.5rem;
-    line-height: 1.4;
-
-    @media screen and (min-width: break(s)) {
-        font-size: 3rem;
-    }
+	@extend .type-sans;
+	font-size: 2.5rem;
+	line-height: 1.4;
+	@media screen and (min-width: break(s)) {
+		font-size: 3rem;
+	}
 }
 h3,
 .h3 {
-    @extend .type-sans;
-
-    font-size: 2rem;
-    line-height: 1.4;
-
-    @media screen and (min-width: break(s)) {
-        font-size: 2.2rem;
-    }
+	@extend .type-sans;
+	font-size: 2rem;
+	line-height: 1.4;
+	@media screen and (min-width: break(s)) {
+		font-size: 2.2rem;
+	}
 }
 h4,
 .h4 {
-    @extend .type-sans;
-
-    font-size: 1.8rem;
-    line-height: 1.5;
+	@extend .type-sans;
+	font-size: 1.8rem;
+	line-height: 1.5;
 }
 h5,
 .h5 {
-    @extend .type-sans;
-
-    font-size: 1.5rem;
-    line-height: 1.6;
+	@extend .type-sans;
+	font-size: 1.5rem;
+	line-height: 1.6;
 }
 h6,
 .h6 {
-    @extend .type-sans;
-
-    font-size: 1.2rem;
-    line-height: 1.6;
+	@extend .type-sans;
+	font-size: 1.2rem;
+	line-height: 1.6;
 }
 p,
 .p {
-    @extend .type-serif;
-
-    font-size: 1.8rem;
-    font-weight: 100;
-    line-height: 1.7;
+	@extend .type-serif;
+	font-size: 1.8rem;
+	font-weight: 100;
+	line-height: 1.7;
 }
 
 // RTE (rich text) - WYSIWYG styles
 // apply .rte descender classes to encapsulate styles
 // and leave base type properties open to extension
 .rte {
-    h1, h2, h3, h4, h5, h6, p {
-        max-width: 40em;
-    }
-    h1, h2, h3, h4, h5, h6 {
-        margin: 0 0 s(s);
-    }
-    .h0 {
-        max-width: 100%;
-    }
-    p {
-        margin: s(m) 0;
-    }
-    a {
-        color: color(theme);
-    }
-    img {
-        @extend .block-relative; 
-        height: auto !important;
-        max-width: 100%;
-        padding: s(m);
-        width: 100%;  
-    }
-    ul, ol {
-        margin: 0 0 s(m) 0;
-    }
+	h1, h2, h3, h4, h5, h6, p {
+		max-width: 40em;
+	}
+	h1, h2, h3, h4, h5, h6 {
+		margin: 0 0 s(s);
+	}
+	.h0 {
+		max-width: 100%;
+	}
+	p {
+		margin: s(m) 0;
+	}
+	a {
+		color: color(theme);
+	}
+	img {
+		@extend .block-relative; 
+		height: auto !important;
+		max-width: 100%;
+		padding: s(m);
+		width: 100%;  
+	}
+	ul, ol {
+		margin: 0 0 s(m) 0;
+	}
 }
 blockquote {
-    @extend .h2;
-    margin: s(l) 0;
-    padding-left: s(s);
-    border-left: 4px solid color(theme);
+	@extend .h2;
+	margin: s(l) 0;
+	padding-left: s(s);
+	border-left: 4px solid color(theme);
 
-    @media (min-width: break(m)){
-        padding-left: s(m);
-    }
+	@media (min-width: break(m)){
+		padding-left: s(m);
+	}
 
-    h1, h2, h3, h4, h5, h6, p {
-        @extend .h2;
-    }
+	h1, h2, h3, h4, h5, h6, p {
+		@extend .h2;
+	}
 }
 hr {
-    @extend .block-relative; 
-    background-color: color(g1);
-    border: 0;
-    height: 2px;
-    margin: s(l) 0;
-    width: 100px;
+	@extend .block-relative; 
+	background-color: color(g1);
+	border: 0;
+	height: 2px;
+	margin: s(l) 0;
+	width: 100px;
 
-    @media (min-width: break(m)){
-        margin: s(xl) 0;
-    }
+	@media (min-width: break(m)){
+		margin: s(xl) 0;
+	}
 }
 a {
-    text-decoration: none;
+	text-decoration: none;
 }
 // Font styles
 .font-s-i {
-    font-style: italic;
+	font-style: italic;
 }
 .font-w-1 {
-    font-weight: 100;
+font-weight: 100;
 }
 .font-w-4 {
-    font-weight: 400;
+	font-weight: 400;
 }
 .font-w-9 {
-    font-weight: 900;
+	font-weight: 900;
 }

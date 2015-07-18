@@ -12,11 +12,11 @@ $align: (
 	.align-#{$align__ext} { text-align: $align }
 } 
 @each $break_ext, $break in $breakpoints {
-  @media (min-width: em($break)) {
-  	@each $align__ext, $align in $align {
-		.align-#{$align__ext}_#{$break_ext} { text-align: $align }
-	} 
-  }
+	@media (min-width: em($break)) {
+		@each $align__ext, $align in $align {
+			.align-#{$align__ext}_#{$break_ext} { text-align: $align }
+		} 
+	}
 }
 $align--vertical: (
 	m: middle,

@@ -1,38 +1,38 @@
 // DISPLAY & POSITIONING
 .block {
-  display: block;
+	display: block;
 }
 .inline {
-  display: inline;
+	display: inline;
 }
 .inline-block {
-  display: inline-block;
+	display: inline-block;
 }
 .relative {
-  position: relative;
+	position: relative;
 }
 .absolute {
-  position: absolute;
+	position: absolute;
 }
 .fixed {
-  position: fixed;
+	position: fixed;
 }
 .static {
-  position: static;
+	position: static;
 }
 .block-relative {
-  @extend .block;
-  @extend .relative;
+	@extend .block;
+	@extend .relative;
 }
 .inline-relative {
-  @extend .inline-block;
-  @extend .relative;
+	@extend .inline-block;
+	@extend .relative;
 }
 .block-fixed {
-  @extend .block;
-  @extend .fixed;
+	@extend .block;
+	@extend .fixed;
 }
 .block-absolute {
-  @extend .block;
-  @extend .absolute;
+	@extend .block;
+	@extend .absolute;
 }

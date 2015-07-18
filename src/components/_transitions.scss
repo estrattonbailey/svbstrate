@@ -31,3 +31,15 @@ $t-short: 0.1s;
 		-moz-transition: background $t-short, color $t-short;
 		-ms-transition: background $t-short, color $t-short;
 }
+.trans-o-s {
+	transition: opacity $t-short;
+		-webkit-transition: opacity $t-short;
+		-moz-transition: opacity $t-short;
+		-ms-transition: opacity $t-short;
+}
+.trans-o-l {
+	transition: opacity $t-long;
+		-webkit-transition: opacity $t-long;
+		-moz-transition: opacity $t-long;
+		-ms-transition: opacity $t-long;
+}

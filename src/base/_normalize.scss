@@ -17,10 +17,10 @@ svg:not(:root) { overflow: hidden }
 button, input, select, textarea { font-family: inherit; font-size: 100%; margin: 0; }
 button, input { line-height: normal }
 button, html input[type="button"], input[type="reset"], input[type="submit"] {
-    -webkit-appearance: none; /* 2 */
-    cursor: pointer; /* 3 */
-    border: 0;
-    outline: 0;
+	-webkit-appearance: none; /* 2 */
+	cursor: pointer; /* 3 */
+	border: 0;
+	outline: 0;
 }
 button[disabled], html input[disabled] { cursor: default }
 input[type="search"] { -webkit-appearance: textfield }
