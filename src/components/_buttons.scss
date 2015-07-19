@@ -8,13 +8,12 @@ button {
 	@extend .inline-relative;
 	@extend .trans-bg-c-s !optional;
 	@extend .radius;
-	@extend .h5;
 	background-color: $button__bg-color;
 	border: 0;
 	color: $button__color;
 	cursor: pointer;
-	margin-right: s(m);
-	padding: s(xs) s(m);
+	margin-right: 1em;
+	padding: .5em 1.2em;
 	text-decoration: none;
 	text-align: center;
 	-webkit-appearance: none;

@@ -198,7 +198,7 @@ html, html a { -webkit-font-smoothing: antialiased; text-shadow: 1px 1px 1px rgb
 
 html, body { color: #111111; font-size: 62.5%; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; }
 
-.type-sans, html, body, h1, .h1, .h0, h2, .h2, blockquote, blockquote h1, blockquote h2, blockquote h3, blockquote h4, blockquote h5, blockquote h6, blockquote p, h3, .h3, legend, h4, .h4, input[type="text"], input[type="email"], input[type="search"], input[type="tel"], select, textarea, td, th, .table__cell, h5, .h5, .button, .button--border, .button--ghost, button, label, h6, .h6 { font-family: "Open Sans", Helvetica, Arial, sans-serif; }
+.type-sans, html, body, h1, .h1, .h0, h2, .h2, blockquote, blockquote h1, blockquote h2, blockquote h3, blockquote h4, blockquote h5, blockquote h6, blockquote p, h3, .h3, legend, h4, .h4, input[type="text"], input[type="email"], input[type="search"], input[type="tel"], select, textarea, td, th, .table__cell, h5, .h5, label, h6, .h6 { font-family: "Open Sans", Helvetica, Arial, sans-serif; }
 
 .type-serif, p, .p, code, li { font-family: georgia, serif; }
 
@@ -220,7 +220,7 @@ h3, .h3, legend { font-size: 2rem; line-height: 1.4; }
 
 h4, .h4, input[type="text"], input[type="email"], input[type="search"], input[type="tel"], select, textarea, td, th, .table__cell { font-size: 1.8rem; line-height: 1.5; }
 
-h5, .h5, .button, .button--border, .button--ghost, button, label { font-size: 1.5rem; line-height: 1.6; }
+h5, .h5, label { font-size: 1.5rem; line-height: 1.6; }
 
 h6, .h6 { font-size: 1.2rem; line-height: 1.6; }
 
@@ -254,7 +254,7 @@ a { text-decoration: none; }
 
 .radius, .button, .button--border, .button--ghost, button, input[type="text"], input[type="email"], input[type="search"], input[type="tel"], select, textarea, input[type="checkbox"], input[type="radio"] { border-radius: 4px; }
 
-.button, .button--border, .button--ghost, button { background-color: #ff4567; border: 0; color: #FFFFFF; cursor: pointer; margin-right: calc(2rem); padding: calc(2rem / 1.618 / 1.618) calc(2rem); text-decoration: none; text-align: center; -webkit-appearance: none; }
+.button, .button--border, .button--ghost, button { background-color: #ff4567; border: 0; color: #FFFFFF; cursor: pointer; margin-right: 1em; padding: .5em 1.2em; text-decoration: none; text-align: center; -webkit-appearance: none; }
 .button:hover, .button--border:hover, .button--ghost:hover, button:hover { background-color: #ff2b52; }
 
 .button--border { background-color: transparent; border: 1px solid #ff4567; color: #ff4567; }
