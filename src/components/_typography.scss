@@ -89,13 +89,14 @@ p,
 		max-width: 40em;
 	}
 	h1, h2, h3, h4, h5, h6 {
-		margin: 0 0 s(s);
+		margin: 1ex 0 .6ex;
 	}
 	.h0 {
 		max-width: 100%;
+		margin: 0 0 0.5ex;
 	}
 	p {
-		margin: s(m) 0;
+		margin: 1ex 0;
 	}
 	a {
 		color: color(theme);
@@ -104,7 +105,7 @@ p,
 		@extend .block-relative; 
 		height: auto !important;
 		max-width: 100%;
-		padding: s(m);
+		padding: s(m) 0;
 		width: 100%;  
 	}
 	ul, ol {

@@ -13,6 +13,7 @@ sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: b
 sup { top: -0.5em }
 sub { bottom: -0.25em }
 img { border: 0 }
+figure { margin: 0 }
 svg:not(:root) { overflow: hidden }
 button, input, select, textarea { font-family: inherit; font-size: 100%; margin: 0; }
 button, input { line-height: normal }

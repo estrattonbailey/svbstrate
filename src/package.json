@@ -1,6 +1,6 @@
 {
   "name": "svbstrate",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "description": "A simple, scalable CSS base layer.",
   "main": "substrate.js",
   "scripts": {
