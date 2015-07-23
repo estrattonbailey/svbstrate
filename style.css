@@ -144,8 +144,6 @@
 
 .u-middle-align-helper::after { content: ''; height: 100%; vertical-align: middle; }
 
-[hidden], template { display: none; }
-
 body { margin: 0; }
 
 a { background: transparent; color: inherit; }
@@ -229,8 +227,8 @@ p, .p, code, li { font-size: 1.8rem; font-weight: 100; line-height: 1.7; }
 .rte h1, .rte h2, .rte h3, .rte h4, .rte h5, .rte h6, .rte p { max-width: 40em; }
 .rte h1, .rte h2, .rte h3, .rte h4, .rte h5, .rte h6 { margin: 1ex 0 .6ex; }
 .rte .h0 { max-width: 100%; margin: 0 0 0.5ex; }
-.rte p { margin: 1ex 0; }
-.rte a { color: #ff4567; }
+.rte p { margin: 2ex 0; }
+.rte a:not(.button):not(.button--border):not(.button--ghost) { color: #ff4567; }
 .rte img { height: auto !important; max-width: 100%; padding: calc(2rem) 0; width: 100%; }
 .rte ul, .rte ol { margin: 0 0 calc(2rem) 0; }
 

@@ -96,9 +96,9 @@ p,
 		margin: 0 0 0.5ex;
 	}
 	p {
-		margin: 1ex 0;
+		margin: 2ex 0;
 	}
-	a {
+	a:not(.button) {
 		color: color(theme);
 	}
 	img {
