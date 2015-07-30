@@ -7,13 +7,13 @@ table,
 	table-layout: fixed;
 	width: 100%;
 }
-.table-row-header {
+.table__row-header {
 	display: table-header-group;
 }
-.table-row-footer {
+.table__row-footer {
 	display: table-footer-group;
 }
-.table-row-group {
+.table__row-group {
 	display: table-row-group;
 }
 .table__row {
@@ -22,16 +22,16 @@ table,
 td,
 th,
 .table__cell {
-	@extend .h4;
 	border-bottom: 1px solid color(g1);
 	display: table-cell;
-	padding: s(s) s(m);
-	text-align: left;
+	padding: .66em 1.33em;
 
-	&:first-child {
-		padding-left: 0;
-	}
-	&:last-child {
-		padding-right: 0;
+	.no-padding & {
+		&:first-child {
+			padding-left: 0;
+		}
+		&:last-child {
+			padding-right: 0;
+		}
 	}
 }

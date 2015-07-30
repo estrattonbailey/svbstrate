@@ -1,5 +1,5 @@
 // LISTS
-ul, ol {
+ul, ol { // add typography sizing classes to outer list container to style font-size
 	margin: 0;
 	padding: 0;
 }
@@ -10,13 +10,13 @@ ul {
 	list-style: disc inside; 
 }
 li {
-	@extend .p;
+	margin: .33em 0;
 }
 // NESTED LISTS
 ul, ol, li {
 	ul, ol {
 		margin: 0;
-		padding-left: s(m);
+		padding-left: 2em;
 	}
 	ul {
 		list-style: circle inside;
