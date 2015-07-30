@@ -1,8 +1,10 @@
 // GRID COMPONENTS
+$grid__gutter--s: 10px !default;
+$grid__gutter--m: 20px !default;
+$grid__gutter--l: 30px !default;
 .grid {
-	@extend .block-relative;
-	margin: auto;
-	width: 100%;
+@extend .block-relative;
+margin: auto;	width: 100%;
 }
 .grid--l {
 	@extend .grid;
@@ -46,32 +48,26 @@
 }
 // GUTTERS
 .has-gutter--s {
-	> .row {
-		margin-left: calc(#{s(s, true)} * -1);
-		margin-right: calc(#{s(s, true)} * -1);
-		> .col {
-			padding-left: s(s);
-			padding-right: s(s);
-		}
+	margin-left: ($grid__gutter--s * -1);
+	margin-right: ($grid__gutter--s * -1);
+	> .col {
+		padding-left: $grid__gutter--s;
+		padding-right: $grid__gutter--s;
 	}
 }
 .has-gutter--m {
-	> .row {
-		margin-left: calc(#{s(m, true)} * -1);
-		margin-right: calc(#{s(m, true)} * -1);
-		> .col {
-			padding-left: s(m); 
-			padding-right: s(m);
-		}
+	margin-left: ($grid__gutter--m * -1);
+	margin-right: ($grid__gutter--m  * -1);
+	> .col {
+		padding-left: $grid__gutter--m;
+		padding-right: $grid__gutter--m;
 	}
 }
 .has-gutter--l {
-	> .row {
-		margin-left: calc(#{s(l, true)} * -1);
-		margin-right: calc(#{s(l, true)} * -1);
-		> .col {
-		    padding-left: s(l); 
-		    padding-right: s(l);
-		}
+	margin-left: ($grid__gutter--l * -1);
+	margin-right: ($grid__gutter--l  * -1);
+	> .col {
+		padding-left: $grid__gutter--l;
+		padding-right: $grid__gutter--l;
 	}
 }

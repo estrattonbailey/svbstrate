@@ -105,21 +105,18 @@ p,
 		@extend .block-relative; 
 		height: auto !important;
 		max-width: 100%;
-		padding: s(m) 0;
+		padding: 2rem 0;
 		width: 100%;  
-	}
-	ul, ol {
-		margin: 0 0 s(m) 0;
 	}
 }
 blockquote {
 	@extend .h2;
-	margin: s(l) 0;
-	padding-left: s(s);
+	margin: 3rem 0;
+	padding-left: 2rem;
 	border-left: 4px solid color(theme);
 
 	@media (min-width: break(m)){
-		padding-left: s(m);
+		padding-left: 3rem;
 	}
 
 	h1, h2, h3, h4, h5, h6, p {
@@ -131,11 +128,11 @@ hr {
 	background-color: color(g1);
 	border: 0;
 	height: 2px;
-	margin: s(l) 0;
+	margin: 4rem 0;
 	width: 100px;
 
 	@media (min-width: break(m)){
-		margin: s(xl) 0;
+		margin: 6rem 0;
 	}
 }
 a {
@@ -145,12 +142,12 @@ a {
 .font-s-i {
 	font-style: italic;
 }
-.font-w-1 {
-font-weight: 100;
+.font-w-l {
+	font-weight: 100;
 }
-.font-w-4 {
+.font-w-r {
 	font-weight: 400;
 }
-.font-w-9 {
+.font-w-b {
 	font-weight: 900;
 }

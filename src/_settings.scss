@@ -32,9 +32,15 @@ $col_sizes: (
     45: 80%
 );
 
+// GRID GUTTERS
+$grid__gutter--s: 10px;
+$grid__gutter--m: 20px;
+$grid__gutter--l: 30px;
+
 // COLORS
 // These are more easily edited within base/colors.scss
 // but here are the basic options.
 $color__theme: #ff4567;
 $color__button: $color__theme;
 $color__background: $color__theme;
+$color__black: #222222; // set background color
