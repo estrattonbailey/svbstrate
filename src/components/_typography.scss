@@ -25,7 +25,7 @@ h1,
 	@extend .type-sans;
 	font-size: 3.2rem;
 	line-height: 1.1;
-	@media screen and (min-width: break(s)) {
+	@media screen and (min-width: 34.375em) { // 550px
 		font-size: 4.5rem;
 	}
 }
@@ -33,7 +33,7 @@ h1,
 	@extend .h1;
 	font-size: 4.5rem;
 	line-height: 1.1;
-	@media screen and (min-width: break(s)) {
+	@media screen and (min-width: 34.375em) { // 550px
 		font-size: 5.5vw;
 	}
 }
@@ -42,7 +42,7 @@ h2,
 	@extend .type-sans;
 	font-size: 2.5rem;
 	line-height: 1.4;
-	@media screen and (min-width: break(s)) {
+	@media screen and (min-width: 34.375em) { // 550px
 		font-size: 3rem;
 	}
 }
@@ -51,7 +51,7 @@ h3,
 	@extend .type-sans;
 	font-size: 2rem;
 	line-height: 1.4;
-	@media screen and (min-width: break(s)) {
+	@media screen and (min-width: 34.375em) { // 550px
 		font-size: 2.2rem;
 	}
 }
@@ -115,7 +115,7 @@ blockquote {
 	padding-left: 2rem;
 	border-left: 4px solid color(theme);
 
-	@media (min-width: break(m)){
+	@media (min-width: 48em){ // 768px
 		padding-left: 3rem;
 	}
 
@@ -131,7 +131,7 @@ hr {
 	margin: 4rem 0;
 	width: 100px;
 
-	@media (min-width: break(m)){
+	@media (min-width: 48em){ // 768px
 		margin: 6rem 0;
 	}
 }
