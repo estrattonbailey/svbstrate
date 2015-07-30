@@ -5,24 +5,24 @@
 // which will only affect layouts greater than break(m)
 
 @each $size, $value in $scale {
-	.margin-a-#{$size} { margin: $value }
-	.margin-l-#{$size} { margin-left: $value }
-	.margin-r-#{$size} { margin-right: $value }
-	.margin-t-#{$size} { margin-top: $value }
-	.margin-b-#{$size} { margin-bottom: $value }
-	.margin-v-#{$size} { margin-top: $value; margin-bottom: $value; }
-	.margin-h-#{$size} { margin-left: $value; margin-right: $value; }
+	.margin-a-#{$size} { margin: calc(#{$value}) }
+	.margin-l-#{$size} { margin-left: calc(#{$value}) }
+	.margin-r-#{$size} { margin-right: calc(#{$value}) }
+	.margin-t-#{$size} { margin-top: calc(#{$value}) }
+	.margin-b-#{$size} { margin-bottom: calc(#{$value}) }
+	.margin-v-#{$size} { margin-top: calc(#{$value}); margin-bottom: calc(#{$value}); }
+	.margin-h-#{$size} { margin-left: calc(#{$value}); margin-right: calc(#{$value}); }
 }
 @each $break_ext, $break in $breakpoints {
   @media (min-width: em($break)) {
 		@each $size, $value in $scale {
-			.margin-a-#{$size}_#{$break_ext} { margin: $value }
-			.margin-l-#{$size}_#{$break_ext} { margin-left: $value }
-			.margin-r-#{$size}_#{$break_ext} { margin-right: $value }
-			.margin-t-#{$size}_#{$break_ext} { margin-top: $value }
-			.margin-b-#{$size}_#{$break_ext} { margin-bottom: $value }
-			.margin-v-#{$size}_#{$break_ext} { margin-top: $value; margin-bottom: $value; }
-			.margin-h-#{$size}_#{$break_ext} { margin-left: $value; margin-right: $value; }
+			.margin-a-#{$size}_#{$break_ext} { margin: calc(#{$value}) }
+			.margin-l-#{$size}_#{$break_ext} { margin-left: calc(#{$value}) }
+			.margin-r-#{$size}_#{$break_ext} { margin-right: calc(#{$value}) }
+			.margin-t-#{$size}_#{$break_ext} { margin-top: calc(#{$value}) }
+			.margin-b-#{$size}_#{$break_ext} { margin-bottom: calc(#{$value}) }
+			.margin-v-#{$size}_#{$break_ext} { margin-top: calc(#{$value}); margin-bottom: calc(#{$value}); }
+			.margin-h-#{$size}_#{$break_ext} { margin-left: calc(#{$value}); margin-right: calc(#{$value}); }
 		}
 	}
 }
