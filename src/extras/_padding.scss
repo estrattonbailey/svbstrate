@@ -4,24 +4,24 @@
 // Plus, breakpoint specific extensions i.e. '.padding-r-l_m { padding-right: scale(l) }',
 // which will only affect layouts greater than break(m)
 @each $size, $value in $scale {
-	.padding-a-#{$size} { padding: $value }
-	.padding-l-#{$size} { padding-left: $value }
-	.padding-r-#{$size} { padding-right: $value }
-	.padding-t-#{$size} { padding-top: $value }
-	.padding-b-#{$size} { padding-bottom: $value }
-	.padding-v-#{$size} { padding-top: $value; padding-bottom: $value; }
-	.padding-h-#{$size} { padding-left: $value; padding-right: $value; }
+	.padding-a-#{$size} { padding: calc(#{$value}) }
+	.padding-l-#{$size} { padding-left: calc(#{$value}) }
+	.padding-r-#{$size} { padding-right: calc(#{$value}) }
+	.padding-t-#{$size} { padding-top: calc(#{$value}) }
+	.padding-b-#{$size} { padding-bottom: calc(#{$value}) }
+	.padding-v-#{$size} { padding-top: calc(#{$value}); padding-bottom: calc(#{$value}); }
+	.padding-h-#{$size} { padding-left: calc(#{$value}); padding-right: calc(#{$value}); }
 }
 @each $break_ext, $break in $breakpoints {
   @media (min-width: em($break)) {
 		@each $size, $value in $scale {
-			.padding-a-#{$size}_#{$break_ext} { padding: $value }
-			.padding-l-#{$size}_#{$break_ext} { padding-left: $value }
-			.padding-r-#{$size}_#{$break_ext} { padding-right: $value }
-			.padding-t-#{$size}_#{$break_ext} { padding-top: $value }
-			.padding-b-#{$size}_#{$break_ext} { padding-bottom: $value }
-			.padding-v-#{$size}_#{$break_ext} { padding-top: $value; padding-bottom: $value; }
-			.padding-h-#{$size}_#{$break_ext} { padding-left: $value; padding-right: $value; }
+			.padding-a-#{$size}_#{$break_ext} { padding: calc(#{$value}) }
+			.padding-l-#{$size}_#{$break_ext} { padding-left: calc(#{$value}) }
+			.padding-r-#{$size}_#{$break_ext} { padding-right: calc(#{$value}) }
+			.padding-t-#{$size}_#{$break_ext} { padding-top: calc(#{$value}) }
+			.padding-b-#{$size}_#{$break_ext} { padding-bottom: calc(#{$value}) }
+			.padding-v-#{$size}_#{$break_ext} { padding-top: calc(#{$value}); padding-bottom: calc(#{$value}); }
+			.padding-h-#{$size}_#{$break_ext} { padding-left: calc(#{$value}); padding-right: calc(#{$value}); }
 		}
 	}
 }
