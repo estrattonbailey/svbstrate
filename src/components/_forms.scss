@@ -31,7 +31,7 @@ input[type="search"],
 input[type="tel"],
 select, {
 	@extend .h4;
-	@extend .radius;
+	@extend .radius !optional;
 	border: 1px solid rgba(color(g), .4);
 	height: 44px;
 	padding: 0 .66em;
@@ -47,7 +47,7 @@ select {
 }
 textarea {
 	@extend .h4;
-	@extend .radius;
+	@extend .radius !optional;
 	border: 1px solid rgba(color(g), .4);
 	min-height: 100px;
 	padding: .66em;
@@ -55,7 +55,7 @@ textarea {
 }
 input[type="checkbox"], 
 input[type="radio"] { 
-	@extend .radius;
+	@extend .radius !optional;
 	border: 1px solid rgba(color(g), .4);
 	vertical-align: middle;
 

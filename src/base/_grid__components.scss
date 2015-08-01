@@ -4,7 +4,7 @@ $grid__gutter--m: 20px !default;
 $grid__gutter--l: 30px !default;
 .grid {
 @extend .block-relative;
-margin: auto;	width: 100%;
+	margin: auto;	width: 100%;
 }
 .grid--l {
 	@extend .grid;
@@ -20,10 +20,10 @@ margin: auto;	width: 100%;
 	@extend .grid;
 	width: 90%;
 	@media (min-width: 24.9375em) { // 399px
-		width: 82.5%;
+		width: 85%;
 	}
 	@media (min-width: 48em) { // 768px
-		width: 75%;
+		width: 80%;
 	}
 }
 .grid--s {

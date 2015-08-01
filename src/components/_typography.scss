@@ -1,17 +1,21 @@
 // TYPOGRAPHY
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,800italic,400,300,800);
+$font-stack__sans: "Open Sans", Helvetica, Arial, sans-serif !default;
+$font-stack__serif: georgia, serif !default;
+$font-stack__body: $font-stack__serif !default;
+$font-stack__headings: $font-stack__sans !default;
+
 html, body {
-	@extend .type-sans;
 	color: color(b);
+	font-family: $font-stack__body;
 	font-size: 62.5%;
 	-ms-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
 }
 .type-sans {
-	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	font-family: $font-stack__sans;
 }
 .type-serif {
-	font-family: georgia, serif;
+	font-family: $font-stack__serif;
 }
 .type-monospace {
 	font-family: Consolas , Monaco, monospace;
@@ -20,9 +24,11 @@ h1, h2, h3, h4, h5, h6, p {
 	font-weight: 100;
 	margin: 0;
 }
+h1, h2, h3, h4, h5, h6 {
+	font-family: $font-stack__headings;
+}
 h1,
 .h1 {
-	@extend .type-sans;
 	font-size: 3.2rem;
 	line-height: 1.1;
 	@media screen and (min-width: 34.375em) { // 550px
@@ -39,7 +45,6 @@ h1,
 }
 h2,
 .h2 {
-	@extend .type-sans;
 	font-size: 2.5rem;
 	line-height: 1.4;
 	@media screen and (min-width: 34.375em) { // 550px
@@ -48,7 +53,6 @@ h2,
 }
 h3,
 .h3 {
-	@extend .type-sans;
 	font-size: 2rem;
 	line-height: 1.4;
 	@media screen and (min-width: 34.375em) { // 550px
@@ -57,25 +61,21 @@ h3,
 }
 h4,
 .h4 {
-	@extend .type-sans;
 	font-size: 1.8rem;
 	line-height: 1.5;
 }
 h5,
 .h5 {
-	@extend .type-sans;
 	font-size: 1.5rem;
 	line-height: 1.6;
 }
 h6,
 .h6 {
-	@extend .type-sans;
 	font-size: 1.2rem;
 	line-height: 1.6;
 }
 p,
 .p {
-	@extend .type-serif;
 	font-size: 1.8rem;
 	font-weight: 100;
 	line-height: 1.7;
