@@ -7,7 +7,7 @@ $button__bg-color--hover: darken(color(button), 5%);
 button {
 	@extend .inline-relative;
 	@extend .trans-bg-c-s !optional;
-	@extend .radius;
+	@extend .radius !optional;
 	background-color: $button__bg-color;
 	border: 0;
 	color: $button__color;

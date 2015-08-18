@@ -1,19 +1,21 @@
 // BREAKPOINTS
-// Svbstrate uses em based @media
+// Convert value to ems, can be used globally
 @function em($value) {
 	@if ($value/1) == $value {
-		@return ($value/16)*1em;
+		@if (unit($value) == 'px') {
+			$unitless_value: $value/1px;
+			@return ($unitless_value/16)*1em;
+		} @else if (unit($value) == 'pt') {
+			$unitless_value: $value/1pt;
+			@return ($unitless_value/16)*1em;
+		} @else {
+			@return ($value/16)*1em;
+		}
 	} 
 	@warn "em(#{$value}) is not a number.";
 	@return null;
 }
-// Breakpoints onfigured to the following sizes:
-// xs: 399px
-// s: 550px
-// m: 768px
-// l: 1024px
-// xl: 1280px
-// xxl: 1400px
+// Default breakpoints
 $breakpoints: (
 	xs: 399,
 	s: 550,
@@ -25,10 +27,35 @@ $breakpoints: (
 // Function 'break()' allows user to specify a key/value
 // from the $breakpoints SASS map.
 // Example usage: '@media (min-width: break(m)) { ... }'
-@function break($key) {
-	@if map-has-key($breakpoints, $key) {
-		@return em(map-get($breakpoints, $key));
+@function break($breakpoint, $min-width: true) {
+	// min-width @media - DEFAULT
+	@if ($min-width == true){
+		@if map-has-key($breakpoints, $breakpoint) {
+			@return em(map-get($breakpoints, $breakpoint));
+		} @else {
+			@return em($breakpoint);
+		}
+		@warn "Something went wrong with your min-width: break(#{$breakpoint}) declaration.";
+		@return null;
+	} 
+	// max-width @media - OPTIONAL
+	@else if ($min-width == false){
+		@if map-has-key($breakpoints, $breakpoint) {
+			@return em(map-get($breakpoints, $breakpoint) - 1);
+		} @else {
+			@return em($breakpoint - 1);
+		}
+		@warn "Something went wrong with your max-width: break(#{$breakpoint}) declaration.";
+		@return null;
+	} 
+	// if neither true nor false, use min-width
+	@else {
+		@if map-has-key($breakpoints, $breakpoint) {
+			@return em(map-get($breakpoints, $breakpoint));
+		} @else {
+			@return em($breakpoint);
+		}
+		@warn "Something went wrong with your use of break(). Check that your breakpoint (#{$breakpoint}) and min/max boolean (#{$min-width}) are entered correctly.";
+		@return null;
 	}
-	@warn "Unknown breakpoint `#{$key}` in $breakpoints object.";
-	@return null;
 }

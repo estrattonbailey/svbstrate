@@ -301,12 +301,12 @@ h1, .h1, .h0 { font-size: 3.2rem; line-height: 1.1; }
 h2, .h2, blockquote, blockquote h1, blockquote h2, blockquote h3, blockquote h4, blockquote h5, blockquote h6, blockquote p { font-size: 2.5rem; line-height: 1.4; }
 @media screen and (min-width: 34.375em) { h2, .h2, blockquote, blockquote h1, blockquote h2, blockquote h3, blockquote h4, blockquote h5, blockquote h6, blockquote p { font-size: 3rem; } }
 
-h3, .h3, legend { font-size: 2rem; line-height: 1.4; }
-@media screen and (min-width: 34.375em) { h3, .h3, legend { font-size: 2.2rem; } }
+h3, .h3 { font-size: 2rem; line-height: 1.4; }
+@media screen and (min-width: 34.375em) { h3, .h3 { font-size: 2.2rem; } }
 
-h4, .h4, input[type="text"], input[type="email"], input[type="search"], input[type="tel"], select, textarea { font-size: 1.8rem; line-height: 1.5; }
+h4, .h4 { font-size: 1.8rem; line-height: 1.5; }
 
-h5, .h5, label, label.checkbox, label.radio { font-size: 1.5rem; line-height: 1.6; }
+h5, .h5 { font-size: 1.5rem; line-height: 1.6; }
 
 h6, .h6 { font-size: 1.2rem; line-height: 1.6; }
 
