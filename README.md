@@ -1,2 +1,2 @@
-# SUBSTRATE
-A simple, scalable CSS base layer.
+# SVBSTRATE
+`npm i svbstrate`
