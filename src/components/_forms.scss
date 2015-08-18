@@ -17,9 +17,6 @@ fieldset, legend { margin: 0; padding: 0; border: 0; }
 form {
 	margin: 3rem 0;
 }
-legend {
-	@extend .h3;
-}
 label,
 input,
 select {
@@ -30,7 +27,6 @@ input[type="email"],
 input[type="search"],
 input[type="tel"],
 select, {
-	@extend .h4;
 	@extend .radius !optional;
 	border: 1px solid rgba(color(g), .4);
 	height: 44px;
@@ -38,7 +34,6 @@ select, {
 	width: 100%;
 }
 label {
-	@extend .h5;
 	color: color(g);
 	margin-bottom: .66em;
 }
@@ -46,7 +41,6 @@ select {
 	background-color: color(w);
 }
 textarea {
-	@extend .h4;
 	@extend .radius !optional;
 	border: 1px solid rgba(color(g), .4);
 	min-height: 100px;
@@ -68,8 +62,6 @@ input[type="radio"] {
 	}
 }
 label.checkbox, label.radio {
-	@extend .h5;
-
 	input {
 		font-size: 2rem;
 		margin: 0 .33em 0 0;
