@@ -1,7 +1,7 @@
 // CODE
 pre {
-	background-color: rgba(color(w), .6);
-	border-left: 4px solid color(theme);
+	background-color: rgba(white, .6);
+	border-left: 4px solid #148ECC;
 	margin: 3rem 0;
 	overflow: auto;
 	overflow-y: hidden;
@@ -11,7 +11,7 @@ pre {
 	}
 }
 code {
-	@extend .p, .type-monospace;
-	background-color: rgba(color(w), .6);
+	@extend .p, .type-monospace !optional;
+	background-color: rgba(white, .6);
 	white-space: pre;
 }

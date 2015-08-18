@@ -3,7 +3,7 @@ $grid__gutter--s: 10px !default;
 $grid__gutter--m: 20px !default;
 $grid__gutter--l: 30px !default;
 .grid {
-@extend .block-relative;
+	@extend .block-relative;
 	margin: auto;	width: 100%;
 }
 .grid--l {
