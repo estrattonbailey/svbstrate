@@ -1,11 +1,12 @@
 // TYPOGRAPHY
-$font-stack__sans: "Open Sans", Helvetica, Arial, sans-serif !default;
-$font-stack__serif: georgia, serif !default;
-$font-stack__body: $font-stack__serif !default;
-$font-stack__headings: $font-stack__sans !default;
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,800italic,400,300,800);
+$font-stack__sans: "Open Sans", Helvetica, Arial, sans-serif;
+$font-stack__serif: georgia, serif;
+$font-stack__body: $font-stack__serif;
+$font-stack__headings: $font-stack__sans;
 
 html, body {
-	color: color(b);
+	color: #222222;
 	font-family: $font-stack__body;
 	font-size: 62.5%;
 	-ms-text-size-adjust: 100%;
@@ -99,7 +100,7 @@ p,
 		margin: 2ex 0;
 	}
 	a:not(.button) {
-		color: color(theme);
+		color: #148ECC;
 	}
 	img {
 		@extend .block-relative; 
@@ -113,7 +114,7 @@ blockquote {
 	@extend .h2;
 	margin: 3rem 0;
 	padding-left: 2rem;
-	border-left: 4px solid color(theme);
+	border-left: 4px solid #148ECC;
 
 	@media (min-width: 48em){ // 768px
 		padding-left: 3rem;
@@ -125,7 +126,7 @@ blockquote {
 }
 hr {
 	@extend .block-relative; 
-	background-color: color(g1);
+	background-color: #f5f5f5;
 	border: 0;
 	height: 2px;
 	margin: 4rem 0;

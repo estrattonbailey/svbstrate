@@ -1,6 +1,6 @@
 // Transitions
-$t-long: 0.3s;
-$t-short: 0.1s;
+$t-long: 0.3s; // time-long
+$t-short: 0.1s; // time-short
 .trans-bg-l {
 	transition: background $t-long;
 		-webkit-transition: background $t-long;

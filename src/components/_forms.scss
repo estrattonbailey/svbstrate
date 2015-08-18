@@ -1,13 +1,13 @@
 // FORMS
 // Reset
-::-webkit-input-placeholder { color: rgba(color(b), .6) }
-:-moz-placeholder { color: rgba(color(b), .6) }
-::-moz-placeholder { color: rgba(color(b), .6) }
-:-ms-input-placeholder { color: rgba(color(b), .6) }
+::-webkit-input-placeholder { color: rgba(#222222, .6) }
+:-moz-placeholder { color: rgba(#222222, .6) }
+::-moz-placeholder { color: rgba(#222222, .6) }
+:-ms-input-placeholder { color: rgba(#222222, .6) }
 input { border: 0; outline: 0;
 	&:-webkit-autofill { background-color: #FFFFFF !important; // customize this as needed
 		-webkit-box-shadow: 0 0 0 1000px #FFFFFF inset; // customize this as needed
-		color: color(b) !important; // customize this as needed
+		color: #222222 !important; // customize this as needed
 	}
 }
 textarea { background-color: transparent; border: 0; max-width: 100%; outline: 0; width: 100%; }
@@ -27,35 +27,32 @@ input[type="email"],
 input[type="search"],
 input[type="tel"],
 select, {
-	@extend .radius !optional;
-	border: 1px solid rgba(color(g), .4);
+	border: 1px solid rgba(#333333, .4);
 	height: 44px;
 	padding: 0 .66em;
 	width: 100%;
 }
 label {
-	color: color(g);
+	color: #333333;
 	margin-bottom: .66em;
 }
 select {
 	background-color: color(w);
 }
 textarea {
-	@extend .radius !optional;
-	border: 1px solid rgba(color(g), .4);
+	border: 1px solid rgba(#333333, .4);
 	min-height: 100px;
 	padding: .66em;
 	width: 100%;
 }
 input[type="checkbox"], 
 input[type="radio"] { 
-	@extend .radius !optional;
-	border: 1px solid rgba(color(g), .4);
+	border: 1px solid rgba(#333333, .4);
 	vertical-align: middle;
 
 	&:checked{
-	  background-color: color(theme);
-	  border-color: color(theme);
+	  background-color: #148ECC;
+	  border-color: #148ECC;
 	}
 	&:focus{
 	  box-shadow: none;

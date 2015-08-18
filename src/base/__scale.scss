@@ -16,13 +16,9 @@ $scale: (
 // SCALE Function
 // E.g. use s(xs) to reference the "small" key in the $scale object
 // If you need a negative value, set the $i @param to true
-@function s($key, $i: false) {
+@function s($key) {
 	@if map-has-key($scale, $key) {
-		@if $i == true {
-			@return map-get($scale, $key);
-		} @else {
-			@return calc(#{map-get($scale, $key)});
-		}
+		@return calc(#{map-get($scale, $key)});
 	} @else {
 		@warn "Unknown increment (#{$key}) in $scale object.";
 		@return 1rem;
