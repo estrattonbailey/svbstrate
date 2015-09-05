@@ -1,4 +1,4 @@
-# svbstrate/components
+# svbstrate/components/
 Use this directory to house reusable modules for your project.
 
 Recommendation: use `.c-*` to prefix these reusable chunks of code.
