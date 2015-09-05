@@ -7,7 +7,7 @@ ol {
 	list-style: decimal inside;
 }
 ul {
-	list-style: disc inside; 
+	list-style: disc inside;
 }
 li {
 	margin: .33em 0;
@@ -23,5 +23,16 @@ ul, ol, li {
 	}
 	ol {
 		list-style: lower-alpha inside;
+	}
+}
+ul.list--reset,
+ol.list--reset,
+li.list--reset,
+.list--reset {
+	list-style: none;
+	padding-left: 0;
+	ul, ol, li {
+		list-style: none;
+		padding-left: 0;
 	}
 }

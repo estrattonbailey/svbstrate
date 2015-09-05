@@ -1,38 +1,45 @@
 // GRID COMPONENTS
-$grid__gutter--s: 10px !default;
-$grid__gutter--m: 20px !default;
-$grid__gutter--l: 30px !default;
+//
+// N.B.
+// The naming of these selectors is a effort to
+// make the HTML easier to read. Elements like
+// .row and .col could be built using classes
+// already available to the markup – as you can
+// see from the @extend statements below -
+// but it's easier to identify a grid and its
+// subsequent blocks if you name them as such.
 .grid {
 	@extend .block-relative;
-	margin: auto;	width: 100%;
+	margin: auto;
+	width: 100%;
 }
 .grid--l {
 	@extend .grid;
 	width: 90%;
-	@media (min-width: 24.9375em) { // 399px
+	@media (min-width: break($_xs)) {
 		width: 92.5%;
 	}
-	@media (min-width: 48em) { // 768px
+	@media (min-width: break($_m)) {
 		width: 95%;
 	}
 }
 .grid--m {
 	@extend .grid;
 	width: 90%;
-	@media (min-width: 24.9375em) { // 399px
+	@media (min-width: break($_xs)) {
 		width: 85%;
 	}
-	@media (min-width: 48em) { // 768px
+	@media (min-width: break($_m)) {
 		width: 80%;
 	}
 }
 .grid--s {
 	@extend .grid;
 	width: 90%;
-	@media (min-width: 24.9375em) { // 399px
+	@media (min-width: break($_xs)) {
 		width: 80%;
 	}
-	@media (min-width: 48em) { // 768px
+	@media (min-width: break($_m)) {
 		width: 66%;
 	}
 }
@@ -41,12 +48,21 @@ $grid__gutter--l: 30px !default;
 	@extend .u-clear;
 	margin: 0 auto;
 }
-.col { 
+.col {
 	@extend .block-relative;
 	float: left;
 	min-height: 1px;
 }
+
 // GUTTERS
+//
+// Created from negative margins on the .row class,
+// should be a directl child of .grid in most
+// cases, but can be used anywhere. Requires the use
+// of .col, but could be customized for your project
+$grid__gutter--s: 10px !default;
+$grid__gutter--m: 20px !default;
+$grid__gutter--l: 30px !default;
 .has-gutter--s {
 	margin-left: ($grid__gutter--s * -1);
 	margin-right: ($grid__gutter--s * -1);

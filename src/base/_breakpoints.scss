@@ -1,5 +1,16 @@
 // BREAKPOINTS
-// Convert value to ems, can be used globally
+// These should be configured for the project.
+// The namespace `$_*` refers to the suffixes
+// used throughout the rest of the project.
+$_xs: 399;
+$_s: 500;
+$_m: 768;
+$_l: 1024;
+$_xl: 1200;
+$_xxl: 1400;
+
+// This function converts values to ems,
+// regardless of units.
 @function em($value) {
 	@if ($value/1) == $value {
 		@if (unit($value) == 'px') {
@@ -11,51 +22,22 @@
 		} @else {
 			@return ($value/16)*1em;
 		}
-	} 
+	}
 	@warn "em(#{$value}) is not a number.";
 	@return null;
 }
-// Default breakpoints
-$breakpoints: (
-	xs: 399,
-	s: 550,
-	m: 768,
-	l: 1024,
-	xl: 1280,
-	xxl: 1400
-) !default;
-// Function 'break()' allows user to specify a key/value
-// from the $breakpoints SASS map.
-// Example usage: '@media (min-width: break(m)) { ... }'
+
+// BREAKPOINT FUNCTION
+// This function can be used with min-width or
+// max-width queries, and converts the pixel
+// value breakpoint variables at the top of this
+// doc to ems for the rendered @media blocks.
 @function break($breakpoint, $min-width: true) {
-	// min-width @media - DEFAULT
-	@if ($min-width == true){
-		@if map-has-key($breakpoints, $breakpoint) {
-			@return em(map-get($breakpoints, $breakpoint));
-		} @else {
-			@return em($breakpoint);
-		}
-		@warn "Something went wrong with your min-width: break(#{$breakpoint}) declaration.";
-		@return null;
-	} 
-	// max-width @media - OPTIONAL
-	@else if ($min-width == false){
-		@if map-has-key($breakpoints, $breakpoint) {
-			@return em(map-get($breakpoints, $breakpoint) - 1);
-		} @else {
-			@return em($breakpoint - 1);
-		}
-		@warn "Something went wrong with your max-width: break(#{$breakpoint}) declaration.";
-		@return null;
-	} 
-	// if neither true nor false, use min-width
-	@else {
-		@if map-has-key($breakpoints, $breakpoint) {
-			@return em(map-get($breakpoints, $breakpoint));
-		} @else {
-			@return em($breakpoint);
-		}
-		@warn "Something went wrong with your use of break(). Check that your breakpoint (#{$breakpoint}) and min/max boolean (#{$min-width}) are entered correctly.";
-		@return null;
+	@if ($min-width == false) {
+		@return em($breakpoint - 1); // subtract on integer for max-width based queries
+	} @else {
+		@return em($breakpoint);
 	}
+	@warn "#{$breakpoint} in function break(#{$breakpoint}) does not exist.";
+	@return 'Check your break() declaration.';
 }

@@ -1,0 +1,71 @@
+// WHITESPACE
+//
+// These classes can be very useful. But, they can
+// be abused easily. They shouldn't be used for
+// spacing that varies across breakpoints. Use them
+// for small UI element spacing, to create small
+// reusable chunks of HTML (components).
+//
+// KEY:
+// mh, ph = margin/padding horizontal (left and right)
+// mv, pv = margin/padding vertical (top and bottom)
+// etc
+
+// These are the pixel based stopping points on the
+// scale. Customize them as needed.
+$intervals: (2,4,8,12,16,20,26,32,40,48,60);
+.mh-a {
+  margin-left: auto;
+  margin-right: auto
+}
+@each $int in $intervals {
+  // MARGINS
+  .mt-#{$int}{
+    margin-top:($int + px)
+  }
+  .mb-#{$int}{
+    margin-bottom:($int + px)
+  }
+  .mv-#{$int}{
+    margin-top:($int + px);
+    margin-bottom:($int + px)
+  }
+  .ml-#{$int}{
+    margin-left:($int + px)
+  }
+  .mr-#{$int}{
+    margin-right:($int + px)
+  }
+  .mh-#{$int}{
+    margin-left:($int + px);
+    margin-right:($int + px)
+  }
+  .mx-#{$int}{
+    margin:($int + px)
+  }
+
+  // PADDING
+  .pt-#{$int}{
+    padding-top:($int + px)
+  }
+  .pb-#{$int}{
+    padding-bottom:($int + px)
+  }
+  .pv-#{$int}{
+    padding-top:($int + px);
+    padding-bottom:($int + px)
+  }
+  .pl-#{$int}{
+    padding-left:($int + px)
+  }
+  .pr-#{$int}{
+    padding-right:($int + px)
+  }
+  .ph-#{$int}{
+    padding-left:($int + px);
+    padding-right:($int + px)
+  }
+  .px-#{$int}{
+    padding:($int + px)
+  }
+}

@@ -1,34 +1,97 @@
-// Widths
-// Generates classes i.e. '.s12 { width: 50% }'
-// Plus, breakpoint specific extensions i.e. '.s12_m { width: 50% }',
-// which will only affect layouts greater than break(m)
-$widths: (
-	1: 100%,
-	12: 50%,
-	13: 33.333333%,
-	23: 66.666666%,
-	14: 25%,
-	34: 75%,
-	16: 16.666666%,
-	56: 83.333333%,
-	15: 20%,
-	25: 40%,
-	35: 60%,
-	45: 80%
-) !default;
-@each $width_ext, $width in $widths {
-	.s#{$width_ext} { width: $width }
-	// .p#{$width_ext} { left: $width }
-	// .pl#{$width_ext} { left: calc(-1 * #{$width}) }
-	// .sx#{$width_ext} { margin-right: $width }
+// WIDTHS
+.s1 { width: 100%; }
+.s12 { width: 50%; }
+.s13 { width: 33.33333%; }
+.s23 { width: 66.66667%; }
+.s14 { width: 25%; }
+.s34 { width: 75%; }
+.s16 { width: 16.66667%; }
+.s56 { width: 83.33333%; }
+.s15 { width: 20%; }
+.s25 { width: 40%; }
+.s35 { width: 60%; }
+.s45 { width: 80%; }
+@media (min-width: break($_xs)) {
+  .s1_xs { width: 100%; }
+  .s12_xs { width: 50%; }
+  .s13_xs { width: 33.33333%; }
+  .s23_xs { width: 66.66667%; }
+  .s14_xs { width: 25%; }
+  .s34_xs { width: 75%; }
+  .s16_xs { width: 16.66667%; }
+  .s56_xs { width: 83.33333%; }
+  .s15_xs { width: 20%; }
+  .s25_xs { width: 40%; }
+  .s35_xs { width: 60%; }
+  .s45_xs { width: 80%; }
 }
-@each $break_ext, $break in $breakpoints {
-	@media (min-width: em($break)){
-		@each $width_ext, $width in $widths {
-		    .s#{$width_ext}_#{$break_ext} { width: $width }
-		    // .p#{$width_ext}_#{$break_ext} { left: $width }
-		    // .pl#{$width_ext}_#{$break_ext} { left: calc(-1 * #{$width}) }
-		    // .sx#{$width_ext}_#{$break_ext} { margin-right: $width }
-		}
-	}
+@media (min-width: break($_s)) {
+  .s1_s { width: 100%; }
+  .s12_s { width: 50%; }
+  .s13_s { width: 33.33333%; }
+  .s23_s { width: 66.66667%; }
+  .s14_s { width: 25%; }
+  .s34_s { width: 75%; }
+  .s16_s { width: 16.66667%; }
+  .s56_s { width: 83.33333%; }
+  .s15_s { width: 20%; }
+  .s25_s { width: 40%; }
+  .s35_s { width: 60%; }
+  .s45_s { width: 80%; }
+}
+@media (min-width: break($_m)) {
+  .s1_m { width: 100%; }
+  .s12_m { width: 50%; }
+  .s13_m { width: 33.33333%; }
+  .s23_m { width: 66.66667%; }
+  .s14_m { width: 25%; }
+  .s34_m { width: 75%; }
+  .s16_m { width: 16.66667%; }
+  .s56_m { width: 83.33333%; }
+  .s15_m { width: 20%; }
+  .s25_m { width: 40%; }
+  .s35_m { width: 60%; }
+  .s45_m { width: 80%; }
+}
+@media (min-width: break($_l)) {
+  .s1_l { width: 100%; }
+  .s12_l { width: 50%; }
+  .s13_l { width: 33.33333%; }
+  .s23_l { width: 66.66667%; }
+  .s14_l { width: 25%; }
+  .s34_l { width: 75%; }
+  .s16_l { width: 16.66667%; }
+  .s56_l { width: 83.33333%; }
+  .s15_l { width: 20%; }
+  .s25_l { width: 40%; }
+  .s35_l { width: 60%; }
+  .s45_l { width: 80%; }
+}
+@media (min-width: break($_xl)) {
+  .s1_xl { width: 100%; }
+  .s12_xl { width: 50%; }
+  .s13_xl { width: 33.33333%; }
+  .s23_xl { width: 66.66667%; }
+  .s14_xl { width: 25%; }
+  .s34_xl { width: 75%; }
+  .s16_xl { width: 16.66667%; }
+  .s56_xl { width: 83.33333%; }
+  .s15_xl { width: 20%; }
+  .s25_xl { width: 40%; }
+  .s35_xl { width: 60%; }
+  .s45_xl { width: 80%; }
+}
+@media (min-width: break($_xxl)) {
+  .s1_xxl { width: 100%; }
+  .s12_xxl { width: 50%; }
+  .s13_xxl { width: 33.33333%; }
+  .s23_xxl { width: 66.66667%; }
+  .s14_xxl { width: 25%; }
+  .s34_xxl { width: 75%; }
+  .s16_xxl { width: 16.66667%; }
+  .s56_xxl { width: 83.33333%; }
+  .s15_xxl { width: 20%; }
+  .s25_xxl { width: 40%; }
+  .s35_xxl { width: 60%; }
+  .s45_xxl { width: 80%; }
 }
