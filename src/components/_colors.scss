@@ -1,5 +1,0 @@
-// COLORS
-// Generates classes i.e. '.c-1 { color: color(1) }'
-@each $color, $hex in $colors {
-	.c-#{$color} { color: $hex }
-}

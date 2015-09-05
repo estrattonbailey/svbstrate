@@ -2,7 +2,7 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,800italic,400,300,800);
 $font-stack__sans: "Open Sans", Helvetica, Arial, sans-serif;
 $font-stack__serif: georgia, serif;
-$font-stack__body: $font-stack__serif;
+$font-stack__body: $font-stack__sans;
 $font-stack__headings: $font-stack__sans;
 
 html, body {
@@ -12,13 +12,13 @@ html, body {
 	-ms-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
 }
-.type-sans {
+.font-sans {
 	font-family: $font-stack__sans;
 }
-.type-serif {
+.font-serif {
 	font-family: $font-stack__serif;
 }
-.type-monospace {
+.font-monospace {
 	font-family: Consolas , Monaco, monospace;
 }
 h1, h2, h3, h4, h5, h6, p {
@@ -32,7 +32,7 @@ h1,
 .h1 {
 	font-size: 3.2rem;
 	line-height: 1.1;
-	@media screen and (min-width: 34.375em) { // 550px
+	@media screen and (min-width: break($_s)) {
 		font-size: 4.5rem;
 	}
 }
@@ -40,7 +40,7 @@ h1,
 	@extend .h1;
 	font-size: 4.5rem;
 	line-height: 1.1;
-	@media screen and (min-width: 34.375em) { // 550px
+	@media screen and (min-width: break($_s)) {
 		font-size: 5.5vw;
 	}
 }
@@ -48,7 +48,7 @@ h2,
 .h2 {
 	font-size: 2.5rem;
 	line-height: 1.4;
-	@media screen and (min-width: 34.375em) { // 550px
+	@media screen and (min-width: break($_s)) {
 		font-size: 3rem;
 	}
 }
@@ -56,7 +56,7 @@ h3,
 .h3 {
 	font-size: 2rem;
 	line-height: 1.4;
-	@media screen and (min-width: 34.375em) { // 550px
+	@media screen and (min-width: break($_s)) {
 		font-size: 2.2rem;
 	}
 }
@@ -103,11 +103,11 @@ p,
 		color: #148ECC;
 	}
 	img {
-		@extend .block-relative; 
+		@extend .block-relative;
 		height: auto !important;
 		max-width: 100%;
 		padding: 2rem 0;
-		width: 100%;  
+		width: 100%;
 	}
 }
 blockquote {
@@ -125,7 +125,7 @@ blockquote {
 	}
 }
 hr {
-	@extend .block-relative; 
+	@extend .block-relative;
 	background-color: #f5f5f5;
 	border: 0;
 	height: 2px;
@@ -143,12 +143,33 @@ a {
 .font-s-i {
 	font-style: italic;
 }
-.font-w-l {
+.font-w-1 {
 	font-weight: 100;
 }
-.font-w-r {
+.font-w-2 {
+	font-weight: 200;
+}
+.font-w-3 {
+	font-weight: 300;
+}
+.font-w-4 {
 	font-weight: 400;
 }
-.font-w-b {
+.font-w-5 {
+	font-weight: 500;
+}
+.font-w-6 {
+	font-weight: 600;
+}
+.font-w-7 {
+	font-weight: 700;
+}
+.font-w-8 {
+	font-weight: 800;
+}
+.font-w-9 {
 	font-weight: 900;
+}
+.font-t-u {
+	text-transform: uppercase;
 }

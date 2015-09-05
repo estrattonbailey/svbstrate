@@ -1,20 +1,29 @@
 // Floats
-//
-// Generates classes i.e. '.float-l { float: left }'
-// Plus, breakpoint specific extensions i.e. '.float-l_m { float: left }',
-// which will only affect layouts greater than break(m)
-$floats: (
-	n: none,
-	l: left,
-	r: right
-);
-@each $float_ext, $float in $floats {
-	.float-#{$float_ext} { float: $float }
+.float-l { float: left }
+.float-r { float: right }
+.float-n { float: none }
+@media (min-width: break($_xs)){
+	.float-l_xs { float: left }
+	.float-r_xs { float: right }
+	.float-n_xs { float: none }
 }
-@each $break_ext, $break in $breakpoints {
-	@media (min-width: em($break)) {
-		@each $float_ext, $float in $floats {
-			.float-#{$float_ext}_#{$break_ext} { float: $float }
-		}
-	}
+@media (min-width: break($_s)){
+	.float-l_s { float: left }
+	.float-r_s { float: right }
+	.float-n_s { float: none }
+}
+@media (min-width: break($_m)){
+	.float-l_m { float: left }
+	.float-r_m { float: right }
+	.float-n_m { float: none }
+}
+@media (min-width: break($_l)){
+	.float-l_l { float: left }
+	.float-r_l { float: right }
+	.float-n_l { float: none }
+}
+@media (min-width: break($_xl)){
+	.float-l_xl { float: left }
+	.float-r_xl { float: right }
+	.float-n_xl { float: none }
 }

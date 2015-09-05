@@ -1,0 +1,87 @@
+// FORMS
+// Reset
+::-webkit-input-placeholder { color: rgba($c-b, .6) }
+:-moz-placeholder { color: rgba($c-b, .6) }
+::-moz-placeholder { color: rgba($c-b, .6) }
+:-ms-input-placeholder { color: rgba($c-b, .6) }
+form { margin: 0 }
+input { border: 0; outline: 0; }
+textarea { background-color: transparent; border: 0; max-width: 100%; outline: 0; width: 100%; }
+fieldset, legend { margin: 0; padding: 0; border: 0; }
+
+// Styles
+.input-group {
+	@extend .relative;
+	margin: 1em auto .66em;
+}
+label,
+input,
+select {
+	@extend .relative;
+}
+input[type="text"],
+input[type="email"],
+input[type="search"],
+input[type="tel"],
+input[type="password"],
+select, {
+	border: 1px solid #999999;
+	padding: .5em .85em;
+}
+label {
+	color: #333333;
+	margin-bottom: .25em;
+}
+.select-wrapper {
+	@extend .inline-relative;
+	&:after {
+		@extend .absolute;
+		content: '\25bc';
+		top: calc(50% - 0.5em);
+		right: 1em;
+		font-size: 2em;
+		color: $c-theme;
+		pointer-events: none;
+	}
+	select {
+		padding: .5em 2.5em .5em .85em;
+	}
+}
+select {
+	background-color: white;
+	border-radius: 0;
+	appearance: none;
+		-webkit-appearance: none;
+}
+textarea {
+	border: 1px solid #999999;
+	min-height: 100px;
+	padding: .85em;
+	width: 100%;
+}
+input[type="checkbox"],
+input[type="radio"] {
+	border: 1px solid #999999;
+	vertical-align: middle;
+
+	&:checked{
+	  background-color: #148ECC;
+	  border-color: #148ECC;
+	}
+	&:focus{
+	  box-shadow: none;
+	}
+}
+label.checkbox, label.radio {
+	input {
+		font-size: 2rem;
+		margin: 0 .33em 0 0;
+		vertical-align: middle;
+	}
+}
+input[type="radio"] {
+	border-radius: 100%;
+}
+input[type="submit"] {
+	@extend .button;
+}

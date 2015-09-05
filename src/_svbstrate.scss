@@ -1,5 +1,4 @@
 // Base Styles
-@import "base/_scale";
 @import "base/breakpoints";
 @import "base/display";
 @import "base/widths";
@@ -9,11 +8,12 @@
 @import "base/normalize";
 @import "base/colors";
 @import "base/align";
-@import "base/visibility";
 @import "base/floats";
+@import "base/transitions";
+@import "base/spacing";
 
 // Elements
-@import "components/_init";
+@import "elements/_init";
 
-// Extras
-// @import "extras/_init";
+// Components
+@import "components/_init";
