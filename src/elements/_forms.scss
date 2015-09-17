@@ -26,7 +26,7 @@ input[type="tel"],
 input[type="password"],
 select, {
 	border: 1px solid #999999;
-	padding: .5em .85em;
+	padding: .35em .65em;
 }
 label {
 	color: #333333;
@@ -44,7 +44,7 @@ label {
 		pointer-events: none;
 	}
 	select {
-		padding: .5em 2.5em .5em .85em;
+		padding: .35em 2.5em .35em .55em;
 	}
 }
 select {
@@ -56,7 +56,7 @@ select {
 textarea {
 	border: 1px solid #999999;
 	min-height: 100px;
-	padding: .85em;
+	padding: .55em;
 	width: 100%;
 }
 input[type="checkbox"],
