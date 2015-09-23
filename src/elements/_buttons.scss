@@ -17,3 +17,6 @@ button {
 	border: 1px solid #148ECC;
 	color: inherit;
 }
+input[type="submit"] {
+	@extend .button;
+}

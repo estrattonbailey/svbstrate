@@ -1,15 +1,4 @@
 // FORMS
-// Reset
-::-webkit-input-placeholder { color: rgba($c-b, .6) }
-:-moz-placeholder { color: rgba($c-b, .6) }
-::-moz-placeholder { color: rgba($c-b, .6) }
-:-ms-input-placeholder { color: rgba($c-b, .6) }
-form { margin: 0 }
-input { border: 0; outline: 0; }
-textarea { background-color: transparent; border: 0; max-width: 100%; outline: 0; width: 100%; }
-fieldset, legend { margin: 0; padding: 0; border: 0; }
-
-// Styles
 .input-group {
 	@extend .relative;
 	margin: 1em auto .66em;
@@ -32,6 +21,7 @@ label {
 	color: #333333;
 	margin-bottom: .25em;
 }
+// Adds a custom arrow
 .select-wrapper {
 	@extend .inline-relative;
 	&:after {
@@ -43,15 +33,16 @@ label {
 		color: $c-theme;
 		pointer-events: none;
 	}
+	// .select-wrapper > select assumes you want to remove default styles
 	select {
 		padding: .35em 2.5em .35em .55em;
+		appearance: none;
+			-webkit-appearance: none;
 	}
 }
 select {
 	background-color: white;
 	border-radius: 0;
-	appearance: none;
-		-webkit-appearance: none;
 }
 textarea {
 	border: 1px solid #999999;
@@ -81,7 +72,4 @@ label.checkbox, label.radio {
 }
 input[type="radio"] {
 	border-radius: 100%;
-}
-input[type="submit"] {
-	@extend .button;
 }

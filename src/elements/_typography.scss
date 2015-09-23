@@ -24,9 +24,11 @@ html, body {
 h1, h2, h3, h4, h5, h6, p {
 	font-weight: 100;
 	margin: 0;
+	max-width: 40em;
 }
 h1, h2, h3, h4, h5, h6 {
 	font-family: $font-stack__headings;
+	margin: 1ex 0 .6ex;
 }
 h1,
 .h1 {
@@ -34,14 +36,6 @@ h1,
 	line-height: 1.1;
 	@media screen and (min-width: break($_s)) {
 		font-size: 4.5rem;
-	}
-}
-.h0 {
-	@extend .h1;
-	font-size: 4.5rem;
-	line-height: 1.1;
-	@media screen and (min-width: break($_s)) {
-		font-size: 5.5vw;
 	}
 }
 h2,
@@ -80,35 +74,7 @@ p,
 	font-size: 1.8rem;
 	font-weight: 100;
 	line-height: 1.7;
-}
-
-// RTE (rich text) - WYSIWYG styles
-// apply .rte descender classes to encapsulate styles
-// and leave base type properties open to extension
-.rte {
-	h1, h2, h3, h4, h5, h6, p {
-		max-width: 40em;
-	}
-	h1, h2, h3, h4, h5, h6 {
-		margin: 1ex 0 .6ex;
-	}
-	.h0 {
-		max-width: 100%;
-		margin: 0 0 0.5ex;
-	}
-	p {
-		margin: 2ex 0;
-	}
-	a:not(.button) {
-		color: #148ECC;
-	}
-	img {
-		@extend .block-relative;
-		height: auto !important;
-		max-width: 100%;
-		padding: 2rem 0;
-		width: 100%;
-	}
+	margin: 2ex 0;
 }
 blockquote {
 	@extend .h2;
@@ -129,17 +95,13 @@ hr {
 	background-color: #f5f5f5;
 	border: 0;
 	height: 2px;
-	margin: 4rem 0;
 	width: 100px;
-
-	@media (min-width: 48em){ // 768px
-		margin: 6rem 0;
-	}
 }
 a {
 	text-decoration: none;
 }
-// Font styles
+// STYLES
+// Pare these down based on your available fonts
 .font-s-i {
 	font-style: italic;
 }
@@ -172,4 +134,7 @@ a {
 }
 .font-t-u {
 	text-transform: uppercase;
+}
+.font-d-u {
+	text-decoration: underline;
 }

@@ -1,4 +1,4 @@
-// Adapted from normalize.css v2.1.2 | MIT License | git.io/normalize 
+// Adapted from normalize.css v2.1.2 | MIT License | git.io/normalize
 body { margin: 0 }
 a { background: transparent; color: inherit }
 a:active, a:hover { outline: 0 }
@@ -16,12 +16,11 @@ figure { margin: 0 }
 svg:not(:root) { overflow: hidden }
 button, input, select, textarea { font-family: inherit; font-size: 100%; margin: 0; }
 button, input { line-height: normal }
-button, html input[type="button"], input[type="reset"], input[type="submit"] {
-	-webkit-appearance: none; /* 2 */
-	cursor: pointer; /* 3 */
-	border: 0;
-	outline: 0;
-}
+form { margin: 0 }
+input { border: 0; outline: 0; }
+textarea { background-color: transparent; border: 0; max-width: 100%; outline: 0; width: 100%; }
+fieldset, legend { margin: 0; padding: 0; border: 0; }
+button, html input[type="button"], input[type="reset"], input[type="submit"] {-webkit-appearance: none;cursor: pointer;border: 0;outline: 0;}
 button[disabled], html input[disabled] { cursor: default }
 input[type="search"] { -webkit-appearance: textfield }
 input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration { -webkit-appearance: none;}
