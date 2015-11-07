@@ -31,7 +31,7 @@ h1, h2, h3, h4, h5, h6 {
 	margin: 1ex 0 .6ex;
 }
 h1,
-.h1 {
+.f1 {
 	font-size: 3.2rem;
 	line-height: 1.1;
 	@media screen and (min-width: break($_s)) {
@@ -39,7 +39,7 @@ h1,
 	}
 }
 h2,
-.h2 {
+.f2 {
 	font-size: 2.5rem;
 	line-height: 1.4;
 	@media screen and (min-width: break($_s)) {
@@ -47,7 +47,7 @@ h2,
 	}
 }
 h3,
-.h3 {
+.f3 {
 	font-size: 2rem;
 	line-height: 1.4;
 	@media screen and (min-width: break($_s)) {
@@ -55,17 +55,17 @@ h3,
 	}
 }
 h4,
-.h4 {
+.f4 {
 	font-size: 1.8rem;
 	line-height: 1.5;
 }
 h5,
-.h5 {
+.f5 {
 	font-size: 1.5rem;
 	line-height: 1.6;
 }
 h6,
-.h6 {
+.f6 {
 	font-size: 1.2rem;
 	line-height: 1.6;
 }
@@ -77,7 +77,7 @@ p,
 	margin: 2ex 0;
 }
 blockquote {
-	@extend .h2;
+	@extend .f2;
 	margin: 3rem 0;
 	padding-left: 2rem;
 	border-left: 4px solid #148ECC;
@@ -87,7 +87,7 @@ blockquote {
 	}
 
 	h1, h2, h3, h4, h5, h6, p {
-		@extend .h2;
+		@extend .f2;
 	}
 }
 hr {

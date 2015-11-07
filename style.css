@@ -110,6 +110,14 @@
   .w25_xxl { width: 40%; }
   .w35_xxl { width: 60%; }
   .w45_xxl { width: 80%; } }
+.h1 { height: 100vh; }
+
+.h12 { height: 50vh; }
+
+.h13 { height: 33.333333vh; }
+
+.h14 { height: 25vh; }
+
 .container, .container--l, .container--m, .container--s { margin-left: auto; margin-right: auto; width: 100%; }
 
 .container--l { width: 90%; }
@@ -139,6 +147,8 @@
 .u-middle-align-helper::after { content: ''; height: 100%; vertical-align: middle; }
 
 .u-fill { bottom: 0; left: 0; right: 0; top: 0; }
+
+.u-bg-cv { background-size: cover; background-position: center; background-repeat: no-repeat; }
 
 body { margin: 0; }
 
@@ -621,20 +631,20 @@ h1, h2, h3, h4, h5, h6, p { font-weight: 100; margin: 0; max-width: 40em; }
 
 h1, h2, h3, h4, h5, h6 { font-family: "Open Sans", Helvetica, Arial, sans-serif; margin: 1ex 0 .6ex; }
 
-h1, .h1 { font-size: 3.2rem; line-height: 1.1; }
-@media screen and (min-width: 31.25em) { h1, .h1 { font-size: 4.5rem; } }
+h1, .f1 { font-size: 3.2rem; line-height: 1.1; }
+@media screen and (min-width: 31.25em) { h1, .f1 { font-size: 4.5rem; } }
 
-h2, .h2, blockquote, blockquote h1, blockquote h2, blockquote h3, blockquote h4, blockquote h5, blockquote h6, blockquote p { font-size: 2.5rem; line-height: 1.4; }
-@media screen and (min-width: 31.25em) { h2, .h2, blockquote, blockquote h1, blockquote h2, blockquote h3, blockquote h4, blockquote h5, blockquote h6, blockquote p { font-size: 3rem; } }
+h2, .f2, blockquote, blockquote h1, blockquote h2, blockquote h3, blockquote h4, blockquote h5, blockquote h6, blockquote p { font-size: 2.5rem; line-height: 1.4; }
+@media screen and (min-width: 31.25em) { h2, .f2, blockquote, blockquote h1, blockquote h2, blockquote h3, blockquote h4, blockquote h5, blockquote h6, blockquote p { font-size: 3rem; } }
 
-h3, .h3 { font-size: 2rem; line-height: 1.4; }
-@media screen and (min-width: 31.25em) { h3, .h3 { font-size: 2.2rem; } }
+h3, .f3 { font-size: 2rem; line-height: 1.4; }
+@media screen and (min-width: 31.25em) { h3, .f3 { font-size: 2.2rem; } }
 
-h4, .h4 { font-size: 1.8rem; line-height: 1.5; }
+h4, .f4 { font-size: 1.8rem; line-height: 1.5; }
 
-h5, .h5 { font-size: 1.5rem; line-height: 1.6; }
+h5, .f5 { font-size: 1.5rem; line-height: 1.6; }
 
-h6, .h6 { font-size: 1.2rem; line-height: 1.6; }
+h6, .f6 { font-size: 1.2rem; line-height: 1.6; }
 
 p, .p, code { font-size: 1.8rem; font-weight: 100; line-height: 1.7; margin: 2ex 0; }
 

@@ -30,22 +30,10 @@
 .u-fill {
 	bottom: 0; left: 0; right: 0; top: 0;
 }
-// BACKGROUND
-//
-// Typing these same three declarations can be
-// tiresome. Fill these in as needed for your
-// project.
-// .u-bg-cv {
-// 	background-size: cover;
-// 	background-position: center;
-// 	background-repeat: no-repeat;
-// }
-// .u-bg-cv-t {
-// 	@extend .bg-cv;
-// 	background-position: top center;
-// }
-// .u-bg-cn {
-// 	background-size: contain;
-// 	background-position: center;
-// 	background-repeat: no-repeat;
-// }
+
+// Background Cover
+.u-bg-cv {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
