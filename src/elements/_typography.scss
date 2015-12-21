@@ -24,11 +24,9 @@ html, body {
 h1, h2, h3, h4, h5, h6, p {
 	font-weight: 100;
 	margin: 0;
-	max-width: 40em;
 }
 h1, h2, h3, h4, h5, h6 {
 	font-family: $font-stack__headings;
-	margin: 1ex 0 .6ex;
 }
 h1,
 .f1 {
@@ -74,7 +72,6 @@ p,
 	font-size: 1.8rem;
 	font-weight: 100;
 	line-height: 1.7;
-	margin: 2ex 0;
 }
 blockquote {
 	@extend .f2;
@@ -100,6 +97,19 @@ hr {
 a {
 	text-decoration: none;
 }
+
+// For rich text content, to add spacing
+// between typographical elements.
+.text-content {
+  h1, h2, h3, h4, h5, h6,
+  .f1, .f2, .f3, .f4, .f5, .f6 {
+    margin: 1ex 0 .6ex;
+  }
+  p {
+    margin: 2ex 0;
+  }
+}
+
 // STYLES
 // Pare these down based on your available fonts
 .font-0 {

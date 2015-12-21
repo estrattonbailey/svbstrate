@@ -210,6 +210,8 @@ html, html a { -webkit-font-smoothing: antialiased; text-shadow: 1px 1px 1px rgb
 
 .c-theme { color: #148ECC; }
 
+.c-w { color: white; }
+
 .c-b { color: #222222; }
 
 .c-g { color: #444444; }
@@ -221,6 +223,8 @@ html, html a { -webkit-font-smoothing: antialiased; text-shadow: 1px 1px 1px rgb
 .c-g3 { color: #999999; }
 
 .bg-c-theme { background-color: #148ECC; }
+
+.bg-c-w { background-color: white; }
 
 .bg-c-b { background-color: #222222; }
 
@@ -627,9 +631,9 @@ html, body { color: #222222; font-family: "Open Sans", Helvetica, Arial, sans-se
 
 .font-monospace { font-family: Consolas , Monaco, monospace; }
 
-h1, h2, h3, h4, h5, h6, p { font-weight: 100; margin: 0; max-width: 40em; }
+h1, h2, h3, h4, h5, h6, p { font-weight: 100; margin: 0; }
 
-h1, h2, h3, h4, h5, h6 { font-family: "Open Sans", Helvetica, Arial, sans-serif; margin: 1ex 0 .6ex; }
+h1, h2, h3, h4, h5, h6 { font-family: "Open Sans", Helvetica, Arial, sans-serif; }
 
 h1, .f1 { font-size: 3.2rem; line-height: 1.1; }
 @media screen and (min-width: 31.25em) { h1, .f1 { font-size: 4.5rem; } }
@@ -646,7 +650,7 @@ h5, .f5 { font-size: 1.5rem; line-height: 1.6; }
 
 h6, .f6 { font-size: 1.2rem; line-height: 1.6; }
 
-p, .p, code { font-size: 1.8rem; font-weight: 100; line-height: 1.7; margin: 2ex 0; }
+p, .p, code { font-size: 1.8rem; font-weight: 100; line-height: 1.7; }
 
 blockquote { margin: 3rem 0; padding-left: 2rem; border-left: 4px solid #148ECC; }
 @media (min-width: 48em) { blockquote { padding-left: 3rem; } }
@@ -654,6 +658,11 @@ blockquote { margin: 3rem 0; padding-left: 2rem; border-left: 4px solid #148ECC;
 hr { background-color: #f5f5f5; border: 0; height: 2px; width: 100px; }
 
 a { text-decoration: none; }
+
+.text-content h1, .text-content h2, .text-content h3, .text-content h4, .text-content h5, .text-content h6, .text-content .f1, .text-content .f2, .text-content blockquote, .text-content blockquote h1, blockquote .text-content h1, .text-content blockquote h2, blockquote .text-content h2, .text-content blockquote h3, blockquote .text-content h3, .text-content blockquote h4, blockquote .text-content h4, .text-content blockquote h5, blockquote .text-content h5, .text-content blockquote h6, blockquote .text-content h6, .text-content blockquote p, blockquote .text-content p, .text-content .f3, .text-content .f4, .text-content .f5, .text-content .f6 { margin: 1ex 0 .6ex; }
+.text-content p { margin: 2ex 0; }
+
+.font-0 { margin: 0; line-height: 1; }
 
 .font-s-i { font-style: italic; }
 
