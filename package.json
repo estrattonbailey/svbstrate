@@ -1,0 +1,27 @@
+{
+  "name": "svbstrate-dev",
+  "version": "1.0.0",
+  "description": "The dev environment to build Svbstrate",
+  "main": "style.scss",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^3.4.2",
+    "onchange": "^2.1.2"
+  },
+  "scripts": {
+    "start": "npm run css:build ; npm run css:watch",
+    "css:watch": "onchange './src/**/*.scss' -- npm run css:build",
+    "css:build": "node-sass style.scss style.css ; echo '\nSvbstrate built successfully!'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/estrattonbailey/svbstrate.git"
+  },
+  "author": "estrattonbailey",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/estrattonbailey/svbstrate/issues"
+  },
+  "homepage": "https://github.com/estrattonbailey/svbstrate#readme"
+}
