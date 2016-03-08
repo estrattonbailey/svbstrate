@@ -1,7 +1,7 @@
 {
   "name": "svbstrate",
-  "version": "0.5.3",
-  "description": "A simple, scalable SCSS base layer.",
+  "version": "0.5.4",
+  "description": "A simple, scalable CSS base layer.",
   "main": "substrate.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
