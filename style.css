@@ -1,5 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,800italic,400,300,800);
-.block, .block-relative, .container, .container--l, .container--m, .container--s, hr, .block-fixed, .block-absolute {
+.block, .block-relative, .container, .container--l, .container--m, .container--s, .container--xs, hr, .block-fixed, .block-absolute {
   display: block; }
 
 .inline {
@@ -9,7 +9,7 @@
 button, .select-wrapper, .u-inline-helper::after, .u-middle-align-helper::after {
   display: inline-block; }
 
-.relative, .block-relative, .container, .container--l, .container--m, .container--s, hr, .inline-relative, .button, .button--border, input[type="submit"],
+.relative, .block-relative, .container, .container--l, .container--m, .container--s, .container--xs, hr, .inline-relative, .button, .button--border, input[type="submit"],
 button, .select-wrapper, .input-group, label,
 input,
 select {
@@ -228,37 +228,22 @@ select {
 .h14 {
   height: 25vh; }
 
-.container, .container--l, .container--m, .container--s {
+.container, .container--l, .container--m, .container--s, .container--xs {
   margin-left: auto;
   margin-right: auto;
   width: 100%; }
 
 .container--l {
-  width: 90%; }
-  @media (min-width: 24.9375em) {
-    .container--l {
-      width: 92.5%; } }
-  @media (min-width: 48em) {
-    .container--l {
-      width: 95%; } }
+  max-width: 1400px; }
 
 .container--m {
-  width: 90%; }
-  @media (min-width: 24.9375em) {
-    .container--m {
-      width: 85%; } }
-  @media (min-width: 48em) {
-    .container--m {
-      width: 80%; } }
+  max-width: 1200px; }
 
 .container--s {
-  width: 90%; }
-  @media (min-width: 24.9375em) {
-    .container--s {
-      width: 80%; } }
-  @media (min-width: 48em) {
-    .container--s {
-      width: 66%; } }
+  max-width: 900px; }
+
+.container--xs {
+  max-width: 735px; }
 
 .clear-l {
   clear: left; }

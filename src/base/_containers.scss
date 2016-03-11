@@ -7,31 +7,17 @@
 }
 .container--l {
 	@extend .container;
-	width: 90%;
-	@media (min-width: break($_xs)) {
-		width: 92.5%;
-	}
-	@media (min-width: break($_m)) {
-		width: 95%;
-	}
+  max-width: 1400px;
 }
 .container--m {
 	@extend .container;
-	width: 90%;
-	@media (min-width: break($_xs)) {
-		width: 85%;
-	}
-	@media (min-width: break($_m)) {
-		width: 80%;
-	}
+  max-width: 1200px;
 }
 .container--s {
 	@extend .container;
-	width: 90%;
-	@media (min-width: break($_xs)) {
-		width: 80%;
-	}
-	@media (min-width: break($_m)) {
-		width: 66%;
-	}
+  max-width: 900px;
+}
+.container--xs {
+	@extend .container;
+  max-width: 735px;
 }
