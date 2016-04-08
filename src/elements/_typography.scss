@@ -32,7 +32,7 @@ h1,
 .f1 {
 	font-size: 3.2rem;
 	line-height: 1.1;
-	@media screen and (min-width: break($_s)) {
+	@media screen and (min-width: break(s)) {
 		font-size: 4.5rem;
 	}
 }
@@ -40,7 +40,7 @@ h2,
 .f2 {
 	font-size: 2.5rem;
 	line-height: 1.4;
-	@media screen and (min-width: break($_s)) {
+	@media screen and (min-width: break(s)) {
 		font-size: 3rem;
 	}
 }
@@ -48,7 +48,7 @@ h3,
 .f3 {
 	font-size: 2rem;
 	line-height: 1.4;
-	@media screen and (min-width: break($_s)) {
+	@media screen and (min-width: break(s)) {
 		font-size: 2.2rem;
 	}
 }

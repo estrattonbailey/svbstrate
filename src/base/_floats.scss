@@ -2,28 +2,11 @@
 .float-l { float: left }
 .float-r { float: right }
 .float-n { float: none }
-@media (min-width: break($_xs)){
-	.float-l_xs { float: left }
-	.float-r_xs { float: right }
-	.float-n_xs { float: none }
-}
-@media (min-width: break($_s)){
-	.float-l_s { float: left }
-	.float-r_s { float: right }
-	.float-n_s { float: none }
-}
-@media (min-width: break($_m)){
-	.float-l_m { float: left }
-	.float-r_m { float: right }
-	.float-n_m { float: none }
-}
-@media (min-width: break($_l)){
-	.float-l_l { float: left }
-	.float-r_l { float: right }
-	.float-n_l { float: none }
-}
-@media (min-width: break($_xl)){
-	.float-l_xl { float: left }
-	.float-r_xl { float: right }
-	.float-n_xl { float: none }
+
+@each $break_ext, $break in $breakpoints {
+	@media (min-width: em($break)){
+    .float-l_#{$break_ext} { float: left }
+    .float-r_#{$break_ext} { float: right }
+    .float-n_#{$break_ext} { float: none }
+	}
 }

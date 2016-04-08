@@ -2,18 +2,9 @@
 // Useful for ensuring float based grids
 // align with varying block heights.
 .clear-l { clear: left }
-@media (min-width: break($_xs)){
-	.clear-l_xs { clear: left }
-}
-@media (min-width: break($_s)){
-	.clear-l_s { clear: left }
-}
-@media (min-width: break($_m)){
-	.clear-l_m { clear: left }
-}
-@media (min-width: break($_l)){
-	.clear-l_l { clear: left }
-}
-@media (min-width: break($_xl)){
-	.clear-l_xl { clear: left }
+
+@each $break_ext, $break in $breakpoints {
+	@media (min-width: em($break)){
+    .clear-l_#{$break_ext} { clear: left }
+	}
 }
