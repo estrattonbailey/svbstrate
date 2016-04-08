@@ -1,5 +1,5 @@
 // UTILIES - prefixed with .u-
-.u-clear {
+.clear {
 	&::before,
 	&::after {
 	  content:' ';
@@ -10,29 +10,11 @@
 	  clear: both;
 	}
 }
-.u-inline-helper {
-	&::after {
-		@extend .inline-block;
-
-		content:'';
-		width: 100%;
-	}
-}
-.u-middle-align-helper {
-	&::after {
-		@extend .inline-block;
-
-		content:'';
-		height: 100%;
-		vertical-align: middle;
-	}
-}
-.u-fill {
+.fill {
 	bottom: 0; left: 0; right: 0; top: 0;
 }
-
 // Background Cover
-.u-bg-cv {
+.bg-s-cv {
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;

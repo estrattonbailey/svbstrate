@@ -6,7 +6,7 @@
   display: inline; }
 
 .inline-block, .inline-relative, .button, .button--border, input[type="submit"],
-button, .select-wrapper, .u-inline-helper::after, .u-middle-align-helper::after {
+button, .select-wrapper {
   display: inline-block; }
 
 .relative, .block-relative, .container, .container--l, .container--m, .container--s, .container--xs, hr, .inline-relative, .button, .button--border, input[type="submit"],
@@ -164,29 +164,20 @@ select {
   .clear-l_xl {
     clear: left; } }
 
-.u-clear::before, .u-clear::after {
+.clear::before, .clear::after {
   content: ' ';
   display: table; }
 
-.u-clear::after {
+.clear::after {
   clear: both; }
 
-.u-inline-helper::after {
-  content: '';
-  width: 100%; }
-
-.u-middle-align-helper::after {
-  content: '';
-  height: 100%;
-  vertical-align: middle; }
-
-.u-fill {
+.fill {
   bottom: 0;
   left: 0;
   right: 0;
   top: 0; }
 
-.u-bg-cv {
+.bg-s-cv {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; }
