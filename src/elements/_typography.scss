@@ -73,17 +73,12 @@ p,
 	line-height: 1.7;
 }
 blockquote {
-	@extend .f2;
 	margin: 3rem 0;
 	padding-left: 2rem;
 	border-left: 4px solid #148ECC;
 
-	@media (min-width: 48em){ // 768px
+	@media (min-width: break(m)){
 		padding-left: 3rem;
-	}
-
-	h1, h2, h3, h4, h5, h6, p {
-		@extend .f2;
 	}
 }
 hr {

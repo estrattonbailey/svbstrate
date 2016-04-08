@@ -861,28 +861,12 @@ h1,
       font-size: 4.5rem; } }
 
 h2,
-.f2,
-blockquote,
-blockquote h1,
-blockquote h2,
-blockquote h3,
-blockquote h4,
-blockquote h5,
-blockquote h6,
-blockquote p {
+.f2 {
   font-size: 2.5rem;
   line-height: 1.4; }
   @media (min-width: 37.5em) {
     h2,
-    .f2,
-    blockquote,
-    blockquote h1,
-    blockquote h2,
-    blockquote h3,
-    blockquote h4,
-    blockquote h5,
-    blockquote h6,
-    blockquote p {
+    .f2 {
       font-size: 3rem; } }
 
 h3,
@@ -919,7 +903,7 @@ blockquote {
   margin: 3rem 0;
   padding-left: 2rem;
   border-left: 4px solid #148ECC; }
-  @media (min-width: 48em) {
+  @media (min-width: 53.125em) {
     blockquote {
       padding-left: 3rem; } }
 
@@ -940,7 +924,7 @@ b, strong {
   font-weight: bold; }
 
 .text-content h1, .text-content h2, .text-content h3, .text-content h4, .text-content h5, .text-content h6,
-.text-content .f1, .text-content .f2, .text-content blockquote, .text-content blockquote h1, blockquote .text-content h1, .text-content blockquote h2, blockquote .text-content h2, .text-content blockquote h3, blockquote .text-content h3, .text-content blockquote h4, blockquote .text-content h4, .text-content blockquote h5, blockquote .text-content h5, .text-content blockquote h6, blockquote .text-content h6, .text-content blockquote p, blockquote .text-content p, .text-content .f3, .text-content .f4, .text-content .f5, .text-content .f6 {
+.text-content .f1, .text-content .f2, .text-content .f3, .text-content .f4, .text-content .f5, .text-content .f6 {
   margin: 1ex 0 .6ex; }
 
 .text-content p {
@@ -1090,18 +1074,10 @@ li.list--reset,
 .list--reset {
   list-style: none;
   padding-left: 0; }
-  ul.list--reset ul, ul.list--reset ol, ul.list--reset li,
-  ol.list--reset ul,
-  ol.list--reset ol,
-  ol.list--reset li,
-  li.list--reset ul,
-  li.list--reset ol,
-  li.list--reset li,
-  .list--reset ul,
-  .list--reset ol,
-  .list--reset li {
-    list-style: none;
-    padding-left: 0; }
+
+.list--reset ul, .list--reset ol, .list--reset li {
+  list-style: none;
+  padding-left: 0; }
 
 table,
 .table {
