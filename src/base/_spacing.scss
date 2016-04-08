@@ -13,7 +13,7 @@
 
 // These are the pixel based stopping points on the
 // scale. Customize them as needed.
-$intervals: (2,4,8,12,16,20,26,32,40,48,60);
+$intervals: (2,4,6,8,10,12,15,20);
 @each $int in $intervals {
   // MARGINS
   .mt-#{$int}{
