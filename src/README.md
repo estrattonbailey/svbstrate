@@ -1,5 +1,6 @@
 # Svbstrate
-### A simple, scalable CSS base layer.
+### A simple, scalable CSS base layer. 
+*1119 LOC - 3.28kb minfied and gzipped*
 
 An atomic CSS substrate layer for your projects, written in SCSS, inspired by [BASSCSS](http://www.basscss.com/) and [Tachyons](http://tachyons.io/). Many thanks to Brent and Adam.
 
@@ -30,3 +31,4 @@ Questions, comments, suggestions? Open and issue or pull request, or reach me on
 * * *
 
 MIT License
+
