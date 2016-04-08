@@ -5,13 +5,15 @@
   "main": "style.scss",
   "dependencies": {},
   "devDependencies": {
+    "minifier": "^0.7.1",
     "node-sass": "^3.4.2",
     "onchange": "^2.1.2"
   },
   "scripts": {
     "start": "npm run css:build ; npm run css:watch",
     "css:watch": "onchange './src/**/*.scss' -- npm run css:build",
-    "css:build": "node-sass style.scss style.css ; echo '\nSvbstrate built successfully!'"
+    "css:build": "node-sass style.scss style.css && echo '\nSvbstrate built successfully!'",
+    "css:minify": "node-sass style.scss style.css && minify style.css && echo '\nSvbstrate minified successfully!'"
   },
   "repository": {
     "type": "git",
