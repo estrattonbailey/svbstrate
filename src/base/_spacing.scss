@@ -13,60 +13,70 @@
 
 // These are the pixel based stopping points on the
 // scale. Customize them as needed.
-$intervals: (2,4,6,8,10,12,15,20);
-@each $int in $intervals {
+$intervals: (
+	'025': 0.25,
+	'05': 0.5,
+	'075': 0.75,
+	1: 1,
+	2: 2,
+	4: 4,
+	6: 6,
+	8: 8 
+) !default;
+
+@each $key, $interval in $intervals {
   // MARGINS
-  .mt-#{$int}{
-    margin-top:($int + px);
+  .mt-#{$key}{
+    margin-top:($interval + em);
   }
-  .mb-#{$int}{
-    margin-bottom:($int + px);
+  .mb-#{$key}{
+    margin-bottom:($interval + em);
   }
-  .mv-#{$int}{
-    margin-top:($int + px);
-    margin-bottom:($int + px);
+  .mv-#{$key}{
+    margin-top:($interval + em);
+    margin-bottom:($interval + em);
   }
-  .ml-#{$int}{
-    margin-left:($int + px);
+  .ml-#{$key}{
+    margin-left:($interval + em);
   }
-  .mr-#{$int}{
-    margin-right:($int + px);
+  .mr-#{$key}{
+    margin-right:($interval + em);
   }
-  .mh-#{$int}{
-    margin-left:($int + px);
-    margin-right:($int + px);
+  .mh-#{$key}{
+    margin-left:($interval + em);
+    margin-right:($interval + em);
   }
-  .mhn-#{$int}{
-    margin-left: -($int + px);
-    margin-right: -($int + px);
+  .mhn-#{$key}{
+    margin-left: -($interval + em);
+    margin-right: -($interval + em);
   }
-  .mx-#{$int}{
-    margin:($int + px);
+  .mx-#{$key}{
+    margin:($interval + em);
   }
 
   // PADDING
-  .pt-#{$int}{
-    padding-top:($int + px);
+  .pt-#{$key}{
+    padding-top:($interval + em);
   }
-  .pb-#{$int}{
-    padding-bottom:($int + px);
+  .pb-#{$key}{
+    padding-bottom:($interval + em);
   }
-  .pv-#{$int}{
-    padding-top:($int + px);
-    padding-bottom:($int + px);
+  .pv-#{$key}{
+    padding-top:($interval + em);
+    padding-bottom:($interval + em);
   }
-  .pl-#{$int}{
-    padding-left:($int + px);
+  .pl-#{$key}{
+    padding-left:($interval + em);
   }
-  .pr-#{$int}{
-    padding-right:($int + px);
+  .pr-#{$key}{
+    padding-right:($interval + em);
   }
-  .ph-#{$int}{
-    padding-left:($int + px);
-    padding-right:($int + px);
+  .ph-#{$key}{
+    padding-left:($interval + em);
+    padding-right:($interval + em);
   }
-  .px-#{$int}{
-    padding:($int + px);
+  .px-#{$key}{
+    padding:($interval + em);
   }
 }
 
