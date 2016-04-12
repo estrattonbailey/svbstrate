@@ -1,3 +1,8 @@
+.mh-a {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 // WHITESPACE
 //
 // These classes can be very useful. But, they can
@@ -14,6 +19,7 @@
 // These are the pixel based stopping points on the
 // scale. Customize them as needed.
 $intervals: (
+  '0': 0,
 	'025': 0.25,
 	'05': 0.5,
 	'075': 0.75,
@@ -46,10 +52,6 @@ $intervals: (
     margin-left:($interval + em);
     margin-right:($interval + em);
   }
-  .mhn-#{$key}{
-    margin-left: -($interval + em);
-    margin-right: -($interval + em);
-  }
   .mx-#{$key}{
     margin:($interval + em);
   }
@@ -78,42 +80,11 @@ $intervals: (
   .px-#{$key}{
     padding:($interval + em);
   }
-}
 
-// MARGINS
-.mh-a {
-  margin-left: auto;
-  margin-right: auto;
-}
-.mx-0 {
-  margin: 0;
-}
-.ml-0 {
-  margin-left: 0;
-}
-.mr-0 {
-  margin-right: 0;
-}
-.mb-0 {
-  margin-bottom: 0;
-}
-.mt-0 {
-  margin-top: 0;
-}
-
-// PADDING
-.px-0 {
-  padding: 0;
-}
-.pl-0 {
-  padding-left: 0;
-}
-.pr-0 {
-  padding-right: 0;
-}
-.pb-0 {
-  padding-bottom: 0;
-}
-.pt-0 {
-  padding-top: 0;
+  // Negative margins
+  // remove this if you like
+  .mhn-#{$key}{
+    margin-left: -($interval + em);
+    margin-right: -($interval + em);
+  }
 }
