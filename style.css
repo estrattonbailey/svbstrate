@@ -848,8 +848,10 @@ h1, h2, h3, h4, h5, h6, p {
   font-weight: 100;
   margin: 0; }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Source Sans Pro", "Helvetica Neue", Helvetica, sans-serif; }
+h1, h2, h3, h4, h5, h6,
+.f1, .f2, .f3, .f4, .f5, .f6 {
+  font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Source Sans Pro", "Helvetica Neue", Helvetica, sans-serif;
+  margin: 1ex 0 .6ex; }
 
 h1,
 .f1 {
@@ -899,7 +901,8 @@ table,
 .table {
   font-size: 1.8rem;
   font-weight: 100;
-  line-height: 1.7; }
+  line-height: 1.7;
+  margin: 2ex 0; }
 
 blockquote {
   margin: 3rem 0;
@@ -925,13 +928,6 @@ small {
 
 b, strong {
   font-weight: bold; }
-
-.text-content h1, .text-content h2, .text-content h3, .text-content h4, .text-content h5, .text-content h6,
-.text-content .f1, .text-content .f2, .text-content .f3, .text-content .f4, .text-content .f5, .text-content .f6 {
-  margin: 1ex 0 .6ex; }
-
-.text-content p {
-  margin: 2ex 0; }
 
 .type--reset {
   margin: 0;
