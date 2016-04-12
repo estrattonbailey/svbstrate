@@ -851,7 +851,7 @@ select {
 html, body {
   color: #222222;
   font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Source Sans Pro", "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 62.5%;
+  font-size: 100%;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%; }
 
@@ -874,51 +874,39 @@ h1, h2, h3, h4, h5, h6 {
 
 h1,
 .f1 {
-  font-size: 3.2rem;
+  font-size: 2.8rem;
   line-height: 1.1; }
-  @media (min-width: 37.5em) {
-    h1,
-    .f1 {
-      font-size: 4.5rem; } }
 
 h2,
 .f2 {
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   line-height: 1.4; }
-  @media (min-width: 37.5em) {
-    h2,
-    .f2 {
-      font-size: 3rem; } }
 
 h3,
 .f3 {
-  font-size: 2rem;
+  font-size: 1.4rem;
   line-height: 1.4; }
-  @media (min-width: 37.5em) {
-    h3,
-    .f3 {
-      font-size: 2.2rem; } }
 
 h4,
 .f4 {
-  font-size: 1.8rem;
+  font-size: 1.1rem;
   line-height: 1.5; }
 
 h5,
 .f5 {
-  font-size: 1.5rem;
+  font-size: 0.9rem;
   line-height: 1.6; }
 
 h6,
 .f6 {
-  font-size: 1.2rem;
+  font-size: 0.8rem;
   line-height: 1.6; }
 
 p,
 .p,
 table,
 .table {
-  font-size: 1.8rem;
+  font-size: 1.1rem;
   font-weight: 100;
   line-height: 1.7; }
 
@@ -929,9 +917,6 @@ blockquote {
   margin: 3rem 0;
   padding-left: 2rem;
   border-left: 4px solid #148ECC; }
-  @media (min-width: 53.125em) {
-    blockquote {
-      padding-left: 3rem; } }
 
 hr {
   background-color: currentColor;
