@@ -124,93 +124,93 @@ select {
 .static {
   position: static; }
 
-.w1 {
-  width: 100%; }
-
-.w12 {
-  width: 50%; }
-
-.w13 {
-  width: 33.33333%; }
-
-.w23 {
-  width: 66.66667%; }
-
-.w14 {
+.col-3 {
   width: 25%; }
 
-.w34 {
+.col-4 {
+  width: 33.33333%; }
+
+.col-6 {
+  width: 50%; }
+
+.col-8 {
+  width: 66.66667%; }
+
+.col-9 {
   width: 75%; }
 
+.col-12 {
+  width: 100%; }
+
 @media (min-width: 24.9375em) {
-  .w1_xs {
-    width: 100%; }
-  .w12_xs {
-    width: 50%; }
-  .w13_xs {
-    width: 33.33333%; }
-  .w23_xs {
-    width: 66.66667%; }
-  .w14_xs {
+  .col-3_xs {
     width: 25%; }
-  .w34_xs {
-    width: 75%; } }
+  .col-4_xs {
+    width: 33.33333%; }
+  .col-6_xs {
+    width: 50%; }
+  .col-8_xs {
+    width: 66.66667%; }
+  .col-9_xs {
+    width: 75%; }
+  .col-12_xs {
+    width: 100%; } }
 
 @media (min-width: 37.5em) {
-  .w1_s {
-    width: 100%; }
-  .w12_s {
-    width: 50%; }
-  .w13_s {
-    width: 33.33333%; }
-  .w23_s {
-    width: 66.66667%; }
-  .w14_s {
+  .col-3_s {
     width: 25%; }
-  .w34_s {
-    width: 75%; } }
+  .col-4_s {
+    width: 33.33333%; }
+  .col-6_s {
+    width: 50%; }
+  .col-8_s {
+    width: 66.66667%; }
+  .col-9_s {
+    width: 75%; }
+  .col-12_s {
+    width: 100%; } }
 
 @media (min-width: 53.125em) {
-  .w1_m {
-    width: 100%; }
-  .w12_m {
-    width: 50%; }
-  .w13_m {
-    width: 33.33333%; }
-  .w23_m {
-    width: 66.66667%; }
-  .w14_m {
+  .col-3_m {
     width: 25%; }
-  .w34_m {
-    width: 75%; } }
+  .col-4_m {
+    width: 33.33333%; }
+  .col-6_m {
+    width: 50%; }
+  .col-8_m {
+    width: 66.66667%; }
+  .col-9_m {
+    width: 75%; }
+  .col-12_m {
+    width: 100%; } }
 
 @media (min-width: 65.625em) {
-  .w1_l {
-    width: 100%; }
-  .w12_l {
-    width: 50%; }
-  .w13_l {
-    width: 33.33333%; }
-  .w23_l {
-    width: 66.66667%; }
-  .w14_l {
+  .col-3_l {
     width: 25%; }
-  .w34_l {
-    width: 75%; } }
+  .col-4_l {
+    width: 33.33333%; }
+  .col-6_l {
+    width: 50%; }
+  .col-8_l {
+    width: 66.66667%; }
+  .col-9_l {
+    width: 75%; }
+  .col-12_l {
+    width: 100%; } }
 
 @media (min-width: 75em) {
-  .w1_xl {
-    width: 100%; }
-  .w12_xl {
-    width: 50%; }
-  .w13_xl {
-    width: 33.33333%; }
-  .w23_xl {
-    width: 66.66667%; }
-  .w14_xl {
+  .col-3_xl {
     width: 25%; }
-  .w34_xl {
-    width: 75%; } }
+  .col-4_xl {
+    width: 33.33333%; }
+  .col-6_xl {
+    width: 50%; }
+  .col-8_xl {
+    width: 66.66667%; }
+  .col-9_xl {
+    width: 75%; }
+  .col-12_xl {
+    width: 100%; } }
 
 .h1 {
   height: 100vh; }
