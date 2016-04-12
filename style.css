@@ -919,9 +919,9 @@ hr {
 a {
   text-decoration: none; }
 
-.font-small,
+.small,
 small {
-  font-size: 0.8em; }
+  font-size: 1.2rem; }
 
 b, strong {
   font-weight: bold; }
@@ -933,45 +933,30 @@ b, strong {
 .text-content p {
   margin: 2ex 0; }
 
-.font-0 {
+.type--reset {
   margin: 0;
   line-height: 1; }
 
-.font-s-i {
+.italic {
   font-style: italic; }
 
-.font-w-1 {
+.light {
   font-weight: 100; }
 
-.font-w-2 {
-  font-weight: 200; }
-
-.font-w-3 {
-  font-weight: 300; }
-
-.font-w-4 {
-  font-weight: 400; }
-
-.font-w-5 {
+.medium {
   font-weight: 500; }
 
-.font-w-6 {
-  font-weight: 600; }
-
-.font-w-7 {
-  font-weight: 700; }
-
-.font-w-8 {
-  font-weight: 800; }
-
-.font-w-9 {
+.bold {
   font-weight: 900; }
 
-.font-t-u {
+.uppercase {
   text-transform: uppercase; }
 
-.font-d-u {
+.underline {
   text-decoration: underline; }
+
+.decoration--none {
+  text-decoration: none; }
 
 .button, .button--border, input[type="submit"],
 button {
