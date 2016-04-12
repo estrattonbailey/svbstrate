@@ -868,8 +868,7 @@ h1, h2, h3, h4, h5, h6, p {
   font-weight: 100;
   margin: 0; }
 
-h1, h2, h3, h4, h5, h6,
-.f1, .f2, .f3, .f4, .f5, .f6 {
+h1, h2, h3, h4, h5, h6 {
   font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Source Sans Pro", "Helvetica Neue", Helvetica, sans-serif;
   margin: 1ex 0 .6ex; }
 
@@ -921,7 +920,9 @@ table,
 .table {
   font-size: 1.8rem;
   font-weight: 100;
-  line-height: 1.7;
+  line-height: 1.7; }
+
+p {
   margin: 2ex 0; }
 
 blockquote {
