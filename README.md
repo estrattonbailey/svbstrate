@@ -1,4 +1,4 @@
-# Svbstrate
+# Svbstrate (WIP Beta)
 ### A simple, scalable CSS base layer. 
 *1119 LOC - 3.28kb minfied and gzipped*
 
