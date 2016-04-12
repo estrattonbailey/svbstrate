@@ -894,7 +894,9 @@ h6,
   line-height: 1.6; }
 
 p,
-.p {
+.p,
+table,
+.table {
   font-size: 1.8rem;
   font-weight: 100;
   line-height: 1.7; }
@@ -1100,20 +1102,20 @@ table,
   display: table-row; }
 
 .table__cell, td,
-th,
-.table__cell--styled {
+th {
   display: table-cell; }
 
 td,
-th,
-.table__cell--styled {
+th {
   border-bottom: 1px solid #f5f5f5;
   padding: .66em 1.33em; }
   .no-padding td:first-child, .no-padding
-  th:first-child, .no-padding
-  .table__cell--styled:first-child {
+  th:first-child {
     padding-left: 0; }
   .no-padding td:last-child, .no-padding
-  th:last-child, .no-padding
-  .table__cell--styled:last-child {
+  th:last-child {
     padding-right: 0; }
+
+th {
+  font-weight: 100;
+  text-align: left; }
