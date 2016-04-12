@@ -25,8 +25,7 @@ $intervals: (
 	'075': 0.75,
 	1: 1,
 	2: 2,
-	4: 4,
-	6: 6,
+	4: 4, 6: 6,
 	8: 8 
 ) !default;
 
@@ -55,6 +54,12 @@ $intervals: (
   .mx-#{$key}{
     margin:($interval + em);
   }
+  // Negative margins
+  // remove this if you like
+  .mhn-#{$key}{
+    margin-left: (- $interval + em);
+    margin-right: (- $interval + em);
+  }
 
   // PADDING
   .pt-#{$key}{
@@ -79,12 +84,5 @@ $intervals: (
   }
   .px-#{$key}{
     padding:($interval + em);
-  }
-
-  // Negative margins
-  // remove this if you like
-  .mhn-#{$key}{
-    margin-left: -($interval + em);
-    margin-right: -($interval + em);
   }
 }
