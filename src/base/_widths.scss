@@ -1,5 +1,6 @@
 // 12 column grid
-$col_sizes: (
+// most common sizes defined by default
+$columns: (
 	3: 25%,
 	4: 33.333333%,
 	6: 50%,
@@ -9,14 +10,14 @@ $col_sizes: (
 ) !default;
 
 // Generate base (mobile) width classes
-@each $col_ext, $width in $col_sizes {
+@each $col_ext, $width in $columns {
 	.col-#{$col_ext} { width: $width }
 }
 
 // Generate breakpoint specific width classes
 @each $break_ext, $break in $breakpoints {
 	@media (min-width: em($break)){
-		@each $col_width, $width in $col_sizes {
+		@each $col_width, $width in $columns {
       .col-#{$col_width}_#{$break_ext} { width: $width }
 		}
 	}
