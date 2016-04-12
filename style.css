@@ -1086,8 +1086,10 @@ table,
   border-collapse: collapse;
   border-spacing: 0;
   display: table;
-  table-layout: fixed;
   width: 100%; }
+
+.table--fixed {
+  table-layout: fixed; }
 
 .table__row-header {
   display: table-header-group; }
