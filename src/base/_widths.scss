@@ -8,25 +8,15 @@ $col_sizes: (
 ) !default;
 
 // Generate base (mobile) width classes
-// Uncomment the push, pull, and suffix
-// classes if you want that functionality
 @each $col_ext, $width in $col_sizes {
-	.s#{$col_ext} { width: $width }
-	// .p#{$col_ext} { left: $width }
-	// .pl#{$col_ext} { left: calc(-1 * #{$width}) }
-	// .sx#{$col_ext} { margin-right: $width }
+	.w#{$col_ext} { width: $width }
 }
 
 // Generate breakpoint specific width classes
-// Uncomment the push, pull, and suffix
-// classes if you want that functionality
 @each $break_ext, $break in $breakpoints {
 	@media (min-width: em($break)){
 		@each $col_width, $width in $col_sizes {
-		    .s#{$col_width}_#{$break_ext} { width: $width }
-		    // .p#{$col_width}_#{$break_ext} { left: $width }
-		    // .pl#{$col_width}_#{$break_ext} { left: calc(-1 * #{$width}) }
-		    // .sx#{$col_width}_#{$break_ext} { margin-right: $width }
+      .w#{$col_width}_#{$break_ext} { width: $width }
 		}
 	}
 }
