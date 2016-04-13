@@ -31,58 +31,58 @@ $intervals: (
 
 @each $key, $interval in $intervals {
   // MARGINS
-  .mt-#{$key}{
+  .mt#{$key}{
     margin-top:($interval + em);
   }
-  .mb-#{$key}{
+  .mb#{$key}{
     margin-bottom:($interval + em);
   }
-  .mv-#{$key}{
+  .mv#{$key}{
     margin-top:($interval + em);
     margin-bottom:($interval + em);
   }
-  .ml-#{$key}{
+  .ml#{$key}{
     margin-left:($interval + em);
   }
-  .mr-#{$key}{
+  .mr#{$key}{
     margin-right:($interval + em);
   }
-  .mh-#{$key}{
+  .mh#{$key}{
     margin-left:($interval + em);
     margin-right:($interval + em);
   }
-  .mx-#{$key}{
+  .mx#{$key}{
     margin:($interval + em);
   }
   // Negative margins
   // remove this if you like
-  .mhn-#{$key}{
+  .mhn#{$key}{
     margin-left: (- $interval + em);
     margin-right: (- $interval + em);
   }
 
   // PADDING
-  .pt-#{$key}{
+  .pt#{$key}{
     padding-top:($interval + em);
   }
-  .pb-#{$key}{
+  .pb#{$key}{
     padding-bottom:($interval + em);
   }
-  .pv-#{$key}{
+  .pv#{$key}{
     padding-top:($interval + em);
     padding-bottom:($interval + em);
   }
-  .pl-#{$key}{
+  .pl#{$key}{
     padding-left:($interval + em);
   }
-  .pr-#{$key}{
+  .pr#{$key}{
     padding-right:($interval + em);
   }
-  .ph-#{$key}{
+  .ph#{$key}{
     padding-left:($interval + em);
     padding-right:($interval + em);
   }
-  .px-#{$key}{
+  .px#{$key}{
     padding:($interval + em);
   }
 }
