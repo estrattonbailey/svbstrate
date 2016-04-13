@@ -1,23 +1,23 @@
 // COLORS
-$c-theme: #148ECC;
-$c-b: #222222;
-$c-g: #444444;
-$c-g1: #f5f5f5;
-$c-g2: #cccccc;
-$c-g3: #999999;
+$c1: #148ECC;
+$cb: #222222;
+$cg: #444444;
+$cg1: #f5f5f5;
+$cg2: #cccccc;
+$cg3: #999999;
 
-.c-theme { color: $c-theme }
-.c-w { color: white }
-.c-b { color: $c-b }
-.c-g { color: $c-g }
-.c-g1 { color: $c-g1 }
-.c-g2 { color: $c-g2 }
-.c-g3 { color: $c-g3 }
+.c1 { color: $c1 }
+.cw { color: white }
+.cb { color: $cb }
+.cg { color: $cg }
+.cg1 { color: $cg1 }
+.cg2 { color: $cg2 }
+.cg3 { color: $cg3 }
 
-.bg-c-theme { background-color: $c-theme }
-.bg-c-w { background-color: white }
-.bg-c-b { background-color: $c-b }
-.bg-c-g { background-color: $c-g }
-.bg-c-g1 { background-color: $c-g1 }
-.bg-c-g2 { background-color: $c-g2 }
-.bg-c-g3 { background-color: $c-g3 }
+.bg-c1 { background-color: $c1 }
+.bg-cw { background-color: white }
+.bg-cb { background-color: $cb }
+.bg-cg { background-color: $cg }
+.bg-cg1 { background-color: $cg1 }
+.bg-cg2 { background-color: $cg2 }
+.bg-cg3 { background-color: $cg3 }

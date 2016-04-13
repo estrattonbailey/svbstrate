@@ -30,7 +30,7 @@ label {
 		top: calc(50% - 0.5em);
 		right: 1em;
 		font-size: 2em;
-		color: $c-theme;
+		color: inherit;
 		pointer-events: none;
 	}
 	// .select-wrapper > select assumes you want to remove default styles

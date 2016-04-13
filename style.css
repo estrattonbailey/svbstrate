@@ -273,46 +273,46 @@ select {
   background-position: center;
   background-repeat: no-repeat; }
 
-.c-theme {
+.c1 {
   color: #148ECC; }
 
-.c-w {
+.cw {
   color: white; }
 
-.c-b {
+.cb {
   color: #222222; }
 
-.c-g {
+.cg {
   color: #444444; }
 
-.c-g1 {
+.cg1 {
   color: #f5f5f5; }
 
-.c-g2 {
+.cg2 {
   color: #cccccc; }
 
-.c-g3 {
+.cg3 {
   color: #999999; }
 
-.bg-c-theme {
+.bg-c1 {
   background-color: #148ECC; }
 
-.bg-c-w {
+.bg-cw {
   background-color: white; }
 
-.bg-c-b {
+.bg-cb {
   background-color: #222222; }
 
-.bg-c-g {
+.bg-cg {
   background-color: #444444; }
 
-.bg-c-g1 {
+.bg-cg1 {
   background-color: #f5f5f5; }
 
-.bg-c-g2 {
+.bg-cg2 {
   background-color: #cccccc; }
 
-.bg-c-g3 {
+.bg-cg3 {
   background-color: #999999; }
 
 .align-l {
@@ -1018,7 +1018,7 @@ label {
   top: calc(50% - 0.5em);
   right: 1em;
   font-size: 2em;
-  color: #148ECC;
+  color: inherit;
   pointer-events: none; }
 
 .select-wrapper select {
