@@ -124,6 +124,9 @@ select {
 .static {
   position: static; }
 
+.hide {
+  display: none; }
+
 .col-3 {
   width: 25%; }
 
@@ -385,7 +388,7 @@ select {
   .float-n_xl {
     float: none; } }
 
-.mh-a {
+.mha {
   margin-left: auto;
   margin-right: auto; }
 
