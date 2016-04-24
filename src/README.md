@@ -1,8 +1,10 @@
 # Svbstrate (WIP Beta)
-### A simple, scalable CSS base layer. 
-*1119 LOC - 3.28kb minfied and gzipped*
+### A simple, scalable SCSS base layer. 
 
-An atomic CSS substrate layer for your projects, written in SCSS, inspired by [BASSCSS](http://www.basscss.com/) and [Tachyons](http://tachyons.io/). Many thanks to Brent and Adam.
+An atomic SCSS substrate layer for your projects inspired by [BASSCSS](http://www.basscss.com/) and [Tachyons](http://tachyons.io/). Many thanks to Brent and Adam.
+
+### [Documentation](http://estrattonbailey.com/svbstrate-site/)
+These aren't complete, but it's a good start.
 
 ## Getting Started 
 Pull down the files from NPM, then copy to your stylesheet directory.
@@ -24,11 +26,10 @@ Open a PR when you're finished! Please comment with the changes, and your reason
 * * *
 
 ## Looking for more info?
-Check out the Barrel Best Practices: CSS doc [here](https://github.com/barrel/barrel-dev-best-practices/blob/master/css.md), or go read everything that [@jxnblk](https://twitter.com/jxnblk_) and [@mrmrs\_](https://twitter.com/mrmrs_) have written about this kind of thing.
+Basic documentation is [here](http://estrattonbailey.com/svbstrate-site/), and go read everything that [@jxnblk](https://twitter.com/jxnblk_) and [@mrmrs\_](https://twitter.com/mrmrs_) have written about this kind of thing.
 
 Questions, comments, suggestions? Open and issue or pull request, or reach me on Twitter at [@estrattonbailey](http://twitter.com/estrattonbailey).
 
 * * *
 
 MIT License
-
