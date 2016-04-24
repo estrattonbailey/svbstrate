@@ -1,37 +1,27 @@
 {
   "name": "svbstrate",
-  "version": "0.10.3",
-  "description": "A simple, scalable CSS base layer.",
-  "main": "substrate.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "version": "0.10.4",
+  "description": "A simple, scalable SCSS base layer.",
   "repository": {
     "type": "git",
     "url": "https://github.com/estrattonbailey/svbstrate.git"
   },
   "keywords": [
     "css",
-    "responsive",
+    "atomic css",
+    "functional css",
     "scss",
+    "ocss",
     "sass",
-    "framework",
-    "boilerplate",
-    "framework",
     "toolkit",
-    "styles",
-    "reset",
-    "base",
     "grid",
-    "basic",
     "framework",
-    "grid",
-    "scss"
+    "grid"
   ],
   "author": "@estrattonbailey",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/estrattonbailey/svbstrate/issues"
   },
-  "homepage": "https://github.com/estrattonbailey/svbstrate#readme"
+  "homepage": "http://estrattonbailey.com/svbstrate-site/"
 }
