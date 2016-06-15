@@ -1,27 +1,12 @@
-# Svbstrate (WIP Beta)
-### A simple, scalable SCSS base layer. 
-
-An atomic SCSS substrate layer for your projects inspired by [BASSCSS](http://www.basscss.com/) and [Tachyons](http://tachyons.io/). Many thanks to Brent and Adam.
-
-### [Documentation](http://estrattonbailey.com/svbstrate-site/)
-These aren't complete, but it's a good start.
+# svbstrate
+### A simple, scalable CSS base layer. 
+A low-level CSS library written in SCSS, inspired by [BASSCSS](http://www.basscss.com/) and [Tachyons](http://tachyons.io/). Many thanks to Brent and Adam. Please check out the [docs site](http://estrattonbailey.com/svbstrate-site/) (WIP) for an overview of what's here. 
 
 ## Getting Started 
-Pull down the files from NPM, then copy to your stylesheet directory.
-```
-npm i svbstrate --save
-```
+TODO
 
 ## Contributing
-Clone this repo, install dependencies:
-```
-npm i
-```
-Compile and watch CSS:
-```
-npm start
-```
-Open a PR when you're finished! Please comment with the changes, and your reasoning behind them :)
+Issues and Pull Requests are welcome. See [CONTRIBUTING.md](https://github.com/barrel/svbstrate/blob/master/CONTRIBUTING.md) for more info.
 
 * * *
 
