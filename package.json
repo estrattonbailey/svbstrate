@@ -8,10 +8,10 @@
   },
   "scripts": {
     "patch": "npm version patch && npm run pub",
-    "pub": "npm publish --access=public"
+    "pub": "npm publish"
   },
   "bin": {
-    "svbstrate": "init.js"
+    "svbstrate": "build.js"
   },
   "keywords": [
     "css",
