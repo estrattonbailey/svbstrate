@@ -11,7 +11,7 @@
     "pub": "npm publish --access=public"
   },
   "bin": {
-    "svbstrate": "make.js"
+    "svbstrate": "init.js"
   },
   "keywords": [
     "css",
