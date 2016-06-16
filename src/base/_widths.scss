@@ -1,24 +1,25 @@
-// 12 column grid
-// most common sizes defined by default
-$columns: (
-	3: 25%,
-	4: 33.333333%,
-	6: 50%,
-	8: 66.666666%,
-  9: 75%,
-  12: 100%
+.w1 {
+  width: 100%;
+}
+
+$widths: (
+  12: 50%,
+  13: 33.33333%,
+  23: 66.66667%,
+  14: 25%,
+  34: 75%,
 ) !default;
 
 // Generate base (mobile) width classes
-@each $col_ext, $width in $columns {
-	.col-#{$col_ext} { width: $width }
+@each $num, $width in $widths{
+  .w#{$num} { width: $width }
 }
 
 // Generate breakpoint specific width classes
 @each $break_ext, $break in $breakpoints {
-	@media (min-width: em($break)){
-		@each $col_width, $width in $columns {
-      .col-#{$col_width}_#{$break_ext} { width: $width }
-		}
-	}
+  @media (min-width: em($break)){
+    @each $num, $width in $widths{
+      .w#{$num}_#{$break_ext} { width: $width }
+    }
+  }
 }
