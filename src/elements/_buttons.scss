@@ -1,22 +1,29 @@
-// BUTTONS
-.button,
+// RESET
 button {
-	@extend .inline-relative;
-	background-color: #148ECC;
-	border: 0;
-	color: white;
-	cursor: pointer;
-	padding: 0.7em 2em;
-	text-decoration: none;
-	text-align: center;
-	-webkit-appearance: none;
+  -webkit-appearance: none;
+  border: 0;
+  border-radius: 0;
+  background-color: transparent;
+  color: inherit;
 }
-.button--border {
-	@extend .button;
-	background-color: transparent;
-	border: 1px solid #148ECC;
-	color: inherit;
+button[disabled], 
+input[disabled] { 
+  cursor: default 
 }
-input[type="submit"] {
-	@extend .button;
+
+// STYLES 
+// Buttons should be button.button or
+// element[rel="button"] for accessibility
+button.button,
+.button,
+a[rel="button"],
+.button[rel="button"],
+input[type="submit"].button {
+  display: inline-block;
+  background-color: $c1;
+  color: white;
+  cursor: pointer;
+  padding: 0.7em 2em;
+  text-decoration: none;
+  text-align: center;
 }
