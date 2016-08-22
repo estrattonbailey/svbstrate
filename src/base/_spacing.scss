@@ -24,9 +24,7 @@ $intervals: (
 	'05': 0.5,
 	'075': 0.75,
 	1: 1,
-	2: 2,
-	4: 4, 6: 6,
-	8: 8 
+	2: 2
 ) !default;
 
 @each $key, $interval in $intervals {
@@ -51,11 +49,6 @@ $intervals: (
     margin-left:($interval + em);
     margin-right:($interval + em);
   }
-  .mx#{$key}{
-    margin:($interval + em);
-  }
-  // Negative margins
-  // remove this if you like
   .mhn#{$key}{
     margin-left: (- $interval + em);
     margin-right: (- $interval + em);
@@ -81,8 +74,5 @@ $intervals: (
   .ph#{$key}{
     padding-left:($interval + em);
     padding-right:($interval + em);
-  }
-  .px#{$key}{
-    padding:($interval + em);
   }
 }
