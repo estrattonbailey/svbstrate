@@ -34,10 +34,11 @@
     "url": "https://github.com/estrattonbailey/svbstrate/issues"
   },
   "homepage": "http://estrattonbailey.com/svbstrate-site/",
-  "dependencies": {},
+  "dependencies": {
+    "fs-extra": "^0.30.0"
+  },
   "devDependencies": {
     "cssnano": "^3.7.4",
-    "fs-extra": "^0.30.0",
     "node-sass": "^3.8.0",
     "postcss-cli": "^2.5.2"
   }
