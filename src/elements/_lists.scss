@@ -1,40 +1,36 @@
-// LISTS
-ul, ol { // add typography sizing classes to outer list container to style font-size
-	margin: 0;
-	padding: 0;
+ul, ol {
+  margin: 0;
+  padding: 0;
 }
 ol {
-	list-style: decimal inside;
+  list-style: decimal inside;
 }
 ul {
-	list-style: disc inside;
+  list-style: disc inside;
 }
 li {
-	margin: .33em 0;
+  margin: .33em 0;
 }
-// NESTED LISTS
 ul, ol, li {
-	ul, ol {
-		margin: 0;
-		padding-left: 2em;
-	}
-	ul {
-		list-style: circle inside;
-	}
-	ol {
-		list-style: lower-alpha inside;
-	}
+  ul, ol {
+    margin: 0;
+    padding-left: 2em;
+  }
+  ul {
+    list-style: circle inside;
+  }
+  ol {
+    list-style: lower-alpha inside;
+  }
 }
 ul.list--reset,
 ol.list--reset,
 li.list--reset,
 .list--reset {
-	list-style: none;
-	padding-left: 0;
-}
-.list--reset {
-	ul, ol, li {
-		list-style: none;
-		padding-left: 0;
-	}
+  list-style: none;
+  padding-left: 0;
+  ul, ol, li {
+    list-style: none;
+    padding-left: 0;
+  }
 }
