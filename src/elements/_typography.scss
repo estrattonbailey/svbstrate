@@ -1,32 +1,22 @@
-// TYPOGRAPHY
-$font-stack__sans: -apple-system, BlinkMacSystemFont, 'Avenir Next', 'Source Sans Pro', 'Helvetica Neue', Helvetica, sans-serif;
-$font-stack__serif: georgia, times, serif;
-$font-stack__body: $font-stack__sans;
-$font-stack__headings: $font-stack__sans;
-
-html, body {
-	color: #222222;
-	font-family: $font-stack__body;
+::selection {
+  background: $c2;
+}
+::-moz-selection {
+  background: $c2;
+}
+:root {
+  font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, sans-serif;
 	font-size: 100%;
-	-ms-text-size-adjust: 100%;
-	-webkit-text-size-adjust: 100%;
+	font-weight: 100;
+	color: #000;
 }
-.font-sans {
-	font-family: $font-stack__sans;
-}
-.font-serif {
-	font-family: $font-stack__serif;
-}
-.font-monospace {
-	font-family: Consolas , Monaco, monospace;
-}
-h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, h4, h5, h6, p,
+.h1, .h2, .h3, .h4, .h5, .h6, .p {
 	font-weight: 100;
 	margin: 0;
 }
 h1, h2, h3, h4, h5, h6 {
-	font-family: $font-stack__headings;
-  margin: 1ex 0 .6ex;
+  margin: 2ex 0 .6ex;
 }
 h1,
 .h1 {
@@ -73,15 +63,12 @@ blockquote {
 	border-left: 4px solid #148ECC;
 }
 hr {
-	@extend .block-relative;
+  display: block;
 	background-color: currentColor;
   color: inherit;
 	border: 0;
 	height: 1px;
 	width: 100%;
-}
-a {
-	text-decoration: none;
 }
 .small,
 small {
@@ -90,9 +77,6 @@ small {
 b, strong {
   font-weight: bold;
 }
-
-// STYLES
-// Pare these down based on your available fonts
 .type--reset {
   margin: 0;
   line-height: 1;
