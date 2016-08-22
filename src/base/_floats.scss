@@ -1,12 +1,9 @@
-// Floats
-.float-l { float: left }
-.float-r { float: right }
-.float-n { float: none }
-
-@each $break_ext, $break in $breakpoints {
-	@media (min-width: em($break)){
-    .float-l_#{$break_ext} { float: left }
-    .float-r_#{$break_ext} { float: right }
-    .float-n_#{$break_ext} { float: none }
-	}
+.float-l { 
+  float: left 
+}
+.float-r { 
+  float: right 
+}
+.float-n { 
+  float: none 
 }
