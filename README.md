@@ -1,7 +1,9 @@
 # svbstrate [![npm](https://img.shields.io/npm/v/svbstrate.svg?maxAge=2592000)](https://www.npmjs.com/package/svbstrate)
 
 ### A simple, scalable CSS base layer. 
-A low-level CSS library written in SCSS, inspired by [BASSCSS](http://www.basscss.com/) and [Tachyons](http://tachyons.io/). Many thanks to Brent and Adam. Please check out the [docs site](http://estrattonbailey.com/svbstrate-site/) (WIP) for an overview of what's here. 
+A low-level CSS library written in SCSS, inspired by [BASSCSS](http://www.basscss.com/) and [Tachyons](http://tachyons.io/). Includes a CLI for ease of use.
+
+**Documentation (WIP):** [estrattonbailey.com/svbstrate-site](http://estrattonbailey.com/svbstrate-site/) 
 
 ## Getting Started 
 Svbstrate is hosted on NPM, so simply install the package to your project and copy the files to your stylesheet directory.
@@ -33,8 +35,10 @@ Issues and Pull Requests are welcome. See [CONTRIBUTING.md](https://github.com/b
 
 * * *
 
-## Looking for more info?
-Basic documentation is [here](http://estrattonbailey.com/svbstrate-site/), and go read everything that [@jxnblk](https://twitter.com/jxnblk_) and [@mrmrs\_](https://twitter.com/mrmrs_) have written about this kind of thing.
+## About This Library
+This libary is heavily influenced by [BASSCSS](http://www.basscss.com/) and [Tachyons](http://tachyons.io/) and in some cases could be considered a SCSS port of those libraries. Due credit and thanks to [@jxnblk](https://twitter.com/jxnblk_) and [@mrmrs\_](https://twitter.com/mrmrs_). If you have the flexibilty to go with POSTCSS, I would recommend BASSCSS 100%. That said, svbstrate does add a few of its own tricks. If (when) my work switches to POSTCSS, I'll be switching to BASSCSS as well and this library will likely be not maintained.
+
+Basic documentation is [here](http://estrattonbailey.com/svbstrate-site/).
 
 Questions, comments, suggestions? Open and issue or pull request, or reach me on Twitter at [@estrattonbailey](http://twitter.com/estrattonbailey).
 
