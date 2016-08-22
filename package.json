@@ -8,7 +8,10 @@
   },
   "scripts": {
     "patch": "npm version patch && npm run pub",
-    "pub": "npm publish"
+    "pub": "npm publish",
+    "build": "npm run css ; npm run css:min",
+    "css": "node-sass src/main.scss dist/svbstrate.css",
+    "css:min": "node-sass src/main.scss | postcss -u cssnano > dist/svbstrate.min.css"
   },
   "bin": {
     "svbstrate": "build.js"
@@ -31,7 +34,11 @@
     "url": "https://github.com/estrattonbailey/svbstrate/issues"
   },
   "homepage": "http://estrattonbailey.com/svbstrate-site/",
-  "dependencies": {
-    "fs-extra": "^0.30.0"
+  "dependencies": {},
+  "devDependencies": {
+    "cssnano": "^3.7.4",
+    "fs-extra": "^0.30.0",
+    "node-sass": "^3.8.0",
+    "postcss-cli": "^2.5.2"
   }
 }
