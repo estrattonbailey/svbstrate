@@ -1,12 +1,16 @@
-// FORMS
-.input-group {
-	@extend .relative;
-	margin: 1em auto .66em;
+form {
+  margin: 0;
+}
+input,
+select,
+textarea {
+  outline: 0;
+  border: 0;
 }
 label,
 input,
 select {
-	@extend .relative;
+  position: relative;
 }
 input[type="text"],
 input[type="email"],
@@ -14,62 +18,63 @@ input[type="search"],
 input[type="tel"],
 input[type="password"],
 select, {
-	border: 1px solid #999999;
-	padding: .35em .65em;
+  border: 1px solid $cb;
+  padding: .35em .65em;
+  outline: 0;
 }
 label {
-	color: #333333;
-	margin-bottom: .25em;
+  color: $cg075;
+  margin-bottom: .25em;
 }
-// Adds a custom arrow
 .select-wrapper {
-	@extend .inline-relative;
-	&:after {
-		@extend .absolute;
-		content: '\25bc';
-		top: calc(50% - 0.5em);
-		right: 1em;
-		font-size: 2em;
-		color: inherit;
-		pointer-events: none;
-	}
-	// .select-wrapper > select assumes you want to remove default styles
-	select {
-		padding: .35em 2.5em .35em .55em;
-		appearance: none;
-			-webkit-appearance: none;
-	}
+  display: inline-block;
+
+  &:after {
+    position: absolute;
+    content: '\25bc';
+    top: calc(50% - 0.5em);
+    right: 1em;
+    font-size: 2em;
+    color: inherit;
+    pointer-events: none;
+  }
+  select {
+    padding: .35em 2.5em .35em .55em;
+    appearance: none;
+    -webkit-appearance: none;
+  }
 }
 select {
-	background-color: white;
-	border-radius: 0;
+  background-color: transparent;
+  border-radius: 0;
 }
 textarea {
-	border: 1px solid #999999;
-	min-height: 100px;
-	padding: .55em;
-	width: 100%;
+  background-color: transparent;
+  border: 1px solid $cb;
+  padding: .65em;
+  max-width: 100%;
+  overflow: auto;
 }
 input[type="checkbox"],
 input[type="radio"] {
-	border: 1px solid #999999;
-	vertical-align: middle;
+  border: 1px solid $cb;
+  vertical-align: middle;
 
-	&:checked{
-	  background-color: #148ECC;
-	  border-color: #148ECC;
-	}
-	&:focus{
-	  box-shadow: none;
-	}
+  &:checked{
+    background-color: #148ECC;
+    border-color: #148ECC;
+  }
+  &:focus{
+    box-shadow: none;
+  }
 }
 label.checkbox, label.radio {
-	input {
-		font-size: 2rem;
-		margin: 0 .33em 0 0;
-		vertical-align: middle;
-	}
+  input {
+    font-size: 2rem;
+    margin: 0 .33em 0 0;
+    vertical-align: middle;
+  }
 }
 input[type="radio"] {
-	border-radius: 100%;
+  border-radius: 100%;
 }
