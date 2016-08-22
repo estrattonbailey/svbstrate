@@ -7,3 +7,16 @@
 .float-n { 
   float: none 
 }
+
+// CLEARFIX
+.clear {
+	&::before,
+	&::after {
+	  content:' ';
+	  display: table;
+	}
+
+	&::after {
+	  clear: both;
+	}
+}
