@@ -1,4 +1,5 @@
-# svbstrate
+# svbstrate [![npm](https://img.shields.io/npm/v/svbstrate.svg?maxAge=2592000)](https://www.npmjs.com/package/svbstrate)
+
 ### A simple, scalable CSS base layer. 
 A low-level CSS library written in SCSS, inspired by [BASSCSS](http://www.basscss.com/) and [Tachyons](http://tachyons.io/). Many thanks to Brent and Adam. Please check out the [docs site](http://estrattonbailey.com/svbstrate-site/) (WIP) for an overview of what's here. 
 
