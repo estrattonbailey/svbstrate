@@ -1,19 +1,38 @@
 $c1: #148ECC;
-$cb: #222222;
-$cg025: rgba($cb, 0.25);
-$cg05: rgba($cb, 0.5);
-$cg075: rgba($cb, 0.75);
+$cb: #000;
+$cg1: lighten($cb, 90%);
+$cg2: lighten($cb, 80%);
+$cg3: lighten($cb, 70%);
+$cg4: lighten($cb, 60%);
+$cg5: lighten($cb, 50%);
+$cg6: lighten($cb, 40%);
+$cg7: lighten($cb, 30%);
+$cg8: lighten($cb, 20%);
+$cg9: lighten($cb, 10%);
 
 .c1 { color: $c1 }
 .cw { color: white }
 .cb { color: $cb }
-.cg025 { color: $cg025 }
-.cg05 { color: $cg05 }
-.cg075 { color: $cg075 }
+.cg1 { color: $cg1 }
+.cg2 { color: $cg2 }
+.cg3 { color: $cg3 }
+.cg4 { color: $cg4 }
+.cg5 { color: $cg5 }
+.cg6 { color: $cg6 }
+.cg7 { color: $cg7 }
+.cg8 { color: $cg8 }
+.cg9 { color: $cg9 }
 
 .bg-c1 { background-color: $c1 }
 .bg-cw { background-color: white }
 .bg-cb { background-color: $cb }
-.bg-cg025 { background-color: $cg025 }
-.bg-cg05 { background-color: $cg05 }
-.bg-cg075 { background-color: $cg075 }
+.bg-cg1 { background-color: $cg1 }
+.bg-cg2 { background-color: $cg2 }
+.bg-cg3 { background-color: $cg3 }
+.bg-cg4 { background-color: $cg4 }
+.bg-cg5 { background-color: $cg5 }
+.bg-cg6 { background-color: $cg6 }
+.bg-cg7 { background-color: $cg7 }
+.bg-cg8 { background-color: $cg8 }
+.bg-cg9 { background-color: $cg9 }
+
