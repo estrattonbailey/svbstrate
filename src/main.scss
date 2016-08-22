@@ -1,21 +1,16 @@
-// Base Styles
-@import "base/normalize";
-@import "base/breakpoints";
-@import "base/display";
-@import "base/widths";
-@import "base/containers";
-@import "base/positioning";
-@import "base/colors";
-@import "base/align";
-@import "base/floats";
-@import "base/spacing";
-@import "base/z-index";
-
-// Elements
-@import "elements/_init";
-
-// Components
-@import "components/_init";
-
-// Modules
-// @import "modules/hero";
+@import "lib/normalize";
+@import "lib/breakpoints";
+@import "lib/display";
+@import "lib/widths";
+@import "lib/containers";
+@import "lib/positioning";
+@import "lib/colors";
+@import "lib/align";
+@import "lib/floats";
+@import "lib/spacing";
+@import "lib/z-index";
+@import "lib/buttons";
+@import "lib/forms";
+@import "lib/lists";
+@import "lib/tables";
+@import "lib/typography";
