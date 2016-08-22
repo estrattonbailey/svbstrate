@@ -1,4 +1,3 @@
-// DISPLAY & POSITIONING
 .block {
 	display: block;
 }
@@ -19,22 +18,6 @@
 }
 .static {
 	position: static;
-}
-.block-relative {
-	@extend .block;
-	@extend .relative;
-}
-.inline-relative {
-	@extend .inline-block;
-	@extend .relative;
-}
-.block-fixed {
-	@extend .block;
-	@extend .fixed;
-}
-.block-absolute {
-	@extend .block;
-	@extend .absolute;
 }
 .hide {
   display: none;
