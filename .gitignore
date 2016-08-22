@@ -6,3 +6,4 @@ style.css.map
 *.log
 *.min.css
 *.gz
+dist/
