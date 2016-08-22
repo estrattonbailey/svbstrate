@@ -1,22 +1,12 @@
-.container {
-	@extend .block-relative;
-	margin-left: auto;
-	margin-right: auto;
-	width: 100%;
-}
 .container--l {
-	@extend .container;
   max-width: 1400px;
 }
 .container--m {
-	@extend .container;
   max-width: 1200px;
 }
 .container--s {
-	@extend .container;
   max-width: 900px;
 }
 .container--xs {
-	@extend .container;
   max-width: 735px;
 }
