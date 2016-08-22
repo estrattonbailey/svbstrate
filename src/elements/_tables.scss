@@ -1,11 +1,19 @@
-// TABLES
 table,
 .table {
-  @extend .p;
 	border-collapse: collapse;
 	border-spacing: 0;
 	display: table;
 	width: 100%;
+}
+td,
+th {
+	display: table-cell;
+	border-bottom: 1px solid #f5f5f5;
+	padding: .66em 1.33em;
+}
+th {
+  font-weight: 100;
+  text-align: left;
 }
 .table--fixed {
   table-layout: fixed;
@@ -24,24 +32,4 @@ table,
 }
 .table__cell {
 	display: table-cell;
-}
-// For use with actual tables
-td,
-th {
-	@extend .table__cell;
-	border-bottom: 1px solid #f5f5f5;
-	padding: .66em 1.33em;
-
-	.no-padding & {
-		&:first-child {
-			padding-left: 0;
-		}
-		&:last-child {
-			padding-right: 0;
-		}
-	}
-}
-th {
-  font-weight: 100;
-  text-align: left;
 }
