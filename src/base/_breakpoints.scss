@@ -3,11 +3,9 @@
 // To use, reference via the break() function
 // below, i.e. break(xl)
 $breakpoints: (
-	xs: 399,
-	s: 600,
-	m: 850,
-	l: 1050,
-	xl: 1200
+	s: 500,
+	m: 800,
+	l: 1100
 ) !default;
 
 // This function converts values to ems,
