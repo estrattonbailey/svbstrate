@@ -1,13 +1,13 @@
 :root {
   font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, sans-serif;
-	font-size: 100%;
-	font-weight: 100;
-	color: #000;
+  font-size: 100%;
+  font-weight: 100;
+  color: #000;
 }
 h1, h2, h3, h4, h5, h6, p,
 .h1, .h2, .h3, .h4, .h5, .h6, .p {
-	font-weight: 100;
-	margin: 0;
+  font-weight: 100;
+  margin: 0;
 }
 h1, h2, h3, h4, h5, h6 {
   margin: 2ex 0 .6ex;
@@ -15,54 +15,54 @@ h1, h2, h3, h4, h5, h6 {
 h1,
 .h1 {
   font-size: 2.8rem;
-	line-height: 1.1;
+  line-height: 1.1;
 }
 h2,
 .h2 {
   font-size: 1.8rem;
-	line-height: 1.4;
+  line-height: 1.4;
 }
 h3,
 .h3 {
   font-size: 1.4rem;
-	line-height: 1.4;
+  line-height: 1.4;
 }
 h4,
 .h4 {
-	font-size: 1.1rem;
-	line-height: 1.5;
+  font-size: 1.1rem;
+  line-height: 1.5;
 }
 h5,
 .h5 {
-	font-size: 0.9rem;
-	line-height: 1.6;
+  font-size: 0.9rem;
+  line-height: 1.6;
 }
 h6,
 .h6 {
-	font-size: 0.8rem;
-	line-height: 1.6;
+  font-size: 0.8rem;
+  line-height: 1.6;
 }
 p,
 .p {
-	font-size: 1.1rem;
-	font-weight: 100;
-	line-height: 1.7;
+  font-size: 1.1rem;
+  font-weight: 100;
+  line-height: 1.7;
 }
 p {
   margin: 2ex 0;
 }
 blockquote {
-	margin: 3rem 0;
-	padding-left: 2rem;
-	border-left: 4px solid #148ECC;
+  margin: 3rem 0;
+  padding-left: 2rem;
+  border-left: 4px solid #148ECC;
 }
 hr {
   display: block;
-	background-color: currentColor;
+  background-color: currentColor;
   color: inherit;
-	border: 0;
-	height: 1px;
-	width: 100%;
+  border: 0;
+  height: 1px;
+  width: 100%;
 }
 .small,
 small {
@@ -76,22 +76,22 @@ b, strong {
   line-height: 1;
 }
 .italic {
-	font-style: italic;
+  font-style: italic;
 }
 .light {
-	font-weight: 100;
+  font-weight: 100;
 }
 .medium {
-	font-weight: 500;
+  font-weight: 500;
 }
 .bold {
-	font-weight: 900;
+  font-weight: 900;
 }
 .uppercase {
-	text-transform: uppercase;
+  text-transform: uppercase;
 }
 .underline {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 .decoration--none {
   text-decoration: none;

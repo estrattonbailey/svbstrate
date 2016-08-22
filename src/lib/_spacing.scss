@@ -20,11 +20,11 @@
 // scale. Customize them as needed.
 $intervals: (
   '0': 0,
-	'025': 0.25,
-	'05': 0.5,
-	'075': 0.75,
-	1: 1,
-	2: 2
+  '025': 0.25,
+  '05': 0.5,
+  '075': 0.75,
+  1: 1,
+  2: 2
 ) !default;
 
 @each $key, $interval in $intervals {
