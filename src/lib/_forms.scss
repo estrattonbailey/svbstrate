@@ -27,14 +27,15 @@ label {
   margin-bottom: .25em;
 }
 .select-wrapper {
+  position: relative;
   display: inline-block;
 
   &:after {
     position: absolute;
     content: '\25bc';
-    top: calc(50% - 0.5em);
+    top: calc(50% - 0.7em);
     right: 1em;
-    font-size: 2em;
+    font-size: 0.6em;
     color: inherit;
     pointer-events: none;
   }
