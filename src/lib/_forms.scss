@@ -28,6 +28,13 @@ label {
   color: $cg6;
   margin-bottom: .25em;
 }
+select {
+  background-color: transparent;
+  border-radius: 0;
+  &::-ms-expand {
+    display: none;
+  }
+}
 .select-wrapper {
   position: relative;
   display: inline-block;
@@ -46,10 +53,6 @@ label {
     appearance: none;
     -webkit-appearance: none;
   }
-}
-select {
-  background-color: transparent;
-  border-radius: 0;
 }
 textarea {
   background-color: transparent;
