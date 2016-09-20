@@ -6,6 +6,8 @@ select,
 textarea {
   outline: 0;
   border: 0;
+  border-radius: 0;
+  -webkit-appearance: none;
 }
 label,
 input,
