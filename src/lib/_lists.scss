@@ -1,38 +1,46 @@
 
-ul, ol {
-  margin: 0;
-  padding: 0;
+ol, ul {
+  list-style: none;
 }
-ol {
-  list-style: decimal inside;
-}
-ul {
-  list-style: disc inside;
-}
-li {
-  margin: .33em 0;
-}
-ul, ol, li {
+
+/**
+ * To achieve list styling,
+ * add the .list class
+ *
+ * i.e ol.list, ul.list
+ */
+.list {
+  li {
+    position: relative;
+    margin: .33em 0;
+    padding-left: 1.5em;
+  }
+
   ul, ol {
     margin: 0;
     padding-left: 2em;
-  }
-  ul {
-    list-style: circle inside;
   }
   ol {
     list-style: lower-alpha inside;
   }
 }
-ul.list--reset,
-ol.list--reset,
-li.list--reset,
-.list--reset {
-  list-style: none;
-  padding-left: 0;
-  ul, ol, li {
-    list-style: none;
-    padding-left: 0;
+
+ol.list {
+  counter-reset: num;
+
+  li::before {
+    content: counter(num) '.';
+    counter-increment: num;
+    display: block;
+    position: absolute;
+    left: 0; top: 0;
   }
+}
+
+ul.list li::before {
+  content: '•';
+  display: block;
+  position: absolute;
+  left: 0; top: 0;
 }
 
