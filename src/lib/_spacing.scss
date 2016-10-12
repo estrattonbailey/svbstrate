@@ -1,78 +1,26 @@
-.mha {
-  margin-left: auto;
-  margin-right: auto;
-}
+// SPACING
+.mla, .mha, .mxa { margin-left: auto }
+.mra, .mha, .mxa { margin-right: auto }
+.mta, .mva, .mxa { margin-top: auto }
+.mba, .mva, .mxa { margin-bottom: auto; }
 
-// WHITESPACE
-//
-// These classes can be very useful. But, they can
-// be abused easily. They shouldn't be used for
-// spacing that varies across breakpoints. Use them
-// for small UI element spacing, to create small
-// reusable chunks of HTML (components).
-//
-// KEY:
-// mh, ph = margin/padding horizontal (left and right)
-// mv, pv = margin/padding vertical (top and bottom)
-// etc
-
-// These are the pixel based stopping points on the
-// scale. Customize them as needed.
 $intervals: (
   '0': 0,
-  '025': 0.25,
+  '0.25': 0.25,
   '05': 0.5,
   '075': 0.75,
   1: 1,
   2: 2
-) !default;
+);
 
 @each $key, $interval in $intervals {
-  // MARGINS
-  .mt#{$key}{
-    margin-top:($interval + em);
-  }
-  .mb#{$key}{
-    margin-bottom:($interval + em);
-  }
-  .mv#{$key}{
-    margin-top:($interval + em);
-    margin-bottom:($interval + em);
-  }
-  .ml#{$key}{
-    margin-left:($interval + em);
-  }
-  .mr#{$key}{
-    margin-right:($interval + em);
-  }
-  .mh#{$key}{
-    margin-left:($interval + em);
-    margin-right:($interval + em);
-  }
-  .mhn#{$key}{
-    margin-left: (- $interval + em);
-    margin-right: (- $interval + em);
-  }
-
-  // PADDING
-  .pt#{$key}{
-    padding-top:($interval + em);
-  }
-  .pb#{$key}{
-    padding-bottom:($interval + em);
-  }
-  .pv#{$key}{
-    padding-top:($interval + em);
-    padding-bottom:($interval + em);
-  }
-  .pl#{$key}{
-    padding-left:($interval + em);
-  }
-  .pr#{$key}{
-    padding-right:($interval + em);
-  }
-  .ph#{$key}{
-    padding-left:($interval + em);
-    padding-right:($interval + em);
-  }
+  .mt#{$key}, .mv#{$key}, .mx#{$key} { margin-top:($interval + em) }
+  .mb#{$key}, .mv#{$key}, .mx#{$key} { margin-bottom:($interval + em) }
+  .ml#{$key}, .mh#{$key}, .mx#{$key} { margin-left:($interval + em) }
+  .mr#{$key}, .mh#{$key}, .mx#{$key} { margin-right:($interval + em) }
+  .mhn#{$key}{ margin-left: (- $interval + em); margin-right: (- $interval + em); }
+  .pt#{$key}, .pv#{$key}, .px#{$key} { padding-top:($interval + em) }
+  .pb#{$key}, .pv#{$key}, .px#{$key} { padding-bottom:($interval + em) }
+  .pl#{$key}, .ph#{$key}, .px#{$key} { padding-left:($interval + em) }
+  .pr#{$key}, .ph#{$key}, .px#{$key} { padding-right:($interval + em) }
 }
