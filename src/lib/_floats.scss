@@ -1,14 +1,8 @@
-.float-l { 
-  float: left 
-}
-.float-r { 
-  float: right 
-}
-.float-n { 
-  float: none 
-}
 
-// CLEARFIX
+.float-l { float: left }
+.float-r { float: right }
+.float-n { float: none }
+
 .clear {
   &::before,
   &::after {
@@ -20,3 +14,4 @@
     clear: both;
   }
 }
+

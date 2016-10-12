@@ -1,15 +1,6 @@
-.fit-x {
-  bottom: 0; left: 0; right: 0; top: 0;
-}
-.fit-t {
-  top: 0;
-}
-.fit-b {
-  bottom: 0;
-}
-.fit-l {
-  left: 0;
-}
-.fit-r {
-  right: 0;
-}
+
+.fit-t, .fit-x { top: 0 }
+.fit-b, .fit-x { bottom: 0 }
+.fit-l, .fit-x { left: 0 }
+.fit-r, .fit-x { right: 0 }
+

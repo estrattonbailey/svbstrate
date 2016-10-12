@@ -1,15 +1,18 @@
-// BREAKPOINTS
-// These should be configured for the project.
-// To use, reference via the break() function
-// below, i.e. break(xl)
+/**
+ * Breakpoints are accessed using
+ * the break() function below.
+ *
+ * i.e. break(m) // returns 48em
+ */
 $breakpoints: (
   s: 500,
   m: 800,
   l: 1100
 ) !default;
 
-// This function converts values to ems,
-// regardless of units.
+/**
+ * Convert a given value to ems
+ */
 @function em($value) {
   @if ($value/1) == $value {
     @if (unit($value) == 'px') {
@@ -26,13 +29,16 @@ $breakpoints: (
   @return null;
 }
 
-// BREAKPOINT FUNCTION
-// This function can be used with min-width or
-// max-width queries, and converts the pixel
-// value breakpoint variables at the top of this
-// doc to ems for the rendered @media blocks.
-// If passed a pixel value, it simply converts
-// it to ems for use.
+/**
+ * Generate a breakpoint for the given key, 
+ * and min/max-width flag
+ *
+ * min-width example:
+ *   @media (min-width: break(m)){}
+ *
+ * max-width example:
+ *   @media (max-width: break(m, false)){}
+ */
 @function break($breakpoint, $min-width: true) {
   @if map-has-key($breakpoints, $breakpoint) {
     @if ($min-width == false) {

@@ -1,3 +1,4 @@
+
 $widths: (
   1: 100%,
   12: 50%,
@@ -7,12 +8,10 @@ $widths: (
   34: 75%,
 ) !default;
 
-// Generate base (mobile) width classes
 @each $num, $width in $widths{
   .w#{$num} { width: $width }
 }
 
-// Generate breakpoint specific width classes
 @each $break_ext, $break in $breakpoints {
   @media (min-width: em($break)){
     @each $num, $width in $widths{
@@ -20,3 +19,4 @@ $widths: (
     }
   }
 }
+

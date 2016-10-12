@@ -1,24 +1,23 @@
-// RESET
+
 button {
-  -webkit-appearance: none;
   border: 0;
   border-radius: 0;
   background-color: transparent;
   color: inherit;
+  -webkit-appearance: none;
 }
 button[disabled], 
 input[disabled] { 
   cursor: default 
 }
 
-// STYLES 
-// Buttons should be button.button or
-// element[rel="button"] for accessibility
+/**
+ * Buttons should be button.button or
+ * .button[role="button"] for accessibility
+ */
 button.button,
-.button,
-a[rel="button"],
-.button[rel="button"],
-input[type="submit"].button {
+.button[role="button"],
+input.button[type="submit"] {
   display: inline-block;
   background-color: $c1;
   color: white;
@@ -27,3 +26,4 @@ input[type="submit"].button {
   text-decoration: none;
   text-align: center;
 }
+

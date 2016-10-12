@@ -1,55 +1,61 @@
+
+.tsx { font-size: 1rem }
+.ts1 { font-size: 4rem }
+.ts2 { font-size: 3rem }
+.ts3 { font-size: 2rem }
+.ts4 { font-size: 1.5rem }
+.ts5 { font-size: 1rem }
+.ts6 { font-size: 0.875rem }
+
 :root {
-  font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, sans-serif;
-  font-size: 100%;
-  font-weight: 100;
-  color: #000;
+	color: $cb;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 80%;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased; 
+
+  @media (min-width: 48em){
+    font-size: 100%;
+  }
 }
-h1, h2, h3, h4, h5, h6, p,
-.h1, .h2, .h3, .h4, .h5, .h6, .p {
-  font-weight: 100;
-  margin: 0;
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-weight: 600;
+  letter-spacing: 0.1rem;
 }
 h1, h2, h3, h4, h5, h6 {
   margin: 2ex 0 .6ex;
 }
-h1,
-.h1 {
-  font-size: 2.8rem;
+h1, .h1 { 
+  @extend .ts1;
   line-height: 1.1;
 }
-h2,
-.h2 {
-  font-size: 1.8rem;
-  line-height: 1.4;
+h2, .h2 { 
+  @extend .ts2;
+  line-height: 1.3;
 }
-h3,
-.h3 {
-  font-size: 1.4rem;
-  line-height: 1.4;
-}
-h4,
-.h4 {
-  font-size: 1.1rem;
+h3, .h3 { 
+  @extend .ts3;
   line-height: 1.5;
 }
-h5,
-.h5 {
-  font-size: 0.9rem;
+h4, .h4 { 
+  @extend .ts4;
+  line-height: 1.5;
+}
+h5, .h5 { 
+  @extend .ts5;
   line-height: 1.6;
 }
-h6,
-.h6 {
-  font-size: 0.8rem;
+h6, .h6 { 
+  @extend .ts6;
   line-height: 1.6;
 }
-p,
-.p {
-  font-size: 1.1rem;
-  font-weight: 100;
+p, .p { 
+  @extend .tsx;
   line-height: 1.7;
 }
-p {
-  margin: 2ex 0;
+p { 
+  margin: 2ex 0 
 }
 blockquote {
   margin: 3rem 0;
@@ -63,6 +69,7 @@ hr {
   border: 0;
   height: 1px;
   width: 100%;
+  margin: 0;
 }
 .small,
 small {
@@ -96,3 +103,4 @@ b, strong {
 .decoration--none {
   text-decoration: none;
 }
+

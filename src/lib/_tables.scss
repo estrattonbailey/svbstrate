@@ -1,3 +1,11 @@
+
+.table--fixed { table-layout: fixed }
+.table__row-header { display: table-header-group }
+.table__row-footer { display: table-footer-group }
+.table__row-group { display: table-row-group }
+.table__row { display: table-row }
+.table__cell { display: table-cell }
+
 table,
 .table {
   border-collapse: collapse;
@@ -15,21 +23,4 @@ th {
   font-weight: 100;
   text-align: left;
 }
-.table--fixed {
-  table-layout: fixed;
-}
-.table__row-header {
-  display: table-header-group;
-}
-.table__row-footer {
-  display: table-footer-group;
-}
-.table__row-group {
-  display: table-row-group;
-}
-.table__row {
-  display: table-row;
-}
-.table__cell {
-  display: table-cell;
-}
+

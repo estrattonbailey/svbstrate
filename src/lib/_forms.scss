@@ -1,3 +1,4 @@
+
 form {
   margin: 0;
 }
@@ -25,7 +26,7 @@ select, {
   -webkit-appearance: none;
 }
 label {
-  color: $cg6;
+  color: rgba($cb, 0.6);
   margin-bottom: .25em;
 }
 select {
@@ -84,3 +85,4 @@ label.checkbox, label.radio {
 input[type="radio"] {
   border-radius: 100%;
 }
+
