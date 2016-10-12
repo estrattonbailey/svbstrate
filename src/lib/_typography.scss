@@ -7,16 +7,13 @@
 .ts5 { font-size: 1rem }
 .ts6 { font-size: 0.875rem }
 
-:root {
+body {
 	color: $cb;
 	font-family: Helvetica, Arial, sans-serif;
-	font-size: 80%;
+	font-size: 100%;
+  line-height: 1.7;
   font-weight: 400;
   -webkit-font-smoothing: antialiased; 
-
-  @media (min-width: 48em){
-    font-size: 100%;
-  }
 }
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
