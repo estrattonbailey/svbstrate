@@ -1,7 +1,17 @@
 # svbstrate [![npm](https://img.shields.io/npm/v/svbstrate.svg?maxAge=2592000)](https://www.npmjs.com/package/svbstrate)
-A low-level functional CSS library. Includes a CLI for ease of use.
+A hyper-minimal functional CSS library. Includes a CLI for ease of use.
 
-**Note:** this library requires [postcss](https://github.com/postcss/postcss). See the included `postcss.config.js` for configuration.
+**1.8kb gzipped**
+
+This library assumes some familiarity with functional CSS and authoring quality CSS in general.
+
+It does not provide:
+1. a grid
+2. breakpoints
+3. colors
+4. a reset/normalize
+
+However, it's trivial to set up a grid using the provided utility classes, and you probably already have a preferred method of authoring and naming colors and breakpoints 😝 I'd also recommend [normalize.css](https://github.com/necolas/normalize.css), but that's up to you.
 
 ## Getting Started 
 Install normally, then copy the files to your stylesheets directory:
@@ -14,6 +24,7 @@ npm i svbstrate -g
 
 svbstrate init path/to/stylesheets/dir
 ```
+See `postcss.config.js` and the scripts in `package.json` for the PostCSS setup, which you'll probably want to be using.
 
 ## API
 ### scale 
@@ -252,8 +263,6 @@ Utils for setting `z-index`:
 .z9 { z-index: 900 }
 .z10 { z-index: 1000 }
 ```
-### normalize
-The usual, from [necolas/normalize.css](https://github.com/necolas/normalize.css).
 
 ## Contributing
 Issues and Pull Requests are welcome. See [CONTRIBUTING.md](https://github.com/barrel/svbstrate/blob/master/CONTRIBUTING.md) for more info.
