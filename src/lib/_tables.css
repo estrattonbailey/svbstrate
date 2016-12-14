@@ -16,7 +16,7 @@ table,
 td,
 th {
   display: table-cell;
-  border-bottom: 1px solid #f5f5f5;
+  border-bottom: 1px solid #000;
   padding: .66em 1.33em;
 }
 th {

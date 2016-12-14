@@ -134,30 +134,6 @@ table {
   -moz-box-sizing: border-box;
 }
 
-.c1 {
-  color: #148ECC;
-}
-
-.cw {
-  color: white;
-}
-
-.cb {
-  color: #000;
-}
-
-.bg-c1 {
-  background-color: #148ECC;
-}
-
-.bg-cw {
-  background-color: white;
-}
-
-.bg-cb {
-  background-color: #000;
-}
-
 .block {
   display: block;
 }
@@ -651,7 +627,7 @@ table,
 td,
 th {
   display: table-cell;
-  border-bottom: 1px solid #f5f5f5;
+  border-bottom: 1px solid #000;
   padding: .66em 1.33em;
 }
 

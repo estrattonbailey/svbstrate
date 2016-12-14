@@ -1,11 +1,4 @@
 :root {
-  --break-s: 32em;
-  --break-m: 50em;
-  --break-l: 75em;
-
-  --c1: #148ECC;
-  --cb: #000;
-
   --scale0: 1rem;
   --scale1: 4rem;
   --scale2: 3rem;
@@ -16,7 +9,6 @@
 }
 
 @import 'lib/reset';
-@import 'lib/colors';
 @import 'lib/display';
 @import 'lib/positioning';
 @import 'lib/flexbox';

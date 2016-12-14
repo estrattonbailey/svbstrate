@@ -16,7 +16,7 @@ textarea {
 input,
 textarea,
 select {
-  border: 1px solid var(--cb);
+  border: 1px solid #000;
   padding: .35em .65em;
   -webkit-appearance: none;
 }
