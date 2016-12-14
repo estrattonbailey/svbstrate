@@ -1,14 +1,5 @@
-:root {
-  --scale0: 1rem;
-  --scale1: 4rem;
-  --scale2: 3rem;
-  --scale3: 2rem;
-  --scale4: 1.5rem;
-  --scale5: 1rem;
-  --scale6: 0.875rem;
-}
-
 @import 'lib/normalize';
+@import 'lib/scale';
 @import 'lib/display';
 @import 'lib/positioning';
 @import 'lib/flexbox';
@@ -20,6 +11,4 @@
 @import 'lib/forms';
 @import 'lib/lists';
 @import 'lib/tables';
-@import 'lib/scale';
 @import 'lib/spacing';
-

@@ -1,4 +1,14 @@
 
+:root {
+  --scale0: 1rem;
+  --scale1: 4rem;
+  --scale2: 3rem;
+  --scale3: 2rem;
+  --scale4: 1.5rem;
+  --scale5: 1rem;
+  --scale6: 0.875rem;
+}
+
 .scale0 { font-size: var(--scale0) }
 .scale1 { font-size: var(--scale1) }
 .scale2 { font-size: var(--scale2) }

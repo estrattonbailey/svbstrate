@@ -1,7 +1,6 @@
 
 .float-l { float: left }
 .float-r { float: right }
-
 .clearfix {
   &::before,
   &::after {
