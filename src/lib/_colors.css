@@ -1,0 +1,9 @@
+
+.c1 { color: var(--c1) }
+.cw { color: white }
+.cb { color: var(--cb) }
+
+.bg-c1 { background-color: var(--c1) }
+.bg-cw { background-color: white }
+.bg-cb { background-color: var(--cb) }
+

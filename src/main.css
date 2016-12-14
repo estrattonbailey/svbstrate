@@ -1,0 +1,33 @@
+:root {
+  --break-s: 32em;
+  --break-m: 50em;
+  --break-l: 75em;
+
+  --c1: #148ECC;
+  --cb: #000;
+
+  --scale0: 1rem;
+  --scale1: 4rem;
+  --scale2: 3rem;
+  --scale3: 2rem;
+  --scale4: 1.5rem;
+  --scale5: 1rem;
+  --scale6: 0.875rem;
+}
+
+@import 'lib/reset';
+@import 'lib/colors';
+@import 'lib/display';
+@import 'lib/positioning';
+@import 'lib/flexbox';
+@import 'lib/align';
+@import 'lib/floats';
+@import 'lib/z-index';
+@import 'lib/typography';
+@import 'lib/buttons';
+@import 'lib/forms';
+@import 'lib/lists';
+@import 'lib/tables';
+@import 'lib/scale';
+@import 'lib/spacing';
+

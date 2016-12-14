@@ -2,9 +2,8 @@
 .block { display: block }
 .inline { display: inline }
 .inline-block { display: inline-block }
+.hide { display: none }
 .relative { position: relative }
 .absolute { position: absolute }
 .fixed { position: fixed }
-.static { position: static }
-.hide { display: none }
 

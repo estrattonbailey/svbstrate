@@ -1,9 +1,8 @@
 
 .float-l { float: left }
 .float-r { float: right }
-.float-n { float: none }
 
-.clear {
+.clearfix {
   &::before,
   &::after {
     content:' ';

@@ -1,17 +1,14 @@
 {
   "name": "svbstrate",
   "version": "2.4.0",
-  "description": "A simple, scalable SCSS base layer.",
+  "description": "A simple, scalable CSS base layer.",
   "repository": {
     "type": "git",
     "url": "https://github.com/estrattonbailey/svbstrate.git"
   },
   "scripts": {
-    "patch": "npm version patch && npm run pub",
-    "pub": "npm publish",
-    "build": "npm run css ; npm run css:min",
-    "css": "node-sass src/main.scss dist/svbstrate.css",
-    "css:min": "node-sass src/main.scss | postcss -u cssnano > dist/svbstrate.min.css"
+    "start": "NODE_ENV=development postcss -c postcss.config.js -w",
+    "build": "NODE_ENV=production postcss -c postcss.config.js"
   },
   "bin": {
     "svbstrate": "build.js"
@@ -20,13 +17,8 @@
     "css",
     "atomic css",
     "functional css",
-    "scss",
-    "ocss",
-    "sass",
     "toolkit",
-    "grid",
-    "framework",
-    "grid"
+    "css library"
   ],
   "author": "estrattonbailey",
   "license": "MIT",
@@ -38,8 +30,15 @@
     "fs-extra": "^0.30.0"
   },
   "devDependencies": {
+    "autoprefixer": "^6.5.3",
     "cssnano": "^3.7.4",
-    "node-sass": "^3.8.0",
-    "postcss-cli": "^2.5.2"
+    "postcss": "^5.2.6",
+    "postcss-cli": "^2.5.2",
+    "postcss-discard-comments": "^2.0.4",
+    "postcss-import": "^9.0.0",
+    "postcss-prettify": "^0.3.4",
+    "postcss-reporter": "^2.0.0",
+    "postcss-scss": "^0.4.0",
+    "precss": "^1.4.0"
   }
 }
