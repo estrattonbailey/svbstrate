@@ -8,7 +8,7 @@
   --scale6: 0.875rem;
 }
 
-@import 'lib/reset';
+@import 'lib/normalize';
 @import 'lib/display';
 @import 'lib/positioning';
 @import 'lib/flexbox';
