@@ -1,15 +1,13 @@
 # svbstrate [![npm](https://img.shields.io/npm/v/svbstrate.svg?maxAge=2592000)](https://www.npmjs.com/package/svbstrate)
-A hyper-minimal functional CSS library. Includes a CLI for ease of use.
-
-**1.8kb gzipped**
+A hyper-minimal functional CSS library. Includes a CLI for ease of use. **1.8kb gzipped**
 
 This library assumes some familiarity with functional CSS and authoring quality CSS in general.
 
 It does not provide:
-1. a grid
-2. breakpoints
-3. colors
-4. a reset/normalize
+  1. a grid
+  2. breakpoints
+  3. colors
+  4. a reset/normalize
 
 However, it's trivial to set up a grid using the provided utility classes, and you probably already have a preferred method of authoring and naming colors and breakpoints 😝 I'd also recommend [normalize.css](https://github.com/necolas/normalize.css), but that's up to you.
 
