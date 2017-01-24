@@ -34,23 +34,13 @@ White space should ideally be handled via `em` units to allow the scale to creat
 ```
 **Source:**
 ```css
-:root {
-  --scale0: 1rem;
-  --scale1: 4rem;
-  --scale2: 3rem;
-  --scale3: 2rem;
-  --scale4: 1.5rem;
-  --scale5: 1rem;
-  --scale6: 0.875rem;
-}
-
-.scale0 { font-size: var(--scale0) }
-.scale1 { font-size: var(--scale1) }
-.scale2 { font-size: var(--scale2) }
-.scale3 { font-size: var(--scale3) }
-.scale4 { font-size: var(--scale4) }
-.scale5 { font-size: var(--scale5) }
-.scale6 { font-size: var(--scale6) }
+.scale0 { font-size: 1rem }
+.scale1 { font-size: 4rem }
+.scale2 { font-size: 3rem }
+.scale3 { font-size: 2rem }
+.scale4 { font-size: 1.5rem }
+.scale5 { font-size: 1rem }
+.scale6 { font-size: 0.875rem }
 ```
 ### typography
 Easy starting point for typographic styles. Includes utils for setting font style, as well as heading classes for overriding default styles:

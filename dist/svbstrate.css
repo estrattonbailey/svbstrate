@@ -1,31 +1,3 @@
-.scale0 {
-  font-size: 1rem;
-}
-
-.scale1 {
-  font-size: 4rem;
-}
-
-.scale2 {
-  font-size: 3rem;
-}
-
-.scale3 {
-  font-size: 2rem;
-}
-
-.scale4 {
-  font-size: 1.5rem;
-}
-
-.scale5 {
-  font-size: 1rem;
-}
-
-.scale6 {
-  font-size: 0.875rem;
-}
-
 .block {
   display: block;
 }
@@ -259,39 +231,69 @@ h6 {
   margin: 1em 0 .6em;
 }
 
+.scale1,
 h1,
 .h1 {
   font-size: 4rem;
+}
+
+h1,
+.h1 {
   line-height: 1.1;
+}
+
+.scale2,
+h2,
+.h2 {
+  font-size: 3rem;
 }
 
 h2,
 .h2 {
-  font-size: 3rem;
   line-height: 1.3;
+}
+
+.scale3,
+h3,
+.h3 {
+  font-size: 2rem;
 }
 
 h3,
 .h3 {
-  font-size: 2rem;
   line-height: 1.5;
+}
+
+.scale4,
+h4,
+.h4 {
+  font-size: 1.5rem;
 }
 
 h4,
 .h4 {
-  font-size: 1.5rem;
   line-height: 1.5;
+}
+
+.scale5,
+h5,
+.h5 {
+  font-size: 1rem;
 }
 
 h5,
 .h5 {
-  font-size: 1rem;
   line-height: 1.6;
+}
+
+.scale6,
+h6,
+.h6 {
+  font-size: 0.875rem;
 }
 
 h6,
 .h6 {
-  font-size: 0.875rem;
   line-height: 1.6;
 }
 
