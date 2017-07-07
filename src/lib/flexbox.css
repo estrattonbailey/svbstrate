@@ -1,13 +1,13 @@
 .f { display: flex }
 .fw { flex-wrap: wrap }
-.fs { align-items: flex-start }
-.fie { align-items: flex-end }
-.fic { align-items: center }
-.fib { align-items: baseline }
-.fjs { justify-content: flex-start }
-.fje { justify-content: flex-end }
-.fjc { justify-content: center }
-.fjb { justify-content: space-between }
+.ais { align-items: flex-start }
+.aie { align-items: flex-end }
+.aic { align-items: center }
+.aib { align-items: baseline }
+.jcs { justify-content: flex-start }
+.jce { justify-content: flex-end }
+.jcc { justify-content: center }
+.jcb { justify-content: space-between }
 .fa {
   flex: 1 1 auto;
   min-width: 0;

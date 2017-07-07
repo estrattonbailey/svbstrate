@@ -41,12 +41,3 @@
 .pb1, .pv1, .px1 { padding-bottom: 1em }
 .pl1, .ph1, .px1 { padding-left: 1em }
 .pr1, .ph1, .px1 { padding-right: 1em }
-
-.mt2, .mv2, .mx2 { margin-top: 2em }
-.mb2, .mv2, .mx2 { margin-bottom: 2em }
-.ml2, .mh2, .mx2 { margin-left: 2em }
-.mr2, .mh2, .mx2 { margin-right: 2em }
-.pt2, .pv2, .px2 { padding-top: 2em }
-.pb2, .pv2, .px2 { padding-bottom: 2em }
-.pl2, .ph2, .px2 { padding-left: 2em }
-.pr2, .ph2, .px2 { padding-right: 2em }

@@ -1,244 +1,319 @@
 # svbstrate [![npm](https://img.shields.io/npm/v/svbstrate.svg?maxAge=2592000)](https://www.npmjs.com/package/svbstrate)
-A hyper-minimal functional CSS library. Includes a CLI for ease of use. **1.8kb gzipped**
 
-This library assumes some familiarity with functional CSS and authoring quality CSS in general.
+Another functional CSS library. Itsy-bitsy classes. Fast and small and all that. Use it if you want. Includes a neat little CLI to copy the files.
 
-It does not provide:
-  1. a grid
-  2. breakpoints
-  3. colors
-  4. a reset/normalize
+## Features
+1. No grid
+2. No breakpoints
+3. No colors
+4. No reset/normalize\*
+5. No opinions, other than what to leave out
+6. **1.2kb gzipped**
 
-However, it's trivial to set up a grid using the provided utility classes, and you probably already have a preferred method of authoring and naming colors and breakpoints 😝 I'd also recommend [normalize.css](https://github.com/necolas/normalize.css), but that's up to you.
+This library doesn't include everything out of the box, because you probably don't need everything out of the box. Define your own grid, colors, and breakpoints, and build up from there using your preferred libraries or methods.
 
-## Getting Started 
-Install normally, then copy the files to your stylesheets directory:
+\*Ok ok, there are [two rules]().
+
+## Usage
+Copy the files from the repo, install to `node_modules`, or use the CLI. Up to you.
 ```
 npm i svbstrate --save
 ```
-**Alternatively,** you can install svbstrate as a global module, and make use of its CLI tool.
+To use the CLI, install globally.
 ```
 npm i svbstrate -g
 
 svbstrate init path/to/stylesheets/dir
-```
-See `postcss.config.js` and the scripts in `package.json` for the PostCSS setup, which you'll probably want to be using.
 
-## API
-### scale 
-The type scale. `scale0` refers to the base type size, and `scale1`-`scale6` refer to the H1-H6 type scale.
+# later, to update
+npm i svbstrate@latest -g
 
-White space should ideally be handled via `em` units to allow the scale to creative relative space around elements. Scale classes are provided to allow for selective scaling on non-typographical elements.
-```html
-<div class="pv2 scale1">Lots of padding</div>
+# for help
+svbstrate help
 ```
-**Source:**
-```css
-.scale0 { font-size: 1rem }
-.scale1 { font-size: 4rem }
-.scale2 { font-size: 3rem }
-.scale3 { font-size: 2rem }
-.scale4 { font-size: 1.5rem }
-.scale5 { font-size: 1rem }
-.scale6 { font-size: 0.875rem }
-```
-### typography
-Easy starting point for typographic styles. Includes utils for setting font style, as well as heading classes for overriding default styles:
-```html
-<h1 class="h3 italic underline">Heading Three: Italic and Underlined</h1>
-```
-**Source:**
-```css
-/* ~ type definitions above ~ */
 
-small {
-  font-size: 0.8em;
-}
-strong {
-  font-weight: bold;
-}
-.type--reset {
-  margin: 0;
-  line-height: 1;
-}
-.italic {
-  font-style: italic;
-}
-.light {
-  font-weight: 100;
-}
-.medium {
-  font-weight: 500;
-}
-.bold {
-  font-weight: 900;
-}
-.uppercase {
-  text-transform: uppercase;
-}
-.underline {
-  text-decoration: underline;
-}
-.decoration--none {
-  text-decoration: none;
-}
-```
-### spacing
-`margin` and `padding` utils. All class follow the same pattern:
-```
-{margin or padding}{direction}{value}
-```
-For example, `mr1` translates to `margin-right: 1em` and `pv075` translates to `padding-left: 0.75em; padding-right: 0.75em`.
+## Philosophies
+This has been covered again and again by people smarter than me. **Functional CSS is a smart way to define your stylesheets.**
 
-For both `padding` and `margin` the spacing scale includes `0.25em` `0.5em` `0.75em` `1em` and `2em` by default. Define more if you like.
+With that out of the way, I encourage these things:
 
-**Note:** these classes to take up space, so remove them if not needed, and be wary of adding any non-reusable (magic) numbers here.
+1. Use `em` units for everything
+2. Don't create spacing classes over `2em`
+3. Mobile first
+4. Use utility classes as a *substrate* or baseline. Use custom classes for case-specific scenarios.
 
-**Source:**
-```css
-.mla, .mha, .mxa { margin-left: auto }
-.mra, .mha, .mxa { margin-right: auto }
-.mta, .mva, .mxa { margin-top: auto }
-.mba, .mva, .mxa { margin-bottom: auto; }
-
-.mt025, .mv025, .mx025 { margin-top: 0.25em }
-.mb025, .mv025, .mx025 { margin-bottom: 0.25em }
-.ml025, .mh025, .mx025 { margin-left: 0.25em }
-.mr025, .mh025, .mx025 { margin-right: 0.25em }
-.mhn025 { margin-left: -0.25em; margin-right: -0.25em; }
-.pt025, .pv025, .px025 { padding-top: 0.25em }
-.pb025, .pv025, .px025 { padding-bottom: 0.25em }
-.pl025, .ph025, .px025 { padding-left: 0.25em }
-.pr025, .ph025, .px025 { padding-right: 0.25em }
-
-/* ~ other definitions below ~ */
-```
+## Styles
 ### display
-Set the `display` property of an element:
-```html
-<div class="block"></div>
-```
-**Source:**
+As ever, use appropriate block-level tags. These are just a couple most commonly applied as overrides. Add more if you like.
 ```css
 .block { display: block }
-.inline { display: inline }
 .inline-block { display: inline-block }
-.hide { display: none }
 ```
+
 ### positioning
-Set the `position` property of an element. Also includes handy utils to set `left` `right` `top` and `bottom` to `0`:
-```html
-<div class="absolute fit-x"></div>
-```
-**Source:**
+Use the `.fill` and directional classes to quickly stick elements within their scope.
 ```css
-.relative { position: relative }
-.absolute { position: absolute }
-.fixed { position: fixed }
-.fit-t, .fit-x { top: 0 }
-.fit-b, .fit-x { bottom: 0 }
-.fit-l, .fit-x { left: 0 }
-.fit-r, .fit-x { right: 0 }
+.rel { position: relative }
+.abs { position: absolute }
+.fix { position: fixed }
+.fill, .top { top: 0 }
+.fill, .bottom { bottom: 0 }
+.fill, .left { left: 0 }
+.fill, .right { right: 0 }
 ```
+
 ### flexbox
-Create basic layouts using flexbox:
-```html
-<div class="flex flex-wrap flex-items-center mhn1">
-  ...
-  <div class="ph1"></div>
-  ...
-</div>
-```
-**Source:**
+Just about all you need to build any grid.
 ```css
-.flex { display: flex }
-.flex-wrap { flex-wrap: wrap }
-.flex-items-start { align-items: flex-start }
-.flex-items-end { align-items: flex-end }
-.flex-items-center { align-items: center }
-.flex-items-baseline { align-items: baseline }
-.flex-items-stretch { align-items: stretch }
-.flex-justify-start { justify-content: flex-start }
-.flex-justify-end { justify-content: flex-end }
-.flex-justify-center { justify-content: center }
-.flex-justify-between { justify-content: space-between }
-.flex-justify-around { justify-content: space-around }
-.flex-auto {
+.f { display: flex }
+.fw { flex-wrap: wrap }
+.ais { align-items: flex-start }
+.aie { align-items: flex-end }
+.aic { align-items: center }
+.aib { align-items: baseline }
+.jcs { justify-content: flex-start }
+.jce { justify-content: flex-end }
+.jcc { justify-content: center }
+.jcb { justify-content: space-between }
+.fa {
   flex: 1 1 auto;
   min-width: 0;
   min-height: 0;
 }
 ```
-### floats
-Set `float` property. Includes a clearfix:
-```html
-<div class="clearfix">
-  <div class="float-l"></div>
-</div>
-```
-**Source:**
-```css
-.float-l { float: left }
-.float-r { float: right }
-.clearfix {
-  &::before,
-  &::after {
-    content:' ';
-    display: table;
-  }
 
-  &::after {
-    clear: both;
-  }
+
+### typography & scale
+White-space should be defined by your type-scale via `em` units. The *scale* is therefore derived from the typographical hierarchy defined here. Also note a few useful utils.
+```css
+body {
+  color: #000;
+  font-family: Helvetica, sans-serif;
+  font-size: 100%;
+  line-height: 1.7;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased; 
+}
+.scale1,
+h1, .h1 {
+  font-size: 4rem;
+}
+h1, .h1 { 
+  line-height: 1.1;
+}
+.scale2,
+h2, .h2 { 
+  font-size: 3rem;
+}
+h2, .h2 { 
+  line-height: 1.3;
+}
+.scale3,
+h3, .h3 { 
+  font-size: 2rem;
+}
+h3, .h3 { 
+  line-height: 1.5;
+}
+.scale4,
+h4, .h4 { 
+  font-size: 1.5rem;
+}
+h4, .h4 { 
+  line-height: 1.5;
+}
+.scale5,
+h5, .h5 { 
+  font-size: 1rem;
+}
+h5, .h5 { 
+  line-height: 1.6;
+}
+.scale6,
+h6, .h6 { 
+  font-size: 0.875rem;
+}
+h6, .h6 { 
+  line-height: 1.6;
+}
+.scale0,
+p, .p { 
+  font-size: 1rem;
+}
+p, .p { 
+  line-height: 1.7;
+}
+p { 
+  margin: 1em 0
+}
+a {
+  color: inherit
+}
+hr {
+  display: block;
+  border: 0;
+  margin: 0;
+  height: 1px;
+  width: 100%;
+  background-color: currentColor;
+  color: inherit;
+}
+small, .small {
+  font-size: 0.75em;
+}
+strong, .b {
+  font-weight: bold;
+}
+em, .i {
+  font-style: italic;
+}
+.caps {
+  text-transform: uppercase;
+}
+.no-under {
+  text-decoration: none;
 }
 ```
+
+### spacing
+Whitespace is important, but bike-shedding isn't worth it. Define relational spacing using small increments, and use custom classes and media queries to expand from there.
+
+These all work the same way:
+```
+mx    margin
+ml    margin left
+mr    margin right
+mv    margin vertical
+mh    margin horizontal
+
+px    padding
+pl    padding left
+pr    padding right
+pv    padding vertical
+ph    padding horizontal
+```
+
+The directional prefix is followed by a value. Preconfigured values: `0.25em` `0.5em` `0.75em` `1em`. I don't reccommend going beyond `1em` as your largest increment. Past that, I find there are many caveats and responsive changes that make larger increments redundant.
+
+```css
+.mha, .mxa { margin-left: auto }
+.mha, .mxa { margin-right: auto }
+.mva, .mxa { margin-top: auto }
+.mva, .mxa { margin-bottom: auto; }
+
+.mt0, .mv0, .mx0 { margin-top: 0 }
+.mb0, .mv0, .mx0 { margin-bottom: 0 }
+
+.mt025, .mv025, .mx025 { margin-top: 0.25em }
+.mb025, .mv025, .mx025 { margin-bottom: 0.25em }
+.ml025, .mh025, .mx025 { margin-left: 0.25em }
+.mr025, .mh025, .mx025 { margin-right: 0.25em }
+.pt025, .pv025, .px025 { padding-top: 0.25em }
+.pb025, .pv025, .px025 { padding-bottom: 0.25em }
+.pl025, .ph025, .px025 { padding-left: 0.25em }
+.pr025, .ph025, .px025 { padding-right: 0.25em }
+
+.mt05, .mv05, .mx05 { margin-top: 0.5em }
+.mb05, .mv05, .mx05 { margin-bottom: 0.5em }
+.ml05, .mh05, .mx05 { margin-left: 0.5em }
+.mr05, .mh05, .mx05 { margin-right: 0.5em }
+.pt05, .pv05, .px05 { padding-top: 0.5em }
+.pb05, .pv05, .px05 { padding-bottom: 0.5em }
+.pl05, .ph05, .px05 { padding-left: 0.5em }
+.pr05, .ph05, .px05 { padding-right: 0.5em }
+
+.mt075, .mv075, .mx075 { margin-top: 0.75em }
+.mb075, .mv075, .mx075 { margin-bottom: 0.75em }
+.ml075, .mh075, .mx075 { margin-left: 0.75em }
+.mr075, .mh075, .mx075 { margin-right: 0.75em }
+.pt075, .pv075, .px075 { padding-top: 0.75em }
+.pb075, .pv075, .px075 { padding-bottom: 0.75em }
+.pl075, .ph075, .px075 { padding-left: 0.75em }
+.pr075, .ph075, .px075 { padding-right: 0.75em }
+
+.mt1, .mv1, .mx1 { margin-top: 1em }
+.mb1, .mv1, .mx1 { margin-bottom: 1em }
+.ml1, .mh1, .mx1 { margin-left: 1em }
+.mr1, .mh1, .mx1 { margin-right: 1em }
+.pt1, .pv1, .px1 { padding-top: 1em }
+.pb1, .pv1, .px1 { padding-bottom: 1em }
+.pl1, .ph1, .px1 { padding-left: 1em }
+.pr1, .ph1, .px1 { padding-right: 1em }
+```
+
+### alignment
+```css
+.al { text-align: left }
+.ac { text-align: center }
+.ar { text-align: right }
+.aj { text-align: justify }
+```
+
 ### buttons
-Buttons should either be actual `button` elements, or `a[role="button"]` elements for accessibility:
-```html
-<button class="button">Actual Button</button>
-<a href="#0" class="button" role="button">Fake Button</a>
-```
-### align
-Set `text-align` and `vertical-align`:
-```html
-<div class="align-c">Centered Text</div>
-```
-**Source:**
+Baseline to style your own buttons.
 ```css
-.align-l { text-align: left }
-.align-c { text-align: center }
-.align-r { text-align: right }
-.align-j { text-align: justify }
-.align-m { vertical-align: middle }
-.align-t { vertical-align: top }
-.align-b { vertical-align: baseline }
+button {
+  border: 0;
+  border-radius: 0;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+button.button,
+.button[role="button"],
+input.button[type="submit"] {
+  background-color: #000;
+  color: white;
+  padding: 0.5em 1.5em;
+}
 ```
+
 ### forms
-You get the drill. This is basic styling.
-### lists
-Lists are by default *unstyled*. To achieve list styling, add the `.list` class to your `ol` or `ul`:
-```html
-<ul class="list">
-  <li>Styled list item</li>
-</ul>
-```
-### tables
-Basic table styling and util classes:
-**Source:**
+Baseline to style your own forms.
 ```css
-.table--fixed { table-layout: fixed }
-.table__row-header { display: table-header-group }
-.table__row-footer { display: table-footer-group }
-.table__row-group { display: table-row-group }
-.table__row { display: table-row }
-.table__cell { display: table-cell }
+form {
+  margin: 0;
+}
+input,
+textarea,
+select {
+  display: inline-block;
+  outline: 0;
+  border-radius: 0;
+  border: 1px solid #000;
+  position: relative;
+  font-size: inherit;
+  background-color: transparent;
+}
+textarea {
+  max-width: 100%;
+  overflow: auto;
+  resize: vertical;
+}
 ```
+
+### lists
+In order to encourage semantic HTML, list styles are disabled by default.
+```css
+ol, ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+ul.list,
+ol.list {
+  padding-left: 2em;
+}
+ol.list {
+  list-style: decimal;
+}
+ul.list {
+  list-style: disc;
+}
+```
+
 ### z-index
-Utils for setting `z-index`:
-```html
-<div class="z0"></div>
-```
-**Source:**
+Manage stacking order without defining one-off classes.
 ```css
 .z0 { z-index: 0 }
 .z1 { z-index: 100 }
@@ -252,11 +327,9 @@ Utils for setting `z-index`:
 .z10 { z-index: 1000 }
 ```
 
-## Contributing
-Issues and Pull Requests are welcome. See [CONTRIBUTING.md](https://github.com/barrel/svbstrate/blob/master/CONTRIBUTING.md) for more info.
-
-## Related
-- [BASSCSS](http://www.basscss.com/)
+## Prior Art
+These guys (and others, but a lot is due to these two) brought functional CSS into everyday conversation. Inspired by them, I started this repo (my very first!) in September 2014 and continue to iterate and learn from it when I can. Yay CSS.
 - [Tachyons](http://tachyons.io/) 
+- [BASSCSS](http://www.basscss.com/)
 
 MIT License
