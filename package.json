@@ -2,6 +2,7 @@
   "name": "svbstrate",
   "version": "4.0.0",
   "description": "A simple, scalable CSS base layer.",
+  "main": "dist/svbstrate.css",
   "repository": {
     "type": "git",
     "url": "https://github.com/estrattonbailey/svbstrate.git"
