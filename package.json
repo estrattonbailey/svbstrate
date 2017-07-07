@@ -7,8 +7,8 @@
     "url": "https://github.com/estrattonbailey/svbstrate.git"
   },
   "scripts": {
-    "start": "NODE_ENV=development postcss -c postcss.config.js -w",
-    "build": "NODE_ENV=production postcss -c postcss.config.js"
+    "start": "NODE_ENV=development postcss src/main.css -w -o dist/svbstrate.css",
+    "build": "NODE_ENV=production postcss src/main.css -o dist/svbstrate.css"
   },
   "bin": {
     "svbstrate": "build.js"
@@ -30,15 +30,9 @@
     "fs-extra": "^0.30.0"
   },
   "devDependencies": {
-    "autoprefixer": "^6.5.3",
-    "cssnano": "^3.7.4",
-    "postcss": "^5.2.6",
-    "postcss-cli": "^2.5.2",
-    "postcss-discard-comments": "^2.0.4",
-    "postcss-import": "^9.0.0",
-    "postcss-prettify": "^0.3.4",
-    "postcss-reporter": "^2.0.0",
-    "postcss-scss": "^0.4.0",
-    "precss": "^1.4.0"
+    "cssnano": "^3.10.0",
+    "postcss": "^6.0.2",
+    "postcss-cli": "^4.1.0",
+    "postcss-import": "^10.0.0"
   }
 }

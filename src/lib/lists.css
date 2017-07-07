@@ -1,40 +1,15 @@
-
 ol, ul {
   list-style: none;
-}
-
-/* To achieve list styling, */
-/* add the .list class */
-/* i.e ol.list, ul.list */
-.list ul,
-.list ol {
+  padding: 0;
   margin: 0;
+}
+ul.list,
+ol.list {
   padding-left: 2em;
 }
-.list ol {
-  list-style: lower-alpha inside;
-}
-.list li {
-  position: relative;
-  margin: .33em 0;
-  padding-left: 1.5em;
-}
-
 ol.list {
-  counter-reset: num;
+  list-style: decimal;
 }
-ol.list li::before {
-  content: counter(num) '.';
-  counter-increment: num;
-  display: block;
-  position: absolute;
-  left: 0; top: 0;
+ul.list {
+  list-style: disc;
 }
-
-ul.list li::before {
-  content: '•';
-  display: block;
-  position: absolute;
-  left: 0; top: 0;
-}
-
