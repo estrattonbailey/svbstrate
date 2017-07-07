@@ -6,49 +6,49 @@ body {
   font-weight: 400;
   -webkit-font-smoothing: antialiased; 
 }
-.scale1,
+.s1,
 h1, .h1 {
   font-size: 4rem;
 }
 h1, .h1 { 
   line-height: 1.1;
 }
-.scale2,
+.s2,
 h2, .h2 { 
   font-size: 3rem;
 }
 h2, .h2 { 
   line-height: 1.3;
 }
-.scale3,
+.s3,
 h3, .h3 { 
   font-size: 2rem;
 }
 h3, .h3 { 
   line-height: 1.5;
 }
-.scale4,
+.s4,
 h4, .h4 { 
   font-size: 1.5rem;
 }
 h4, .h4 { 
   line-height: 1.5;
 }
-.scale5,
+.s5,
 h5, .h5 { 
   font-size: 1rem;
 }
 h5, .h5 { 
   line-height: 1.6;
 }
-.scale6,
+.s6,
 h6, .h6 { 
   font-size: 0.875rem;
 }
 h6, .h6 { 
   line-height: 1.6;
 }
-.scale0,
+.s0,
 p, .p { 
   font-size: 1rem;
 }
