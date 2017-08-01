@@ -1,6 +1,6 @@
 body {
   color: #000;
-  font-family: Helvetica, sans-serif;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif !default;
   font-size: 100%;
   line-height: 1.7;
   font-weight: 400;
