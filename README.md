@@ -49,7 +49,7 @@ With that out of the way, I encourage these things:
 
 ## Styles
 ### display
-As ever, use appropriate block-level tags. These are just a couple most commonly applied as overrides. Add more if you like.
+As ever, use appropriate tags for block-level or inline elements, etc. These are just a couple most commonly applied as overrides. Add more if you like.
 ```css
 .block { display: block }
 .inline-block { display: inline-block }
@@ -86,7 +86,6 @@ Just about all you need to build any grid.
   min-height: 0;
 }
 ```
-
 
 ### typography & scale
 White-space should be defined by your type-scale via `em` units. The *scale* is therefore derived from the typographical hierarchy defined here. Also note a few useful utils.
