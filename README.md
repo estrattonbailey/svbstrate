@@ -12,7 +12,7 @@ Another functional CSS library. Itsy-bitsy classes. Fast and small and all that.
 
 This library doesn't include everything out of the box, because you probably don't need everything out of the box. Define your own grid, colors, and breakpoints, and build up from there using your preferred libraries or methods.
 
-\*Ok ok, there are [two rules]().
+\*Ok ok, there are [two rules](https://github.com/estrattonbailey/svbstrate/blob/master/src/lib/reset.css).
 
 ## Usage
 Copy the files from the repo, install to `node_modules`, or use the CLI. Up to you.
@@ -30,6 +30,11 @@ npm i svbstrate@latest -g
 
 # for help
 svbstrate help
+```
+#### CDN
+If you'd like, you can also use [unpkg](https://unpkg.com/#/):
+```html
+<link rel='stylesheet' href='https://unpkg.com/svbstrate' type='text/css'/>
 ```
 
 ## Philosophies
