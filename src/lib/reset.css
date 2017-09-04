@@ -1,2 +1,15 @@
 html, body { margin: 0 }
-* { box-sizing: border-box }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+a,
+button,
+[role="button"],
+input,
+label,
+select,
+textarea {
+  touch-action: manipulation;
+}
