@@ -65,6 +65,8 @@ Use the `.fill` and directional classes to quickly stick elements within their s
 .fill, .bottom { bottom: 0 }
 .fill, .left { left: 0 }
 .fill, .right { right: 0 }
+.x { width: 100% }
+.y { height: 100% }
 ```
 
 ### flexbox
@@ -184,65 +186,65 @@ Whitespace is important, but bike-shedding isn't worth it. Define relational spa
 
 These all work the same way:
 ```
-mx    margin
+m    margin
 ml    margin left
 mr    margin right
-mv    margin vertical
-mh    margin horizontal
+my    margin y-axis
+mx    margin x-axis
 
-px    padding
+p    padding
 pl    padding left
 pr    padding right
-pv    padding vertical
-ph    padding horizontal
+py    padding y-axis
+px    padding x-axis
 ```
 
-The directional prefix is followed by a value. Preconfigured values: `0.25em` `0.5em` `0.75em` `1em`. I don't reccommend going beyond `1em` as your largest increment. Past that, I find there are many caveats and responsive changes that make larger increments redundant.
+The directional prefix is followed by a value. Preconfigured values: `0.25em` `0.5em` `0.75em` `1em`. I don't reccommend going beyond `1em` as your largest increment. Past that, I find there are many caveats and responsive changes that make larger increments unnecessary.
 
 ```css
-.mha, .mxa { margin-left: auto }
-.mha, .mxa { margin-right: auto }
-.mva, .mxa { margin-top: auto }
-.mva, .mxa { margin-bottom: auto; }
+.mxa, .ma { margin-left: auto }
+.mxa, .ma { margin-right: auto }
+.mya, .ma { margin-top: auto }
+.mya, .ma { margin-bottom: auto; }
 
-.mt0, .mv0, .mx0 { margin-top: 0 }
-.mb0, .mv0, .mx0 { margin-bottom: 0 }
+.mt0, .my0, .m0 { margin-top: 0 }
+.mb0, .my0, .m0 { margin-bottom: 0 }
 
-.mt025, .mv025, .mx025 { margin-top: 0.25em }
-.mb025, .mv025, .mx025 { margin-bottom: 0.25em }
-.ml025, .mh025, .mx025 { margin-left: 0.25em }
-.mr025, .mh025, .mx025 { margin-right: 0.25em }
-.pt025, .pv025, .px025 { padding-top: 0.25em }
-.pb025, .pv025, .px025 { padding-bottom: 0.25em }
-.pl025, .ph025, .px025 { padding-left: 0.25em }
-.pr025, .ph025, .px025 { padding-right: 0.25em }
+.mt025, .my025, .m025 { margin-top: 0.25em }
+.mb025, .my025, .m025 { margin-bottom: 0.25em }
+.ml025, .mx025, .m025 { margin-left: 0.25em }
+.mr025, .mx025, .m025 { margin-right: 0.25em }
+.pt025, .py025, .p025 { padding-top: 0.25em }
+.pb025, .py025, .p025 { padding-bottom: 0.25em }
+.pl025, .px025, .p025 { padding-left: 0.25em }
+.pr025, .px025, .p025 { padding-right: 0.25em }
 
-.mt05, .mv05, .mx05 { margin-top: 0.5em }
-.mb05, .mv05, .mx05 { margin-bottom: 0.5em }
-.ml05, .mh05, .mx05 { margin-left: 0.5em }
-.mr05, .mh05, .mx05 { margin-right: 0.5em }
-.pt05, .pv05, .px05 { padding-top: 0.5em }
-.pb05, .pv05, .px05 { padding-bottom: 0.5em }
-.pl05, .ph05, .px05 { padding-left: 0.5em }
-.pr05, .ph05, .px05 { padding-right: 0.5em }
+.mt05, .my05, .m05 { margin-top: 0.5em }
+.mb05, .my05, .m05 { margin-bottom: 0.5em }
+.ml05, .mx05, .m05 { margin-left: 0.5em }
+.mr05, .mx05, .m05 { margin-right: 0.5em }
+.pt05, .py05, .p05 { padding-top: 0.5em }
+.pb05, .py05, .p05 { padding-bottom: 0.5em }
+.pl05, .px05, .p05 { padding-left: 0.5em }
+.pr05, .px05, .p05 { padding-right: 0.5em }
 
-.mt075, .mv075, .mx075 { margin-top: 0.75em }
-.mb075, .mv075, .mx075 { margin-bottom: 0.75em }
-.ml075, .mh075, .mx075 { margin-left: 0.75em }
-.mr075, .mh075, .mx075 { margin-right: 0.75em }
-.pt075, .pv075, .px075 { padding-top: 0.75em }
-.pb075, .pv075, .px075 { padding-bottom: 0.75em }
-.pl075, .ph075, .px075 { padding-left: 0.75em }
-.pr075, .ph075, .px075 { padding-right: 0.75em }
+.mt075, .my075, .m075 { margin-top: 0.75em }
+.mb075, .my075, .m075 { margin-bottom: 0.75em }
+.ml075, .mx075, .m075 { margin-left: 0.75em }
+.mr075, .mx075, .m075 { margin-right: 0.75em }
+.pt075, .py075, .p075 { padding-top: 0.75em }
+.pb075, .py075, .p075 { padding-bottom: 0.75em }
+.pl075, .px075, .p075 { padding-left: 0.75em }
+.pr075, .px075, .p075 { padding-right: 0.75em }
 
-.mt1, .mv1, .mx1 { margin-top: 1em }
-.mb1, .mv1, .mx1 { margin-bottom: 1em }
-.ml1, .mh1, .mx1 { margin-left: 1em }
-.mr1, .mh1, .mx1 { margin-right: 1em }
-.pt1, .pv1, .px1 { padding-top: 1em }
-.pb1, .pv1, .px1 { padding-bottom: 1em }
-.pl1, .ph1, .px1 { padding-left: 1em }
-.pr1, .ph1, .px1 { padding-right: 1em }
+.mt1, .my1, .m1 { margin-top: 1em }
+.mb1, .my1, .m1 { margin-bottom: 1em }
+.ml1, .mx1, .m1 { margin-left: 1em }
+.mr1, .mx1, .m1 { margin-right: 1em }
+.pt1, .py1, .p1 { padding-top: 1em }
+.pb1, .py1, .p1 { padding-bottom: 1em }
+.pl1, .px1, .p1 { padding-left: 1em }
+.pr1, .px1, .p1 { padding-right: 1em }
 ```
 
 ### alignment
