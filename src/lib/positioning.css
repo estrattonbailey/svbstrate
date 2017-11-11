@@ -5,3 +5,5 @@
 .fill, .bottom { bottom: 0 }
 .fill, .left { left: 0 }
 .fill, .right { right: 0 }
+.x { width: 100% }
+.y { height: 100% }
