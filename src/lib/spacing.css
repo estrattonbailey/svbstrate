@@ -3,6 +3,9 @@
 .mya, .ma { margin-top: auto }
 .mya, .ma { margin-bottom: auto; }
 
+.pt0, .py0, .p0 { padding-top: 0 }
+.pb0, .py0, .p0 { padding-bottom: 0 }
+
 .mt0, .my0, .m0 { margin-top: 0 }
 .mb0, .my0, .m0 { margin-bottom: 0 }
 
