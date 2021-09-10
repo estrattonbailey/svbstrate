@@ -1,15 +1,3 @@
-ol, ul {
+.no-list {
   list-style: none;
-  padding: 0;
-  margin: 0;
-}
-ul.list,
-ol.list {
-  padding-left: 2em;
-}
-ol.list {
-  list-style: decimal;
-}
-ul.list {
-  list-style: disc;
 }

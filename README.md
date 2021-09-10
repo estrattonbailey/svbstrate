@@ -1,4 +1,4 @@
-# svbstrate [![npm](https://img.shields.io/npm/v/svbstrate.svg?maxAge=2592000)](https://www.npmjs.com/package/svbstrate)
+# svbstrate ![npm](https://img.shields.io/npm/v/svbstrate) [![](https://badgen.net/bundlephobia/minzip/svbstrate)](https://bundlephobia.com/result?p=svbstrate)
 
 Another functional CSS library. Itsy-bitsy classes. Fast and small and all that. Use it if you want. Includes a neat little CLI to copy the files.
 
@@ -8,7 +8,6 @@ Another functional CSS library. Itsy-bitsy classes. Fast and small and all that.
 3. No colors
 4. No reset/normalize\*
 5. No opinions, other than what to leave out
-6. **1.2kb gzipped**
 
 This library doesn't include everything out of the box, because you probably don't need everything out of the box. Define your own grid, colors, and breakpoints, and build up from there using your preferred libraries or methods.
 
@@ -299,24 +298,9 @@ textarea {
 ```
 
 ### lists
-In order to encourage semantic HTML, list styles are disabled by default.
-```css
-ol, ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-ul.list,
-ol.list {
-  padding-left: 2em;
-}
-ol.list {
-  list-style: decimal;
-}
-ul.list {
-  list-style: disc;
-}
-```
+
+List styling is left to browsers, but if you want to disable it, use the
+`.no-list` utility.
 
 ### z-index
 Manage stacking order without defining one-off classes.
