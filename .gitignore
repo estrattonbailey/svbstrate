@@ -1,3 +1,4 @@
 node_modules/
 *.gz
 index.html
+dist

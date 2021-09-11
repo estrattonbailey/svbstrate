@@ -11,7 +11,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .s1,
 h1, .h1 {
-  font-size: 3rem;
+  font-size: 2.8rem;
 }
 h1, .h1 {
   line-height: 1.1;
@@ -46,7 +46,7 @@ h5, .h5 {
 }
 .s6,
 h6, .h6 {
-  font-size: 0.875rem;
+  font-size: 0.75rem;
 }
 h6, .h6 {
   line-height: 1.6;
@@ -84,4 +84,7 @@ em, .i {
 }
 .no-under {
   text-decoration: none;
+}
+.mono {
+  font-family: monospace;
 }
