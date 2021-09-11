@@ -1,9 +1,8 @@
 html, body {
   margin: 0;
-  color: #000;
   font-family: -apple-system, system-ui, BlinkMacSystemFont, sans-serif;
   font-size: 100%;
-  line-height: 1.7;
+  line-height: 1.6;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
 }
@@ -19,31 +18,28 @@ input,
 label,
 select,
 textarea {
+  display: inline-block;
   touch-action: manipulation;
-}
-
-button {
   padding: 0;
+}
+button {
   border: 0;
   border-radius: 0;
-  display: inline-block;
   cursor: pointer;
   background-color: transparent;
   color: inherit;
   font: inherit;
   -webkit-appearance: none;
 }
-
 form {
   margin: 0;
 }
 input,
 textarea,
 select {
-  display: inline-block;
   outline: 0;
   border-radius: 0;
-  border: 1px solid #000;
+  border: 1px solid currentColor;
   position: relative;
   font-size: inherit;
   background-color: transparent;
@@ -84,49 +80,51 @@ textarea {
 h1, h2, h3, h4, h5, h6, p {
   margin: 0;
 }
-.s1,
+.fs1,
 h1, .h1 {
   font-size: 2.8rem;
 }
 h1, .h1 {
   line-height: 1.1;
 }
-.s2,
+.fs2,
 h2, .h2 {
   font-size: 2.2rem;
 }
 h2, .h2 {
   line-height: 1.3;
 }
-.s3,
+.fs3,
 h3, .h3 {
   font-size: 1.8rem;
 }
 h3, .h3 {
   line-height: 1.5;
 }
-.s4,
+.fs4,
 h4, .h4 {
   font-size: 1.4rem;
 }
 h4, .h4 {
   line-height: 1.5;
 }
-.s5,
+.fs5,
 h5, .h5 {
   font-size: 1rem;
 }
 h5, .h5 {
   line-height: 1.6;
 }
-.s6,
+small,
+.small,
+.fs6,
 h6, .h6 {
   font-size: 0.75rem;
 }
 h6, .h6 {
   line-height: 1.6;
 }
-.s0,
+.fs0,
 p, .p {
   font-size: 1rem;
 }
@@ -145,12 +143,6 @@ hr {
   background-color: currentColor;
   color: inherit;
 }
-small, .small {
-  font-size: 0.75em;
-}
-strong, .b {
-  font-weight: bold;
-}
 em, .i {
   font-style: italic;
 }
@@ -168,6 +160,16 @@ em, .i {
 .tar { text-align: right }
 .taj { text-align: justify }
 .no-list { list-style: none }
+
+.fw1 { font-weight: 100 }
+.fw2 { font-weight: 200 }
+.fw3 { font-weight: 300 }
+.fw4 { font-weight: 400 }
+.fw5 { font-weight: 500 }
+.fw6 { font-weight: 600 }
+strong, .fw7 { font-weight: 700 }
+.fw8 { font-weight: 800 }
+.fw9 { font-weight: 900 }
 
 .mxa, .ma { margin-left: auto }
 .mxa, .ma { margin-right: auto }
