@@ -1,40 +1,28 @@
 {
   "name": "svbstrate",
   "version": "4.2.1",
-  "description": "A simple, scalable CSS base layer.",
-  "main": "dist/svbstrate.css",
-  "files": [
-    "dist",
-    "build.js",
-    "README.md"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/estrattonbailey/svbstrate.git"
-  },
+  "description": "A functional/atomic/utility css library.",
+  "main": "svbstrate.css",
   "scripts": {
     "build": "pnpx esbuild --bundle --minify src/main.css --outfile=dist/svbstrate.css"
   },
   "bin": {
-    "svbstrate": "build.js"
+    "svbstrate": "bin.js"
   },
   "keywords": [
     "css",
-    "atomic css",
-    "functional css",
-    "toolkit",
-    "css library"
+    "atomic",
+    "functional",
+    "utility"
   ],
   "author": "estrattonbailey",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/estrattonbailey/svbstrate.git"
+  },
   "bugs": {
     "url": "https://github.com/estrattonbailey/svbstrate/issues"
   },
-  "homepage": "http://estrattonbailey.com/svbstrate-site/",
-  "dependencies": {
-    "fs-extra": "^0.30.0"
-  },
-  "devDependencies": {
-    "esbuild": "^0.12.26"
-  }
+  "homepage": "http://estrattonbailey.com/svbstrate-site/"
 }

@@ -1,0 +1,301 @@
+html, body {
+  margin: 0;
+  color: #000;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, sans-serif;
+  font-size: 100%;
+  line-height: 1.7;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+a,
+button,
+[role="button"],
+input,
+label,
+select,
+textarea {
+  touch-action: manipulation;
+}
+
+button {
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  display: inline-block;
+  cursor: pointer;
+  background-color: transparent;
+  color: inherit;
+  font: inherit;
+  -webkit-appearance: none;
+}
+
+form {
+  margin: 0;
+}
+input,
+textarea,
+select {
+  display: inline-block;
+  outline: 0;
+  border-radius: 0;
+  border: 1px solid #000;
+  position: relative;
+  font-size: inherit;
+  background-color: transparent;
+}
+textarea {
+  max-width: 100%;
+  overflow: auto;
+  resize: vertical;
+}
+
+.rel { position: relative }
+.abs { position: absolute }
+.fix { position: fixed }
+.fill, .top { top: 0 }
+.fill, .bottom { bottom: 0 }
+.fill, .left { left: 0 }
+.fill, .right { right: 0 }
+.w { width: 100% }
+.h { height: 100% }
+.db { display: block }
+.dib { display: inline-block }
+.f { display: flex }
+.fw { flex-wrap: wrap }
+.ais { align-items: flex-start }
+.aie { align-items: flex-end }
+.aic { align-items: center }
+.aib { align-items: baseline }
+.jcs { justify-content: flex-start }
+.jce { justify-content: flex-end }
+.jcc { justify-content: center }
+.jcb { justify-content: space-between }
+.fa {
+  flex: 1 1 auto;
+  min-width: 0;
+  min-height: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+.s1,
+h1, .h1 {
+  font-size: 2.8rem;
+}
+h1, .h1 {
+  line-height: 1.1;
+}
+.s2,
+h2, .h2 {
+  font-size: 2.2rem;
+}
+h2, .h2 {
+  line-height: 1.3;
+}
+.s3,
+h3, .h3 {
+  font-size: 1.8rem;
+}
+h3, .h3 {
+  line-height: 1.5;
+}
+.s4,
+h4, .h4 {
+  font-size: 1.4rem;
+}
+h4, .h4 {
+  line-height: 1.5;
+}
+.s5,
+h5, .h5 {
+  font-size: 1rem;
+}
+h5, .h5 {
+  line-height: 1.6;
+}
+.s6,
+h6, .h6 {
+  font-size: 0.75rem;
+}
+h6, .h6 {
+  line-height: 1.6;
+}
+.s0,
+p, .p {
+  font-size: 1rem;
+}
+p, .p {
+  line-height: 1.7;
+}
+a {
+  color: inherit;
+}
+hr {
+  display: block;
+  border: 0;
+  margin: 0;
+  height: 1px;
+  width: 100%;
+  background-color: currentColor;
+  color: inherit;
+}
+small, .small {
+  font-size: 0.75em;
+}
+strong, .b {
+  font-weight: bold;
+}
+em, .i {
+  font-style: italic;
+}
+.caps {
+  text-transform: uppercase;
+}
+.no-under {
+  text-decoration: none;
+}
+.mono {
+  font-family: monospace;
+}
+.tal { text-align: left }
+.tac { text-align: center }
+.tar { text-align: right }
+.taj { text-align: justify }
+.no-list { list-style: none }
+
+.mxa, .ma { margin-left: auto }
+.mxa, .ma { margin-right: auto }
+.mya, .ma { margin-top: auto }
+.mya, .ma { margin-bottom: auto; }
+
+.pt0, .py0, .p0 { padding-top: 0 }
+.pb0, .py0, .p0 { padding-bottom: 0 }
+
+.mt0, .my0, .m0 { margin-top: 0 }
+.mb0, .my0, .m0 { margin-bottom: 0 }
+
+.mt1, .my1, .m1 { margin-top: 4px }
+.mb1, .my1, .m1 { margin-bottom: 4px }
+.ml1, .mx1, .m1 { margin-left: 4px }
+.mr1, .mx1, .m1 { margin-right: 4px }
+.pt1, .py1, .p1 { padding-top: 4px }
+.pb1, .py1, .p1 { padding-bottom: 4px }
+.pl1, .px1, .p1 { padding-left: 4px }
+.pr1, .px1, .p1 { padding-right: 4px }
+
+.mt2, .my2, .m2 { margin-top: 8px }
+.mb2, .my2, .m2 { margin-bottom: 8px }
+.ml2, .mx2, .m2 { margin-left: 8px }
+.mr2, .mx2, .m2 { margin-right: 8px }
+.pt2, .py2, .p2 { padding-top: 8px }
+.pb2, .py2, .p2 { padding-bottom: 8px }
+.pl2, .px2, .p2 { padding-left: 8px }
+.pr2, .px2, .p2 { padding-right: 8px }
+
+.mt3, .my3, .m3 { margin-top: 12px }
+.mb3, .my3, .m3 { margin-bottom: 12px }
+.ml3, .mx3, .m3 { margin-left: 12px }
+.mr3, .mx3, .m3 { margin-right: 12px }
+.pt3, .py3, .p3 { padding-top: 12px }
+.pb3, .py3, .p3 { padding-bottom: 12px }
+.pl3, .px3, .p3 { padding-left: 12px }
+.pr3, .px3, .p3 { padding-right: 12px }
+
+.mt4, .my4, .m4 { margin-top: 16px }
+.mb4, .my4, .m4 { margin-bottom: 16px }
+.ml4, .mx4, .m4 { margin-left: 16px }
+.mr4, .mx4, .m4 { margin-right: 16px }
+.pt4, .py4, .p4 { padding-top: 16px }
+.pb4, .py4, .p4 { padding-bottom: 16px }
+.pl4, .px4, .p4 { padding-left: 16px }
+.pr4, .px4, .p4 { padding-right: 16px }
+
+.mt5, .my5, .m5 { margin-top: 20px }
+.mb5, .my5, .m5 { margin-bottom: 20px }
+.ml5, .mx5, .m5 { margin-left: 20px }
+.mr5, .mx5, .m5 { margin-right: 20px }
+.pt5, .py5, .p5 { padding-top: 20px }
+.pb5, .py5, .p5 { padding-bottom: 20px }
+.pl5, .px5, .p5 { padding-left: 20px }
+.pr5, .px5, .p5 { padding-right: 20px }
+
+.mt6, .my6, .m6 { margin-top: 24px }
+.mb6, .my6, .m6 { margin-bottom: 24px }
+.ml6, .mx6, .m6 { margin-left: 24px }
+.mr6, .mx6, .m6 { margin-right: 24px }
+.pt6, .py6, .p6 { padding-top: 24px }
+.pb6, .py6, .p6 { padding-bottom: 24px }
+.pl6, .px6, .p6 { padding-left: 24px }
+.pr6, .px6, .p6 { padding-right: 24px }
+
+.mt7, .my7, .m7 { margin-top: 28px }
+.mb7, .my7, .m7 { margin-bottom: 28px }
+.ml7, .mx7, .m7 { margin-left: 28px }
+.mr7, .mx7, .m7 { margin-right: 28px }
+.pt7, .py7, .p7 { padding-top: 28px }
+.pb7, .py7, .p7 { padding-bottom: 28px }
+.pl7, .px7, .p7 { padding-left: 28px }
+.pr7, .px7, .p7 { padding-right: 28px }
+
+.mt8, .my8, .m8 { margin-top: 32px }
+.mb8, .my8, .m8 { margin-bottom: 32px }
+.ml8, .mx8, .m8 { margin-left: 32px }
+.mr8, .mx8, .m8 { margin-right: 32px }
+.pt8, .py8, .p8 { padding-top: 32px }
+.pb8, .py8, .p8 { padding-bottom: 32px }
+.pl8, .px8, .p8 { padding-left: 32px }
+.pr8, .px8, .p8 { padding-right: 32px }
+
+.mt9, .my9, .m9 { margin-top: 36px }
+.mb9, .my9, .m9 { margin-bottom: 36px }
+.ml9, .mx9, .m9 { margin-left: 36px }
+.mr9, .mx9, .m9 { margin-right: 36px }
+.pt9, .py9, .p9 { padding-top: 36px }
+.pb9, .py9, .p9 { padding-bottom: 36px }
+.pl9, .px9, .p9 { padding-left: 36px }
+.pr9, .px9, .p9 { padding-right: 36px }
+
+.mt10, .my10, .m10 { margin-top: 40px }
+.mb10, .my10, .m10 { margin-bottom: 40px }
+.ml10, .mx10, .m10 { margin-left: 40px }
+.mr10, .mx10, .m10 { margin-right: 40px }
+.pt10, .py10, .p10 { padding-top: 40px }
+.pb10, .py10, .p10 { padding-bottom: 40px }
+.pl10, .px10, .p10 { padding-left: 40px }
+.pr10, .px10, .p10 { padding-right: 40px }
+
+.mt11, .my11, .m11 { margin-top: 44px }
+.mb11, .my11, .m11 { margin-bottom: 44px }
+.ml11, .mx11, .m11 { margin-left: 44px }
+.mr11, .mx11, .m11 { margin-right: 44px }
+.pt11, .py11, .p11 { padding-top: 44px }
+.pb11, .py11, .p11 { padding-bottom: 44px }
+.pl11, .px11, .p11 { padding-left: 44px }
+.pr11, .px11, .p11 { padding-right: 44px }
+
+.mt12, .my12, .m12 { margin-top: 48px }
+.mb12, .my12, .m12 { margin-bottom: 48px }
+.ml12, .mx12, .m12 { margin-left: 48px }
+.mr12, .mx12, .m12 { margin-right: 48px }
+.pt12, .py12, .p12 { padding-top: 48px }
+.pb12, .py12, .p12 { padding-bottom: 48px }
+.pl12, .px12, .p12 { padding-left: 48px }
+.pr12, .px12, .p12 { padding-right: 48px }
+
+.z0 { z-index: 0 }
+.z1 { z-index: 1 }
+.z2 { z-index: 2 }
+.z3 { z-index: 3 }
+.z4 { z-index: 4 }
+.z5 { z-index: 5 }
+.z6 { z-index: 6 }
+.z7 { z-index: 7 }
+.z8 { z-index: 8 }
+.z9 { z-index: 9 }
+.z10 { z-index: 10 }
